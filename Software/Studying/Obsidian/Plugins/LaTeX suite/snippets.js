@@ -1,6 +1,6 @@
 [
 	// Math mode
-	{trigger: "mk", replacement: "$$0$", options: "tA"},
+	{trigger: "mk", replacement: "${ $0 }$$1", options: "tA"},
 	{trigger: "dm", replacement: "$$\n$0\n$$", options: "tAw"},
 	{trigger: "beg", replacement: "\\begin{$0}\n$1\n\\end{$0}", options: "mA"},
 
@@ -130,6 +130,7 @@
 	{trigger: "...", replacement: "\\dots", options: "mA"},
 	{trigger: "<->", replacement: "\\leftrightarrow ", options: "mA"},
 	{trigger: "->", replacement: "\\to", options: "mA"},
+	{trigger: "<-", replacement: "\\leftarrow", options: "mA"},
 	{trigger: "!>", replacement: "\\mapsto", options: "mA"},
 	{trigger: "invs", replacement: "^{-1}", options: "mA"},
 	{trigger: "\\\\\\", replacement: "\\setminus", options: "mA"},
@@ -143,6 +144,7 @@
 	{trigger: "set", replacement: "\\{ $0 \\}$1", options: "mA"},
 	{trigger: "=>", replacement: "\\implies", options: "mA"},
 	{trigger: "=<", replacement: "\\impliedby", options: "mA"},
+	{trigger: "\\leq>", replacement: "\\Longleftrightarrow", options: "mA"},
 	{trigger: "iff", replacement: "\\iff", options: "mA"},
 	{trigger: "e\\xi sts", replacement: "\\exists", options: "mA", priority: 1},
 	{trigger: "===", replacement: "\\equiv", options: "mA"},
@@ -251,7 +253,7 @@
 	{trigger: "Bmat", replacement: "\\begin{Bmatrix}\n$0\n\\end{Bmatrix}", options: "mA"},
 	{trigger: "vmat", replacement: "\\begin{vmatrix}\n$0\n\\end{vmatrix}", options: "mA"},
 	{trigger: "Vmat", replacement: "\\begin{Vmatrix}\n$0\n\\end{Vmatrix}", options: "mA"},
-	{trigger: "case", replacement: "\\begin{cases}\n$0\n\\end{cases}", options: "mA"},
+	//{trigger: "case", replacement: "\\begin{cases}\n$0\n\\end{cases}", options: "mA"},
 	{trigger: "align", replacement: "\\begin{align}\n$0\n\\end{align}", options: "mA"},
 	{trigger: "array", replacement: "\\begin{array}\n$0\n\\end{array}", options: "mA"},
 	{trigger: "matrix", replacement: "\\begin{matrix}\n$0\n\\end{matrix}", options: "mA"},
@@ -288,6 +290,7 @@
 	{trigger: "c", replacement: "`{c}$0`$1", options: "tw"},
 	{trigger: "cpp", replacement: "`{cpp}$0`$1", options: "tw"},
 	{trigger: "html", replacement: "`{html}$0`$1", options: "tw"},
-	{trigger: "dataview", replacement: "```dataview\n$0\n```$1", options: "tAw"}
-	
+	{trigger: "dataview", replacement: "```dataview\n$0\n```$1", options: "tAw"},
+	{trigger: "case", replacement: "\\begin{cases} $0 \\end{cases}$1", options: "mA"},
+
 ]

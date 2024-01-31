@@ -30,6 +30,9 @@ tags:
 	- `xx`
 		- `{latex}\times`
 		- $\times$
+	- `exists`
+		- `{latex}\exists`
+		- ${ \exists }$
 	- `set`
 		- `{latex}\{ \}`
 		- $\{ \}$
@@ -65,3 +68,16 @@ tags:
 	- `sim`
 		- `{latex}\sim`
 		- $\sim$
+	- `\\\`
+		- `{latex}\setminus`
+		- $\setminus$
+	- **Arrows:**
+		- `->`
+			- `{latex}\to`
+			- ${ \to }$
+		- `=>`
+			- `{latex}\implies`
+			- ${ \implies }$
+		- `=<`
+			- `{latex}\impliedby`
+			- ${ \impliedby }$

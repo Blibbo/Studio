@@ -57,6 +57,8 @@ tags:
 	- `{latex}$x^{y}$`
 		- $x^{y}$
 		- superscript
+	- `{latex}$\exists$`
+		- ${ \exists }$
 	- `{latex}$\in$`
 		- $\in$
 	- `{latex}$\forall$`
@@ -86,6 +88,12 @@ tags:
 		- $\sum_{i = 0}^{n}x+i$
 	- `{latex}$\frac{x}{y}$`
 		- $\frac{x}{y}$
+	- `{latex}$\begin{cases} x=1 \\ x=2 \end{cases}$`
+		- $\begin{cases} x=1 \\ x=2 \end{cases}$
+		- `{latex}$\begin{cases} true, & \text{if x=4} \end{cases}$`
+			- ${ \begin{cases} true, & \text{if x=4} \end{cases} }$
+	- `{latex}$A \setminus B$`
+		- $A \setminus B$
 	- `{latex}$\equiv$`
 		- $\equiv$
 	- `{latex}$\symbol\limits_{under}^above$`
@@ -93,6 +101,8 @@ tags:
 	- `{latex}$\sim$`
 		- $\sim$
 	- **Arrows:**
+		- `{latex}$\to$`
+			- ${ \to }$
 		- `{latex}$\rightarrow$`
 			- $\rightarrow$
 		- `{latex}$\Rightarrow$`
