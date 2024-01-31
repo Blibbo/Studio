@@ -1,0 +1,19 @@
+il PDO offre un'interfaccia per connettermi ai database
+$pdoObj = new PDO(dsn, username, password, options); //usa try e catch per questa riga di codice
+
+esempio dsn: 'mysql:host=128.0.0.1;dbname=antonio'
+
+PDOException. La classe dell'oggetto ritornato nel catch() del costruttore di PDO.
+PDOExceptionObj->getMessage(); //spiega cos'è andato storto
+
+$statement = $pdoObj->prepare('sql instruction');
+$statement->execute();
+array = $statement->fetchAll(PDO::FETCH_OBJ); //or PDO::FETCH_CLASS, $className
+
+options is an array that looks like this [
+	PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+]
+
+PDO::ERRMODE_SILENT
+PDO::ERRMODE_WARNING
+PDO::ERRMODE_EXCEPTION //find more info at php.net/manual/en/pdo.setattribute.php

@@ -1,0 +1,5 @@
+CONSOLE LOG
+	$el.ownerDocument.defaultView.console.log()
+	^^^doesn't work :thumbsup:
+
+	just make a function and use moustache syntax to call it in the template.

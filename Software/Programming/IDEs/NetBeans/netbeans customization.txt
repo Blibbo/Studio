@@ -1,0 +1,13 @@
+TEXT EDITOR THEMES:
+	https://netbeansthemes.com/
+
+	HOW TO INSTALL THEM:
+		https://netbeansthemes.com/how-to-install/
+		https://www.youtube.com/watch?v=qgzZXrcyNJA&ab_channel=BoostMyTool
+	
+	MY THEME:
+		https://netbeansthemes.com/dracula/
+		
+KEYS:
+	Tools|Options|Keymap
+		-seek function, map the key

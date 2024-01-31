@@ -1,0 +1,1 @@
+require("package"); //gets the package stored in node_modules

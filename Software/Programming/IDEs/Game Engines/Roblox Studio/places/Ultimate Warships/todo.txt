@@ -1,0 +1,61 @@
++vedi come cambiano gli attributi della nave
+	attributo goingBackwards
++sistema ServerModule.ReduceShipSpeed e SetSpeed
+	+crea funzione ServerModule.SetShipVelocityDirection(ship, bool)
+	
++crea funzione ReplicatedModule.ToggleTrails(model, bool)
+-Ship Handler uses attributes instead of stats
+	+max speed
+	+speed
+	+acceleration
+	+dampening
+	+turn speed
+	+max health
+	-missile regen time (missile runner special)
+	-SpecialChargeRequired
+	-explosion size
+	-CSTP (charge special time passed)
+	-missile scale
+	
+-handle players leaving mid match
+
+-make sure you're giving turret heads permanent upvectors BEFORE
+	unanchoring them
+	
+-inherit speed for projectiles
+
+-handle ship collisions better:
+	same team ships should collide, same team projectiles shouldn't
+
+-replace deprecated SetPartCollisionGroup with BasePart.CollisionGroup
+
+-dimensione esplosione missili
+
+-proiettili devono attivare barriera
+
+-handle ship upgrades:
+	-upgrade button (cogs icon) to the right of "Purchase"
+	
+	-remember ship specific upgrades for the session
+		-dynamically assign special skills to the player (AssignShip)
+
+-figure out special skills and complete them.
+	-low cruiser -> just the one
+	-missile runner -> dash (3 raycasts)
+	-default ship -> two of them
+
+-damaging explosions
+
+-damaging collisions
+
+-second missile
+
+-make game scale a global variable
+
+-juggernaut gamemode
+
+-make players keep unlocked ships
+
+-test AIs
+
+-Study Gerstner's formula and move the planes with the player

@@ -1,0 +1,313 @@
+OFFICIAL DOCUMENTATION:
+	https://docs.oracle.com/en/java/javase/19/docs/api/index.html
+
+Java Standard Edition contents (classes & libraries)
+
+CLASSES
+	SYSTEM
+		available anywhere. Just call "System"
+		
+		METHODS
+			System.out.println("Hello World!"); //print in new line
+			System.out.print("Hello World!"); //just prints
+			.nanoTime(); //returns the time. Precision of a billionth of a second
+			.currentTimeMillis(); //precision of a millisecond
+		
+
+	SCANNER: Basic input
+		https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Scanner.html
+		
+		import java.util.Scanner; //import the class
+		
+		METHODS:
+			.nextInt(); //returns the inserted integer from the keyboard
+			.nextLong(); //gets a long in input
+		
+		EX:
+			public class MyClass {
+				public static void main(String[] args) {
+					Scanner input = new Scanner(System.in); //declare the "input" Scanner instance
+					int N;
+					N=input.nextInt(); //call the method to wait for the text input
+				}
+			}
+
+	THREADS
+		new Thread(new Runnable())
+
+		METHODS:
+			.start() //execute ASYNC
+			.run() //execute SYNC
+			.sleep((long)timeInMilliseconds);
+
+			SYNCHRONIZED:
+		
+	STRING
+		String myString;
+		
+		METHODS
+			.toUpperCase(); //MAKES IT ALL IN CAPS
+			.toLowerCase(); //makes it lowercase
+			.split(" "); //è explode
+			
+		OPERATORS
+			string1+string2; //concatenation
+			
+	Integer
+
+		METHODS:
+			.parseInt("1"); //returns int
+			
+	ARRAYLIST
+		import java.util.ArrayList;
+		
+		ArrayList<Integer> myArray = new ArrayList<Integer>();
+		
+		METHODS:
+			.add(valOfArrayType); //returns a boolean and pushes to array
+		
+	RANDOM
+		import java.util.Random;
+		
+		METHODS
+			.nextInt(maxVal);
+		
+	JFRAME
+		import javax.swing.JFrame;
+		
+		CONSTRUCTOR
+			new JFrame(); //bery complex
+		
+		METHODS:
+			.add(new JPanel()); //generally used in the constructor, so this.add(panel). Ideally you only got one jframe instance
+			.setTitle('ur title');
+			.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			.setResizable(false); //default is true
+			.pack(); //makes the size fit the components (such as panels)
+			.setVisible(true);
+			.setLocationRelativeTo(null); //mette la finestra al centro
+			
+		STATIC PROPERTIES:
+			Java.EXIT_ON_CLOSE;
+		
+	Component
+		awt components. Old.
+		
+		
+		METHODS:
+			.setFocusable(true); //gives a component the focus of the application, so the key inputs will be registered there
+			
+	JComponent
+		swing components. Newer
+		
+		.getFontMetrics(new Graphics().getFont());
+
+	JPanel (extends Component)
+		import javax.swing.JPanel;
+		
+		METHODS:
+			.paintComponent(new Graphics()); //to call this, you have to call repaint(); without any parameters (IF you're in a subclass of JPanel)
+			:setPreferredSize(new Dimension(myX,myY)); //sets the size of the panel
+			.setBackground(Color.black); //sets color of the panel
+			.setFocusable(true);
+			.addKeyListener(new MyKeyAdapter()); //any subclass of KeyAdapter
+			.addKeyListener(new MyKeyListener()); //any class that implements KeyListener
+			.setDoubleBuffered(true); //improves performance
+		
+	Graphics
+		import java.awt.Graphics;
+		
+		METHODS
+			.drawLine(x1, y1, x2, y2);
+			.drawString(str, x, y);
+			.setColor(Color.red);
+			.setFont(new Font());//check font constructor
+			.fillOval(x, y, width, height);
+			.fillRect(x, y, width, height);
+			.getFont(); //get the Font object
+		
+	Graphics2D (EXTENDS Graphics)
+		import java.awt.Graphics2D
+
+		cast Graphics instance into Graphics2D
+			Graphics2D newInstance = (Graphics2D)graphicsInstance;
+			
+		METHODS
+			.dispose(); //frees up space occupied by the instance
+			.drawImage(BufferedImage i, x, y, width, height, ImageObserver i); //just put null as imageobserver
+		
+	Font
+		import java.awt.Font;
+		
+		CONSTRUCTOR
+			new Font(name, Font.Bold, size);
+			
+			NAMES:
+				"Ink Free"
+		STATIC PROPERTIES:
+			Font.BOLD
+			Font.PLAIN
+			
+		METHODS:
+			.getSize();
+		
+	FontMetrics
+		import java.awt.FontMetrics
+		
+		FontMetrics metrics = getFontMetrics(g.getFont()); //or new Font()
+		
+		METHODS:
+			.stringWidth(str);
+		
+	KeyAdapter
+		import java.awt.event.KeyAdapter;
+		
+		METHODS:
+			.keyPressed(KeyEvent e); //usually you'll override this method to do something about the key
+			
+	KeyEvent
+		import java.awt.event.KeyEvent;
+		
+		METHODS:
+			.getKeyCode();
+			
+		STATIC PROPERTIES:
+			.VK_RIGHT
+			.VK_LEFT
+			.VK_UP
+			.VK_DOWN
+			.VK_W //there are others for other keys
+		
+	Color
+		import java.awt.Color;
+
+		CONSTRUCTORS
+			new Color(r, g, b); //3 ints
+
+		STATIC PROPERTIES
+			.black
+			.red
+			.green
+		
+	Dimension
+		import java.awt.Dimension;
+		
+		CONSTRUCTOR
+			new Dimension(myX, myY);
+		
+	Timer
+		import javax.swing.Timer;
+		
+		CONSTRUCTOR
+			new Timer(milliseconds, new ActionListener()); //class that implements an actionlistener
+		
+		METHODS
+			.start();
+			.stop();
+		
+	ActionEvent
+		import java.awt.event.ActionEvent;
+		
+	BufferedImage
+		import java.awt.image.BufferedImage;
+		
+		TYPICAL USAGE:
+			BufferedImage yourImage = ImageIO.read(getClass().getResourceAsStream("/path/starting/fromClasspath.txt"));
+			Graphics2DInstance.drawImage(yourImage, x, y, width, height, null);
+
+	ImageIO
+		import javax.imageio.ImageIO;
+		
+		METHODS:
+		.read(something returned by classInstance.getResourceAsStream());
+		
+
+	BufferedReader
+		//it reads text files.
+		import java.io.BufferedReader;
+		
+		METHODS:
+			.readLine();
+			.close(); //close the reader if you won't use it anymore
+		
+		TYPICAL USAGE:
+			BufferedReader br = new BufferedReader(
+				new InputStreamReader(getClass().getResourceAsStream("/path/starting/fromClasspath.txt")
+			);
+		
+	InputStream
+		import java.io.InputStream;
+		
+	InputStreamReader
+		import java.io.InputStreamReader;
+		
+	Rectangle
+		import java.awt.Rectangle;
+		
+		Rectangle r = new Rectangle(x, y, width, height);
+		
+	Object
+		implicitly extended by every java class
+		
+		METHODS:
+			getClass(); //returns runtime Class object
+		
+		+ATTRIBUTES:
+			x
+			y
+			width
+			height
+		
+	Class
+		instance can be returned by getClass()
+		
+		METHODS:
+			.getName(); //get the name of the class
+			.getResourceAsStream(); //don't get it tbh
+		
+	JAR
+		import jar files in your project to use APIs
+		
+	EXCEPTIONS
+		UnsupportedOperationException
+				//when something is yet to implement
+				throw new UnsupportedOperationException("Not supported yet.");
+				
+		IOException
+			java.io.IOException
+			
+			METHODS
+				.printStackTrace(); //prints stack trace
+				
+INTERFACES
+	contracts are a collection of method signatures. If a class
+	implements an interface, it's gotta fully fulfill the contract
+	(implement all methods in the contract)
+
+	Runnable
+		run()
+		
+	ActionListener
+		import java.awt.event.ActionListener;
+		
+		CONTRACT
+			@Override
+			public void actionPerformed(ActionEvent e) {}
+		
+	KeyListener
+		import java.awt.event.KeyListener;
+		
+		CONTRACT
+			@Override
+			public void keyTyped(KeyEvent e) {
+				throw new UnsupportedOperationException("Not supported yet.");
+
+			@Override
+			public void keyPressed(KeyEvent e) {
+				throw new UnsupportedOperationException("Not supported yet.");
+			}
+
+			@Override
+			public void keyReleased(KeyEvent e) {
+				throw new UnsupportedOperationException("Not supported yet.");
+			}

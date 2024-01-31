@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<!-- Include CodeMirror CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.1/codemirror.css">
+
+<!-- Include CodeMirror JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.1/codemirror.js"></script>
+
+<!-- Include CodeMirror mode (choose the mode you need) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.1/mode/javascript/javascript.js"></script>
+
+<!-- Include CodeMirror theme (choose the theme you prefer) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.1/theme/dracula.css">
+
+<!-- Create a textarea or other element to turn into CodeMirror -->
+<textarea id="myTextarea">function myFunction() {\n  console.log('Hello, CodeMirror!');\n}</textarea>
+
+<!-- Initialize CodeMirror -->
+<script>
+  var myTextarea = document.getElementById('myTextarea');
+  var myCodeMirror = CodeMirror.fromTextArea(myTextarea, {
+    mode: 'javascript',
+    theme: 'dracula',
+    lineNumbers: true
+  });
+</script>
+</html>

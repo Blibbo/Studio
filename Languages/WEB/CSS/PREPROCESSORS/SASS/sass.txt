@@ -1,0 +1,1 @@
+"Syntactically Awesome Style Sheets" - SASS files have a .scss extension

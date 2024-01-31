@@ -1,0 +1,47 @@
+TRANSFORMATION MATRICES
+	"CONVENTION" TRANSFORMATION MATRICES
+		AFFINE TRANSFORMATIONS:
+			-scale
+			-translate
+			-rotate
+		
+			CHARACTERISTICS
+				-the last column is 0 0 0 1 (if points are represented in a column matrix. Else this is the last row)
+				-these transformations preserve lines and middle points
+			
+	PROJECTION MATRICES
+		PROJECTIVE TRANSFORMATIONS:
+			-ortographic projection: used in rasterization algorithms
+			-perspective projection: looks natural
+			
+			CHARACTERISTICS
+				-these transformations only preserve lines, but not distances
+					(as in, which distances are the same within the transformed figure)
+			
+	APPLY A TRANSFORMATION
+		you must multiply the 4x4 matrix by a point defined with HOMOGENEOUS coordinates:
+			(x, y, z, w=1) <- 3D point defind with homogeneous coordinates.
+		-w can be implicit in affine transformations
+		-projective transformations:
+			-w must be explicit in projective transformations
+			-x y and z must be divided by w after the transformation (cuz w will end up being different from 1)
+
+PERSPECTIVE AND ORTOGRAPHIC PROJECTION
+	https://www.scratchapixel.com/lessons/3d-basic-rendering/perspective-and-orthographic-projection-matrix/projection-matrices-what-you-need-to-know-first.html
+	
+	WIKIPEDIA
+		https://it.wikipedia.org/wiki/Proiezione_(geometria)
+
+	3D -> Transformations are hard and require trigonometric functions. Not advised
+		Multiply the following matrix to a 3D point in the form of a 3x1 matrix:
+		1 0 0
+		0 1 0
+		this visualizes the shape "from the front" and essentially gets rid of z.
+	
+	4D -> 3D points expressed as homogeneous coordinates (x, y, z, w=1) - Transformations are easy
+		PROJECTION PIPELINE:
+			world space
+			-> camera space (3D space) * proj matrix
+			-> CLIP SPACE (homogeneous coordinates) - a program that does this transformation is called a "vertex shader". It takes in input a projection matrix and a vertex
+			->clipping happens in clip space. This has nothing to do with the projection but it's convenient to do it now
+			-> NDC space (has a range of [-1, 1] in most APIs. Alternatively [0, 1] works

@@ -1,0 +1,24 @@
+SETUP:
+	npm is the Node Package Manager
+
+	go to this site: https://nodejs.org/en/
+	just install it lol
+		THEN:
+			npm -v
+			node -v
+		must BOTH work
+
+	read more if you're interested https://www.freecodecamp.org/news/how-to-install-node-js-and-npm-on-windows-2/
+
+NPM SCRIPTS
+	make a file (if there isn't one) called package.json and put this inside
+	{
+		"scripts":{
+			"my-script": "my command"
+		}
+	}
+	then to execute it in the console (you must be in the parent folder of package.json)
+	use this command
+		npm run my-script
+	OR the shorthand://NVMNVMNVMNVM it has to exist already, you can't run your own script
+		npx my-script

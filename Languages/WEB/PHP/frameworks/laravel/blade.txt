@@ -1,0 +1,187 @@
+blade is a template engine laravel uses
+***BLADE IGNORES HTML COMMENTS, BLADE ONLY CARES ABOUT BLADE COMMENTS***
+
+call a file fileName.blade.php to get the blade syntax
+
+INSTEAD OF:
+<?foreach($array as $object) : ?>
+
+	<li> <?= $user->name ?> </li>
+	<!--or-->
+	<li> <?php echo $user->name ?> </li>
+
+<?endforeach; ?>
+
+USE:
+
+@foreach ($users as $user)
+
+<li>{{ $user->name }}</li>
+
+@endforeach
+
+this stuff with '@' is technically called a blade directive
+
+
+{{phpThing()}} can be used inside html attribute strings other than in html code.
+It actually just gets translated to <?php echo $phpVariable?> behind the scenes.
+
+html code contained in strings printed out through {{}} does not get compiled UNLESS
+you use this syntax: {!! $myHtmlString !!}
+
+
+cycling through stuff with @foreach adds a bunch of useful variables like $loop.
+you might use {{ dd($loop) }} to check it out, but you could instead use
+@dd($loop)
+loop is an object with properties describing the state of the loop.
+Let's say we wanted to format exclusively on the fourth iteration:
+<element class="{{$loop->iteration==4? 'myClass' : ''}}">
+
+FOR SYNTAX
+	@for($i=0;$i<10;$i++)
+	@endfor
+
+IF SYNTAX
+	@if(boolean value)
+		<stuff/>
+	@endif
+
+UNLESS SYNTAX
+	@unless(boolean stuff) <- opposite of if
+	@endunless
+	
+COMMENT SYNTAX
+	{{-- comment --}}
+	
+PHP BLOCK
+	@php
+		$var = "make a var"; //pretty much the <??> tag
+	@endphp
+
+PARTIAL VIEWS SYNTAX - the icky way
+	@yield('yourSection') is used for example in layouts files, in that one place where the actual
+	content goes.
+	yourSection is transferred to the file which calls yield. It pretty much assembles itself
+	needless to say, yourSection needs to exist. Preferably on another file.
+	These will generally be the contents of said other file:
+		@extends ('layout')
+		@section('yourSection')
+		<!--your html code--!>
+		@endsection
+	you can have multiple sections. But if the layout file is yielding for more than one section,
+	naturally the files which claim to extend it need to define all of them.
+
+
+BLADE COMPONENTS
+	they allow you to wrap a piece of html. It's a different approach to the same problem
+	solved above with the @yield and @extends stuff.
+
+	make a "components" folder in your views directory and put the php components there
+	in the layout file:
+		{{$myContent}} is where it expects to get filled with content from the files.
+	content files:
+		<x-layoutFileName myContent="thingtoprint"/>
+		this only allows you to write the html inside that string which is gross
+		
+	ALTERNATIVELY:
+		<x-layoutFileName>
+			<x-slot name="myContent">
+				<tag>your actual html</tag>
+			</x-slot>
+		</x-layoutFileName>
+		
+	ALTERNATIVELY AND PREFERABLY:
+		layout file: {{$slot}} <- special variable name for the default slot
+		content files: 
+		<x-layoutFileName>
+			thingtoprint
+		</x-layoutFileName>
+		
+		NESTED BLADE COMPONENT:
+			<x-component-folder.component-name />
+	
+	PASSING VARIABLES TO BLADE COMPONENTS
+		to pass a php variable to a php component, do this:
+			<x-component-name :variableName="$phpVariableTheViewHas" />
+				*notice how on the :tagAttribute you don't need {{}} to reference php code
+		then on top of the component file, use
+			@props(['variableName'])
+		which as you can see is an array. You can put multiple props
+			@props(['propName' => false])
+		can set a default value for the prop
+		
+	PASSING ATTRIBUTES TO BLADE COMPONENTS
+		{{$attributes}} can be added to any tag and it'll give the same attributes
+		you gave to the <x-component> tag.
+		If that component tag tries to set the same attributes to something else,
+		it won't work. $attributes has priority.
+		HOWEVER what you can do is use
+			$attributes->merge(['attributeName' => 'value']) instead.
+		OR alternatively
+			$attributes(['name' => 'value']) just call $attributes like the merge method
+	
+PARTIALS
+	for partial views, you might make a component but if you're only calling it once and
+	you're trying to order your code, conventionally you probably want to make a partial view.
+	The file name starts with an underscore, don't use the component folder and just
+	include the file with blade's @include ('_file-name-without-extension')
+	
+TIME
+	inside the <time> </time> tag, timestamp variables will get interpreted into
+	understandable strings. Example of timestamps might be the created_at or
+	published_at attributes that eloquent models receive when there's a timestamp into
+	their migration.
+	These timestamp attributes are instances of a class and library called carbon
+	which builds upon the php DateTime object
+	Let's say we have a post with a created_at attribute, calling the diffForHumans() method
+	on this attribute will make it even more readable for users. "2022 10 01 11:23" becomes
+	"1 minute ago". It just works.
+	
+@csrf
+	Cross Site Request Forgery is when another website sends a request to yours.
+	Laravel protects you from this and the only forms which will work on your website
+	will need this @csrf blade directive inside of them. What it does is add a hidden input
+	inside your form with a name of _token and some encrypted gibberish as the value.
+	This is only necessary when you use method="POST", not "GET".
+	If you don't do this when it's required, you'll get a 419 page expired error.
+	
+FORM COMPILATION ERRORS
+	if a user makes a small mistake and sends it to the server, the server redirects him
+	and he has to fill in everything again.
+	To prevent that, give inputs a default value of "{{old('inputName')}}"
+		(don't with passwords)
+		old() accepts an optional parameter which is the default to use in case there's no "old" value
+	To display the errors to the user, put this at the bottom of the input
+	@error('inputName')
+		{{$message}}
+	@enderror
+		alternatively there's an $errors bag with more functionality which is always present
+			$errors->all(); //fetch all validation errors
+			$errors->any(); //tells you if there are any errors
+			
+@guest
+	IF YOU'RE A GUEST RENDER THIS
+	translates to @unless(auth()->check())
+@endguest
+
+@auth
+	@if(auth()->check())
+@else
+	{{--it even has an 'else' statement--}}
+@endauth
+
+
+@method('PATCH') {{--You can put this inside a form to tell laravel you're actually trying to use patch
+	instead of post but the browsers didn't really support patch requests when laravel 8 from scratch came out
+	Laravel can then route appropriately through a Route::patch() request
+	'DELETE' works the same--}}
+	
+@can('gate')
+	{{--checks whether the logged user can pass through the gate you defined in appserviceprovider (PROVIDED
+	YOU DID)--}}
+@endcan
+
+CUSTOM BLADE DIRECTIVE
+	make it on the AppServiceProvider, in the boot() method. Blade is in the Illuminate\Support\Facades namespace
+	Blade::if('directiveName', function(){return $logic}); {{--displays stuff IF logic--}}
+	https://stackoverflow.com/questions/13002626/how-to-set-variables-in-a-laravel-blade-template

@@ -1,0 +1,56 @@
+SYNTAX
+	All javascript is valid typescript syntax.
+
+	TYPES TO VARIABLES:
+		let var: number = 42;
+		
+	DEFINE REUSABLE TYPES THROUGH INTERFACES
+		interface User{
+			id: string;
+			name: string;
+			age?: number; //OPTIONAL, NOTICE THE QUESTION MARK
+		}
+		//after defining this, instead of :{id:number, etc} you can just use :User
+		
+	TYPES TO FUNCTIONS
+		const myFunction = (arg1: number, arg2: number): number => par1+par2
+		
+	OBJECT TYPES
+		myObjVar: {attribute1: number, attribute2: string}
+
+	ARRAYS
+		const myArr = [1,2,3]; //can't have key:value pairs.
+		
+	POSSIBLE TYPES:
+		number
+		string
+		Date
+			myDate?.toISOString() turns it into a string, OPTIONALLY
+		
+	TYPE ASSERTION
+		a = myFunction() as number; //ensures "a" will contain a number
+		
+	TYPE RECOGNITION:
+		if a type is a superset of the other, it can be used instead of the subset type because it won't
+		provoke any runtime errors. Anything you can do with the subset, you can do with the superset.
+		Additionally, since TypeScript is all about the structure, if two types have the same contract
+		they can be used interchangeably.
+		
+FUNCTIONS
+	OBJECTS:
+		SHALLOW COPY
+			const clonedObject = Object.assign({}, originalObject); /*makes a shallow copy in this case.
+				generally, it assigns*/
+
+		ARRAY CONVERSION:
+			https://bobbyhadz.com/blog/typescript-convert-object-to-array
+			
+			Object.getValues(obj) -> returns array of values
+			Object.getKeys(obj) -> returns array of keys
+			Object.getEntry(obj) -> returns an array version. Key-value pair. (SUCKS BALLS)
+
+
+	STRINGS
+		CONVERSION
+			parseInt(myString); //returns NaN if invalid (Not a Number)
+			parseFloat(myString); /NaN if invalid

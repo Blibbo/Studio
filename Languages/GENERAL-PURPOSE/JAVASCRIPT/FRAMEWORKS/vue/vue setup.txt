@@ -1,0 +1,14 @@
+UNPKG CDN:
+	<script src="https://unpkg.com/vue@3"></script>
+
+VSCODE EXTENSION:
+	Vue Language Features (Volar)
+		other extensions in the VSCode folder's "extensions.txt" file
+	
+CHROME EXTENSION:
+	Vue.js devtools
+	https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en
+	
+VUE SERVER:
+	npx serve
+	^^^ needs node. Instructions on how to install node are on the node file

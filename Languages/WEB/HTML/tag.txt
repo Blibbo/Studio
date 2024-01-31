@@ -1,0 +1,9 @@
+<strike></strike> taglia il testo
+<?php echo "stringa"?> <- esegue codice php
+<?="stringa"?> <- stessa cosa sopra
+<br> va a capo
+<pre></pre> preserva la formattazione del testo senza comprimere whitespace
+
+<html
+	lang="en" 
+></html> <!--sets the language-->

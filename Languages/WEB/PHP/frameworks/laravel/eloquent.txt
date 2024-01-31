@@ -1,0 +1,246 @@
+Eloquent models tie database tables to php classes
+
+make a new migration through
+	php artisan make:migration migrationName
+		make the name something that explains what the migration does. Ex: "create_my_table"
+			IT KNOWS "create" and equips you with the tools to create the table
+make an eloquent model with
+	php artisan make:model modelName
+	
+to make everything quickly you can take a peek at php artisan help make:model
+	specifically, you'll find adding -m makes a migration to create the table for your model
+	-c for the controller
+	
+if you access the actual file with the model class
+	adding a $fillable protected property with an array of strings will set the
+	attributes fillable in bulk through className::create(). Ex
+		protected $fillable = ['property1', 'property2'];
+	protected $guarded instead is a blacklist, as opposed to the whitelist above.
+	public function $getRouteKeyName should return the key it looks for on default inside your
+	routes/web file in the wild card, given that the parameter to that route function is
+	an instance of your eloquent model class. It was the only way to accomplish this
+	inside your routes file in the past, just use modelName:attribute in the wildcard instead
+
+your eloquent model will generally be stored in the following namespace
+	App\Models\ModelName
+that said, let's pretend we're using the namespace.
+ModelName::find(primaryKeyValue);
+ModelName::find(primaryKeyValue, ['attributeName']); //only returns the attribute(s) if it finds an instance
+ModelName::findOrFail(3); //fails if the item with that id is not found
+ModelName::all(); //returns a collection of all the items in the table
+ModelName::count(); //returns the number of items
+ModelName::create([key1 => value1, key2 => value2]); //returns instance
+
+RETURN A QUERY
+	ModelName::with('relationship', 'optionalRelationship2')->get();//get the results from an sql query for each relationship you pass onto the method
+	ModelName::with(*relationships or array containing them*); //gets the first item from the collection above
+	ModelName::without(relationships); //selectively disable automatic extra queries to relationships
+	ModelName::latest('fieldName*'); //adds an "order by" constraint behind the scenes *optional sorting field, default is prolly one of the timestamps. Has to be another Carbon instance anyways. It sorts according to it
+	ModelName::take(num); //returns a collection out of however many instances required
+	ModelName::truncate(); //empties the eloquent models IF you don't have any constraints on the table
+	ModelName::where('field', 'value'); //select * from table where field = value
+	ModelName::where('age', '>=', 21); //select * from modelname(s) where age >= 21
+		->where('title', 'like', '%potente%'); //select * from modelnames where title like '%potente%' - it will look for anything with 'potente' in the middle
+		->orWhere('otherField', 'like', '%potente%'); //alt query, looking for the word in another field
+	ModelName::latest()->filter(); //filters according to the scopeFilter() method of the model
+	$query->when(boolenExpression, fn($query)=>$query->something()); //ignore the function if the statement is false. The function must not necessarily return the query as you can just modify the object through its methods like shown here (but it is also returned here, which isn't necessary)
+	$query->whereExists() //sql where exists()
+		->from('otherTable') //querying another table
+			->where('otherTable.field', value) //the thing to notice here is that to query another table you're specifying the table to query's name
+			->whereColumn('otherTable.field', 'table.field'); //you'd be looking for the exact value string("table.field") if you didn't use whereColumn
+	$query->whereHas('otherTable', fn ($query) => $query->where('field', 'value')); //you're looking for 'table' elements where their 'otherTable' relationship has 'field' set to 'value'
+	$query->where(fn($query)=>$query->where()->orWhere()); //wrapping everything in a 'where' with that closure (arrow function) makes sure that part of the sql query is isolated, as if you put brackets around it
+	
+END A QUERY
+	->first(); //returns the first item of the query
+	->get(); //gets the results of the query as a "collection" object
+	->paginate(int perPageNum); /*returns an object where the collection is stored in the
+		->data property recognizes a ?page=n request parameter which sets the page. No page
+			means page 1
+		->links() renders the links to move between the pages*/
+	->simplePaginate(num); //paginate, but simple. Slightly more performant when there's lots of data
+		->withQueryString(); //appends ?page=num to the rest of the query string 
+		
+$collection->pluck('attribute'); //returns a collection with only the specified attributes
+$collection->first(); //returns the first element of the collection
+$collection->firstWhere(attributeName, searchedValue); //guess.
+$modelInstance->fresh(); /*returns the instance to how it is in the database.
+	This is for whenever you haven't saved the thing yet and need to get the original back*/
+$instance->update(['key1' => 'value1', 'key2' => 'value2']); /*changes the value and saves
+automatically*/
+$instance->is($anotherInstance); //checks whether their ids are the same with ===
+$instance->exists; //checks whether it exists
+
+whatever operation you execute on a single item won't matter unless you use $item->save();
+that doesn't only apply to creating new items, but also modifying them.
+
+route-model binding:
+	the parameter to a route function can be given the eloquent model class as long as
+	the parameter's name has the same name as the wildcard.
+	If the wildcard's name is something like randomName(conventionally the model's):attribute
+	then it'll call firstWhere to match the attribute on the wildcard with the item you're
+	looking for. The reason why it knows the class is because you've specified it in the
+	function's parameter, it's a quirk of laravel's.
+	
+Migrations
+	define attributes of the model with their type and quirks
+	known types:
+		$table->id(); //(it's already there)
+		$table->foreignId('name'); //unsigned big integer, just like the id
+		$table->string('name'); //string field, max 255 characters
+		$table->text('name'); //longer text
+		$table->unsignedBigInteger('name'); //an unsigned big integer. Foreign keys usually
+		$table->timestamps(); //created_at, updated_at
+		$table->timestamp('name');
+	stuff you can add:
+		->nullable(); //allows the field to be NULL in value
+		->unique(); //to make the field unique
+	relationships:
+		$table->foreign('fk_name')->references('pk')->on('table'); /*makes the (ALREADY
+			EXISTING) field 'fk_name' a foreign key which references 'pk' on the 'table' table.
+			FOREIGN CONSTRANTS:
+				->onDelete('cascade'); /*makes the instance get deleted if whatever has the
+					primary key disappears*/
+				->cascadeOnDelete(); //shorthand for the thing above
+			OR
+				just call ->constrained->cascadeOnDelete() on a ->foreignId('name'). Same thing
+			
+	
+MODEL CLASS
+public function scopeFilter(){} //allows you to call ModelName::newQuery()->filter()
+
+Eloquent Relationships
+	go to your class, add a public function relationshipName()
+	"relationshipName" can be replaced with whatever the name of your actual attribute
+	with the foreign key is (minus the _id part). Name it after another model for example.
+	then you have to feed this method what kind of relationship this is and who with (
+		$this->hasOne(modelName::class),
+		$this->hasMany(m1Name::class, m2Name::class, etc);
+		$this->belongsTo(EloquentModelClassName::class, ***optional); //LITERALLY just ::class, don't change class
+		$this->belongsToMany(m1Name::class, m2Name::class);
+	***foreign key name specifies the foreign key to check if the method isn't called like
+	the foreign key minus _id (which is the default it assumes).
+	so to recap: the method's called "owner"? The default key is "owner_id". Specify
+	otherwise. And "hasMany" or "belongsToMany" relationships don't need a key either ways.***
+	so if you try to access your relationship through obj->relationship you'll see the instance
+	your relationship_id field is representing. I call it "relationship" but again, it can have
+	any name. Not displaying a proper example doesn't help either, so here's an example:
+	eloquent model "Post" has a "category_id" field.
+	let's say we get a post like this: $post = Post::first();
+	$post->category will return the category, which is the instance of the Category class
+	(which is another model) with $post->category_id as id (prim key).
+	$post->category() instead will call a method and return a belongsTo object, or whatever
+	kind of relationship that is (see above).
+	calling dd on the post now will display both info on the post AND on the category; it's
+	as if you just made* that field by calling ->category
+	*"made" as in actually occupied space in memory for that field, since the relationship was
+	defined in the model class.
+	
+	An instance without a relationship can call ->create() onto the relationship method and it'd
+	automatically set the foreign key and everything. Practical example:
+		user()->posts()->create(); would create 1 post and set the user_id on the new post automatically.
+	
+	FOREIGN CONSTRAINTS
+		when a model like "comment" doesn't make sense if the "post" it's parented to ceases to
+		exist, we use a foreign constraint to make the comment go away.
+		They're used to maintain the consistency of the Database.
+		check migrations to see more
+	
+	
+Log SQL queries:
+	\Illuminate\Support\Facades\DB::listen(function($query){
+		\Illuminate\Support\Facades\Log::info('foo');
+		//ALTERNATIVELY
+		//logger($query->sql);
+	});
+	
+	then check laravel.log inside the logs folder inside storage.
+	add another $query->bindings parameter to logger to figure out what the query was
+	looking for at the time
+	
+	ALTERNATIVELY you can just use clockwork, on the database tab there's a queries section.
+	
+Solving N+1
+	let's say you're getting all the items in your table.
+	$items = modelName::all();
+	BUT you'll later need for every item the field of a related entity, like so
+		$items[i]->relationship->[other Entity's Field].
+	by repeating this, you'll make a query PER iteration, when a single query has the power
+	to solve the problem. And here's how to solve it:
+	modelName::with('relationship')->get(); //can use other queries instead of get
+	This way, your $items[0] object will have a fully functional ->$relationship field with
+	references to the other record's fields. BUT you'll have made exactly two queries instead
+	of 1 per iteration, and these queries are:
+	1 query for all the items in that table
+	1 query for all the items in the other table whose ids are identifiable as a foreign key in
+	the original items.
+	Very powerful stuff.
+	Additionally, when you query through an instance's relationship (ex: $johnDoe->posts)
+	you won't be able to call a ->with() method. So to solve the N+1 problem there, you'll
+	need to use the ->load() method which works the same but for this specific case.
+	
+	ALTERNATIVELY you might use the $with attribute on your model class and set a default
+	of the additional queries which are necessary to load any instance of a model (eager loading).
+	
+
+Factories
+	once you make a factory the definition() method returns an array.
+	this is what you can put in it
+		return [ //the returned array
+			'belongsToRelationship' => ModelName::factory(), //make a new instance of a model to
+				//belong to
+			'stringField' => $this->faker->paragraph, //OR sentence OR word or whatever really.
+				//makes up words and stuff. Just think of something, it can probably make it up
+			'stringField' => $this->faker->unique()->userName, //adds unique username
+				//you can now use fake() instead of $this->faker
+			'paragraphsField' => '<p>'.implode('</p><p>',$this->faker->paragraphs(2)).'</p>'
+				/*	if you make multiple things (words, paragraphs) you'll be given an array
+					so this is the hacky way to make it back into a string. In this case
+					we're putting closing and opening tags in between them but we could have just
+					put a space
+				*/
+			];
+	Usage
+		ModelName::factory(optionalNum)->create(); //creates instance(s) of the model according
+			//to the factory
+		ModelName::factory(); /*returns id of an instance of the model it makes on the spot.
+			//ONLY IF you're defining a migration's relationship field.
+			Which means you'd be making an instance of the model just to put its id
+			on the foreign key of the factory you're working on. It's not a stand alone command
+			to create a single instance, use ModelName::factory()->create() instead*/
+		ModelName::factory(optionalNum)->create([ //overriding specific fields when using
+			'fieldToOverride' => 'overrideValue,	//factories
+			'field2' => 'value2'
+		]) 
+		$instance = ModelName::factory()->create(); //returns the single created instance
+		
+ELOQUENT MUTATOR
+	call a model's method like this "set{AttributeName}Attribute"
+	it defines what to do whenever a specific attribute gets set
+	to mutate the attribute just use $this->attributes['attributeName'] = bcrypt($password);
+	where $password is the parameter that gets passed automatically to the function
+	
+	get{AttributeName}Attribute (you don't need the curly brackets)
+	passes the value to get onto the function, you have to return a modified version
+	
+CONTROLLERS
+	it's a good practice to stick to the 7 restful actions for your controller actions
+	which are:
+		@index -> loads a view to show all instances of the model
+		@show -> load a specific resource
+		@create -> show a view to create a new item
+		@store -> persist the item when you're done
+		@edit -> show a view to edit the instance
+		@update -> update when the edit form has been submitted
+		@destroy -> remove instance
+		
+	some people inject a request object into their controller actions.
+	/*Example: */ public function store(*param*, Request $request){
+		/*
+			this request object has a bunch of functions and is nearly identical to the object
+			returned by request(). Some of the stuff you can do with it:
+		*/
+		$request->user() //returns the user who is logged in
+			->id; //returns the id
+		$request->input('requestedParameterName'); //pretty much request('name')
+		

@@ -1,0 +1,114 @@
+Se vuoi usare MAMP su altre macchine:
+
+MAMP/conf/php8.0.1/php.ini è il file di config. Il server apache della versione attuale di
+MAMP non va oltre la 8.0.1.
+Puoi controllare la versione del php del tuo server apache con phpinfo() e puoi anche trovare
+il path del file di config utilizzato.
+
+
+"Drivers not found"
+Controlla di aver scritto mysql nel DSN dato che è il nome del driver.
+Guarda phpinfo() e controlla che sotto PDO ci sia il driver di mysql.
+Cerca extension_dir nel tuo php.ini e assicurati che la cartella sia MAMP/bin/php/php8.0.1/ext.
+Assicurati che ci sia extension=php_pdo_sql.dll nel file .ini e che il driver sia effettivamente
+presente nella cartella ext.
+
+Il routing non funziona, aggiungere /test o qualunque URI dopo localhost dà errore 404:
+Nella root directory del server, tipicamente htdocs, aggiungi un file chiamato .htaccess e
+scrivi questo dentro:
+	RewriteEngine On
+	RewriteRule ^.*$ index.php [END]
+	
+	
+Non mostra gli errori:
+ini_set('display_errors', 1); ini_set('display_startup_errors', 1); nel codice
+OPPURE vai nel file .ini e mettili manualmente a On
+	
+	
+CSS non funziona:
+	il file non viene proprio riconosciuto, non esiste:
+		nel file di prima (.htaccess), sopra quelle due righe metti questa:
+			RewriteCond %{REQUEST_FILENAME} !-f
+		inoltre il path del CSS su nell'attributo href deve partire PER FORZA dalla root del
+		server. htdocs per MAMP
+	lo stile usato è di un file vecchio o che non esiste più, dov'è?
+		nella cache del tuo browser. Fai Ctrl + F5 per eliminare la cache.
+		se non funziona fai Ctrl + F5 sulla pagina del CSS da developer tools (Ctrl + Shift + J)
+
+
+	
+Installazione composer
+
+Fai un file chiamato composer.json nella root del tuo progetto e scrivi questo dentro:
+{
+    "autoload":{
+        "classmap": [
+            "./"
+        ]
+    }
+}
+se ti serve aggiungi
+, "exclude-from-classmap": ["/some-direcory/"] dopo classmap
+
+https://getcomposer.org/download/
+Scarica l'installer per Windows, te lo mette nel path in automatico quindi il prompt
+riconoscerà composer. Vai nella directory di htdocs (usa cd per cambiare directory) o ovunque
+sia il tuo progetto e butta un composer install.
+Assicurati di aver già fatto il JSON prima di installare
+
+Quando fai nuove classi non farà auto load, ti serve andare nella directory di lavoro col cmd
+(htdocs nel caso di mamp) ed eseguire il comando composer dump-autoload.
+Va rifatto ogni volta che hai una nuova classe
+
+installa laravel con
+	composer global require "laravel/installer"
+poi fai laravel new nomeCartella per fare un nuovo progetto. La cartella viene creata in
+qualunque sia la directory in cui ti trovi.
+
+laravel artisan è un comando eseguibile solo nella nuova directory, ed è presumibilmente ganzo
+
+MAMP 5.0.0 ti forza a usare php8.0.1, ma laravel 9.3.6 (attuale versione) ha bisogno di
+php8.0.2. Composer fortunatamente ti permette di installare laravel 9.0.0 (il massimo
+che puoi chiedere da MAMP) automaticamente qualora ci siano problemi nell'installazione.
+Non devi fare nulla per risolvere, si risolve da solo e non serve input da parte tua.
+È solo un reminder di spostarti da MAMP in caso sia necessario.
+STRONZATE. Tutte stronzate. Non funziona un CAZZO.
+
+php -c C:/MAMP/conf/php8.1.0/php.ini -f /home/me/test.php
+-f è per eseguire, rimpiazzalo con qualunque cosa dovessi fare con php
+-c è necessario perché tuo padre è ricchione.
+NIENTE. Prendi il file di config che il CLI si è fissato a usare e rimpiazzalo con quello che
+vuoi tu e che ha le impostazioni di 8.1.0. Magari tieniti quello originale e cambiagli nome.
+SICCOME DA WINDOWS È STRONZO devi aggiungere al file di config in questione
+extension=php_fileinfo.dll
+su tutti i file di config (8.1.0 e 8.0.1)
+
+Ctrl + P per cercare i file. È OP. Puoi saltare caratteri del path
+ex: per andare a routes/web.php puoi scrivere roweb. Non ti avvicinerai più di così ad avere un superpotere
+
+
+VSCode EXTENSIONS:
+	Composer Companion - Per attivarlo: Ctrl + P e scrivi "> Settings.json" e aggiungi queste righe
+									  o Ctrl + Shift + P senza il maggiore
+		"composerCompanion.enabled": true,
+		"composerCompanion.executablePath": (cerca il path di composer con "where composer" sul prompt)
+		È READ-ONLY scherzavo. Vai su file > Preferences > Settings > Extensions > Composer Companion
+		e cambia il path nel path trovato prima con "where composer" sul prompt
+
+non usare MAI cristoddio MAI ti sto dicendo "php artisan serve" per testare.
+INVECE usa
+	php -S localhost:8000 -t public
+altrimenti non funziona UN CAZZO. javascript, css, non funziona UN CAZZO.
+Soluzione trovata su questo thread https://stackoverflow.com/questions/41266046/getting-err-invalid-http-response-error-laravel5-localhost
+
+YAML - metadata
+	composer require spatie/yaml-front-matter sempre sulla cartella del coso
+	
+Installare Clockwork (devtool di php per il browser)
+	composer require itsgoingd/clockwork
+	
+	php artisan route:cache (restarta il server)
+	
+	e poi installa l'estensione per browser
+	chrome/edge: https://chrome.google.com/webstore/detail/clockwork/dmggabnehkmmfmdffgajcflpdjlnoemp
+	firefox: https://addons.mozilla.org/en-US/firefox/addon/clockwork-dev-tools/

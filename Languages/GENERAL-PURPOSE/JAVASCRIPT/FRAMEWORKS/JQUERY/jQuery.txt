@@ -1,0 +1,56 @@
+CDN
+	https://releases.jquery.com/
+
+	<script
+		src="https://code.jquery.com/jquery-3.6.3.js"
+		integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+		crossorigin="anonymous"></script>
+
+	OR
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+GOOD PRACTICE
+	$(document).ready(function(){
+		//always write your code here
+	});
+
+SYNTAX
+	ELEMENT OBJECT
+		$('#myId') //element with that id
+		$("p") //all paragraphs
+		$('.myClass') //all classes
+		$('#myComboBox :selected').text(); //selected combobox element
+		
+		METHODS
+			.hide(); //style.display=none;
+			.addClass('myClass'); //adds the class to your element
+			.removeClass('myClass'); //removes the class from your element
+			.html('<p>my markup</p>); //assigns to the element's .innerHTML
+			.val(); //get value
+			.val('my val'); //set value
+			.css('my-attribute', '#MYVAL');
+
+		EVENTS
+			.click(function(){
+				//onclick
+			});
+			.change(function(){
+				
+			});
+
+		AJAX
+			$.ajax({
+				//your json to send the server
+				type: 'POST',
+				url: "myscript.php",
+				dataType: "json",
+				data: {name, value}, //your json content
+				success: function(data, stat){ //handle the server response
+					for(res in data){
+						//example where you read records returned by the server
+					}
+				},
+				error: function(request, status){
+					//handle error
+				}
+			})

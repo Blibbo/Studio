@@ -1,0 +1,2 @@
+Ctrl + Enter //show suggestions. Like when you didn't import something
+Ctrl + Space //import the first suggestion

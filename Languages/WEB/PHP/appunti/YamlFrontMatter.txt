@@ -1,0 +1,22 @@
+Contenuto file
+
+//metadata
+---
+title: Example
+---
+
+//body
+<p>ciao</p>
+
+//oggetto yaml
+$object = YamlFrontMatter::parse(file_get_contents(__DIR__.'example.md'));
+//or
+$object = YamlFrontMatter::parseFile(__DIR__.'example.md'); //same thing as above
+
+$object->matter('title'); //=> 'Example';
+$object->matter(); //=>array with all the metadata
+$object->body(); //=> '<p>ciao</p>'
+
+//accesso diretto alle proprietà
+
+$object->title; //=> 'Example';

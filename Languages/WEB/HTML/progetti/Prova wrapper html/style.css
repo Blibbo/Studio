@@ -1,0 +1,273 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*found at http://html5doctor.com/html-5-reset-stylesheet/*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MY CODE BEGINS*/
+
+@font-face{
+    src: url("fonts/AmongUs-Regular.ttf");
+    font-family: "mogus";
+}
+ol li{
+    transition-duration: 400ms;
+}
+ol li:hover{
+    color: yellow;
+}
+
+.TopBar{
+    height:50px;
+    background-color: green;
+}
+.TopBar ul{
+    width: fit-content;
+    margin: 0 auto;
+}
+.TopBar li{
+    box-sizing: border-box;
+    column-count: 2;
+    column-gap: 10px;
+    line-height: 50px;
+    float:left;
+    background-color: yellow;
+    padding: 0 15px;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    outline-style:ridge;
+    outline-width: 5px;
+
+}
+
+.TopBar li:focus{
+    border: 5px solid red;
+}
+
+.wrapper{
+    width: 100%;/*100vh (viewport height percentage) 100vw (viewport width percentage) calc(100vh-100px)*/
+    background-color:rgb(197, 222, 243);
+    margin: 0 auto;
+    /* margin:t,r,b,l; */
+}
+
+/*
+    over 0 -> probs phone
+    over 768 -> probs tablet
+    over 1000 -> monitor
+*/
+@media only screen and (min-width: 768px) {
+    .wrapper{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 768px){
+    /*solo cell*/
+}
+
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+
+#buttonTest{
+    text-shadow: 0 0 10px #000;
+    display: block;
+    background-color: rgba(255, 0, 0, 0.322);
+    text-align: center;
+    color: white;
+    font-family: "mogus";
+    font-size: 50px;
+    border-style: none;
+    font-style: normal;
+    font-weight: 100; /*100 to 900*/
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 255, 242, 0.431);
+    transition-duration: 400ms;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    text-indent: 0px;/*changes first line of a paragraph*/
+    /*line-height: 0px; space between lines*/
+    margin: 0 auto;
+    transform-origin: bottom right;
+    transform: rotate(-10deg);
+    /*vertical-align: middle; only works if display:table-cell; che funziona solo dentro una display:table;*/
+}
+/* * indicates all elements. *{margin=0;padding=0} is helpful :thumbsup: */
+#buttonTest:hover{
+    /*width: 30px;*/
+    text-shadow: 5px 5px #000;
+    background-color: aqua;
+    text-decoration-color: rgba(255, 0, 0, 0.322);
+}
+
+.rectangleTest{
+    background: url(imgs/Gradient-sphere.png) no-repeat;
+    /* background-image: url(imgs/Gradient-sphere.png);
+    background-repeat: no-repeat; */
+    background-size: 200% 200%; /*width height, contain=fit in box, cover=cover the box*/
+    background-position: center;
+    image-orientation: flip;
+    height:100px;
+    width:200px;
+    background-color: #000;
+}
+
+.vid{
+    width:100%;
+    height:300px;
+}
+
+/*div h1{} formatta tutti gli h1 dentro un div
+quindi tag annidati e robba funziano così
+div div p h1{}
+display:flex container per griglie, supportato un po' ovunque
+flex-wrap:wrap dice di andare a capo, nowrap è il valore di default ed è tipo overflow:hidden
+flex-direction: row oppure column e il loro rispettivo inverso
+flex-flow: row wrap -> le due proprietà precedenti in una riga
+justify-content: flex-start è il default. space between fa lo spazio in mezzo, space around intorno e blabla
+space-evenly è tipo space around e space between fusi
+align-items: stretch stretcha l'altezza, center centra verticalmente sulla riga, flex-start mette sopra (default) e flex-end sotto
+align-items: baseline centra in maniera atomica anche se hai contenuto più alto
+align-content: center centra LE RIGHE, align-items i singoli elementi
+
+QUINDI
+
+justify-content ORIZZONTALE e align-content VERTICALE
+
+ELEMENTI DENTRO IL FLEX BOX:
+i singoli elementi dentro il flex, order:2 order:3 segnano l'ordine in cui devono apparire.
+flex-basis: 30% segna la larghezza, flex-grow: 2 segna quanto spazio si deve prendere rispetto agli altri (defult 1, e lo spazio è tra quello che ha a disposizione)
+
+flex: 0(grow) 1(shrink) 100px(basis);
+
+
+
+PSEUDO ELEMENTS
+
+::placeholder{} il placeholder in tutti gli elementi che ne hanno uno
+input::placeholder{} qualunque placeholder dentro un input
+
+:-ms-input-placeholder{} internet explorer
+::-ms-input-placeholder{} microsoft edge
+
+*/

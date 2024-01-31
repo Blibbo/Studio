@@ -1,0 +1,25 @@
+VUE
+	import {thing} from 'vue';
+	
+	WATCH //tells you when the value of reactive state changes
+		import { watch } from "vue";
+		watch(myReactiveState, (newVal) => {
+			//idk something
+		}, optionalDeep); /*optionalDeep is optional and if it's there it must be {deep:true}
+			what it does is it watches if properties change other than the whole thing. MIGHT BE
+			COSTLY*/
+
+ICOMOON
+	npm install icomoon
+	import {IconName} from 'icomoon/IconName';
+	
+	then you can use the <IconName /> component in your .vue files' <template>
+	
+CHARTS
+	npm install vue-chartjs
+	
+SWEETALERT
+	import swal from 'sweetalert';
+	swal('my alert');
+	swal('title', 'alertMessage', 'level'); //levels: success/warning/danger/info
+		//if it doesnt fucking work just go for sweetalert 2 and check its documentation

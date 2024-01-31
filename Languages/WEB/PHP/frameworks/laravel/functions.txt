@@ -1,0 +1,370 @@
+view('path'); //loads view. For the path, you can use either / or . no difference
+//the view folder is actually in the resources directory
+
+bcrypt('my string'); //encrypts messages
+Str::slug('My String'); //turns it into a slug. So something like my-string
+ucwords('my string'); //returns 'My String' (capitalizes letters)
+
+return $variable; inside a controller action: prints out a .json version of the variable.
+if you wrap the variable in "" it'll be a blank html with the .json text, but without them
+it's in dark mode for some reason.
+you normally return a view so it makes sense I guess. Speaking about which
+
+view('viewName.index', compact('arrayName')); //loads the view
+
+request('thing'); //returns the parameter in $_REQUEST. So both $_GET and $_POST
+request(['thing']); //returns the same thing as above, but as an associative array with 'thing' as key
+request()->only('thing'); //same thing as above
+request(); //returns an object apparently
+request()->all(); //returns  all requested stuff
+request()->routeIs('routeName'); //checks if the loaded page belongs to a named route
+request()->getQueryString(); //the entire request string
+request()->except('URI parameter'); //the entire query array minus that one nasty parameter
+http_build_query(requestArray); //turns it into a string.
+request()->user()->id; //current authenticated user's id
+request()->merge	 ???
+request()->replace	 ???
+request()->is('requestString'); /*returns a boolean.
+	The request string starts from after '/'. Ex: /posts/{{$slug}} becomes 'posts/{{$slug}}'
+	you could also avoid manually writing posts/ and just say '*'.{{$slug}}*/
+request()->file('inputName'); //returns instance of UploadedFile class
+request()->validate(['email' => 'required|email']); /*the request is validated; the
+	validation rule required|email means the field email is both required and must be checked
+	like an email (something like asdf@asdf.com)
+	VALIDATION RULES:
+		| 		-chains stuff. It's an old method, using an array like ['rule', 'rule2'] is recommended
+		: 		-assigns value
+		required-means it's required
+		email 	-means it has to be a valid email address
+		max:val -gives a maximum number of characters for the request parameter * sql var char has a size limit of 255 so max:255 would make sense
+		min:val -minimum number of characters
+		image	-must be an image file
+		unique:tableName, columnName -makes it unique for that table's column
+			OR in modern syntax (array with all the rules) this array element is
+				Rule::unique('table', 'column')
+					->ignore($instance->id); - extends Rule::unique to exclude that specific instance. 
+						specifying an attribute is not required, $instance should work fine.
+						If the ignored model is a blank instance it's fine too. ex: ->ignore(new ModelName())
+		exists:tableName, columnName	-it must already exist in the database. Potentially
+			a security issue, as guests would have a way of knowing if someone is registered
+			ALT Rule::exists('table', 'column')
+	if validation fails you get redirected to the previous page and the very next line after
+	->validate() won't even be executed. If it's successful, the attributes will be returned
+	by the method.
+	
+
+use App\Models\User; //use the user model. Try and make your own models like this one.
+$users=User::all(); //basically does select * from 'users'
+alternatively
+$users = User::where('age', '>=', 21)->get();//select * from 'users' where age>=21;
+$user = new User; // make new user
+$user->save(); //saves user in the database
+User::create(request()->all());//tries to create an user out of the request parameters
+
+FILE UPLOAD
+	UploadedFile class (call request()->file('inputName') to get a new instance of this class)
+		->store('folderName'); /*makes a folder called folderName under storage/app or just stores
+			the file inside of that folder if it already exists
+			ALSO returns the path.*/
+	storage/app is considered by laravel the "local disk".
+	check config/filesystems.php to edit the config.
+	Replace local with public to make public the default file system. Public is just a folder inside
+	storage/app.
+	to access assets:
+		asset('storage/'.$storedPath);
+		or just /storage/{{$storedPath}}
+		it seems like it lets you ignore /app/public which are in between /storage/ and your path
+		(public is only in there if you changed the default storage, but regardless, it just doesn't
+		matter apparently)
+
+REDIRECTING
+	return redirect('/');//redirects to the given URI
+	return redirect()->route('routeName'); //redirects to the route which goes by routeName
+	return redirect('/')->with(sessionKey, 'flash message'); //redirects and calls a flash message
+	back()//redirects to the previous page
+		->withInput() //keep form inputs upon redirecting
+		->withErrors('errorname', 'error text');
+
+DEBUGGING
+	dd('error message'); //dump & die
+	ddd('error message'); //dump, die & debug
+
+	abort(404); //didn't find the resource
+	abort(403); //"I know what you're trying to do but you're not allowed to do it"
+	abort(Response::HTTP_FORBIDDEN); /*same thing as above. Named version of the status code. Check the Response
+		class to see all the codes that were set as constants*/
+
+ROUTING
+	These methods are called by a route (Route::get('URI', function(){return view('viewName');})
+	CONTROLLERS
+		instead of function(){return view()} you could make it so the function returning a view
+		is a controller's method.
+		To do that, pass 'App\Http\Controllers\YourController@method' as the second parameter
+		Conventionally, the views loaded by the controller's methods are called
+			controllername.methodname(.blade.php)
+		This dot notation's functionality is that you can make folders called like the
+		controller later and not have to change anything
+		
+		SINGLE FUNCTION
+			add a method called __invoke() to your controller (and no other methods) and you'll be
+			able to call the controller without specifying the method through @method
+		
+	->name('RouteName'); //gives the route a name
+	->middleware('route.specific.middleware');
+	/*
+		middlewares are a piece of logic that runs when a new request comes in
+		to view which ones exist check app/Http/Kernel.php
+		global ones run for every route and are found in $middleware in the kernel; route specific ones
+		are in $routeMiddleware, and they have key names which the kernel then translates
+		into classes. The keys are:
+			'guest' restricts access to guests (users which aren't logged in)
+			'auth' restricts it to authenticated users
+	*/
+		
+	GROUP MIDDLEWARE ROUTES
+		Route::middleware('middlewareName')->group(function(){
+			Route::method('URI', 'Controller@action');
+			Route::method('URI1', 'Controller1@action');
+		})
+		//gives these routes the same middleware
+	
+	RESOURCEFUL CONTROLLERS
+		Route::resource('URI', 'Controller') //makes a route for each restful action.
+			->except('actionName'); //excludes an action
+		you could put this inside a middleware group and it'd count as all 7 routes, all with the same middleware
+	
+	CONSTRAINTS
+	they dictate what the wild card can be
+	->where('wildCardName', 'regularExpression');//example regular expression: '[A-z]+'
+	->whereAlfa('cardName') // '[a-zA-Z]+'
+	->whereAlfaNumeric($wildCard) // '[a-zA-Z0-9]+'
+	->whereNumber($wildCard) // '[0-9]+'
+
+
+ROUTE SERVICE PROVIDER
+	this service gets used a lot internally and it has some really referenced properties
+	like "protected const HOME" which will make the app think the home is at /home
+	which might not be the case. So uhh check it out and fix it
+
+
+CACHE
+	cache()->remember("route.{wildCard}", seconds, function(){return the path});/*mette un coso
+	in cache*/
+	cache()->rememberForever('cacheName', function(){});/*remembers forever. If it doesn't find
+	the thing by its cacheName, it will make it through the function. So the function has to
+	return something to fill the cache to begin with*/
+	cache()->forget('cacheName'); //clears cache
+	cache('cacheName'); //returns the desired cache
+	cache()->get('cacheName'); //same thing as above but more verbose
+	cache()->put('cacheKey', 'value'); //stores value in the cache key
+	cache(['cacheKey' => 'value']); //basically cache()->put() but shorter
+	cache(['cacheKey' => 'value'], now()->addSeconds(3)); //puts the thing in the cache for 3 seconds
+		now()->addMinutes(minutes); /*adds minutes to a timer and tells it how much to wait.
+		Specifically, I've seen this used in combo with the function above instead of the seconds*/
+		now()->addHours(hours)
+		now()->addDays(days)
+		now()->addWeeks(weeks)
+		//a singular version of these function exists. Ex "addHour" as opposed to "addHours"
+
+base_path(restOfPath); //path from the root of the project
+app_path(restOfPath); //path from app directory
+resource_path(restOfPath); //path from resources.
+
+throw new ModelNotFoundException(); //throws an exception explaining it couldn't find the model.
+
+FILES
+	File::files("yourPath"); /*import the file class with "facade" at the end.
+		Returns the files parented
+		to the given file. The file objects in the return array are of the "SplFileInfo" class*/
+	SplFileInfoObject->getPathname(); //gives you the path of the file
+	(string)SFIObj; //same thing as above
+	SFIObj->getContents(); //the decent one
+
+collect($array) returns a collection, which is an object with these methods
+	->map(function($element){})
+	->firstWhere(attributeName, searchedValue)
+	->sortBy(attributeName)
+	->sortByDesc(attributeName); //sorts in the reversed order
+	->skip(1); //useful in foreach loops, this skips the first item
+	->count(); //returns the amount of items in the collection or null if it's empty
+	->filter
+	->each
+	->merge
+	->pull
+	
+	
+	
+PACKAGES
+	Pagination
+		once you import it, there'll be a /resources/views/vendor/Pagination directory
+		inside of it there are different frameworks to style your pagination.
+		To choose to use one of those customization methods, go to
+		app/Providers/AppServiceProviders and in your boot() method call
+		Iluminate/Pagination/Paginator::useBootstrap(); to use bootstrap
+		::useTailwind() is the default
+		::useBootstrapThree() for bootstrap version 3
+		to change the default pagination styling go to /resources/views/vendor/Pagination
+		open whatever file represents your preferred styling method
+		
+		the boot() method is a good place to put stuff that is valid for the whole project.
+		Another thing you could do with it is call
+			Model::unguard(); //(use Illuminate\Database\Eloquent\Model; first)
+		so that you can call ->create() and there won't be restricted properties on models.
+		If you do that, don't use request()->all() on the ->create() method of the model though.
+		
+PASSWORDS
+	the passwords should be crypted immediately as you register them through bcrypt()
+	to check if a crypted value corresponds to something you'll use
+	Illuminate\Support\Facades\Hash::check('isThisTheValue', $cryptedValue)
+	this is a great method to check passwords if you already know them beforehand anyway
+	
+FLASH MESSAGES
+	They only appear on the next page request
+	session()->flash('sessionKey', 'flash message'); //make the entry for that key
+	session()->has('sessionKey'); //check if the session has that key
+	session()->get('sessionKey');		//return the value for the key
+	session('sessionKey');				//same as above ^^^
+	return redirect('/')->with(sessionKey, 'flash message');
+		//redirects and makes an entry for that sessionKey
+		
+AUTHENTICATION
+	auth()->login($user); //logs in the instance of the 'User' model
+	auth()->check(); //returns whether the user is authenticated
+	auth()->user(); //returns the authenticated user object
+		->name; /*check the property like any other model instance. Only use this if you're
+			positive the user is logged in*/
+	auth()->id(); /*gives you the id of the authenticated user. auth()->user()->id() would do
+		the same.*/
+	request()->user()->id; //yet another way to write it
+	auth()->guest(); //basically !auth()->check();
+	auth()->logout();
+	auth()->attempt($credentialsArray); //attempts to log a user in with the provided credentials
+		checks the password and returns false if it failed
+		in case of failure: check back()->withInput()->withErrors([''=>''])
+		or throw an exception with
+			use Illuminate\Validation\ValidationException;
+			or use Dotenv\Exception\ValidationException idk
+			throw ValidationException::withMessages(['errorname'=>'error message'])
+	VALIDATION: check request()->validate()
+	session()->regenerate(); //do this if you sign a user in manually
+	
+.ENV
+	when you put something new in your .env file, you can go to config/services.php and
+	add the new third party service. To get values from the env file you can then use
+	env('KEY_NAME') or env('KEY_NAME', 'defaultValue')
+	
+	the files in the /config directory reference env() a lot and put placeholder values in case
+	there's no .env correspondence.
+	You can add keys to /config/app.php
+	ANYWHERE outside config you can call config('services.thirdPartyService') and it'll
+	give you all the keys you added
+	if you want a specific key just use config('services.thirdPartyService.keyName')
+	
+	
+DEPENDANCIES
+	Laravel automatically instantiates objects of weird classes that you write in a function's
+	parameters. Or at least, it tries its hardest to through automatic resolution of dependancies.
+	Specifically, if your class doesn't have a __construct method then it means instantiating
+	that object's dependancy will be as easy as executing "new DependancyName;"
+	it will first look for the dependancy in laravel's own already instantiated services though.
+	If any of the classes involved that need to be instantiated require a parameter
+	laravel can't instantiate, such as a string, it will fail because it won't be able to know
+	what to pass to the constructor. Otherwise it will recursively instantiate everything.
+	To fix that issue with unknown parameters you must be explicit about how to instantiate
+	a certain class. You can see that below *
+	Dependancies are basically properties of classes that usually get assigned through
+	the constructor and contain instances of other classes, usually services.
+	For example: public function __construct(ClassIDependOn $dependancyName){}
+	WHY IT'S IMPORTANT:
+		The first call to a service will instantiate the service itself. All the others will
+		reference the same object that was previously created.
+	* EXPLICITLY INSTANTIATE DEPENDANCIES:
+		inside AppServiceProviders put something like this inside the register method:
+			app()->bind(MyClass::class, function(){
+				return new MyClass(new DependancyClass, "that nasty string parameter");
+			}
+		DIY:
+			let's say you did this: app()->bind('foo', function(){return 'bar';}).
+			First things first: you're stupid. Secondly, and more importantly, to check
+			if laravel is actually able to get the service ("bar") through the key you gave it ("foo")
+			you have 2 methods:
+				app()->get('foo'); //returns "bar"
+				resolve('foo'); //helper function, still returns 'bar'
+		Through this you can add stuff to laravel's own service container that's checked before anything
+		else during automatic resolution.
+		
+CONTRACTS AND INTERFACES
+	an interface is declared like a class but with "interface" instead of class.
+	the methods of an interface aren't implemented.
+	To do that, make another class that's declared like "class NewClass implements MyInterface{}"
+	Needless to say, all the methods have the same name and exactly the same parameters.
+	Interfaces aren't instantiable.
+	A contract is the correct formula to implement the interface. So, it's basically the list of
+	the methods.
+	A workaround to interfaces not being instantiable is letting laravel "instantiate" them
+	through a key inside the service container like we've seen before. You'll then be able to decide
+	which class' instance to return in the AppServiceProvider. The function passed to app()->bind()
+	will handle the logic that chooses a specific implementation of the interface.
+	
+GATE
+	its namespace is Illuminate\Support\Facades\Gate. Use it.
+	The Gate Facade is useful whenever you want to filter through your users
+	Put its code in the AppServiceProvider's "boot()" method. It's a good place.
+	
+	define an ADMIN gate:
+	Gate::define('admin', function(User $user){return $logic}); //IDK if you can put other models. Probably so.
+		the logic here could be something as simple as
+			return $user->username == "AdminUser";
+	
+	then to check if the instance (the user in this case) can pass through the gate (is an admin) use:
+		$instance->can('filterName') // which translates to request()->user()->can('admin') for this use case
+	ALTERNATIVELY:
+		Gate::allows('admin')
+	ALSO:
+		$instance->cannot('filter'); //returns !$instance->can('filter')
+	ALSO ALSO:
+		->can() and ->cannot() return booleans, but if you decide to use $this->authorize('gate'); then
+		it will automatically throw a 403 if the user does not meet the criteria for the gate. It's
+		stand-alone, it doesn't need to be in a conditional statement because again, this isn't a boolean.
+		It's a process in and of itself; The criteria is applied to the logged user.
+	ALSO ALSO ALSO:
+		blade directive. @can('gate'). Applied on the logged user, I guess. Still not sure if you can change
+		the model on the gate itself and whether it'd do something though. Don't think so.
+	MIDDLEWARE:
+		the can middleware handles all authorization. If you make a gate, you can just add a middleware to
+		your routes that looks like this: ->middleware('can:gate'); and you can add parameters like
+		"can:gate,parameters"
+		
+HELPER FUNCTIONS
+	make a "Helpers" directory directly under app
+	make a helpers.php file in that directory
+	add the following to composer.json, inside "autoload" and right under "psr-4":
+		"files": [
+            "app/Helpers/helpers.php"
+        ]
+	do sumn like this inside the helpers.php file:
+		<?php
+			use Carbon\Carbon;
+			  
+			/**
+			 * Write code on Method
+			 *
+			 * @return response()
+			 */
+			if (! function_exists('exampleFunction')) {
+				function exampleFunction()
+				{
+					return 'exampleString';
+				}
+			}
+	execute this on a terminal:
+		composer dump-autoload
+		
+RESPONSIVE DESIGN
+	min-[200px]:class	arbitrary minimum screen size
+	max-[200px]:class	arbitraty maximum screen size
+	sm:class			640px
+	md:					768px
+	lg:					1024px
+	xl:					1280px
+	2xl:				1536px - they all work on the phone first (min-width:)

@@ -1,0 +1,2 @@
+LOADING SPINNERS:
+	https://stephanwagner.me/only-css-loading-spinner

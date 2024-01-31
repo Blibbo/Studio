@@ -1,0 +1,22 @@
+((Ma che non hanno mai funzionato))
+
+fai un file chiamato .htaccess e scrivi questo dentro
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteEngine On
+	RewriteRule ^.*$ index.php [END]
+	
+	
+	
+nel file composer.json metti questo
+        "classmap": [
+            "app/http/controllers"
+        ]
+dentro
+	"autoload": {
+	
+	}
+	
+	
+If someone goes into the error No application encryption key has been specified.
+in the installation of the "Laravel From Scratch Blog Demo Project",
+just run the command php artisan key:generate and you are done.

@@ -1,0 +1,7 @@
+JDK
+	javac YourClass.java
+		crea un file .class dal file sorgente
+	java YourClass
+		il JRE esegue il file .class (non c'è bisogno di .class nel comando)
+	javap -c YourClass
+		(dev'essere un .class) javap disassembla il file e -c mostra le istruzioni in un assembler del linguaggio della JVM

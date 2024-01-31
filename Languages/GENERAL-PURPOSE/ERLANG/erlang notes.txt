@@ -1,0 +1,3 @@
+ERLANG
+	-runs on the BEAM VM
+		elixir also runs on beam

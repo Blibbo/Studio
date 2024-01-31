@@ -1,0 +1,14 @@
+https://pravatar.cc/
+
+<img src="https://i.pravatar.cc/SIZE?u=UNIQUENUM" alt="Propic">
+	<!--
+		Replace SIZE with the size of the square in pixels. Loads a random propic.
+		Replace UNIQUENUM with an unique id. Makes sure every request gives a different result.
+	-->
+	
+SVG
+	explanation: https://www.w3schools.com/graphics/svg_path.asp
+	icons: https://www.svgrepo.com/
+	editor: https://boxy-svg.com/app
+	
+	to make an svg's path fit into a box, just set the <svg>'s width and viewBox attributes.

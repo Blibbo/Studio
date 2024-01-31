@@ -1,0 +1,9 @@
+PSR-4 autoloader
+MVC (Model View Controller)
+Laravel Sail (alternativa a MAMP presumibilmente), potrebbe servirti per redis
+tree (CLI)
+Regular Expressions
+Active record pattern
+git status (dice che file ha creato o eliminato il comando precedente)
+alias art="php artisan" (makes shorthand commands)
+alias art (tells you what alias exists whch is called art)

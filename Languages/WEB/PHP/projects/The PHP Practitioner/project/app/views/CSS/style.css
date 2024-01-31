@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(26, 30, 34);
+    border-radius:10px;
+}
+
+ul{
+    width:fit-content;
+    margin: 0 auto;
+    box-shadow: 0 0 10px black, 0 0 50px 10px black inset;
+    border-radius: 30px;
+    padding:20px;
+}
+
+h1{
+    text-align: center;
+    color:green;
+}
+
+li{
+    color:white;
+}

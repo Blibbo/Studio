@@ -1,0 +1,223 @@
+INSTALLATION
+	CDN API
+		LATEST
+			<link href="https://cdn.tailwindcss.com" rel="stylesheet"> (doesn't work)
+				or
+			<script src="https://cdn.tailwindcss.com"></script> (works)
+				it does a full css reset
+		OLD
+			<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	
+	INSTALL LOCALLY: https://tailwindcss.com/docs/installation
+		Go in your project's directory and run these:
+			npm install -D tailwindcss
+			npx tailwindcss init
+		Add these to your main CSS file:
+			@tailwind base;
+			@tailwind components;
+			@tailwind utilities;
+		Run this to build the ultimate css tailwind file:
+			npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+			
+	INSTALL WITH LARAVEL:
+		OFFICIAL SOURCE
+			https://tailwindcss.com/docs/guides/laravel
+		UNOFFICIAL
+			https://dev.to/moose_said/installing-tailwind-css-in-your-laravel-project-16f3#:~:text=Almost%20everything%20in%20Laravel%20is,help%20you%20customize%20it%20smoothly.
+		the config file is in tailwind.config.js
+		
+		execute these 2 lines in your project's directory:
+			npm install -D tailwindcss postcss autoprefixer
+			npx tailwindcss init
+			
+			
+		ADD
+			mode: 'jit'
+		IN
+			tailwind.config.js
+		
+		other solutions
+			https://stackoverflow.com/questions/70584680/problem-with-arbitrary-values-on-tailwind-with-react
+			https://v2.tailwindcss.com/docs/just-in-time-mode
+			
+			https://laracasts.com/discuss/channels/design/tailwindcss-arbitrary-values-in-blade
+			&
+			https://stackoverflow.com/questions/73142864/npm-run-watch-not-working-and-returning-errors-saying-missing-watch
+	
+	Tailwind migrated from the JIT engine:
+		https://tailwindcss.com/docs/upgrade-guide#configure-content-sources
+	
+	CHECK THE VERSION WITH
+		npm view tailwindcss version
+	OR
+		npm info tailwindcss version
+		
+		
+	[IGNORE EVERYTHING UP UNTIL THIS POINT]
+	
+	Make it work on Laravel: https://stackoverflow.com/questions/73142864/npm-run-watch-not-working-and-returning-errors-saying-missing-watch
+		go to package.json after having installed node and npm and ran their commands onto your project
+		you'll see "vite build" and that translates to npm run build, well you CANNOT use that or tailwind
+		gets all fucked up for some reason. ADD THIS LINE INSTEAD (right under '"build": "vite build",'):
+		"watch": "vite build --watch"
+		
+		then to run the whole thing you have to use:
+			npm run watch
+		and then you can even close that prompt.
+	
+COLORS
+	-gray-100			The colors' value is inverted, where 1000 is black and 0 is white
+	-indigo-500			Indaco
+	-emerald-500/25		0 to 100, offset 25. Opacity. 100 is visible and 0 is transparent
+			-500/[.06]	specific values.
+	-slate-500			generic text color
+	
+DIRECTIONS
+	-t					top
+	-r					right
+	-b					bottom
+	-l					left
+	-x					left and right
+	-y					top and bottom
+
+SIZES
+	px					1px
+	xs					extra small
+	sm					small
+	md					medium
+	lg					large
+	xl					extra large
+	2xl					double extra large
+	4xl					quadruple extra large
+	
+PSEUDO ELEMENTS
+	focus:				when something is selected, like when you click on a textarea
+	hover:				when your cursor is over it
+	disabled:			if the input is disabled
+	peer-focus:			when a peer element gets focused
+	dark:				user has browser set to dark mode
+	
+TEXT
+	text-white			colors text
+	uppercase			renders the text uppercase
+	font-semibold		makes the font semibold
+	text-xs				sets the text size
+	underline			makes the text have an underline
+	
+CURSOR
+	cursor-not-allowed	divieto di sosta
+	
+BOX MODEL
+	bg-gray-100			colors the background.
+	border				makes a solid border.
+	border-3			makes a solid border which is 3 px thick.
+	border-l			makes a solid border on the left
+	border-l-4			makes a solid border-left and 4 px thick.
+	border-gray-200		colors the border.
+	mb-4				margin-bottom of 4 pixels.
+	mt-10				margin-top of 10 pixels.
+	-mt-10				margin-top of -10 pixels.
+	p-6					padding of 6 pixels.
+	space-y-6			element + element{margin-top: 6px} I think. But on the direct children.
+	divide-y			element + element will have a border in between
+	divide-gray-600		set the divide's color
+	rounded-xl			rounded box
+	rounded-full		tries to make a circle (can't if it's a rectangle)
+	max-w-sm			sets the maximum width to "small"
+	mx-auto				margin on the x axis set to auto.
+	h-50				set the height to 50 px
+	w-50				set the width to 50 px
+	z-10 				(to 50, 0 or auto are accepted too) z-index: 10
+	max-h-48			max height
+	overflow-auto		scroll if there's more content and a max height
+	hidden				display:none
+	
+FLEX
+	flex				display:flex to the element.
+	flex-shrink-0		prevents the flexbox from shrinking the element.
+	items-				align along the secondary axis. Works on grid too
+		center			center of the secondary axis
+		end				aligns items at the end of the secondary axis (on the bottom of the row normally)
+	justify-
+		end				end of primary axis (to the right if normal flex)
+	justify-between		gets flex children as far away from each other as possible
+	flex-col			makes the flexbox vertical and justify-end would go to the bottom
+	gap-8				gap on the x axis
+	min-w-0				if the flex child overflows the parent, use this
+	
+	FLEX CHILDREN
+		flex-1				children of a flexbox can use it. It makes the element as big as it can get(???)
+
+
+GRID
+	lg:grid				makes the tag a grid
+	lg:grid-cols-12		the grid has 12 columns
+	
+	gap-x-10			makes the columns have a 10px gap between them (on the x axis)
+	space-x-10			a replacement for gap for browser compatibility. It fucks with the margins
+						of the elements inside. I recommend gap
+	auto-rows-min		makes it so the rows' height fits the content.
+	
+	place-items-center	guess.
+	
+	GRID ELEMENTS
+		col-span-4			makes the element INSIDE the grid span 4 columns
+		col-start-5			offsets the grid element 5 columns from the left
+
+EVENTS
+	pointer-events-none		removes event listeners from the element and its children
+	pointer-events-auto		you can give it to a child of pointer-events-none to make an exception
+
+TextArea styling
+	focus:outline-none	remove default textarea focus styling
+	focus:ring			uses box shadow to make a ring
+	focus:ring-0		removes ring
+	
+MIN SCREEN WIDTH - RESPONSIVE DESIGNS
+	sm:					cell phones @media (min-width: 640px) { ... }
+	md:					768px
+	lg:					1024px	
+	xl:					1280px
+	2xl:				1536px
+	
+BACKGROUND
+	IMAGES:
+		class="bg-[url('/img/hero-pattern.svg')]"
+			arbitrary value. Requires a proper tailwind installation, can't use the CDN for this one.
+	SIZE:
+		bg-auto		default size
+		bg-cover	cover the whole box using the image
+		bg-contain	contain the whole image within the box
+	GRADIENTS:
+		https://tailwindcss.com/docs/background-image
+	GRAYSCALE:
+		grayscale-0		colors
+		grayscale		b/w. Even images and everything
+		
+CONFIG: tailwind.config.js
+	on module.exports add:
+	theme: {
+		extend: { 				EXTEND A TAILWIND CLASS WITH -
+			grayscale:{			grayscale- in this case
+				50: '50%',		grayscale-50
+			},
+			colors:{
+				'boob-color': '#800085' 		you made a new color
+			}
+		}
+	}
+	
+TRANSFORM
+	transform			base class to put before all transformations
+	transform-gpu		makes it so the transform calculations are done by the gpu
+	rotate-45			applies rotate(45deg)
+	
+QUICK CENTER APPLICATION:
+	<html class="h-full">
+		<body class="h-full grid place-items-center">
+			quick center
+		</body>
+	</html>
+	
+	CENTER HORIZONTALLY
+		mx-auto

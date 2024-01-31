@@ -1,0 +1,28 @@
+<form
+	method="GET" <?php//you know what it does. Come on?>
+	method="POST" <?//I refuse to explain this one either?>
+	
+	enctype="multipart/form-data" <?//use this if you have both text and files in your inputs?>
+>
+	<input
+		type="email" <!--provides client side validation for emails. Tells you if the email
+			isn't valid before even hitting the server-->
+		type="password" <!--hides characters-->
+		type="text" <!--just generic text. Not very long-->
+		type="file" <!--you're uploading a file-->
+		
+		type="checkbox"<!--it's a checkbox-->
+		
+		required <!--you can't escape this input-->
+		
+		name="myName" <!--request will have ?myName= inside it-->
+		
+		value="myValue" <!--request will have ?myName=myValue as a parameter.
+			Not sure if you can omit the name on this one, I think not-->
+			
+		autocomplete="password" <!--gives hints to password managers that this input is a password-->
+		autocomplete="username" <!--gives hints to password managers that this input is the email (confusing)-->
+		autocomplete="current-password" <!--the current password of the account-->
+		autocomplete="new-password" <!--you have to insert it yourself-->
+	>
+</form>

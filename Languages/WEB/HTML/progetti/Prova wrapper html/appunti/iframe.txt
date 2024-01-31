@@ -1,0 +1,8 @@
+l'iframe che copi da yt o altre piattaforme dev'essere contenuto in un div del genere:
+
+<div style="
+    position:relative;
+    padding-bottom: 56.25%;
+    padding-top:25px;
+    height:0px;
+">

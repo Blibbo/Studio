@@ -1,0 +1,19 @@
+body{
+	background-image: url("background.png");
+	background-repeat: no-repeat;
+	background-attachment: no-scroll;
+	background-position: top;
+	background-color: #22294a;
+}
+h1{
+	color: white;
+	font-size: 75px;
+	position: center;
+	margin-left: 30%;
+}
+h2{
+	font-family: fantasy;
+	font-size: 100px;
+	color: white;
+	margin-left: 47%;
+}

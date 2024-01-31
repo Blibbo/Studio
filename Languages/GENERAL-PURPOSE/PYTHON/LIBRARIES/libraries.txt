@@ -1,0 +1,3 @@
+import libraryName //imports libraries
+
+pygame //does something. Look it up

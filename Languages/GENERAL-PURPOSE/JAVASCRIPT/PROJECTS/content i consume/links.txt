@@ -1,0 +1,86 @@
+LINEAR ALGEBRA, GEOMETRY AND MORE
+	VECTORS
+		-3Blue1Brown on linear dependancy and vector spaces. VERY good material
+			https://www.youtube.com/watch?v=k7RM-ot2NWY&list=WL&index=6&t=84s&ab_channel=3Blue1Brown
+			
+			follow up:
+				-his video on matrices and transforming space
+				-this other guy's video on matrices
+					https://www.youtube.com/watch?v=4csuTO7UTMo
+				
+				-the determinant
+				https://www.youtube.com/watch?v=Ip3X9LOh2dk&ab_channel=3Blue1Brown
+				
+				-his video on inverse matrices
+
+	3D RENDERING
+		-COMPREHENSIVE GUIDE (top tier study material)
+			https://www.scratchapixel.com/index.html
+			
+		-guy makes a spinning cube in a language I'm not familiar in
+			https://www.youtube.com/watch?v=p4Iz0XJY-Qk&ab_channel=TheCodingTrain
+
+LANGUAGES
+	C++
+		-COMEPLETELY out syntaxed:
+			take notes from this video
+		
+			https://www.youtube.com/watch?v=i_wDa2AS_8w&ab_channel=mCoding
+				
+		-RECURSION VS LOOPS
+			https://www.youtube.com/watch?v=sGjAe6y299g&ab_channel=DreamsofCode
+			
+SOFTWARE
+	OBSIDIAN
+		start video
+		-https://www.youtube.com/watch?v=DbsAQSIKQXk&ab_channel=NoBoilerplate
+		
+		-about github and team obsidian collaboration (effect. of plain text)
+		https://www.youtube.com/watch?v=WgV6M1LyfNY&ab_channel=NoBoilerplate
+		
+		-daily todos
+		https://www.youtube.com/watch?v=sTSgD4784gM&ab_channel=JonathanPritchard
+		
+		porn/gore (depends on perspective)
+		https://www.youtube.com/watch?v=rNTX-jnSmSk&ab_channel=JCOMedia%7CJustinHitt
+		https://www.youtube.com/watch?v=7RKNKbEYAlA&ab_channel=Jundon
+		https://www.youtube.com/watch?v=9NyOGXOTmUc&ab_channel=LinkingYourThinkingwithNickMilo
+		
+
+OUT OF MY SCOPE
+	Mandelbrot Set
+		-guy who made a program to hear fractals
+			https://www.youtube.com/watch?v=GiAj9WW1OfQ&ab_channel=CodeParade
+		-michael stevens being really charismatic
+			https://www.youtube.com/watch?v=MwjsO6aniig&ab_channel=D%21NG
+		-mind blowing video from veritasium
+			https://www.youtube.com/watch?v=ovJcsL7vyrk&ab_channel=Veritasium
+
+	Borders on Sci-fi
+		-mind blowing warp drive visuals
+			https://www.youtube.com/watch?v=vFNgd3pitAI&ab_channel=ScienceClicEnglish
+			-negative mass?
+			-massless particles don't "experience" time, they must move at c and
+				the beginning and end of their journey coincides
+				
+	Maths?
+		COMPLEX NUMBERS
+			-epic math duel
+			https://www.youtube.com/watch?v=cUzklzVXJwo&ab_channel=Veritasium
+			
+		-lying through visual proofs
+			https://www.youtube.com/watch?v=VYQVlVoWoPY&ab_channel=3Blue1Brown
+		-prime numbers make a funny drawing
+			https://www.youtube.com/watch?v=EK32jo7i5LQ&ab_channel=3Blue1Brown
+		
+	Mental health
+		-Veritasium on the longest running study on human happiness
+			https://www.youtube.com/watch?v=vSQjk9jKarg&ab_channel=Veritasium
+			
+			takeaways
+			-"loneliness" is physically harmful and it has nothing to do with being alone
+			-badges of achievement are pointless
+			-do meaningful work
+		
+	Polyphasic Sleep
+		https://www.youtube.com/watch?v=OuizzRCALCU&ab_channel=NoBoilerplate

@@ -1,0 +1,10 @@
+cd onedrive/studio/linguaggi/php-mysql/progetti
+cd nomeprogetto
+SATANA: php artisan serve
+php -S localhost:8000 -t public
+
+*altro prompt*
+cd onedrive/studio/linguaggi/php-mysql/progetti
+SATANA: npm run dev
+npm run watch
+	Ctrl + S sul prompt di npm quando chiami nuove classi tailwind nel tuo codice

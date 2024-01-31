@@ -1,0 +1,30 @@
+API: https://alpinejs.dev/
+
+CDN
+	<script src="//unpkg.com/alpinejs" defer></script>
+	
+	OPPURE
+		<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+ALPINE COMPONENT
+	to make an alpine component you just have to add the x-data attribute
+	<div x-data="{varName: value}"> <!--the thing in the {} is a js object,
+		it's the "single source of truth for this component"-->
+
+ATTRIBUTES
+	<div x-show="varName" <!--shows IF the expression passed is true. Uses css' display:none
+		so you should probably set it by default for drop down menus if you don't want it to
+		appear for a moment before alpine loads on the page-->
+		
+		x-init="js code" <!--executes code immediately-->
+		
+		x-text="state" <!--changes the text in the div-->
+	>
+
+EVENTS
+	<button @click="alert('helo')" > <!--pretty much the onclick event-->
+		you can change variables made through alpine components here too
+		
+	@click.away="js code" <!--when you click somewhere else-->
+	
+	@click.prevent="" <!--prevents the default action. Can be used on anchor tags-->

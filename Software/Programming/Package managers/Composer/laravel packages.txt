@@ -1,0 +1,27 @@
+MEDIA LIBRARY
+	INSTALLATION
+		composer require "spatie/laravel-medialibrary:^10.0.0"
+		
+	CREATE MEDIA CLASS:
+		php artisan medialibrary:media
+		
+	PUBLISH MIGRATION (Media class)
+		php artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider" --tag="migrations"
+
+
+INTERFACE, SERVICE, REPOSITORIES
+	STACKOVERFLOW THREAD https://stackoverflow.com/questions/47748160/how-to-make-repository-in-laravel
+	
+	LARAVEL MAKE REPOSITORY
+		GITHUB
+			https://github.com/jason-guru/laravel-make-repository
+			
+		COMPOSER
+			composer require jason-guru/laravel-make-repository --dev
+	
+	LARAVEL MORE COMMANDS
+		GITHUB
+			https://github.com/theanik/laravel-more-command
+		
+		COMPOSER
+			composer require theanik/laravel-more-command --dev

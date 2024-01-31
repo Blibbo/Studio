@@ -1,0 +1,23 @@
+https://stackoverflow.com/questions/22918517/npm-bower-composer-differences
+
+Bower is a deprecated javascript package manager
+
+Composer is the php one
+
+Node handles javascript dependancies
+	NPM vs NPX
+		https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/
+		npm doesn't have anything by itself.
+		LOCAL INSTALLS
+			npm will install packages into /node_modules/.bin
+		GLOBAL INSTALLS
+			npm will install stuff onto %appdata%/npm
+		NPX
+			npx is bundled with npm nowadays. It installs stuff. it quik.
+			If it's not installed somehow just run
+				npm install -g npx
+			npx can run scripts without installing them in your machine.
+			Ex:
+				npx https://gist.github.com/AnUser/aScript29k4k25k46k3n6j2
+			executes a script it finds online. Careful with it
+				or npx cowsay wow (it say wow :o)

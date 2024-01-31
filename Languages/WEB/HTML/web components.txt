@@ -1,0 +1,11 @@
+GUIDE:
+	https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot
+	
+	SHADOW DOM:
+		https://css-tricks.com/styling-a-web-component/
+		
+		MORE ON THE TEMPLATE
+		https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template
+		
+	GITHUB REPO:
+		https://github.com/mdn/web-components-examples/tree/main/element-details

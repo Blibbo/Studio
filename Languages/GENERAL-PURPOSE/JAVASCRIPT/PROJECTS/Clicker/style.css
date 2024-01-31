@@ -1,0 +1,56 @@
+html, body, table, button{
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+button{
+    background-color: rgba(255,255,255,0);
+    border-style:none;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.bar, #hp{
+    padding:0;
+    position:relative;
+    margin:0 auto;
+    border-radius: 100px;
+    height:20px;
+    width:500px;
+    border-color: rgba(70,70,70,1);
+    border-style:solid;
+    border-width:10px;
+    background-color: rgb(94, 94, 94);
+    background-size:100% 100%;
+
+	z-index: -1000;
+}
+
+.text{
+	text-align:center;
+	color:white;
+	text-shadow: 0 0 10px #000;
+	font-size: 100px;
+}
+
+.bar{
+    background-size:100% 100%;
+    background-image:url(images/background.png);
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+#hp{
+    text-align: center;
+    background-attachment: center left;
+    position:absolute;
+    float:left;
+    border-style: none;
+    z-index: 2000;
+    background: rgba(250, 152, 217, 0.876);
+    background:#b00b69;
+    background:rgb(100, 237, 255);
+}

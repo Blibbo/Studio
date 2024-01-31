@@ -1,0 +1,56 @@
+unset(array[key]); //elimina value dall'array
+
+die(roba da stampare); //termina l'esecuzione del programma e stampa la roba
+
+ucwords(some string); //capitalizes the first letter of the string passed
+
+var_dump(anything); //prints out any stuff in a variable. Va forte col tag doppio <pre></pre>
+
+require file.php; no brackets, it executes the php file and stops execution if it doesn't find it
+
+import file.php; no brackets in this one either, doesn't block execution
+
+echo [stringa]; stampa ed esegue codice html nella stringa
+
+htmlspecialchars(stringa); //stampa le cose per come sono senza eseguire codice html
+
+in_array(val, array); //vero se lo trova, falso se non lo trova
+
+array_map(function($arrayElement){}, $array); //fa quello che vuoi con gli elementi.
+Nella funzione che passi, non cambiare il parametro. Ritornane uno nuovo.
+Questo è perché l'intera funzione restituisce il nuovo array con gli elementi mappati.
+
+trim(stringa, char); //toglie char dall'inizio e dalla fine della stringa, se lo trova
+
+array_key_exists(key, array); //returns whether given key exists within the array
+
+array_filter($array, function($arrayElement){}); //la funzione passata deve tornare un valore
+booleano, tutta la funzione ritorna un array con soli gli elementi sui quali è tornato true.
+
+array_column($array, keyOrAttribute); returns an array where elements only have that one
+property. There's a third optional property that is another key or attribute whose VALUE
+will become the key of the previous attribute passed in the new array.
+
+sprintf(stringWithPlaceHolders, var1, var2, var3) a placeholder for strings looks like %s
+
+array_keys($array) // returns an array of only the keys
+
+implode($separator, $array); // the separator could look like ', '. The array becomes a string
+
+IMPORTANTISSIMO - header('Location: /'); //where you can replace / with any URI and redirect
+
+method_exists($class, $action);
+
+explode('char', string); //splits the string
+
+splat operator ...$array makes a tuple out of an array, allows it to be parsed to functions
+and count as multiple parameters.
+
+extract($data); //makes variables with keys contained in $data as the name and the contents
+of $data as the value.
+
+compact($data); //takes a variable and passes it as a key value pair with the key being the name
+
+file_get_contents($filePathString); //returns a string containing the contents of the file
+
+file_exists($path); //guess.

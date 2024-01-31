@@ -1,0 +1,15 @@
+https://vitejs.dev/guide/ (french for quick)
+
+make a vue project: get in the projects folder, execute this:
+	npm init vue@latest
+^^^ get the latest version of vue
+then after you finish
+	cd your-new-project-folder
+	npm install
+	npm run lint	<--these   to	 the
+	npm run dev		<--		two  boot	server
+	
+to run always use
+	npm run dev
+OR
+	npx vite

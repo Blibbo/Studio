@@ -1,0 +1,87 @@
+artisan is laravel's command line utility and to use it you need to make a laravel project first
+
+laravel new NomeProgetto will make a new laravel project. cd to your new project folder
+
+php artisan
+shows command list
+	"make" commands are file generators
+	php artisan make:controller [name] - 
+		makes a controller. The name can include the namespace path. Ex: Admin\PostController
+			--invokable makes a single action controller
+			
+	php artisan make:model modelName -m
+		makes a model AND a migration for it called [timeStamp]_create_modelNamePlural_table
+		(the plural thing is really smart and has English accurate syntax no matter the word)
+		-mfc adds migration + factory + controller
+		-f just adds the factory
+		-c just adds the controller
+		-s is useless (seeder class. There's a default seeder already so you'll rarely use it)
+	
+	php artisan make:factory ModelnameFactory
+		call it that or the model won't be able to use ::factory()->create()
+	
+	php artisan make:resource ResourceName
+		makes a resource. The classes that convert stuff into javascript stuff. Look into it.
+	
+	php artisan make:component ComponentName
+		makes a file called component-name.blade.php, but in the actual command you need
+		to use upper camel case (pascal case)
+		This command doesn't just make the component file, but also an associated model
+		found in app/View/Components
+	
+	php artisan storage:link
+		adds a storage folder on the public folder that links to storage/public.
+		So public/storage to storage/public. Huh. That's kinda funny.
+
+	php artisan make:middleware MiddlewareName
+		makes a new middleware with its basic methods and stuff. You must then add it to the kernel.
+		The main spot to add code to your middleware is the handle method (yknow, the ONLY one that's there)
+
+	php artisan help make:controller
+		explains how to use the command
+
+	php artisan serve
+		builds up the server and is realy col :thumbsup:
+
+	php artisan route:clear
+		clears route cache
+
+	php artisan migrate
+		runs the database migrations (makes tables(?))
+
+	php artisan migrate:rollback
+		NVM
+
+	php artisan migrate:fresh
+		empties all tables and migrates again
+		--seed reseeds it too, as if to call php artisan db:seed. If you use this, ::truncate()
+		is redundant
+
+	php artisan tinker
+		execute php stuff on your project. You have access to your namespaces and everything
+
+	php artisan make:model modelName
+
+	php artisan make:seeder 
+		c'è già uno di default quindi non ti serve
+
+	php artisan db:seed
+		attiva le classi seeder e fa i record previsti da esse. Non si resettano se lo rifai,
+		si aggiungono.
+		if your seeder class calls ModelName::truncate() before seeding you can delete
+		everything and seed all over again. Kinda like migrate:fresh --seed
+
+	php artisan vendor:publish
+		makes you "own" a specific file so that you can tweak it as you want
+		to choose one, you have to write the number displayed on the right of the package
+		you need
+		PRACTICALLY it just copies stuff from some obscure remote /vendor directory to a more
+		easily accessible /resources directory. It's not just a way to have a shortcut to a
+		package though, there's more to it: you shouldn't ideally NEVER ever touch the vendor
+		directory at all.
+
+	php artisan route:list
+		lists routes
+
+	php artisan route:clear
+		clears route cache

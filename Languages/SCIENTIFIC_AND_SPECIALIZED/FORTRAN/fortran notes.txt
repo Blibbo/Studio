@@ -1,0 +1,3 @@
+SYNTAX
+	ARRAYS
+		-arrays are saved in memory in the column-major order. Watch out with pointer offsets

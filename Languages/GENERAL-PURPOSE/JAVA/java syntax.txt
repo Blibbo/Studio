@@ -1,0 +1,84 @@
+DOCUMENTATION
+	https://docs.oracle.com/en/java/javase/19/docs/api/index.html
+
+CLASSES
+	class MyClass{}
+	
+	MAIN METHOD:
+		public static void main(Strings[] args){}
+		
+	CONSTRUCTOR:
+		public MyClass() {}
+		
+	IMPLEMENTARE INTERFACCE
+		class MyClass implements MyInterface{}
+	
+	ESTENDERE CLASSI
+		class MyClass extends OtherClass{} //
+		
+		OVERRIDE
+			@Override
+			public void methodName(){}
+			
+		SUBCLASS CASTING
+			(SubClass)superInstance
+			
+	PUNTATORI
+		this // questa istanza generica
+		super // la superclasse
+			// super.metodoPadre(); //chiama il codice della classe madre
+
+IMPORTS
+	import java.awt.*; //import everything under awt. Doesn't include stuff under that
+	import java.awt.event.*; //you'd need to do this too, the line above doesn't include this one
+
+COSTANTI
+	final nomeCostante;
+	
+	ARRAY
+		final int myArray[] = new int[10]; //array with 10 elements
+	
+VALORI
+	''		character literal
+	""		strings
+
+TIPI DI DATO
+	PRIMITIVI
+		byte - 1
+		short - 2
+		int - 4
+		long - 8
+		
+		float - 4
+		double - 8
+		
+	DERIVATI
+		String
+		Integer
+		
+	CASTING
+		
+
+OPERATORS
+	+	//string concatenation
+
+COMMENTI
+	//
+	/* */
+	/** */ - crea automaticamente la documentazione
+	
+STATEMENTS
+	else if(){} //separated, differently from C++
+	try{}catch(Exception e){} //tries the first block, runs the second if the code fails
+	switch(var){
+	case 'A':
+		ur=code;
+		break;
+	}
+
+ESCAPE CHARS
+	\n
+	\t
+	\\
+	\" - non termina la stringa
+

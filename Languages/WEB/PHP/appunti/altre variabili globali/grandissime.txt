@@ -1,0 +1,21 @@
+$_GET è un array con tutte le variabili contenute nell'url nello stile ?name=simo&surname=bonf
+	il metodo get ignora l'attributo action nel <form> in favore del contenuto del form stesso
+
+$_POST alternativo di get, prende le richieste fatte con post e quindi indecifrabili dall'url
+	method="POST" aggiunge al valore dell'attributo action
+
+$_REQUEST è un array con entrambe le cose di sopra. Tuttecose.
+
+$_SERVER var dump ti mostra quanta robba ha
+
+$_SERVER['REQUEST_URI'] mostra l'URI (va usata la funzione trim per gli slash) ((E quell'
+altra odissea per tagliare le request))
+parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) prendi l'uri. Trimma tutto
+
+$_SERVER['REQUEST_METHOD'] mostra il metodo di richiesta, ex get o post
+
+__DIR__ path alla directory corrente
+
+self dentro il metodo di una classe: l'oggetto sul quale viene chiamato il metodo
+static è utilizzabile dentro la classe stessa e non farà riferimento all'oggetto come self
+static::staticMethod() si può fare dentro un metodo non statico

@@ -1,0 +1,59 @@
+Install typescript as a dev dependancy on the project you're working on:
+	npm i -D typescript
+you could use the -g flag to install it globally, but if you don't then you can mantain different versions
+between projects.
+
+Files in the directory where you install typescript can have the .ts extension.
+
+THE COMPILER:
+	typescript files have to be compiled down to javascript first. The compiler is the one you
+	installed before, to access it you need the node_modules directory you created in your project
+	(or wherever else) and to execute
+		node_modules/typescript/bin/tsc yourTSFile.ts
+		
+TO EXECUTE DIRECTLY:
+	https://github.com/TypeStrong/ts-node
+	npm install -D ts-node
+	console.log will log in the console window where you run
+		ts-node myTSFile.ts
+	or
+		node lib/yourTSFile.ts
+	alternatively:
+		deno
+		webpack
+		https://www.typescriptlang.org/play
+			"share" makes a unique url for the code if you wanna ask in a forum how to debug a thing
+		
+CONFIG FILE:
+	https://www.typescriptlang.org/tsconfig
+	it's a .json file (duh) and here's what it can contain:
+		{
+			"compilerOptions": {
+				"lib": [
+					"ESNext", //bunch of standard libraries with types
+					"dom" //other types useful for frontend
+				],
+				
+				"outDir": "lib",
+				"removeComments": true,
+				"target": "ES6",
+				
+				"baseUrl": "./",
+				"esModuleInterop": true,
+				"moduleResolution": "node",
+				"paths": {}
+				
+				"sourceMap": true,
+				"sourceRoot": "/",
+				
+				//strict checks force you to use best-practice stuff
+				"alwaysStrict": true,
+				"allowUnreachableCode": false,
+				"noImplicitAny": true,
+				"strictNullChecks": true
+			},			
+			"include": ["./**/*.ts"],
+			"exclude": [
+				"node_modules/**/*"
+			]
+		}

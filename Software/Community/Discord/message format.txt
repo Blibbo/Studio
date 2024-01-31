@@ -1,0 +1,8 @@
+SHORTCUTS
+	TEXTING
+		Ctrl + Backspace deletes the whole message
+		
+FORMAT
+	```languagename //language name is optional. Colors the code
+		code
+	```

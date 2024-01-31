@@ -1,0 +1,18 @@
+To get mailchimp for php:
+
+https://mailchimp.com/developer/marketing/guides/quick-start/
+composer require mailchimp/marketing
+
+
+SSL connection - cURL error
+	visit this page for all the info or keep reading: https://docs.boltcms.io/5.0/howto/curl-ca-certificates
+	download this file: https://curl.haxx.se/ca/cacert.pem
+	put the file anywhere
+	add this line to your php.ini file:
+	curl.cainfo = "C:\path\to\cacert.pem"
+	**they're backslashes**
+	
+	TO VIEW THE FILE PATH IN THE .ini FILE:
+		var_dump(ini_get('curl.cainfo'));
+
+API Reference: https://mailchimp.com/developer/marketing/api/lists/get-list-info/

@@ -1,0 +1,4 @@
+OCAML
+	-relies on recursion
+	-tail call optimization
+		no function call stack memory limits

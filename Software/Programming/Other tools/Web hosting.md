@@ -1,0 +1,54 @@
+---
+tags:
+  - software
+  - web-development
+---
+---
+### Tools
+
+- Remote hosting:
+	- Services:
+		- [000webhost](https://www.000webhost.com/)
+			- has a free plan
+			- server side computation ([[php]] allowed)
+			- limited storage (no [[Laravel]])
+		- [[GitHub]]
+			- free
+			- no server side computation
+				- no php, no database
+			- static pages
+	- about remote hosting:
+		- you can turn off your pc (you're not the one answering requests)
+		- the remote server has the entire website data and is answering requests
+		- these services basically offer cloud storage
+		- free service?
+			- very limited storage
+			- no power over domain name
+			- no dependencies (they require serious storage space)
+				- no [[Node.js|Node]]
+				- no [[Composer]]
+- Tunneling:
+	- Software:
+		- [ngrok](https://ngrok.com/)
+			- **About ngrok:**
+				- excellent free plan
+				- one permanent (but random) free domain
+			- **Installation ([[Chocolatey]]):**
+				- `choco install ngrok`
+			- **Commands:**
+				- `ngrok config add-authtoken your-token`
+					- you only need to do this once
+					- you find your token by logging in to the site
+				- `ngrok http 80`
+		- [localtunnel](https://theboroer.github.io/localtunnel-www/)
+			- has a free plan
+	- about tunneling:
+		- can't turn off your pc
+			- you're answering requests
+			- you're also pretending to be the host you're tunneling to
+			- _nobody shall know who's providing the service_
+			- ~~you're batman~~
+		- doubles response time
+		- everything is encrypted
+		- free? 
+			- random ass domain, probably

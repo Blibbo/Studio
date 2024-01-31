@@ -1,0 +1,6 @@
+ELIXIR
+	-doesn't provide loops
+	-only has immutable variables
+	-runs on the BEAM virtual machine
+		erlang also uses it
+	-has ruby's syntax

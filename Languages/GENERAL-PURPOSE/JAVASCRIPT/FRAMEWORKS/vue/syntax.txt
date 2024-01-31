@@ -1,0 +1,251 @@
+OPTIONS API
+	MOUNT VUE ON A TAG THROUGH ITS ID
+	<script>
+		Vue.createApp({appObject}).mount('#app');
+	</script>
+
+	REPLACE appObject WITH:
+	{
+		data(){
+			return {//DECLARE VARIABLES FOR YOUR VUE COMPONENT
+				var1: 'val1',
+				var2: 'val2'
+			}
+		},
+		//HOOKS
+		created(){},
+		mounted(){
+			//code to execute on .mount()
+		},
+		unmounted(){},
+		methods: {
+			methodName() {
+				//code
+				/*
+					NOTE: variables inside data() mentioned here have this syntax: this.variableName
+					that's because you're inside the application object class
+				*/
+			}
+		},
+		computed: { /*methods whose results can be cached. They don't get called, they're
+			basically variables*
+			myMethod(){
+				return 'something'; //it remembers what this function returned
+			}
+		}
+		components: {
+			'my-component': {
+				/*
+					this is structured exactly like the app object. It's another vue component.
+					It can have a data(){return {}} method or a methods: {} object
+					
+					to render a vue component, render it like any html tag.
+					Ex: <my-component> </my-component>
+					You use this syntax on the template of the parent, obviously. You can't
+					render a component inside itself.
+				*/
+			},
+			'my-other-component': {
+				template: ` //it needs backticks. Renders the markup
+					<any-markup>
+						<slot /> /*that's the slot in between the component's opening and
+							closing tag*/
+							
+						//NAMED SLOTS
+						
+						<slot name="myName" />
+						<h1 v-if="$slots.header"><slot name="header" /></h1> /*this is really
+							common*/
+					</any-markup>
+					
+				<!--PARENT COMPONENT: NAMED SLOTS
+					<template v-slot:default>
+						/*
+							this is the same as writing inside the component tag. Change
+							the "default" to complete a different slot.
+							The name you use must match a name of a slot used by the component
+						*/
+					</template>
+					
+				-->
+				`,
+				
+				props: { //things you can pass to the component as attributes
+						/*
+							the parent would have to pass :my-prop="" for this to be "myProp".
+							Markup isn't case sensitive and vue adjusts for that.
+						*/
+					myProp: String //it only accepts strings as myProp
+						//OR
+					myProp: {
+						type: String,
+						default: 'defaultValue'
+					}
+				}
+			}
+		}
+	}
+	EXPORTING COMPONENTS:
+		make a js module like this:
+		export default {
+			//your component object
+		}
+		
+	IMPORTING COMPONENTS:
+		to import a module, you need to be in a module.
+		Make your script type="module" and then import like this:
+			import componentObject from "./your/pathTo/Component.js";
+		THEN don't forget to add the imported componentObject to your components{} object.
+			if you don't use a key (like components{'cKey':componentObject}) then the syntax
+			to use the component defaults to camel case interpreted as follows:
+				<component-object></component-object>, otherwise it'll just be <c-key>
+
+	MEANWHILE ON THE VUE COMPONENT:
+		MOUSTACHE SYNTAX
+			/*
+				MOUSTACHE SYNTAX CANNOT BE USED INSIDE ATTRIBUTE STRINGS LIKE IN LARAVEL BLADE
+				use v-bind to get the desired result though
+			*/
+			
+			<div id="app">
+				{{ variable }} //echoes out javascript processed, reactive state values.
+			</div>
+			
+			<pre>
+				{{ myObject }} //it gets jsonified
+			</pre>
+		
+		ATTRIBUTES:
+			v-model="vueDataVar" /*elements with this attribute have their value attribute linked
+				to the variable. Rewriting the value of one sets the value of the other
+				LONG FORM: :value="vueDataVar" @input="vueDataVar = $event.target.value"*/
+			CUSTOM COMPONENT v-model:
+				modelValue is the default prop name. You can customize it through v-model:myName
+				DEFAULT EVENT
+					'update:modelValue'
+				you can just emit it like this: $emit('update:modelValue', myValue)
+				and you don't need to listen to any event on the other side (the parent
+				component)
+			
+			v-bind:htmlattribute="vuevariable" //bind the element's attribute to vue's source of truth
+			:htmlattribute="vuevariable" //shorthand for v-bind: is just :
+			
+			:CLASS BINDINGS
+				class bindings accept arrays, strings or objects. Here's an example with
+				the object
+				:class="{
+					'main classes': true,
+					'val1 classes': prop1 === 'val1',
+					'val2 classes': prop1 === 'val2',
+					'val3 classes': prop1 === 'val3',
+				}"
+				so you're applying classes conditionally, based on the component's prop1
+			
+				NB: you can use a regular class attribute and then ALSO another v-binded class
+					attribute and they'll both work together.
+			
+			LOOPS:
+				v-for="myElement in myArray" //repeats the component for elements in the array
+				:key="uniqueValForTheArray" //always use this in foreach's
+			
+			CONDITIONALS:
+				v-if="condition" //renders if true, comments the block if false
+				v-show="condition" /*uses display:none, better if you have to toggle it
+					over and over again*/
+			EVENTS:
+				v-on:eventName="vueMethod" /*calls the method on the event.
+					don't call it here though, you just have to pass the method's name*/
+				v-on:click="doSumn" //when you click the element
+				@click="" //shorthand for v-on:click=""
+				
+				@submit="myAction" //only works on forms. myAction gets passed the event
+				@submit.prevent="" //calls .preventDefault() on the event automatically
+				
+				CHILD COMPONENT TO PARENT COMPONENT
+					this.$emit("myCustomEvent", this.myChildComponentData); //
+				THEN ON THE PARENT
+					listen to the custom event through v-on: (@)
+					Ex: <my-child-component @myCustomEvent="myAction"></my-child-component>
+						methods:{
+							myAction(childComponentData){
+								//this has the injected data passed through with the event
+							}
+						}
+						/*if you don't want to use a method and want to inline the code,
+							the $event variable will contain the parameter automatically.
+							No need for an immediately invoked function expression
+					NB: inside the parent component file, the custom event only exists
+						in the child component. Use it as an attribute of the child component.
+					*/
+				
+				@input="" /*fires on an input whenever you type into it or something
+					it passes an input parameter (accessible through $event or with a custom
+					name if you use a function)
+					$event.target //the input tag
+				*/
+
+			v-text="ciao" /*leave the text between the opening and closing tag empty and use
+				this if you want to avoid moustache syntax for whatever reason*/
+
+			v-slot:slotName /*only a template tag can use it, and it must be inside a component
+				tag.*/
+			#slotName //shorthand for v-slot:slotName
+
+	VARIABLES
+		$event /*accessible when listening to an event inline. Contains the parameter
+			that would have been passed to the event handling function */
+		$slots /*accessible in a component. It has a key for each slot in the component.
+			The keys only have a value if the parent component filled that specific slot.
+			Great to use with v-if. Ex: v-if="$slots.heading"*/
+			
+	MIXINS
+		look it up. Worse composables.
+
+COMPOSITION API
+	https://vuejs.org/guide/extras/composition-api-faq.html#what-is-composition-api
+	
+	INSIDE A COMPONENT
+		//the file format is .vue
+		<template><h1>your markup</h1></template>
+	
+		<script setup lang="ts"> //use typescript
+			
+		</script>
+	
+	IMPORT A COMPONENT
+		
+		AT SIGN (@)
+			check webpack.base.conf.js
+		
+	ENUM
+		//enum file to import:
+		export enum YourEnumType{
+			MYVALUE = "a value",
+			VALUE2 = "another value"
+		}
+	
+	METHODS
+		let myMethod = ()=>{};
+	
+	GET THE ROUTERLINK AND VIEW
+		import { RouterLink, RouterView } from "vue-router";
+	
+	COMPOSABLES
+		make a src folder called composables
+		make a .js file and export a function called like the file, then declare functions inside it:
+			export function myFileName(){
+				function myFunction(){}
+				
+				return { myFunction };
+			}
+		use the function in other components:
+		
+		import {myFileName} from "@/composables/myFileName";
+		let { myFunction } = myFileName();
+	
+	REACTIVITY TRANSFORM //DOESN'T WORK AT ALL and breaks everything
+		https://vuejs.org/guide/extras/reactivity-transform.html
+		just use this
+			import { $ref } from 'vue/macros'
+		then use $ref() instead of ref() and you won't need to use .value on reactive data
+		

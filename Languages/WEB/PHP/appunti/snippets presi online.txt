@@ -1,0 +1,7 @@
+/*
+	Alternativa all'estensione deprecata di chrome/edge var_masterpiece
+	il secondo parametro è il nome della variabile che verrà mostrata.
+*/
+function highlight_array($array, $name = 'var') {
+	highlight_string("<?php\n\$$name =\n" . var_export($array, true) . ";\n?>");
+}

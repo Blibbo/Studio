@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "thorletto";
+    src: url(fonts/thorletto/Thorletto.ttf);
+}
+
+@font-face {
+    font-family: "fire";
+    src: url(fonts/plastic\ explosive/plastic.ttf);
+}
+
+body{
+    font-size: 100px;
+    text-shadow: 0 0 50px rgb(0, 0, 0);
+    color:white;
+    height:100%;
+    font-family: "thorletto";
+    width:100%;
+    text-align: center;
+    line-height: 100vh;
+    background-color: rgb(18, 16, 21);
+}
+
+.behind{
+    /*center*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid rgba(255,255,0,0);
+    padding: 10px;
+
+    /*style*/
+    background-color: rgba(38, 32, 47, 0);
+    background-image: url(imgs/planer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width:700px;
+    height:700px;
+    /*border-radius: 100%;*/
+    z-index: -1;
+}

@@ -1,0 +1,161 @@
+Cartesian plane -> euclidean space
+scale a point -> multiply a point. (scaling coordinates by (1,1,-1) doesn't sound like "scaling" but it is)
+
+vector spaces:
+	-every vector inside them is defined by a basis
+	-"a basis" means "the axes".
+	-the axes are linearly independent unit vectors whose linear combination can represent every vector in the space
+	
+	change of basis: common operation, for example passing from 3D to 2D
+	
+HANDEDNESS OF THE COORDINATE SYSTEM
+	right hand coordinate system:
+		-lookvectors have a negative z component
+		
+	left hand coordinate systems:
+		-lookvectors have a positive z component (ew).
+		-To remember: lefty: ew weird. Right hand = common, normal
+	NOTE
+		you can label these axes whatever the fuck you want, you can't mess it up.
+		it's right handed if:
+			-up is up
+			-right is right
+			-forward is towards you
+		they can be labeled (n,m,g) for all it matters
+		
+coordinate systems in the rendering pipeline:
+	object, local, camera and screen
+	
+linear operators to make linear transformations
+	-scale
+	-translate
+		change from one coordinate system to another:
+			-1 point
+			-1 another point (representing another coordinate system)
+			point-other point = point in the other coordinate system
+			
+about vectors
+	-||V|| is the magnitude. also called length or norm (||V|| is called double bar notation)
+	-to calculate the magnitude, you can extend the pythagorean theorem to the third dimension
+		sqrt(x^2 + y^2 + z^2)
+	
+	NORMALIZATION:
+		-the mathematical notation is V with a ^ over it.
+		-normalizing it is as simple as calculating the length and dividing each component by it
+		-so ^V = V/||V||
+		-"norm" is a function to assign a specific length
+		-this function (where the assigned length is 1) is called Euclidean norm
+		
+	DOT PRODUCT
+		-remains the same under linear transformation
+		
+		
+		the dot product of:
+			-2 normalized vectors is equal to the cosine of the angle between the vectors
+				-it seems to be the case that acos(A.B) = angle between the vectors
+				-my intuition tells me you can't do acos(cos(A.B)) because then you'd find 2 angles
+				-apparently you CAN but in order for the result to be accurate you have to
+					do like pi - cosValue in case cosValue is negative
+			-A and B where ||B||=1 is equal to the magnitude of the projection of A onto the dir. of B
+				-if you divide this magnitude by the magnitude of the non normalized vector, you get
+					the cosine again
+			-A and B where neither is normalized is equal to a number with a non significant raw numerical
+				value that has important properties. The ones I know are:
+				-divide it by either magnitude and you'll obtain the magnitude of
+					the projection of A onto B (if divided by B) or B onto A (if divided by A)
+				-on its own, if the angle is right (90 degrees, not "correct") then the product is 0
+		
+		PROJECTION OF A ONTO THE DIRECTION OF B
+			-has the direction of B
+			-has a magnitude equal to the leg (that coincides with a part of the B vector)
+				of the right triangle built with A as the whole hypothenuse
+				
+	ROW MAJOR
+		-preferred convention
+		-pre multiplication / left multiplication (point first)
+	COLUMN MAJOR
+		-transformations have to be applied in reverse. P * Rx * Ry becomes Ry * Rx * P
+			where Rx and Ry are matrices that apply rotations to the x and y axes respectively
+		-physics and maths use this notation
+		
+	CROSS PRODUCT
+		-calculates the components of a vector that's orthogonal to the other two
+		-the other two must not necessarily be orthogonal
+		-it's anticommutative (changing the order changes the sign of the result)
+
+ABOUT MATRICES
+	SCALE MATRIX
+		2 0 0
+		0 2 0
+		0 0 2
+		
+		-UNIFORM SCALE: the values on the axes are the same
+		-this doubles the size of each vector and doubles the magnitude, or the distance from the origin
+		-if the scale factor is -1 you flip it along each axis
+		
+	INVERSE OF A MATRIX
+		-hard to compute
+		-calculation involves cofactors and determinants
+		-multiplied by each other the result is the identity matrix
+		-M * 1/M = M/M = 1 (identity matrix)
+		
+	ORTHOGONAL MATRICES
+		 3  1  3	 5  7
+		-1  1  2	-7  5
+		-3 -2  3
+		
+		-transpose is equal to its inverse
+		
+	ABSOLUTELY INCOMPREHENSIBLE GIBBERISH
+		https://www.scratchapixel.com/lessons/mathematics-physics-for-computer-graphics/geometry/transforming-normals.html
+		
+	WHY 4X4
+		FOURTH ROW:
+			-x, y and z translation. Just adds stuff to each coordinate during multiplication
+			-requires the point to have "1" to add the full scale
+			-it's just cheating to squeeze in translation
+			-in 4x3 matrices, if the point's w is .5 you get half the translation indicated
+		FOURTH COLUMN:
+			-it's "0 0 0 1".
+			-w=1 is uninfluenced by everything as it's just a cheat
+			-that's why xyz multipliers are 000 and w's is 1
+			-w is just there, chilling
+			-^until it isn't.
+			-w is used in shear and projective transformations
+			-0 0 0 1 becomes a clusterfuck when that happens
+	GIMBAL LOCK
+		there are two specific orientations that cause problems apparently
+		https://en.wikipedia.org/wiki/Gimbal_lock
+	
+		BOTTOM OF THIS PAGE:
+			https://www.scratchapixel.com/lessons/mathematics-physics-for-computer-graphics/geometry/transforming-points-and-vectors.html
+			Quaternions are better?? Analysis is based??
+			
+WORLD SPACE AND OBJECT SPACE
+	-point moves according to which plane it's being read in
+		FROM OBJECT TO WORLD SPACE
+			P' =  P x WM (world matrix)
+				-P is expressed in object space
+				
+		FROM WORLD SPACE TO OBJECT SPACE
+			P' = P x OM (object matrix)
+			
+	-point stays where it is but is expressed in the other frame (???)
+	
+SPHERICAL COORDINATES
+	theta (θ): vertical angle, range 0, π
+	phi (φ): horizontal (plane) angle, range 0, 2π
+	r: radial distance, the magnitude of the vector
+		xyz -> Vr Vu Vf
+		
+PROBLEM WITH ASIN, ACOS AND ATAN
+	-in the unit circumference, you have:
+		-2 points with the same sine (2 quadrants, y axis is the axis of symmetry)
+		-2 points with the same cosine (2 quadrants, x axis is the axis of symmetry)
+		-2 points with the same tangent (1st and 3rd quadrant)
+	-no problem calculating sin, cos and tan for any point
+	-if you have the sin/cos/tangent though, and you want the angle used to calculate it?
+	-which angle? Depends on the point. You can't invert this function
+	
+LOCAL COORDINATE SYSTEM
+	-directions are called right, up and dow

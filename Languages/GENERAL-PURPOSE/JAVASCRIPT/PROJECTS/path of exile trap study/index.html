@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="//unpkg.com/alpinejs" defer></script> -->
+</head>
+<body class="h-full grid place-items-center">
+
+    <div class="h-full grid place-items-center absolute pointer-events-none">
+        <img id="winElement" style="opacity: 0" src="res/img/gigavasta.png" class="w-96 h-96 duration-500 pointer-events-none"/>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4">
+        <div id="0" class="bg-black w-24 h-24 duration-500" onclick="clicked(this.id)"></div>
+        <div id="1" class="bg-gray-500 w-24 h-24 duration-500" onclick="clicked(this.id)"></div>
+        <div id="2" class="bg-black w-24 h-24 duration-500" onclick="clicked(this.id)"></div>
+        <div id="7" class="bg-black w-24 h-24 duration-500" onclick="clicked(this.id)"></div>
+        <div class="w-24 h-24"></div>
+        <div id="3" class="bg-black w-24 h-24 duration-500" onclick="clicked(this.id)"></div>
+        <div id="6" class="bg-black w-24 h-24 duration-500" onclick="clicked(this.id)"></div>
+        <div id="5" class="bg-black w-24 h-24 duration-500" onclick="clicked(this.id)"></div>
+        <div id="4" class="bg-black w-24 h-24 duration-500" onclick="clicked(this.id)"></div>
+    </div>
+</body>
+</html>
+
+<script>
+    const winElement = document.getElementById("winElement")
+    var elements = []
+    for(let currId = 0; currId<8; currId++){
+        elements.push(document.getElementById(currId))
+    }
+
+
+    function clicked(id){
+        id = parseInt(id)
+        involvedElements = [
+            elements[id-1==-1? 7 : id-1],
+            elements[id],
+            elements[id+1==8? 0 : id+1]
+        ]
+        
+        for(let i=0;i<3;i++){
+            involvedElements[i].className == "bg-black w-24 h-24 duration-500"
+            ?involvedElements[i].className = "bg-gray-500 w-24 h-24 duration-500"
+            :involvedElements[i].className = "bg-black w-24 h-24 duration-500"
+        }
+
+        //check if win
+        let firstClassFr = ''
+        let failed = false
+        for(let i=0;i<elements.length;i++){
+            if(firstClassFr == ''){
+                firstClassFr = elements[i].className
+            }else{
+                if(firstClassFr != elements[i].className){
+                    failed = true
+                }
+            }
+        }
+
+        if(!failed){
+            winElement.style.opacity = 1
+        }else{
+            winElement.style.opacity = 0
+        }
+
+    }
+</script>

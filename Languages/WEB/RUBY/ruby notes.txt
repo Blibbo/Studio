@@ -1,0 +1,2 @@
+RUBY
+	-has the same syntax as elixir

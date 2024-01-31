@@ -1,0 +1,28 @@
+Laravel breeze is a minimal authentication starter kit
+https://laravel.com/docs/9.x/starter-kits
+
+go on your app folder and run this command
+composer require laravel/breeze --dev
+
+php artisan breeze:install
+"git status" is a command which explains what the previous command did
+you can't run it like that though, just google what you gotta download to use it
+	
+node -v
+npm -v
+if both work it means you have both node and npm and you're set to go
+
+now run:
+	npm install && npm run dev 
+		handles front end dependancies. package.json as opposed to the php dependancies handled
+		by composer.json
+	
+	npm run dev
+		is enough for all the other times you gotta start the server
+
+in your project's database folder make a databaseName.sqlite file (sqlite is file based)
+.env
+	DB_DATABASE: absolute path of your db. Cd in there and use "cd" to see the current path
+	
+then migrate your tables and you're good to go. There will be a bunch of new views and
+controllers in your projects, change the views to match the website's style

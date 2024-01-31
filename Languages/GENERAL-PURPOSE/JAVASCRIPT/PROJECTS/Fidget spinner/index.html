@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="h-full w-full">
+    <div class="h-full w-full flex flex-col justify-center">
+        <div class="w-full flex items-center justify-center">
+            <img id="spinner" src="res/img/spinner.png" class="w-48 h-48 origin-center relative left-24">
+            <img src="res/img/bearing.png" class="w-48 h-48 relative -left-24">
+        </div>
+
+        <div class="mt-12 flex justify-center">
+            <button class="bg-blue-500 text-white rounded-lg p-1 hover:bg-blue-300" onclick="speedUp()">+0.5 speed</button>
+            <button class="bg-red-500 text-white rounded-lg p-1 hover:bg-red-300 ml-5" onclick="slowDown()">-0.5 speed</button>
+        </div>
+    </div>
+
+    <script>
+        function sleep(seconds){
+            return new Promise(resolve=>setTimeout(resolve, seconds*1000));
+        }
+
+        var incr = 1;
+
+        (async function(){
+
+
+
+            const spinner = document.getElementById("spinner")
+            let i = 0
+
+            while(true){
+                spinner.style.transform = "rotate(" + i + "deg)"
+                i+=incr
+                await sleep(.001)
+            }
+        }());
+
+
+
+        function speedUp(){
+            incr += .5
+        }
+
+        function slowDown(){
+            incr -= .5
+        }
+    </script>
+</body>
+</html>

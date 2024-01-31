@@ -1,0 +1,5 @@
+https://www.scratchapixel.com/lessons/3d-basic-rendering/perspective-and-orthographic-projection-matrix/projection-matrices-what-you-need-to-know-first.html
+
+^ mentioned in that link. More on Ch. 4 of that lesson.
+
+A lesson on the Cohen-Sutherland algorithm should have been added to the section on advanced rasterization

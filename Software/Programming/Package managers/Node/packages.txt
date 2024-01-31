@@ -1,0 +1,113 @@
+SWEETALERT2
+	https://sweetalert2.github.io/
+	
+	INSTALLATION
+		npm install sweetalert2
+	CDN
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	USAGE
+		import Swal from 'sweetalert2'
+
+		const Swal = require('sweetalert2')
+		
+		Swal.fire({
+		  title: 'Error!',
+		  text: 'Do you want to continue',
+		  icon: 'error',
+		  confirmButtonText: 'Cool'
+		})
+	ICONS:
+		'error'
+		'success'
+		'warning'
+		'info'
+		'question'
+
+CAROUSELS
+	https://madewithvuejs.com/carousels
+
+	SWIPER VUE --funny cube
+		https://swiperjs.com/element
+		
+		DEMOS
+			https://swiperjs.com/demos
+
+	VUE CAROUSEL
+		https://github.com/SSENSE/vue-carousel
+
+VUEFORM SLIDER
+	INSTALLATION
+		https://github.com/vueform/slider#installation
+		
+		npm install @vueform/slider
+		
+	USAGE
+		TEMPLATE
+			<Slider v-model="value" />
+
+		SCRIPT
+			import Slider from '@vueform/slider'
+			const value = ref([10,20]); //makes a double sliders. You can add as many as you want
+		
+		UNDER THE SCRIPT:
+			<style src="@vueform/slider/themes/default.css"></style>
+
+
+SWEETALERT
+	https://www.npmjs.com/package/sweetalert
+	
+	INSTALLATION
+			npm install sweetalert --save-dev
+		OR
+			npm install --save sweetalert
+		
+	USAGE
+		import swal from 'sweetalert';
+		
+		swal("Hello world!");
+
+JSON SERVER
+	pull in a fake API
+		npm install json-server --save-dev
+	HELP
+		npx json-server
+	MAKE A JSON RESOURCE OUT OF A JSON FILE
+		npx json-server file_name.json
+			you can add -p 3001 to specify the port (in this case I put 3001 just to avoid using
+			the same one npx serve uses)
+		if you change the file, be sure to Ctrl + C and boot up the server again to see the
+		changes.
+		
+	SETUP
+		after you install json-server you'll have a package.json file. Go inside it
+		and add "scripts":{
+			"start": "command & other command" /*use && to wait for the first one to execute
+				the second. Also json doesn't have comments*/
+		}
+	THEN USE
+		npm run start
+	to call the "start" script in the package.json. Could have been anything else other
+	than "start"
+	
+	CONCURRENTLY
+		make commands run at the same time. Windows limitation doesn't allow it by default.
+			npm install concurrently --save-dev
+		then in your package.json
+			"start": "concurrently --kill-others \"command\" \"other command\""
+		then to execute
+			npm run start
+		another common name is dev. So npm run dev
+		
+	ALTERNATIVELY
+		you can have multiple "start" commands in your package.json scripts. It's just
+		that they'll open a console window each.
+
+LODASH
+	npm install lodash
+	import { cloneDeep } from 'lodash'; //import generic function from lodash
+	
+	cloneDeep(obj); //returns a deep copy of the object
+
+COWSAY WOW
+	npx cowsay wow
+		può scrivere altre cose

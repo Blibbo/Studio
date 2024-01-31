@@ -1,0 +1,397 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*found at http://html5doctor.com/html-5-reset-stylesheet/*/
+
+:root {
+    --lightBlue:#1e90ff;
+    --darkBlue: rgb(42, 66, 110);/*29, 46, 77*/
+    --hoverColor: rgb(56, 88, 146);
+}
+
+html {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+*,*::before,*::after {
+    box-sizing:inherit;
+}
+
+.wrapper{
+    width:70%;
+    margin:0 auto;
+}
+
+#TopBar{
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color: var(--darkBlue);
+    line-height: 60px;
+    height:60px;
+    display:inline-block;
+    z-index: 99999999;
+    overflow:hidden;
+}
+
+.barReplacement{
+    height:60px;
+    background-color: rgba(255,255,255,0);
+}
+
+#TopBar ul{
+    width:100%;
+    background-color:red;
+}
+
+.right{
+    float:right;
+}
+
+#TopBar li{
+    float:left;
+}
+
+#TopBar a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display:block;
+    font-weight: 900;
+
+    padding: 0 20px;
+    transition-duration:200ms;
+    text-shadow: 0 0 40px black;
+    text-align: center;
+}
+
+#TopBar a:hover{
+    background-color: var(--hoverColor);
+    text-shadow: 5px 5px 5px black;
+    box-shadow: 5px 0px 5px black;
+}
+
+#Selected{
+    display:block;
+    border-bottom: 5px solid rgba(255, 255, 255, 1);
+    height:60px;
+}
+
+body{
+    background-color:black;
+}
+
+#background{
+    opacity:.2;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: black url(images/background2.jpg) no-repeat fixed center;
+    background-size: 100% 100%;
+    z-index: -9999;
+}
+
+html, body{
+    height:100%;
+}
+
+#container{
+    height:100%;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+footer {
+    position:relative;
+    bottom:10px;
+}
+
+#footer{/*table row*/
+    height:0px;
+    width:0px;
+}
+
+footer li{
+    float: left;
+}
+
+footer h6, footer a{
+    text-decoration:none;
+    padding: 0 20px 5px;
+    color: white;
+    text-shadow: 0 0 10px white;
+    font-size: 25px;
+    border-color: white;
+    display:block;
+    border-width: 2px;
+    border-right-style:solid;
+}
+
+.inlineImg{
+    padding: 0 20px 5px;
+    height:25px;
+    width:25px;
+    display:inline-block;
+    background-size: 100% 100%;
+}
+
+section, .specialSection{
+    margin: 30px auto;
+    border-radius: 20px;
+    background-color:white;
+}
+
+article{
+    padding: 40px;
+}
+
+h1{
+    color: black;
+    font-weight: 900;
+    font-family: monospace;
+    font-size: 40px;
+}
+
+h2{
+    color: black;
+    font-weight: 900;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    line-height:35px;
+}
+
+.noBorder{
+    border-style: none;
+}
+
+.separator, .specialSeparator{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 3px;
+    background-color: var(--hoverColor);
+    box-shadow: 0 0 3px black;
+}
+
+.specialSection{
+    background-color: rgba(0,255,255,0);
+    text-align: center;
+}
+
+.specialSection .separator{
+    box-shadow: 0 0 20px white;
+    height:10px;
+}
+
+.specialSection h1{
+    color: white;
+    text-shadow: 0 0 20px white;
+    font-size: 60px;
+}
+
+.specialSection p{
+    color: white;
+    text-shadow: 0 0 10px white;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.specialSection .hazardContainer{
+    display:flex;
+    overflow:auto;
+    list-style-type:none;
+    width:100%;
+    margin: 0 auto;
+    background-color: rgba(255,0,0,0);
+}
+
+.hazardText{
+    margin:auto 0;
+    overflow:auto;
+    float:left;
+    width: 60%;
+    background-color: rgba(0,130,0,0);
+}
+
+.hazard{
+
+    background: rgba(255,255,0,0) url(images/hazard-sign.png) no-repeat center;
+    background-size: 100% 100%;
+    width:20%;/*200px*/
+    float:left;
+    height:200px;
+
+    margin:auto 0;
+}
+
+.stickyContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+@media only screen and (max-width:768px){/*cellulari*/
+    .inlineImg{
+        padding: 0 5px;
+        height: 10px;
+        width:10px;
+        display:inline-block;
+    }
+    .wrapper{
+        width:99%;
+    }
+    #TopBar a{
+        font-size:10px;
+        padding: 0 10px;
+        letter-spacing: 0;
+    }
+    #Selected{
+        height:40px;
+    }
+    #TopBar{
+        line-height:40px;
+        height:40px;
+    }
+    #TopBar ul{
+        width:fit-content;
+        margin:0 auto;
+    }
+    p{
+        font-size:15px;
+        line-height:25px;
+    }
+    h1{
+        font-size:20px;
+    }
+    h2{
+        font-size:17px;
+    }
+    footer a, footer h6{
+        font-size:10px;
+        padding:0 5px;
+    }
+    footer{
+        height:10px;
+    }
+    /*.specialSection ul{
+
+    }
+    .hazard{
+        width:10%;
+    }*/
+    .specialSection h1{
+        font-size: 25px;
+    }
+    .specialSection p{
+        font-size: 20px;
+    }
+}

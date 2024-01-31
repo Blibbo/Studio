@@ -1,0 +1,12 @@
+dir /s /b java.exe let me find my jres. I fucked around with the javapaths
+to see if something was wrong with my java  (nothing was wrong with it)
+	WHICH I HAD (in order):
+		C:\Program Files\Common Files\Oracle\Java\javapath --19
+
+		C:\Program Files (x86)\Common Files\Oracle\Java\javapath --1.8.0_321-b07
+
+		C:\ProgramData\Oracle\Java\javapath --1.8.0_321-b07
+
+
+	TO TEST
+		C:\Users\All Users\Oracle\Java\javapath\java.exe --1.8.0_321-b07

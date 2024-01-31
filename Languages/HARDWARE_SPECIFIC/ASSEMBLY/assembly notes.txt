@@ -1,0 +1,20 @@
+ABOUT THE LANGUAGE
+	-your variables are registers
+	-change cpu, change registers
+	-these notes refer to a x64 CPU
+	-64 is the width in bits of the registers
+	-always matches the width of the instruction sets
+	
+SYTNTAX
+	REGISTER NAMES
+		RDI
+
+	ASSIGNMENT
+		MOV RDI, 8
+		MOV RDI, RSI
+		
+		QWORD PTR
+			MOV 
+			
+	COMMENTS
+		;my comment
