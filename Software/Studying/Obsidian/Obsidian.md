@@ -15,7 +15,7 @@ tags:
 - [[Markdown#^syntax-highlighting|Syntax highlighting]] in [[Markdown#^fenced-syntax|codeblocks]] happens through [[Prism.js]] in reading mode
 	- **[Available languages](https://prismjs.com/#supported-languages)**
 	- editing mode uses CodeMirror so that list has nothing to do with it.
-	- Yes, this SUCKS BALLS
+	- Yes, this SUCKS BALLS and creates inconsistencies
 
 ---
 
