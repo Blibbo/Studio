@@ -103,7 +103,7 @@ WHERE file.name != this.file.name
 
 - **Windows Registry Editor** ^registry-editor
 	- open it: [[#^regedit]]
-	- show address bar: View > address bar
+	- _show address bar_: View > address bar
 - **Remove program from context menu** (when you right click your desktop or whatever)
 	- a program in your context menu typically has 2 registry editor entries:
 		- the one for when you right click on a file
