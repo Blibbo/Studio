@@ -19,6 +19,8 @@ tags:
 
 ### Shortcuts
 
+- `Ctrl + L`
+	- select address bar
 - `Ctrl + Shift + I`
 	- toggle devtools window
 - `F12`

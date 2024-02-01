@@ -101,6 +101,7 @@ tags:
 	- `{latex}$\sim$`
 		- $\sim$
 	- **Arrows:**
+		- [Reference](https://garsia.math.yorku.ca/MPWP/LATEXmath/node9.html)
 		- `{latex}$\to$`
 			- ${ \to }$
 		- `{latex}$\rightarrow$`
