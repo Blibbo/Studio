@@ -104,18 +104,25 @@ tags:
 		- [Reference](https://garsia.math.yorku.ca/MPWP/LATEXmath/node9.html)
 		- `{latex}$\to$`
 			- ${ \to }$
-		- `{latex}$\rightarrow$`
-			- $\rightarrow$
-		- `{latex}$\Rightarrow$`
-			- $\Rightarrow$
-		- `{latex}$\Leftrightarrow$`
-			- $\Leftrightarrow$
+			- also `{latex}$\rightarrow$`
 		- `{latex}$\leftrightarrow$`
 			- $\leftrightarrow$
-		- `{latex}$\leftarrow$`
-			- $\leftarrow$
+		- `{latex}$\Rightarrow$`
+			- $\Rightarrow$
 		- `{latex}$\Leftarrow$`
 			- $\Leftarrow$
+		- `{latex}$\Leftrightarrow$`
+			- $\Leftrightarrow$
+		- `{latex}$\leftarrow$`
+			- $\leftarrow$
+		- `{latex}$\nwarrow$`
+			- ${ \nwarrow }$
+		- `{latex}$\nearrow$`
+			- ${ \nearrow }$
+		- `{latex}$\swarrow$`
+			- ${ \swarrow }$
+		- `{latex}$\searrow$`
+			- ${ \searrow }$
 	- **Font stuff:**
 		- **Info**
 			- can't preserve whitespace

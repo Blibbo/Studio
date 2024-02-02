@@ -81,3 +81,29 @@ tags:
 		- `=<`
 			- `{latex}\impliedby`
 			- ${ \impliedby }$
+
+---
+
+### My snippets
+
+- `mk`
+	- `${  }$`
+- `stackrel`
+	- `{latex}\stackrel{$1}{$0}$2`
+	- ${ \stackrel{hello}{\longrightarrow} }$
+	- `stackrel1TAB2TAB3`
+		- ${ \stackrel{2}{1}3 }$
+- `-->`
+	- `{latex}\longrightarrow`
+	- ${ \longrightarrow }$
+- `<--`
+	- `{latex}\longleftarrow`
+	- ${ \longleftarrow }$
+- `<->`
+	- ${ \leftarrow }$
+- `<=>`
+	- ${ \Leftrightarrow }$
+- `<-->`
+	- ${ \longleftrightarrow }$
+- `<==>`
+	- ${ \Longleftrightarrow }$

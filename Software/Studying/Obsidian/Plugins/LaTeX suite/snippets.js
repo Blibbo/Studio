@@ -1,6 +1,6 @@
 [
 	// Math mode
-	{trigger: "mk", replacement: "${ $0 }$$1", options: "tA"},
+	//{trigger: "mk", replacement: "$ $0 $$1", options: "tA"},
 	{trigger: "dm", replacement: "$$\n$0\n$$", options: "tAw"},
 	{trigger: "beg", replacement: "\\begin{$0}\n$1\n\\end{$0}", options: "mA"},
 
@@ -144,7 +144,7 @@
 	{trigger: "set", replacement: "\\{ $0 \\}$1", options: "mA"},
 	{trigger: "=>", replacement: "\\implies", options: "mA"},
 	{trigger: "=<", replacement: "\\impliedby", options: "mA"},
-	{trigger: "\\leq>", replacement: "\\Longleftrightarrow", options: "mA"},
+	//???{trigger: "\\leq>", replacement: "\\Longleftrightarrow", options: "mA"},
 	{trigger: "iff", replacement: "\\iff", options: "mA"},
 	{trigger: "e\\xi sts", replacement: "\\exists", options: "mA", priority: 1},
 	{trigger: "===", replacement: "\\equiv", options: "mA"},
@@ -255,7 +255,7 @@
 	{trigger: "Vmat", replacement: "\\begin{Vmatrix}\n$0\n\\end{Vmatrix}", options: "mA"},
 	//{trigger: "case", replacement: "\\begin{cases}\n$0\n\\end{cases}", options: "mA"},
 	{trigger: "align", replacement: "\\begin{align}\n$0\n\\end{align}", options: "mA"},
-	{trigger: "array", replacement: "\\begin{array}\n$0\n\\end{array}", options: "mA"},
+	//{trigger: "array", replacement: "\\begin{array}\n$0\n\\end{array}", options: "mA"},
 	{trigger: "matrix", replacement: "\\begin{matrix}\n$0\n\\end{matrix}", options: "mA"},
 
 
@@ -281,7 +281,22 @@
 	// Misc
 	{trigger: "tayl", replacement: "${0:f}(${1:x} + ${2:h}) = ${0:f}(${1:x}) + ${0:f}'(${1:x})${2:h} + ${0:f}''(${1:x}) \\frac{${2:h}^{2}}{2!} + \\dots$3", options: "mA"},
 	
+	// My Math
+	{trigger: "mk", replacement: "${ $0 }$$1", options: "tA"},
+	{trigger: "case", replacement: "\\begin{cases} $0 \\end{cases}$1", options: "mA"},
+	{trigger: "array", replacement: "\\begin{array}\\ $0 \\end{array}$1", options: "mA"},
+	{trigger: "tabb", replacement: "\\quad", options: "mA"},
+	{trigger: "\\quadb", replacement: "\\qquad", options: "mA"},
+	{trigger: "-->", replacement: "\\longrightarrow", options: "mA"},
+	{trigger: "\\leq>", replacement: "\\Leftrightarrow", options: "mA"},
+	{trigger: "\\leftarrow>", replacement: "\\leftrightarrow", options: "mA"},
+	{trigger: "\\leftarrow-", replacement: "\\longleftarrow", options: "mA"},
+	{trigger: "\\longleftarrow>", replacement: "\\longleftrightarrow", options: "mA"},
+	{trigger: "\\longleftarrow>", replacement: "\\longleftrightarrow", options: "mA"},
+	{trigger: "\\leq=>", replacement: "\\Longleftrightarrow", options: "mA"},
+	{trigger: "stack\\mathrm{Re}l", replacement: "\\stackrel{$1}{$0}$2", options: "mA"},
 	
+	// Code
 	{trigger: "fence", replacement: "```", options: "tcA"},
 	{trigger: "bt", replacement: "`", options: "t"},
 	{trigger: "js", replacement: "`{js}$0`$1", options: "tw"},
@@ -291,6 +306,5 @@
 	{trigger: "cpp", replacement: "`{cpp}$0`$1", options: "tw"},
 	{trigger: "html", replacement: "`{html}$0`$1", options: "tw"},
 	{trigger: "dataview", replacement: "```dataview\n$0\n```$1", options: "tAw"},
-	{trigger: "case", replacement: "\\begin{cases} $0 \\end{cases}$1", options: "mA"},
 
 ]
