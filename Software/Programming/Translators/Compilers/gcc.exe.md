@@ -48,7 +48,7 @@ aliases:
 	- adds debugging information in the executable
 	- easier to debug with tools like [[GDB]]
 - `{bash}gcc ... -lm`
-	- `{bash}-l` tells the linker to add a library
+	- `{bash}-l` tells the linker to add a library in the standard path
 	- write the library name without the "lib" prefix and the extension
 	- `{bash}-lm`
 		- [[C#^libm|libm]]
@@ -59,3 +59,7 @@ aliases:
 - `{bash}gcc ... -m64`
 	- explicitly compile in [[x86-64|x64]]
 	- this happens by default you absolutely don't need this
+- **Check compiler flags**
+	- **check for [[AVX2]] or [[AVX-512]]**
+		- `{bash}gcc -march=native -E - < /dev/null | grep avx2`
+		- `{bash}gcc -march=native -E - < /dev/null | grep avx512`

@@ -65,13 +65,20 @@ WHERE file.name != this.file.name
 		- if it finds multiple, it tells you the location of every single one
 	- `tree`
 		- view the folder tree of the directory you're in
-	- `regedit` ^regedit
-		- open system registries editor
-	- `msinfo32` ^msinfo32
+	- `systeminfo`
 		- info about the system
-	- `devmgmt.msc`
-		- device manager
-		- you can see USBs that fail to connect there
+	- `wmic get cpu`
+		- tells you info about the cpu
+		- `wmic get cpu caption`
+			- returns the caption of the CPU (the essential details)
+	- **Commands that open another window**
+		- `regedit` ^regedit
+			- open system registries editor
+		- `msinfo32` ^msinfo32
+			- info about the system
+		- `devmgmt.msc`
+			- device manager
+			- you can see USBs that fail to connect there
 	
 
 ---

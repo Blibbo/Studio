@@ -10,9 +10,9 @@ tags:
 
 - **Original Unix:**
 	- System V Release 4 (**SVR4**): AT&T released the source code for one of the later versions of Unix but not under an open-source license. It had restrictive licensing terms
-- **Unix-based:**
-	- **Berkeley Software Distribution**: The University of California, Berkeley, developed the BSD Unix variant, which was based on the original Unix code. The BSD operating systems (such as **FreeBSD**, **OpenBSD**, and **NetBSD**) are open source ^bsd
-	- [[GNU]]: [[Linux]] is obviously the biggest open-source unix-based os lol
+- **Unix-based (not Unix. I mean yeah Unix, but not original Unix):**
+	- [[Linux|GNU/Linux]]: biggest open-source unix-based os
+	- [[BSD]]: the weird one ^bsd
 
 ---
 

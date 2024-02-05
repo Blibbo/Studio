@@ -8,11 +8,24 @@ tags:
 
 ### About Visual Studio
 
-- **Solutions:**
-	- they have a `.sln` extension
-	- they contain multiple [[#^projects]]
-- **Projects:** ^projects
-	- a project file extension varies based on what kind of project it is
+- powerful [[IDE]] for the [[Windows]] environment
+
+---
+
+### Solutions
+
+- they have a `.sln` extension
+- they contain multiple [[#Projects]]
+
+---
+
+### Projects
+
+- a project file extension varies based on what kind of project it is
+- **Properties:**
+	- **Compiler flags**
+		- flags on the compiler
+		- you can check for stuff like [[AVX2]] support
 
 ---
 
@@ -54,7 +67,7 @@ tags:
 ### [[C]] and [[C++]]
 
 - **Info:**
-	- they have a `.vcxproj` extension (both C and C++)
+	- [[#Projects]] have a `.vcxproj` extension (both C and C++)
 - **Required workload**
 	- [[#^c-workload|Desktop apps development with C++]]
 	

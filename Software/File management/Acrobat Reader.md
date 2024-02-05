@@ -1,0 +1,23 @@
+---
+aliases:
+  - Adobe Acrobat Reader
+---
+---
+
+### About Acrobat Reader
+
+- pdf viewer
+- the mobile app isn't too bad
+
+---
+
+### Night mode on desktop
+
+- [thread](https://community.adobe.com/t5/acrobat-reader-discussions/night-mode-adobe-pc-version/td-p/7157047)
+- "There is no such Night Mode feature in Adobe Reader for Windows however, as a work around you can try this :-
+	- Please Open Adobe Reader, go to Edit menu & select Preferences from the drop-down.
+	- Preferences window will pop up on the screen.
+	- Choose Accessibility from the Categories section.
+	- Now check the Replace Document Color box.
+	- In front of Custom Color Please change the Page Background to Black & Text Document to White.
+	- Click OK to confirm the changes. This will give you the similar result"

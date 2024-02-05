@@ -17,6 +17,13 @@ aliases:
 ### Userland
 
 - [[GNU]], if the distro is GNU based
+- [[Unix#Userland]], in any case
+- **Commands**
+	- `{bash}grep flags /proc/cpuinfo`
+		- find out info about the cpu
+	- `{bash}lscpu`
+		- info about the cpu
+		- check for "Flags" to see if [[AVX2]] or [[AVX-512]] is listed
 
 ---
 

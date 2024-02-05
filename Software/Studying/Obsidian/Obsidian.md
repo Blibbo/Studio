@@ -110,6 +110,9 @@ tags:
 	- open graph view
 - `local graph`
 	- open local graph
+- `open in default app`
+- `add file property`
+- `clear file properties`
 	
 ---
 
