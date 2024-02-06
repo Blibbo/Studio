@@ -103,6 +103,8 @@ tags:
 	- `Ctrl + B`
 		- remove from Bold text
 		- add to "`Toggle left sidebar`"
+	- `Ctrl + I`
+		- remove from toggle italic
 
 ---
 

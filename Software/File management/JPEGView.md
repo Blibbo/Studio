@@ -30,8 +30,10 @@ tags:
 
 - **JPEGView x64 portable crashes when dragging big images**
 	- [Github issue](https://github.com/sylikc/jpegview/issues/53)
+		- [thread i found this other thread on](https://github.com/sylikc/jpegview/issues/53)
 	- **Fix:**
-		- 
+		- config file
+		- `CPUType=SSE`
 
 ---
 
