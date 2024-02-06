@@ -91,6 +91,8 @@ tags:
 	- Settings > Hotkeys
 - `Ctrl + O`
 	- Search note
+- `Ctrl + E`
+	- Toggle reading mode
 - `Ctrl + P`
 	- Open command palette
 - `Ctrl + N`
@@ -106,13 +108,13 @@ tags:
 
 [[Fuzzy search]]. The best type of search
 `Ctrl + P +:`
+- `open in default app`
+- `add file property`
+- `clear file properties`
 - `graph`^graph
 	- open graph view
 - `local graph`
 	- open local graph
-- `open in default app`
-- `add file property`
-- `clear file properties`
 	
 ---
 
