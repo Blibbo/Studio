@@ -88,10 +88,6 @@ tags:
 		- $\sum_{i = 0}^{n}x+i$
 	- `{latex}$\frac{x}{y}$`
 		- $\frac{x}{y}$
-	- `{latex}$\begin{cases} x=1 \\ x=2 \end{cases}$`
-		- $\begin{cases} x=1 \\ x=2 \end{cases}$
-		- `{latex}$\begin{cases} true, & \text{if x=4} \end{cases}$`
-			- ${ \begin{cases} true, & \text{if x=4} \end{cases} }$
 	- `{latex}$A \setminus B$`
 		- $A \setminus B$
 	- `{latex}$\equiv$`
@@ -100,6 +96,38 @@ tags:
 		- $\sum\limits_{under}^{above}$
 	- `{latex}$\sim$`
 		- $\sim$
+	- `{latex}$\circ$`
+		- ${ \circ }$
+	- `{latex}$\circledcirc$` [Package:: amssymb]
+		- ${ \circledcirc }$
+	- **Mark stuff:**
+		- `{latex}$\boxed{x}$` [Package:: amsmath]
+			- ${ \boxed{ x } }$
+		- `{latex}$\underline{a}$`
+			- ${ \underline{e} }$
+		- `{latex}$\dot{x}$`
+			- ${ \dot{x} }$
+		- `{latex}$\overline{x}$`
+			- ${ \overline{x} }$
+	- **Environments:**
+		- `{latex}$\begin{environmentname} Environment Maths \end{environmentname}$`
+		- **environmentname**
+			- `array`
+				- align to the center, write one equation under the other
+			- `cases`
+				- align to the left
+				- big curly bracket
+				- 
+		- **Environment Maths**
+			- `{latex}equation1 \\ equation2`
+				- equation 2 is on the next row
+			- `{latex}1 & 2 \\ 3 & 4`
+				- `&` aligns the rows
+		- **Examples:**
+			- `{latex}$\begin{cases} x=1 \\ x=2 \end{cases}$`
+				- $\begin{cases} x=1 \\ x=2 \end{cases}$
+			- `{latex}$\begin{cases} true, & \text{if x=4} \end{cases}$`
+				- ${ \begin{cases} true, & \text{if x=4} \end{cases} }$
 	- **Arrows:**
 		- [Reference](https://garsia.math.yorku.ca/MPWP/LATEXmath/node9.html)
 		- `{latex}$\to$`
@@ -107,6 +135,10 @@ tags:
 			- also `{latex}$\rightarrow$`
 		- `{latex}$\leftrightarrow$`
 			- $\leftrightarrow$
+		- `{latex}$\implies$`
+			- ${ \implies }$
+		- `{latex}$\impliedby$`
+			- ${ \impliedby }$
 		- `{latex}$\Rightarrow$`
 			- $\Rightarrow$
 		- `{latex}$\Leftarrow$`

@@ -15,6 +15,23 @@ tags:
 
 ---
 
+### Snippet options
+
+- `m`
+	- triggers in math mode
+- `c`
+	- triggers in code mode
+- `t`
+	- triggers in text mode
+- `A`
+	- triggers automatically
+	- if it's missing you must press TAB to trigger the snippet
+- `w`
+	- must be a word
+	- a word is text surrounded by word delimiters (empty spaces, quotation marks etc)
+
+---
+
 ### Default snippets
 
 - `mk`
@@ -23,10 +40,27 @@ tags:
 - `dm`
 	- math block
 	- from [[LaTeX#^math-block|latex]]
-- **While in math mode**
+- **Math mode**
+	- **Visual (on selected stuff)**
+		- `C`
+			- cancel selected math
+		- `B`
+			- unsetset (put something under)
+			- element gains width if the thing under is wide
+		- `U`
+			- underbrace (curly bracket under)
+			- element gains width if the thing under is wide
 	- `!=`
 		- `{latex}\neq`
 		- $\neq$
+	- `norm`
+		- `{latex}\lvert\rvert`
+		- ${ \lvert \$0 \rvert }\$1$
+	- `cdot`
+		- `{latex}\cdot`
+		- ${ \cdot }$
+		- `{latex}$a \cdot b$`
+			- ${ a \cdot b }$
 	- `xx`
 		- `{latex}\times`
 		- $\times$
@@ -35,7 +69,7 @@ tags:
 		- ${ \exists }$
 	- `set`
 		- `{latex}\{ \}`
-		- $\{ \}$
+		- $\{ \$0\}\$1$
 	- `eset`
 		- `{latex}\emptyset`
 		- $\emptyset$
@@ -60,8 +94,6 @@ tags:
 	- `cap`
 		- `{latex}\cap`
 		- $\cap$
-	- `bf`
-		- `{latex}\mathbf{}`
 	- `equiv`
 		- `{latex}\equiv`
 		- $\equiv$
@@ -71,10 +103,26 @@ tags:
 	- `\\\`
 		- `{latex}\setminus`
 		- $\setminus$
+	- **Mark stuff:**
+		- `und`
+			- `{latex}\underline{}`
+			- ${ \underline{\$0}\$1 }$
+	- **Number sets:**
+		- `NN`
+			- `{latex}\mathbb(N)`
+			- ${ \mathbb{N} }$
+	- **Fonts:**
+		- `bf`
+			- `{latex}\mathbf{}`
+		- `mbb`
+			- `{latex}\mathbb{}`
 	- **Arrows:**
 		- `->`
 			- `{latex}\to`
 			- ${ \to }$
+		- `<-`
+			- `{latex}\leftarrow`
+			- ${ \leftarrow }$
 		- `=>`
 			- `{latex}\implies`
 			- ${ \implies }$
@@ -93,17 +141,36 @@ tags:
 	- ${ \stackrel{hello}{\longrightarrow} }$
 	- `stackrel1TAB2TAB3`
 		- ${ \stackrel{2}{1}3 }$
-- `-->`
-	- `{latex}\longrightarrow`
-	- ${ \longrightarrow }$
-- `<--`
-	- `{latex}\longleftarrow`
-	- ${ \longleftarrow }$
-- `<->`
-	- ${ \leftarrow }$
-- `<=>`
-	- ${ \Leftrightarrow }$
-- `<-->`
-	- ${ \longleftrightarrow }$
-- `<==>`
-	- ${ \Longleftrightarrow }$
+- `circ`
+	- `{latex}\circ`
+	- ${ \circ }$
+	- `circledcirc`
+		- `{latex}\circledcirc`
+		- ${ \circledcirc }$
+- `xline`
+	- `{latex}\overline{x}`
+	- ${ \overline{x} }$
+	- whatever `x` is, it gets a line over it
+		- `eline` ${ \implies \overline{e} }$
+- **Arrows:**
+	- `-->`
+		- `{latex}\longrightarrow`
+		- ${ \longrightarrow }$
+	- `<--`
+		- `{latex}\longleftarrow`
+		- ${ \longleftarrow }$
+	- `<->`
+		- ${ \leftarrow }$
+	- `<-->`
+		- ${ \longleftrightarrow }$
+	- `<=>`
+		- ${ \Leftrightarrow }$
+	- `<==>`
+		- ${ \Longleftrightarrow }$
+- **Deleted from default:**
+	- `case`
+		- replaced with inline case environment (the same but no `\n`)
+	- `array`
+		- replaced with inline array
+	- `<=>`
+		- replaced with `<==>`. `<=>` is now being used for the short one

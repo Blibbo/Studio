@@ -295,12 +295,22 @@
 	{trigger: "\\longleftarrow>", replacement: "\\longleftrightarrow", options: "mA"},
 	{trigger: "\\leq=>", replacement: "\\Longleftrightarrow", options: "mA"},
 	{trigger: "stack\\mathrm{Re}l", replacement: "\\stackrel{$1}{$0}$2", options: "mA"},
+	{trigger: "circ", replacement: "\\circ", options: "mAw"},
+	{trigger: "([A-z])line", replacement: "\\overline{[[0]]}", options: "rmAw"},
+	{trigger: "L", replacement: "\\boxed{ ${VISUAL} }", options: "mA"},
+	{trigger: "b\\otimes ed", replacement: "\\boxed{$0}$1", options: "mA"},
+	{trigger: "cancel", replacement: "\\cancel{$0}$1", options: "mA"},
+
 	
 	// Code
+	{trigger: "code", replacement: "`$0`$1", options: "tA"},
+	{trigger: "bld", replacement: "**$0**$1", options: "tAw"},
+	{trigger: "italic", replacement: "*$0*$1", options: "tAw"},
+	{trigger: "strike", replacement: "~~$0~~$1", options: "tAw"},
 	{trigger: "fence", replacement: "```", options: "tcA"},
 	{trigger: "bt", replacement: "`", options: "t"},
 	{trigger: "js", replacement: "`{js}$0`$1", options: "tw"},
-	{trigger: "latex", replacement: "`{latex}$$0$`$1", options: "tAw"},
+	{trigger: "latex", replacement: "`{latex}$$0$`$1", options: "tw"},
 	{trigger: "bash", replacement: "`{bash}$0`$1", options: "tw"},
 	{trigger: "c", replacement: "`{c}$0`$1", options: "tw"},
 	{trigger: "cpp", replacement: "`{cpp}$0`$1", options: "tw"},

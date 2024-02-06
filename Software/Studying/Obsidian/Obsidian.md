@@ -89,6 +89,8 @@ tags:
 
 - **Change shortcuts:**
 	- Settings > Hotkeys
+- `Ctrl + T`
+	- new tab
 - `Ctrl + O`
 	- Search note
 - `Ctrl + E`
