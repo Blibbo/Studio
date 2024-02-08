@@ -1,5 +1,7 @@
 ---
-tags:
+tags: 
+aliases:
+  - Microprocessors
 ---
 ---
 

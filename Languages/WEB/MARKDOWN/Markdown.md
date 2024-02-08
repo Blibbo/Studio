@@ -38,13 +38,13 @@ https://www.markdownguide.org/basic-syntax/
 		```
 - **Linking** ^links
 	- Hyperlinks
-		- \[link name\]\(url\)
+		- `{markdown}[link name](url)`
 	- Within the same page:
-		- `[link name](#identifier)`
+		- `{markdown}[link name](#identifier)`
 		- the identifier is the "id" (or "name" for anchor tags??) attribute of html tags
 			- I haven't verified any of this info. It's all from this Stack Overflow thread:
 				https://stackoverflow.com/questions/2822089/how-to-link-to-part-of-the-same-document-in-markdown
-		- this should work when converting from markdown to any of these #markup languages:
+		- this should work when converting from markdown to any of these markup languages:
 			- [[HTML]]
 			- [[LaTeX]]
 			- [[ConTeXt]]
@@ -90,11 +90,9 @@ https://www.markdownguide.org/basic-syntax/
 	- **Syntax highlighting:** ^syntax-highlighting
 		- not all markdown editors support it
 			- it's not a trivial task, so it usually requires other plugins
-			- see more in #syntax-highlighting linked with javascript
+			- see more in #syntax-highlighting libraries
 				```dataview
-				table
-				where contains("#syntax-highlighting")
-				where contains("[[JavaScript]]")
+				TABLE FROM #library and #syntax-highlighting
 				```
 		- only works for multi line blocks
 		- write the language name after the first fence (\`\`\`)

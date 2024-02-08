@@ -9,6 +9,7 @@ tags:
 
 ### About CodeMirror
 
+- [[JavaScript]]
 - Allows you to edit code inside a [[HTML#^text-area|text area]]
 
 ---
@@ -66,4 +67,12 @@ import CodeMirror from 'codemirror';
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/mode/javascript/javascript.js';
 import 'codemirror/theme/dracula.css'; // Create a textarea or other element to turn into CodeMirror
+```
+
+---
+
+### Used by
+
+```dataview
+LIST FROM "Software" AND [[CodeMirror]]
 ```

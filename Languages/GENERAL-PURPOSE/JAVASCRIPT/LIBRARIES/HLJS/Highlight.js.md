@@ -7,6 +7,14 @@ tags:
 ---
 ---
 
+### About HLJS
+
+- [[JavaScript]] library
+- syntax highlighting
+- no longer updated
+
+---
+
 ### Usage
 
 ```html
@@ -23,4 +31,12 @@ tags:
 function sayHello() { console.log('Hello, world!'); }
 </code></pre>
 </body>
+```
+
+---
+
+### Used by
+
+```dataview
+LIST FROM "Software" AND [[Highlight.js]]
 ```

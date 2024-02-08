@@ -1,7 +1,15 @@
 ---
 aliases:
   - doom
+tags:
+  - framework
 ---
+---
+
+### About DOOM
+
+- [[Emacs]] framework
+- looks like a modern text editor
 
 ---
 

@@ -7,7 +7,14 @@ tags:
 ---
 ---
 
-### External documentation
+### About Prism.js
+
+- [[JavaScript]] library
+- syntax highlighting
+
+---
+
+### Docs
 
 - [prismjs.com](https://prismjs.com/)
 - **[Available languages](https://prismjs.com/#supported-languages)**
@@ -46,4 +53,12 @@ npm install prismjs
 
 ```js
 import Prism from 'prismjs';
+```
+
+---
+
+### Used by
+
+```dataview
+LIST FROM "Software" AND [[Prism.js]]
 ```

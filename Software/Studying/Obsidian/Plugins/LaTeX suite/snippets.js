@@ -305,9 +305,6 @@
 	
 	// Code
 	{trigger: "code", replacement: "`$0`$1", options: "tA"},
-	{trigger: "bld", replacement: "**$0**$1", options: "tAw"},
-	{trigger: "italic", replacement: "*$0*$1", options: "tAw"},
-	{trigger: "strike", replacement: "~~$0~~$1", options: "tAw"},
 	{trigger: "fence", replacement: "```", options: "tcA"},
 	{trigger: "bt", replacement: "`", options: "t"},
 	{trigger: "js", replacement: "`{js}$0`$1", options: "tw"},
@@ -317,5 +314,10 @@
 	{trigger: "cpp", replacement: "`{cpp}$0`$1", options: "tw"},
 	{trigger: "html", replacement: "`{html}$0`$1", options: "tw"},
 	{trigger: "dataview", replacement: "```dataview\n$0\n```$1", options: "tAw"},
+	
+	// Markdown
+	{trigger: "bld", replacement: "**$0**$1", options: "tAw"},
+	{trigger: "italic", replacement: "*$0*$1", options: "tAw"},
+	{trigger: "strike", replacement: "~~$0~~$1", options: "tAw"},
 
 ]

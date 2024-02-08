@@ -6,6 +6,7 @@ tags:
 
 ### About Eruda
 
+- [[JavaScript]] library
 - Devtools on mobile.
 
 ---

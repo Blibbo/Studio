@@ -7,5 +7,6 @@ aliases:
 
 ### About MIPS
 
+- [[Microprocessor]] #architecture
 - apparently good for learning
-- very old obviously
+- very old

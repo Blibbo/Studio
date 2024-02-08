@@ -30,6 +30,43 @@ tags:
 
 ---
 
+### Shortcuts
+
+- **Change shortcuts:**
+	- Settings > Hotkeys
+- `Ctrl + T`
+	- new tab
+- `Ctrl + O`
+	- Search note
+- `Ctrl + E`
+	- Toggle reading mode
+- `Ctrl + P`
+	- Open command palette
+- `Ctrl + N`
+	- New Note
+- **Mines:**
+	- `Ctrl + B`
+		- remove from Bold text
+		- add to "`Toggle left sidebar`"
+	- `Ctrl + I`
+		- remove from toggle italic
+
+---
+
+### Commands
+
+[[Fuzzy search]]. The best type of search
+`Ctrl + P +:`
+- `open in default app`
+- `add file property`
+- `clear file properties`
+- `graph`^graph
+	- open graph view
+- `local graph`
+	- open local graph
+	
+---
+
 ### Community plugins
 
 - **Unique plugins:**
@@ -83,43 +120,6 @@ tags:
 	- optimal for notes
 	- _just use this please_
 
----
-
-### Shortcuts
-
-- **Change shortcuts:**
-	- Settings > Hotkeys
-- `Ctrl + T`
-	- new tab
-- `Ctrl + O`
-	- Search note
-- `Ctrl + E`
-	- Toggle reading mode
-- `Ctrl + P`
-	- Open command palette
-- `Ctrl + N`
-	- New Note
-- **Mines:**
-	- `Ctrl + B`
-		- remove from Bold text
-		- add to "`Toggle left sidebar`"
-	- `Ctrl + I`
-		- remove from toggle italic
-
----
-
-### Commands
-
-[[Fuzzy search]]. The best type of search
-`Ctrl + P +:`
-- `open in default app`
-- `add file property`
-- `clear file properties`
-- `graph`^graph
-	- open graph view
-- `local graph`
-	- open local graph
-	
 ---
 
 ### Unique Obsidian syntax

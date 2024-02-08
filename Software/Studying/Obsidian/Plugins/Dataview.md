@@ -285,11 +285,17 @@ tags:
 	- `{js}minby(array, function)`
 	- `{js}maxby(array, function)`
 - **Objects, Arrays, and String Operations**`
-	- `{js}contains() and friends`
-	- `{js}contains(object|list|string, value)`
-	- `{js}icontains(object|list|string, value)`
-	- `{js}econtains(object|list|string, value)`
-	- `{js}containsword(list|string, value)`
+	- `{js}contains()` and friends
+		- `{js}contains(object|list|string, value)`
+			- searches if the object has key with the given name
+			- if any list element equals the value
+			- if the string has `{js}value` as a substring
+		- `{js}icontains(object|list|string, value)`
+			- case insensitive version
+		- `{js}econtains(object|list|string, value)`
+			- looks for the exact value
+			- identical to `{js}contains` as far as i know. I'd have to test for differences
+		- `{js}containsword(list|string, value)`
 	- `{js}extract(object, key1, key2, ...)`
 	- `{js}sort(list)`
 	- `{js}reverse(list)`

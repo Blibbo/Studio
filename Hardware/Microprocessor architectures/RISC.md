@@ -4,6 +4,13 @@ aliases:
 ---
 ---
 
+### About
+
+- [[Microprocessor]] architecture
+- for mobile devices
+
+---
+
 ### RISC Architectures
 
 ```dataview

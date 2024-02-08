@@ -5,6 +5,13 @@ tags:
 ---
 ---
 
+### About Pygments
+
+- [[Python]] library
+- syntax highlighting
+
+---
+
 ### Installation
 
 `pip install Pygments`
