@@ -299,7 +299,7 @@
 	{trigger: "([A-z])line", replacement: "\\overline{[[0]]}", options: "rmAw"},
 	{trigger: "L", replacement: "\\boxed{ ${VISUAL} }", options: "mA"},
 	{trigger: "b\\otimes ed", replacement: "\\boxed{$0}$1", options: "mA"},
-	{trigger: "cancel", replacement: "\\cancel{$0}$1", options: "mA"},
+	{trigger: "canc", replacement: "\\cancel{$0}$1", options: "mA"},
 
 	
 	// Code
