@@ -137,6 +137,7 @@ tags:
 	- _\[\[note name\]\]_
 	- _\[\[ note name |display name\]\]_
 	- _\[\[ note name# a specific header |display name\]\]_
+		- if the header contains backlinks, you omit the square brackets
 	- _\[\[ note name#^block-identifier |display name\]\]_ ^block-backlinks
 		- mode on identifiers [[#^block-identifier|here]]
 	- _!\[\[ note name# header \]\]_

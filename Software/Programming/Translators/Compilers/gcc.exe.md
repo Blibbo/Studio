@@ -60,6 +60,6 @@ aliases:
 	- explicitly compile in [[x86-64|x64]]
 	- this happens by default you absolutely don't need this
 - **Check compiler flags**
-	- **check for [[AVX2]] or [[AVX-512]]**
+	- **check for AVX2 or AVX-512**
 		- `{bash}gcc -march=native -E - < /dev/null | grep avx2`
 		- `{bash}gcc -march=native -E - < /dev/null | grep avx512`

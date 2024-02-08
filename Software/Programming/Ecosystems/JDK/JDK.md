@@ -14,7 +14,7 @@ aliases:
 ### JRE
 
 - stands for **Java Runtime Environment**
-- contains an implementation of the [[JVM Architecture|JVM]]
+- contains an implementation of the [[JVM|JVM]]
 - contains an implementation of the [[Java|Java SE]]
 
 ---

@@ -23,7 +23,7 @@ aliases:
 		- find out info about the cpu
 	- `{bash}lscpu`
 		- info about the cpu
-		- check for "Flags" to see if [[AVX2]] or [[AVX-512]] is listed
+		- check for "Flags" to see if AVX2 or AVX-512 is listed
 
 ---
 

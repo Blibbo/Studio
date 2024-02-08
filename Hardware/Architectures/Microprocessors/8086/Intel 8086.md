@@ -11,7 +11,7 @@ tags:
 
 ---
 
-### [[Microprocessor#ISA|ISA]]
+### [[ISA]]
 
 ![[i8086_instruction_set.pdf]]
 

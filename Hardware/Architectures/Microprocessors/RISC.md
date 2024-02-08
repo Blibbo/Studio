@@ -6,7 +6,7 @@ aliases:
 
 ### About
 
-- [[Microprocessor]] architecture
+- [[ISA|Instruction Set]] architecture
 - for mobile devices
 
 ---
@@ -14,5 +14,5 @@ aliases:
 ### RISC Architectures
 
 ```dataview
-LIST FROM "Hardware/Microprocessor architectures" AND [[RISC]]
+LIST FROM "Hardware/Architectures/Microprocessors" AND [[RISC]]
 ```

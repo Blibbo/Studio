@@ -311,7 +311,7 @@
 	{trigger: "latex", replacement: "`{latex}$$0$`$1", options: "tw"},
 	{trigger: "bash", replacement: "`{bash}$0`$1", options: "tw"},
 	{trigger: "c", replacement: "`{c}$0`$1", options: "tw"},
-	{trigger: "cpp", replacement: "`{cpp}$0`$1", options: "tw"},
+	{trigger: "cpp", replacement: "`{cpp}$0`$1", options: "twA"},
 	{trigger: "html", replacement: "`{html}$0`$1", options: "tw"},
 	{trigger: "dataview", replacement: "```dataview\n$0\n```$1", options: "tAw"},
 	
@@ -319,5 +319,8 @@
 	{trigger: "bld", replacement: "**$0**$1", options: "tAw"},
 	{trigger: "italic", replacement: "*$0*$1", options: "tAw"},
 	{trigger: "strike", replacement: "~~$0~~$1", options: "tAw"},
+	
+	// Emojis
+	{trigger: ":thumbsup:", replacement: "👍", options: "tA"},
 
 ]

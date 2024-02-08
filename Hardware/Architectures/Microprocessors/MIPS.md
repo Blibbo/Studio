@@ -7,6 +7,6 @@ aliases:
 
 ### About MIPS
 
-- [[Microprocessor]] #architecture
+- [[ISA|Instruction Set]] architecture
 - apparently good for learning
 - very old

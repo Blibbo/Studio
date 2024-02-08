@@ -2,11 +2,11 @@
 aliases:
   - Java Virtual Machine Architecture
   - Java Virtual Machine
-  - JVM
+  - JVM Architecture
 ---
 ---
 
-### About the JVM Architecture
+### About the JVM
 
 - provides abstraction for real hardware
 - it has a made up instruction set. [[#Bytecode instruction set]]

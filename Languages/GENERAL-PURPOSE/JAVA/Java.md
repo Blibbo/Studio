@@ -34,7 +34,7 @@ By processing I mean "what the fuck do you do with java code"
 		- you don't need to write `{bash}java HelloWorld.class` explicitly
 		- write it exactly like you see there
 - **Being a dickhead:**
-	- you can compile Java [[JVM Architecture#Bytecode instruction set|bytecode]] into [[x86-64]] binary instruction format if you have the `.jar` already
+	- you can compile Java [[JVM#Bytecode instruction set|bytecode]] into [[x86-64]] binary instruction format if you have the `.jar` already
 	- tools to do it:
 		- [[GraalVM Native Image]]
 	- this takes away the whole point of the vm

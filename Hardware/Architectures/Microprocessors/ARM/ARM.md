@@ -8,8 +8,7 @@ aliases:
 ### About ARM
 
 - [[RISC]] architecture
-- 32-bit originally
-- 64-bit (the modern one)
+- 32-bit (originally)
 - energy-efficient
 - for phones and stuff
 

@@ -25,7 +25,7 @@ tags:
 - **Properties:**
 	- **Compiler flags**
 		- flags on the compiler
-		- you can check for stuff like [[AVX2]] support
+		- you can check for stuff like AVX2 support
 
 ---
 

@@ -6,7 +6,7 @@ tags:
 ### About java.exe
 
 - part of the [[Jdk#JRE|JRE]]
-- this executable is the primary way to interact with the [[JVM Architecture|JVM]]
+- this executable is the primary way to interact with the [[JVM]]
 
 ---
 
