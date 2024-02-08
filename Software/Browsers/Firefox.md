@@ -19,8 +19,14 @@ tags:
 
 ### Shortcuts
 
+- `Ctrl + T`
+	- new tab
 - `Ctrl + L`
 	- select address bar
+- `Ctrl + W`
+	- close tab
+- `Ctrl + TAB`
+	- switch tab
 - `Ctrl + Shift + I`
 	- toggle devtools window
 - `F12`
