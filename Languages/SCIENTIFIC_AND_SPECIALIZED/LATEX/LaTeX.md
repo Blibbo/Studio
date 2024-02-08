@@ -67,6 +67,10 @@ tags:
 		- $\subset$
 	- `{latex}$\subseteq$`
 		- $\subseteq$
+	- `{latex}$\supset$`
+		- ${ \supset }$
+	- `{latex}$\supseteq$`
+		- ${ \supseteq }$
 	- `{latex}$\cup$`
 		- $\cup$
 	- `{latex}$\cap$`

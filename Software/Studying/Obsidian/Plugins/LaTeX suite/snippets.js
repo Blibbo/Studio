@@ -254,7 +254,7 @@
 	{trigger: "vmat", replacement: "\\begin{vmatrix}\n$0\n\\end{vmatrix}", options: "mA"},
 	{trigger: "Vmat", replacement: "\\begin{Vmatrix}\n$0\n\\end{Vmatrix}", options: "mA"},
 	//{trigger: "case", replacement: "\\begin{cases}\n$0\n\\end{cases}", options: "mA"},
-	{trigger: "align", replacement: "\\begin{align}\n$0\n\\end{align}", options: "mA"},
+	//{trigger: "align", replacement: "\\begin{align}\n$0\n\\end{align}", options: "mA"},
 	//{trigger: "array", replacement: "\\begin{array}\n$0\n\\end{array}", options: "mA"},
 	{trigger: "matrix", replacement: "\\begin{matrix}\n$0\n\\end{matrix}", options: "mA"},
 
@@ -285,6 +285,7 @@
 	{trigger: "mk", replacement: "${ $0 }$$1", options: "tA"},
 	{trigger: "case", replacement: "\\begin{cases} $0 \\end{cases}$1", options: "mA"},
 	{trigger: "array", replacement: "\\begin{array}\\ $0 \\end{array}$1", options: "mA"},
+	{trigger: "align", replacement: "\\begin{align} $0 \\end{align}$1", options: "mA"},
 	{trigger: "tabb", replacement: "\\quad", options: "mA"},
 	{trigger: "\\quadb", replacement: "\\qquad", options: "mA"},
 	{trigger: "-->", replacement: "\\longrightarrow", options: "mA"},
