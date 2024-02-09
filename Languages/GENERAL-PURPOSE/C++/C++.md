@@ -95,11 +95,11 @@ aliases:
 			- inside the class
 			- `{cpp}str myProperty;`
 		- **NOTES:**
-			- you'll always need to use the CRO (`{cpp}::`) if you use this type outside of the class
+			- you'll always need to use the CRO `{cpp}::` if you use this type outside of the class
 			- you can define a type inside a class through:
 				- `{cpp}typedef`
 				- `{cpp}struct`
-				- `{cpp}class` (straight up another `{cpp}class`)
+				- `{cpp}class` (straight up another class)
 	- **CONTEXT RESOLUTION OPERATOR (CRO ^^^)**
 		- **NOTES:**
 			- it's this symbol: `{cpp}::`

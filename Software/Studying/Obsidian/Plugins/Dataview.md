@@ -17,6 +17,15 @@ tags:
 
 ---
 
+### Configuration
+
+- `Inline Query Prefix`
+	- {dataview}
+- `JavaScript Inline Query Prefix`
+	- {dataviewjs}
+
+---
+
 ### Syntax
 
 - **Index data in your note:** ^index-data

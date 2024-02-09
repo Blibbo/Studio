@@ -44,6 +44,8 @@ tags:
 	- Open command palette
 - `Ctrl + N`
 	- New Note
+- `Ctrl + Shift + I`
+	- open developer console
 - **Mines:**
 	- `Ctrl + B`
 		- remove from Bold text
@@ -124,6 +126,8 @@ tags:
 
 ### Unique Obsidian syntax
 
+- ==Highlighted Text==
+	- `==highlighted==`
 - **Tags** ^tags
 	- `#my-tag`
 		- [[Naming conventions#^kebab-case|kebab case]]

@@ -1,0 +1,75 @@
+- A
+	- b
+		- can do this cool "range based" `{cpp}for` loop
+			- don't bother with indexes, just use the value. No off-by-one errors
+		- `{cpp}for(const int v : {-129, -128, -1, 0, 42, 127, 128, 255, 256}){}`
+- A
+	- bad
+		- C
+			- debugging
+				- `{cpp}T x, y, z;`
+				- `{cpp}(&x)[1] == y`. That's true.
+	- **METHODS**
+		- **CONST METHOD**
+			- `{cpp}int myMethod() const {}`
+			- the state of the object won't change through the function
+		- **METHOD CHAINING**
+			- `{cpp}return` type of your method must be a reference type to its own class
+			- `{cpp}return` value of your method must be the own object (content of "`{cpp}this`" pointer)
+			```cpp
+			MyClass& chainableMethod(){
+				return *this;
+			}
+			```
+			- then `{cpp}obj.chainableMethod().chainableMethod().chainableMethod()`
+		- **CONSTRUCTOR**
+			- **MEMBER INITIALIZER LISTS**
+				- **USAGE:**
+					- constructor for a class called Example with x and y as int properties
+					- `{cpp}Example(int a, int b) : x(a), y(b) {}`
+				- **NOTES:**
+					- the member initializer syntax initializes the members (wow)
+					- initializing follows order of declaration INSIDE THE CLASS
+					- order in which you write them INSIDE THE INITIALIZER is arbitrary and it does not matter
+					- only way to initialize constant members
+					- good practice regardless (for non constant members too)
+	- **IN-CLASS MEMBER INITIALIZATION**
+		- **USAGE:**
+			- declare and initialize a property directly in the class
+			- `{cpp}int myProperty = 3;`
+				- from inside a class. Not in a method
+		- **NOTES:**
+			- before the C++11 standard, you could only use constants (instead of the integer literal "3" used here)
+			- mind blowing line of code, I know
+			- you're not entitled to this syntax, be grateful
+	- **FRIEND FUNCTIONS**
+		- **DECLARATION:**
+			- inside the class add this signature
+			- `{cpp}friend void myFriend(MyClass&);`
+		- **DEFINITION:**
+			- outside the class
+			- `{cpp}void myFriend(MyClass& obj){}`
+		- **NOTES:**
+			- they're not members of the class
+			- they can access private and protected stuff all the same
+	- **STATIC PROPERTIES**
+		- inside a class
+		- `{cpp}static int a = 3;`
+		- `{cpp}static void StaticMethod(){}`
+		- **NOTES:**
+			- it's a member.
+			- every object shares it
+			- this method can't access
+	- **NESTED TYPES**
+		- **DECLARATION**
+		- **USAGE**
+			- outside the class
+			- `{cpp}MyClass:: myString;`
+			- inside the class ==a==
+			- `{cpp}str myProperty;`
+		- **NOTES:**
+			- you'll always need to use the CRO () if you use this type outside of the class
+			- you can define a type inside a class through:
+				- `{cpp}typedef`
+				- `{cpp}struct`
+				- `{cpp}class` (straight up another `{cpp}class`)
