@@ -1,11 +1,12 @@
 ---
-tags:
-  - software
-  - plugin
+aliases:
 ---
 ---
 
-**Core Program**:: [[Obsidian]]
+### About dataview
+
+- [[Obsidian]] plugin
+- index and query your vault
 
 ---
 
@@ -14,6 +15,8 @@ tags:
 - [dataview](https://github.com/blacksmithgu/obsidian-dataview) on [[GitHub]]
 - [documentation](https://blacksmithgu.github.io/obsidian-dataview/)
 - it generates data out of [[#^index-data|indexed information]] in the note
+- conflicts a little with [[Code Styler]] in some hyper specific cases
+	- inline fields inside code blocks will fuck up code blocks
 
 ---
 

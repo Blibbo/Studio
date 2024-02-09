@@ -1,11 +1,12 @@
 ---
-tags:
-  - software
-  - plugin
+tags: []
 ---
 ---
 
-**Core Program**:: [[Obsidian]]
+### About LaTeX suite
+
+- [[Obsidian]] plugin
+- become 1000x faster at writing latex maths
 
 ---
 
