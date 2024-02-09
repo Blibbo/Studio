@@ -8,6 +8,7 @@ tags:
 ### About Windows
 
 - bloatware, with a functioning operating system hidden in there
+- made in [[C++]]
 
 ---
 
@@ -71,6 +72,10 @@ WHERE file.name != this.file.name
 		- tells you info about the cpu
 		- `wmic get cpu caption`
 			- returns the caption of the CPU (the essential details)
+	- `type file.txt`
+		- show file contents
+	- `more`
+		- same as `type`(???)
 	- **Commands that open another window**
 		- `regedit` ^regedit
 			- open system registries editor
@@ -101,6 +106,7 @@ WHERE file.name != this.file.name
 - **Path** ^path
 	- this variable stores a list of directories
 	- every executable file (`.exe`, `.batch`, `.cmd`) that's directly inside the directories contained here is available everywhere on your system
+	- priority is based on order
 	- super useful for executable files that you want to turn into commands available anywhere, like [[Git]] or [[php.exe]]
 	- when you install git, it goes in the path automatically. But you get what I mean
 

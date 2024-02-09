@@ -120,6 +120,13 @@ tags:
 
 ---
 
+### Linux tools
+
+- `C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\usr\bin`
+	- i found a bunch of utilities in that directory. I'll just put them in the [[Windows#^path]]
+
+---
+
 ### [[NET Core|.NET]]
 
 - **Info:**

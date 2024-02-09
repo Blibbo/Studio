@@ -14,6 +14,19 @@ aliases:
 
 ---
 
+### What it's used for
+
+- [[Application processor|Application processors]]
+- [[Microcontrollers]]
+- [[SoCs]]
+- other embedded devices
+
+---
+
+### Development tools
+
+---
+
 ### Trivia
 
 - initially developed by **Acorn Computers** in the **'80s** for PCs

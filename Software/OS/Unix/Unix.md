@@ -61,6 +61,9 @@ tags:
 		- useful for [[Bash#Scripts]]
 		- `{bash}sleep 1`
 			- sleep for 1 second
+	- `{bash}cat -v file.txt`
+		- show non printing characters (???)
+		- it only shows the file's content from my experience
 
 ---
 

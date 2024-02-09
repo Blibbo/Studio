@@ -46,7 +46,7 @@ tags:
 	- `link`
 		- [[Obsidian#^backlinks|obsidian links]]
 	- `list`
-		- [[Javascript#ARRAYS|javascript arrays]]
+		- [[JavaScript#ARRAYS|javascript arrays]]
 	- `boolean`
 	- `number`
 - **Query your data:**
