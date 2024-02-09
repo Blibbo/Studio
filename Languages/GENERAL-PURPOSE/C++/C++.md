@@ -138,13 +138,13 @@ aliases:
 			- `{cpp}a^b`
 				- bitwise XOR
 			- `{cpp}a<<b`
+				- $a = a \times 2^b$
 				- left shift by '`{cpp}b`' positions
 				- adds '`{cpp}b`' zeros to the bits
-				- does $a \times 2^b$
 				- undefined behavior on overflow
 			- `{cpp}a>>b`
+				- ${ a = a / 2^b }$
 				- right shift
-				- basically divides 'a' by 2^b
 				- undefined behavior on overflow
 			- `{cpp}a*b`
 				- multiplication
