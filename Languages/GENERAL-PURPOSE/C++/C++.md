@@ -181,7 +181,8 @@ aliases:
 				- you can overload `{cpp}()`. The constructor doesn't count though, it's still the constructor. It's pretty intuitive stuff if you think about it. just common sense.
 		- **OPERATOR OVERLOAD ON MEMBER FUNCTIONS**
 			- **BINARY OVERLOAD EXAMPLE w/'+'**
-				- `{cpp}obj1 + obj2 = obj3`, where `{cpp}obj3.value = obj1.value + obj2.value`
+				- `{cpp}obj1 + obj2 = obj3`
+				- where `{cpp}obj3.value == obj1.value + obj2.value`
 				```cpp
 				MyClass operator+(const MyClass& operand) const {
 					MyClass result;
@@ -220,14 +221,15 @@ aliases:
 		- **PREFIX AND POSTFIX INCREMENT**
 			- **PREFIX**
 				- **MEMBER FN**
-					`{cpp}MyClass operator++();`	//-- for decrement
+					- `{cpp}MyClass operator++();`
+						- `{cpp}--` for decrement
 				- **NON MEMBER FN**
-					`{cpp}MyClass operator++(MyClass myObj);`
+					- `{cpp}MyClass operator++(MyClass myObj);`
 			- **POSTFIX**
 				- **MEMBER FN**
-					`{cpp}MyClass operator++(int);`
+					- `{cpp}MyClass operator++(int);`
 				- **NON MEMBER FN**
-					`{cpp}MyClass operator++(MyClass myObj, int);`
+					- `{cpp}MyClass operator++(MyClass myObj, int);`
 					
 		- **OVERLOADING STREAM INSERTION AND EXTRACTION**
 			- in the cout<< and cin>> syntax, << and >> are operator overloads themselves
