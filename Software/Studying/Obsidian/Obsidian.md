@@ -126,8 +126,15 @@ tags:
 
 ### Unique Obsidian syntax
 
+- [ ] **Checkboxes** ^checkboxes
+	```
+	[ ] - This is a checkbox
+	[X] - This is a checked checkbox
+	```
 - ==Highlighted Text==
-	- `==highlighted==`
+	- `==Highlighted Text==`
+- **Bold text and _nested italic_ text**
+	- `**Bold text and _nested italic_ text**`
 - **Tags** ^tags
 	- `#my-tag`
 		- [[Naming conventions#^kebab-case|kebab case]]
@@ -166,11 +173,6 @@ tags:
 	- `{latex}$ inline math $` can be fused with other text (like I'm doing with inline code and this text)
 	- that's it.
 	- check [[LaTeX#^math-mode |this note]] to see wtf to put between `{latex}$$`
-- [ ] **Checkboxes** ^checkboxes
-	```
-	[ ] - This is a checkbox
-	[X] - This is a checked checkbox
-	```
 	
 ---
 
