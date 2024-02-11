@@ -3,14 +3,16 @@ tags:
   - web-development
   - package-manager
   - software
+aliases:
+  - Node Package Manager
 ---
 ---
 
 ### About npm
 
-- It's the [[Node.js]] package manager
+- It's package manager for [[Node.js]]
 - handles dependencies for [[JavaScript]]
-- these dependencies go into a super heavy folder called `node-modules`
+- these dependencies get installed into a super heavy folder at the root of your project called `node-modules`
 
 ---
 

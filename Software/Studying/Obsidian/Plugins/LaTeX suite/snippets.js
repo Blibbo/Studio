@@ -298,10 +298,12 @@
 	{trigger: "stack\\mathrm{Re}l", replacement: "\\stackrel{$1}{$0}$2", options: "mA"},
 	{trigger: "circ", replacement: "\\circ", options: "mAw"},
 	{trigger: "([A-z])line", replacement: "\\overline{[[0]]}", options: "rmAw"},
-	{trigger: "L", replacement: "\\boxed{ ${VISUAL} }", options: "mA"},
 	{trigger: "b\\otimes ed", replacement: "\\boxed{$0}$1", options: "mA"},
 	{trigger: "canc", replacement: "\\cancel{$0}$1", options: "mA"},
 
+	
+	// Visual
+	{trigger: "L", replacement: "\\boxed{ ${VISUAL} }", options: "mA"},
 	
 	// Code
 	{trigger: "cd", replacement: "`$0`$1", options: "tw"},

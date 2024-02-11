@@ -11,21 +11,24 @@ tags:
 - you own the files
 - Made in [[Electron]]
 - Plugins are written in [[JavaScript]]
-- Obsidian uses [[CodeMirror]] as the underlying text editor
-- [[Markdown#^syntax-highlighting|Syntax highlighting]] in [[Markdown#^fenced-syntax|codeblocks]] happens through [[Prism.js]] in reading mode
-	- **[Available languages](https://prismjs.com/#supported-languages)**
-	- editing mode uses CodeMirror so that list has nothing to do with it.
-	- Yes, this SUCKS BALLS and creates inconsistencies
+- uses these tools for syntax highlighting in codeblocks:
+	- [[Prism.js]] in reading mode
+	- [[CodeMirror]] in editing mode
+		- because CodeMirror is also Obsidian's text editor
+	- there might be visual inconsistencies between the two modes.
+- uses [[MathJax]] for rendering maths
 
 ---
 
 ### Rendering of Markdown in the client
 
+- [Docs](https://help.obsidian.md/Editing+and+formatting/Advanced+formatting+syntax)
 - basic [[Markdown#Syntax|markdown syntax]]
 - most [[HTML]] syntax
 - [[YAML]] format for [[#^properties|properties]]
 - [Wikilinks](https://en.wikipedia.org/wiki/Help:Link), sort of (exact implementation in obsidian [[#^backlinks |here]])
 - [[LaTeX]], with [[#^math-blocks |this]] syntax
+- [[Mermaid]] for diagrams
 - unique [[#Unique Obsidian syntax|obsidian syntax]]
 
 ---

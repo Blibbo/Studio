@@ -9,8 +9,7 @@ tags:
 
 ### About Prism.js
 
-- [[JavaScript]] library
-- syntax highlighting
+- [[JavaScript]] library for syntax highlighting
 
 ---
 
@@ -21,9 +20,13 @@ tags:
 
 ---
 
-### CDN
+## Demo
 
-###### Example
+![[Languages/WEB/JAVASCRIPT/LIBRARIES/Prismjs/index.html]]
+
+## Installation
+
+### CDN
 
 ```html
 <head>
