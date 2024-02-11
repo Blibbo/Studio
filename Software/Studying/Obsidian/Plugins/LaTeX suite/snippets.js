@@ -304,7 +304,7 @@
 
 	
 	// Code
-	{trigger: "code", replacement: "`$0`$1", options: "tA"},
+	{trigger: "cd", replacement: "`$0`$1", options: "tw"},
 	{trigger: "fence", replacement: "```", options: "tcA"},
 	{trigger: "bt", replacement: "`", options: "t"},
 	{trigger: "js", replacement: "`{js}$0`$1", options: "tw"},

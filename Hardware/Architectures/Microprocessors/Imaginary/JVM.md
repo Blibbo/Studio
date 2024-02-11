@@ -3,6 +3,7 @@ aliases:
   - Java Virtual Machine Architecture
   - Java Virtual Machine
   - JVM Architecture
+  - Bytecode
 ---
 ---
 

@@ -13,7 +13,7 @@ tags:
 
 - source files have a `.cs` extension
 - [[NET Core|.NET]] language
-- compiles to: [[Intermediate Language]]
+- compiles to: [[CIL]]
 
 ---
 

@@ -92,7 +92,7 @@ https://www.markdownguide.org/basic-syntax/
 			- it's not a trivial task, so it usually requires other plugins
 			- see more in #syntax-highlighting libraries
 				```dataview
-				TABLE FROM #library and #syntax-highlighting
+				TABLE FROM #library AND #syntax-highlighting
 				```
 		- only works for multi line blocks
 		- write the language name after the first fence (\`\`\`)

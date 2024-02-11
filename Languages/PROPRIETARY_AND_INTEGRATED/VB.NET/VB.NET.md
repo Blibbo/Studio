@@ -14,4 +14,4 @@ aliases:
 - closely integrated with the [[NET Core|.NET]]
 - source files have a `.vb` extension
 - successor to [[Visual Basic]]
-- compiles to [[Intermediate Language|IL]]
+- compiles to [[CIL|IL]]

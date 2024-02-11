@@ -11,7 +11,7 @@ aliases:
 - instruction addresses are variable in length
 - they're built into the [[microprocessor]]
 - it's the foundation of software. This is what allows you to write code and interact with the hardware
-- if you don't like the instruction set, you **buy a new processor** or use a [[Runtime Environment]]. There's no way to modify an already built processor
+- if you don't like the instruction set, you **buy a new processor** or use a [[Runtime Environments|Runtime Environment]]. There's no way to modify an already built processor
 
 ---
 

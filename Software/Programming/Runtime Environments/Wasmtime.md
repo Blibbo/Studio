@@ -6,7 +6,7 @@ tags:
 
 ### About Wasmtime
 
-- runtime environment for [[WebAssembly|Wasm]]
+- [[Runtime Environments|Runtime Environment]] for [[WebAssembly|Wasm]]
 
 ---
 

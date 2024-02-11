@@ -3,12 +3,13 @@ tags:
   - software
 aliases:
   - VM
+  - Virtual Machine
 ---
 ---
 
 ### About VMs
 
-- i got nothing interesting yet
+- they're a specific type of [[Runtime Environments|Runtime Environment]]
 
 ---
 

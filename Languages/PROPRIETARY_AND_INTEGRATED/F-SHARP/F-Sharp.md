@@ -12,4 +12,4 @@ aliases:
 ### About F Sharp
 
 - [[NET Core|.NET]] language
-- compiles to [[Intermediate Language|IL]] (which runs on the [[CLR]])
+- compiles to [[CIL|IL]] (which runs on the [[CLR]])
