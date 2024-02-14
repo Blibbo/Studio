@@ -293,17 +293,21 @@
 	{trigger: "\\leftarrow>", replacement: "\\leftrightarrow", options: "mA"},
 	{trigger: "\\leftarrow-", replacement: "\\longleftarrow", options: "mA"},
 	{trigger: "\\longleftarrow>", replacement: "\\longleftrightarrow", options: "mA"},
-	{trigger: "\\longleftarrow>", replacement: "\\longleftrightarrow", options: "mA"},
 	{trigger: "\\leq=>", replacement: "\\Longleftrightarrow", options: "mA"},
 	{trigger: "stack\\mathrm{Re}l", replacement: "\\stackrel{$1}{$0}$2", options: "mA"},
 	{trigger: "circ", replacement: "\\circ", options: "mAw"},
 	{trigger: "([A-z])line", replacement: "\\overline{[[0]]}", options: "rmAw"},
 	{trigger: "b\\otimes ed", replacement: "\\boxed{$0}$1", options: "mA"},
 	{trigger: "canc", replacement: "\\cancel{$0}$1", options: "mA"},
-
+	{trigger: "ne\\xi sts", replacement: "\\nexists", options: "mA", priority: 1},
+	{trigger: "overline", replacement: "\\overline{$0}$1", options: "mA"},
+	
+	{trigger: "QQ", replacement: "\\mathbb{Q}", options: "mA"},
 	
 	// Visual
 	{trigger: "L", replacement: "\\boxed{ ${VISUAL} }", options: "mA"},
+	{trigger: "G", replacement: "\\underline{ ${VISUAL} }", options: "mA"},
+
 	
 	// Code
 	{trigger: "cd", replacement: "`$0`$1", options: "tw"},
@@ -315,14 +319,15 @@
 	{trigger: "c", replacement: "`{c}$0`$1", options: "tw"},
 	{trigger: "cpp", replacement: "`{cpp}$0`$1", options: "twA"},
 	{trigger: "html", replacement: "`{html}$0`$1", options: "tw"},
+	{trigger: "python", replacement: "`{python}$0`$1", options: "tw"},
 	{trigger: "dataview", replacement: "```dataview\n$0\n```$1", options: "tAw"},
 	
 	// Markdown
 	{trigger: "bld", replacement: "**$0**$1", options: "tAw"},
 	{trigger: "italic", replacement: "*$0*$1", options: "tAw"},
 	{trigger: "strike", replacement: "~~$0~~$1", options: "tAw"},
+	{trigger: "[[", replacement: "[[$0]]$1", options: "tA"},
 	
 	// Emojis
 	{trigger: ":thumbsup:", replacement: "👍", options: "tA"},
-
 ]

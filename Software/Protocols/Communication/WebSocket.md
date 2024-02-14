@@ -18,5 +18,5 @@ tags:
 
 ### Trivia
 
-- standardized by the Internet Engineering Task Force (IETF)
+- standardized by the [[IETF]]
 - specified in RFC 6455

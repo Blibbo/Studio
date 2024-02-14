@@ -9,4 +9,5 @@ aliases:
 
 ### About ANSI
 
+- operates at the national level (USA)
 - it standardizes stuff

@@ -1,8 +1,8 @@
 ---
 aliases:
-  - WSL
   - WSL2
   - wsl.exe
+  - Windows Subsystem for Linux
 ---
 ---
 

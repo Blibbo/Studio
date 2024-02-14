@@ -89,6 +89,12 @@ tags: []
 	- `subseteq`
 		- `{latex}\subseteq`
 		- $\subseteq$
+	- `+-`
+		- `{latex}\pm`
+		- ${ \pm }$
+	- `-+`
+		- `{latex}`
+		- ${ \mp }$
 	- `cup`
 		- `{latex}\cup`
 		- $\cup$
@@ -105,9 +111,11 @@ tags: []
 		- `{latex}\setminus`
 		- $\setminus$
 	- **Mark stuff:**
-		- `und`
-			- `{latex}\underline{}`
-			- ${ \underline{\$0}\$1 }$
+		- `xund`
+			- `{latex}\underline{x}`
+			- ${ \underline{x} }$
+			- works for any letter AND latex symbol
+				- **ex: ** `@aund` ${ \implies \underline{\alpha} }$
 	- **Number sets:**
 		- `NN`
 			- `{latex}\mathbb(N)`
@@ -153,6 +161,14 @@ tags: []
 	- ${ \overline{x} }$
 	- whatever `x` is, it gets a line over it
 		- `eline` ${ \implies \overline{e} }$
+- `nexists`
+	- `{latex}\nexists`
+	- ${ \nexists }$
+- **Visual:**
+	- `L`
+		- box selection
+	- `G`
+		- underline
 - **Arrows:**
 	- `-->`
 		- `{latex}\longrightarrow`
@@ -173,5 +189,7 @@ tags: []
 		- replaced with inline case environment (the same but no `\n`)
 	- `array`
 		- replaced with inline array
+	- `align`
+		- replaced with an inline align
 	- `<=>`
 		- replaced with `<==>`. `<=>` is now being used for the short one

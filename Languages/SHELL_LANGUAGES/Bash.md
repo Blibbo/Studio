@@ -3,12 +3,14 @@ tags:
   - scripting
   - language
   - interpreter
+aliases:
+  - GNU Bash
+  - Bourne Again Shell
 ---
 ---
 
 ### About Bash
 
-- stands for "**Bourne Again Shell**"
 - builds on the [[SH|Bourne Shell]], but user friendl*ier*
 - shell for a bunch of [[Unix]] like systems, most notably [[Linux]] and [[macOS]] (ew)
 - backwards compatible: most SH scripts can be run by Bash

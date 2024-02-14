@@ -59,6 +59,8 @@ tags:
 		- superscript
 	- `{latex}$\exists$`
 		- ${ \exists }$
+	- `{latex}$\nexists$` [Package::amssymb]
+		- ${ \nexists }$
 	- `{latex}$\in$`
 		- $\in$
 	- `{latex}$\forall$`
@@ -71,6 +73,14 @@ tags:
 		- ${ \supset }$
 	- `{latex}$\supseteq$`
 		- ${ \supseteq }$
+	- `{latex}$\emptyset$`
+		- ${ \emptyset }$
+	- `{latex}$\varnothing$`
+		- ${ \varnothing }$
+	- `{latex}$\pm$`
+		- ${ \pm }$
+	- `{latex}$\mp$`
+		- ${ \mp }$
 	- `{latex}$\cup$`
 		- $\cup$
 	- `{latex}$\cap$`
@@ -81,13 +91,6 @@ tags:
 	- `{latex}$\vee$`
 		- $\vee$
 		- OR
-	- `{latex}$\not$`
-		- negates the next thing you write
-		- **Examples:**
-			- `{latex}$\not\in$`
-				- $\not\in$
-			- `{latex}$\not\subset$`
-				- $\not\subset$
 	- `{latex}$\sum_{i = 0}^{n}x+i$`
 		- $\sum_{i = 0}^{n}x+i$
 	- `{latex}$\frac{x}{y}$`
@@ -102,10 +105,10 @@ tags:
 		- $\sim$
 	- `{latex}$\circ$`
 		- ${ \circ }$
-	- `{latex}$\circledcirc$` [Package:: amssymb]
+	- `{latex}$\circledcirc$` 
 		- ${ \circledcirc }$
 	- **Mark stuff:**
-		- `{latex}$\boxed{x}$` [Package:: amsmath]
+		- `{latex}$\boxed{x}$` 
 			- ${ \boxed{ x } }$
 		- `{latex}$\underline{a}$`
 			- ${ \underline{e} }$
@@ -113,6 +116,21 @@ tags:
 			- ${ \dot{x} }$
 		- `{latex}$\overline{x}$`
 			- ${ \overline{x} }$
+		- **Cancel**
+			- `{latex}$\not expression$`
+				- ${ \not expression }$
+				- negates the next thing you write
+				- **Examples:**
+					- `{latex}$\not\in$`
+						- $\not\in$
+					- `{latex}$\not\subset$`
+						- $\not\subset$
+			- `{latex}$\neg$`
+				- also negates the next thing
+			- `{latex}$\cancel{expression}$`
+				- ${ \cancel{ \text{expression} } }$
+			- `{latex}$\centernot {expression}$` [Package::centernot]
+				- ${ \centernot {expression} }$
 	- **Environments:**
 		- `{latex}$\begin{environmentname} Environment Maths \end{environmentname}$`
 		- **environmentname**
@@ -121,7 +139,8 @@ tags:
 			- `cases`
 				- align to the left
 				- big curly bracket
-				- 
+			- `vmatrix`
+				- matrix but with big pipes around it
 		- **Environment Maths**
 			- `{latex}equation1 \\ equation2`
 				- equation 2 is on the next row

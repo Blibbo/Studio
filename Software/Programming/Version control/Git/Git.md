@@ -52,7 +52,7 @@ tags:
 	- `{bash}git checkout -b new-branch`
 		- copy current branch and paste to new branch AND checkout to it
 	- `{bash}git fetch`
-		- download the changes made to the remote repo
+		- download the changes made to the remote repo (all branches)
 		- your local branch is unchanged, you just download this "`origin/alt-version-of-your-branch`" thing
 		- to get the new changes and actually see them in your branch you'd have to merge the remote's branch onto you. There's a command that fetches and then does that: [[#^git-pull|git pull]]
 		- ~~see what's up~~
@@ -110,6 +110,8 @@ tags:
 			- the file is still there after you run this
 			- git will mark it as removed
 			- if you [[#^push|push]] your changes, it'll disappear in the remote
+	- **Discard changes**
+		- `{bash}git checkout -- .`
 		
 ---
 

@@ -7,6 +7,12 @@ aliases:
 ---
 ---
 
+### About IEEE
+
+- operates at the international level
+
+---
+
 ### IEEE-SA
 
 - **IEEE Standards Association**

@@ -10,6 +10,7 @@ tags:
 
 - [[Chromium]] based
 - uses [[V8]]
+- uses [[Blink]]
 - lol
 
 ---

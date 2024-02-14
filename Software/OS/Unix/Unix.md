@@ -23,6 +23,12 @@ tags:
 	- TW: im a windowstard so you'll see `.exe` thrown around a lot
 	- it's to remind me if i download knockoff linux utilities i'll need to explicitly write `.exe`
 - **Commands:** ^commands
+	- `{bash}rmdir my_directory`
+		- delete EMPTY directory
+	- `{bash}rm -r my_directory`
+		- delete directory AND its contents
+		- `{bash}rm -ri my_directory`
+			- prompts for confirmation before deleting
 	- `{bash}sudo othercommand`
 		- "superuser do"
 		- execute as administrator, basically
@@ -39,7 +45,6 @@ tags:
 		- **Examples:**
 		- `{bash}mv path/file.txt new/path`
 			- move files
-			- 
 		- `{bash}mv same/directory/oldname.txt same/directory/newname.txt`
 			- rename the file
 	- `{bash}grep`

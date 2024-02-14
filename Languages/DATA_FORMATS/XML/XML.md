@@ -4,7 +4,7 @@ tags:
   - language
   - standard
 aliases:
-  - Extensible Markup Language
+  - eXtensible Markup Language
 ---
 ---
 

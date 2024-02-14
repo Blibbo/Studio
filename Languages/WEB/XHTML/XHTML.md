@@ -5,6 +5,13 @@ tags:
 ---
 ---
 
+### About XHTML
+
+- stricter version of [[HTML]]
+- respects [[XML]]
+
+---
+
 ### Trivia
 
-- published in January 2000 as a W3C Reccomendation
+- XHTML 1.0 was published in January 2000 as a [[W3C]] Recommendation

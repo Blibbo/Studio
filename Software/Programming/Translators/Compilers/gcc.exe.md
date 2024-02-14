@@ -27,6 +27,9 @@ aliases:
 - `{bash}gcc yourfile.c -o yourprogram.exe`
 	- generate an .exe out of a .c
 	- overwrites `yourprogram.exe` if it existed already
+- `{bash}gcc -c sourcefile.c -o yourprogram.o`
+	- generate an object file
+	- it's not the `{bash}-c` flag, it's the `{bash}.o` extension
 - `{bash}gcc --version`
 	- version of the compiler
 	- also tells you the architecture you're compiling for

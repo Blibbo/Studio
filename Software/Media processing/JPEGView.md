@@ -23,6 +23,12 @@ tags:
 - **KeepParameters**
 	- keep zoom and filters through image navigation
 	- set to `true` or `false`
+- **DefaultWindowRect=sticky**
+	- keep window in place through zooming and navigating images (perfect for big desktops)
+- **CPUType=SSE**
+	- keep it from crashing
+- **ShowFullScreen=false**
+	- open images in windowed mode by default
 
 ---
 

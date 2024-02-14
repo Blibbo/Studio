@@ -7,6 +7,7 @@ tags:
 ### About Firefox
 
 - uses [[SpiderMonkey]]
+- uses [[Gecko]]
 
 ---
 

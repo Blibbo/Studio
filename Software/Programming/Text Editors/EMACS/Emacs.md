@@ -1,6 +1,8 @@
 ---
 tags:
   - open-source
+aliases:
+  - GNU Emacs
 ---
 ---
 
