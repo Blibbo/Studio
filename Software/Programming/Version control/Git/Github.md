@@ -6,8 +6,20 @@ tags:
 ---
 ---
 
-### README.md
+### About Github
 
+- a place to host [[Git]] repositories
+- it adds a bunch of extra bullshit to git
+	- [[#Github Gists]]
+	- organization of multiple repos in like... bigger projects, or something
+	- issues developers can take on and link their commits to
+	- pull requests among forks?? idk if it's just a normal git thing. Never contributed to open source yet
+
+---
+
+### README.md files
+
+- they're markdown files rendered in the main page of a repository
 - [[GFM]]
 
 ---
@@ -59,3 +71,9 @@ Generally, you have 2 types of URLs
 		- to open files with markdown support, you need either
 			- Pretext
 			- iAWriter
+
+---
+
+### Trivia
+
+- now owned by Microsoft

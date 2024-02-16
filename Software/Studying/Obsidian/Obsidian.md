@@ -62,6 +62,8 @@ tags:
 
 [[Fuzzy search]]. The best type of search
 `Ctrl + P +:`
+- `split right`
+- `split down`
 - `open in default app`
 - `add file property`
 - `clear file properties`
