@@ -55,6 +55,14 @@ WHERE file.name != this.file.name
 		- pauses the prompt until a key is pressed
 		- you could replicate this program in [[c]] by calling [[C#^getchar|getchar]] and ignoring the return value
 		- useful for [[Command Prompt#Batch files|batch files]] or for programs to keep a prompt from closing automatically
+	- `REM any string here`
+		- remark. A comment. Does nothing
+		- used in [[Command Prompt|batch]] files
+	- `call otherbatch`
+		- call another batch file without passing control to it
+		- changes these called batch files make persist (variables, `cd`)
+	- `set VAR=initial_value`
+		- set a variable value. read it with `%VAR%` in [[Command Prompt|batch]] files
 	- `echo string`
 		- echoes the string in the prompt
 		- `echo off` ^echo-off

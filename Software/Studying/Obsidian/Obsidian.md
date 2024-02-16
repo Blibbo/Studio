@@ -218,4 +218,10 @@ tags:
 		
 ---
 
+### Automatic last vault opening
+
+https://www.reddit.com/r/ObsidianMD/comments/p5f3m5/disable_automatic_open_of_last_vault/
+
+---
+
 ### Plugin development
