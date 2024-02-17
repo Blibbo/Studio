@@ -49,6 +49,9 @@ tags:
 	- New Note
 - `Ctrl + Shift + I`
 	- open developer console
+- `Ctrl + ;` ^add-property-shortcut
+	- add file property
+	- [[#^add-property-command]]
 - **Mines:**
 	- `Ctrl + B`
 		- remove from Bold text
@@ -62,10 +65,17 @@ tags:
 
 [[Fuzzy search]]. The best type of search
 `Ctrl + P +:`
-- `split right`
-- `split down`
-- `open in default app`
-- `add file property`
+- `bulist`
+	- turn the current line into a bullet list item
+	- removes any other bullshit (checkbox, numbered list item or whatever else)
+- `sright`
+	- split right
+- `sdown`
+	- split down
+- `odefap`
+	- `open in default app`
+- `add file property` ^add-property-command
+	- [[#^add-property-shortcut]]
 - `clear file properties`
 - `graph`^graph
 	- open graph view
