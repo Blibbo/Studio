@@ -65,9 +65,13 @@ tags:
 
 [[Fuzzy search]]. The best type of search
 `Ctrl + P +:`
-- `bulist`
+- `buli`
+	- `toggle bullet list`
 	- turn the current line into a bullet list item
 	- removes any other bullshit (checkbox, numbered list item or whatever else)
+- `yk`
+	- `cycle bullet checkbox`
+	- after `buli`. to make checkboxes
 - `sright`
 	- split right
 - `sdown`
