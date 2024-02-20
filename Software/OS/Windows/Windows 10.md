@@ -2,6 +2,9 @@
 tags:
   - closed-source
   - operating-system
+aliases:
+  - Windows 10 Home
+  - Windows 10 Pro
 ---
 ---
 

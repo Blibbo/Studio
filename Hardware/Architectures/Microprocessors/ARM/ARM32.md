@@ -1,4 +1,0 @@
----
-aliases:
-  - AArch32
----

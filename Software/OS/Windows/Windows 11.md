@@ -2,6 +2,9 @@
 tags:
   - closed-source
   - operating-system
+aliases:
+  - Windows 11 Pro
+  - Windows 11 Home
 ---
 ---
 

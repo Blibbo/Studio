@@ -1,4 +1,7 @@
-
+---
+aliases:
+  - Microcontroller
+---
 ---
 
 ### About microcontrollers

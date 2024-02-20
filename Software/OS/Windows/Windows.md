@@ -27,7 +27,22 @@ WHERE file.name != this.file.name
 	- `Edit the system environment variables`
 	- `Edit environment variables for your acccount`
 	- `System Information`
-		- it's [[#^msinfo32|this]] .exe
+		- it's [[#^msinfo32]].exe
+	- `Defragment and Optimize Drives`
+		- see what kind of drives you have (ssd, hdd)
+		- optimize the drives
+			- defragmentation for hdds
+			- trimming for ssds
+				- trimming happens based on the table the garbage collector in the ssd makes
+				- if the microcontroller hasn't been alimented and stayed idle long enough, the table isn't updated
+	- `Power Options`
+		- it's also in the control panel
+		- Disable power management for ssds and make them consume all the time (needed to for the garbage collector to index stuff when idle)
+			- `Change plan settings` on the plan in use
+			- `Change advanced power settings`
+			- `PCI Express`
+			- `Link State Power Management`
+			- `Setting: Off`
 - **Commands:** ^commands
 	- `cd path/to/directory` ^cd
 		- change directory
@@ -89,6 +104,8 @@ WHERE file.name != this.file.name
 			- open system registries editor
 		- `msinfo32` ^msinfo32
 			- info about the system
+			- `System Model`
+				- what laptop you're using
 		- `devmgmt.msc`
 			- device manager
 			- you can see USBs that fail to connect there
@@ -188,3 +205,11 @@ WHERE file.name != this.file.name
 	- you should be able to type these through unicode codes but it doesn't seem to work
 	- ≠
 	- π
+
+---
+
+### Related
+
+```dataview
+LIST FROM "Software/OS/Windows/RELATED"
+```
