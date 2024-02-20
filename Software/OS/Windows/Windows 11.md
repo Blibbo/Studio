@@ -55,3 +55,18 @@ it's jan 2024. Still no news
 			- use file explorer to move stuff from `onedrive\desktop` to your new desktop, and so on with the documents folder etc
 	- **Restart**
 		- not shut down. _Restart_ your pc.
+
+---
+
+### Windows/Temp/csat/csat.exe and csat_dwnldr.exe are in my windows defender
+
+
+- [same exact problem](https://answers.microsoft.com/it-it/windows/forum/all/impossibile-rimuovere-elementi-da-escludere-dalle/b80372e5-ff79-4040-bcac-1188546d20ab)
+	- they didn't answer him anything and the thread was locked
+- [similar problem but this guy actually installed malware](https://www.reddit.com/r/windows/comments/131pk7n/i_cant_remove_greyed_out_these_exclusions_from/)
+	- solution:
+		- [[Windows#^regedit]]
+		- `HKLM/Software/Policies/Microsoft/Windows Defender/Exclusions` ${ \to }$ grayed out exclusion entries
+		- remove all of them (the whole key) or just the ones you need
+		- just fyi `HKLM/Software/Microsoft/Windows Defender/Exclusions` are the non greyed out ones (yours, don't remove)
+	- in my pc it's actually `Computer/HKEY_LOCAL_MACHINE/Software/Policies/Microsoft/Windows Defender/Policy Manager` and then `ExcludePaths`
