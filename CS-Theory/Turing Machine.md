@@ -1,0 +1,3 @@
+- device that can write and read 0s and 1s to and from a storage
+- theorized to be able to perform any kind of calculation
+- calling it "architecture" is a stretch

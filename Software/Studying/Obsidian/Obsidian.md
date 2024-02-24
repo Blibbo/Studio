@@ -45,6 +45,8 @@ tags:
 	- Toggle reading mode
 - `Ctrl + P`
 	- Open command palette
+- `Ctrl + Shift + V`
+	- Paste as plain text
 - `Ctrl + N`
 	- New Note
 - `Ctrl + Shift + I`
@@ -69,6 +71,10 @@ tags:
 	- `toggle bullet list`
 	- turn the current line into a bullet list item
 	- removes any other bullshit (checkbox, numbered list item or whatever else)
+- `foldlist`
+	- fold everything that's foldable in the note
+- `unfoldlist`
+	- unfold everything
 - `yk`
 	- `cycle bullet checkbox`
 	- after `buli`. to make checkboxes
@@ -90,23 +96,18 @@ tags:
 
 ### Community plugins
 
-- **Unique plugins:**
-	- **Dataview**
-		- [Documentation](https://blacksmithgu.github.io/obsidian-dataview/queries/structure/)
-		- generates data out of the [[#^properties|yaml properties]] of the notes
-		- lets you manipulate this data through queries
-		- _ubiquitous_
-	- TagFolder
-		- `Ctrl + P + Show Tag Folder`
-		- shows tags like folders
-		- ~~i know right~~
-- **Maths**
-	- [Link](https://www.youtube.com/watch?v=AaCVP7zqOMU&ab_channel=Omix) to "Epic Italian maths guy"
-		- use [[#^latex-suite|latex suite]]
-		- use [[#^tokyo-night|tokyo night]]
-	- [[LaTeX suite]] ^latex-suite
-		- adds snippets that look like [these](https://castel.dev/post/lecture-notes-1/)
-		- you can add your snippets in the settings
+- **[[Dataview]]**
+	- [Documentation](https://blacksmithgu.github.io/obsidian-dataview/queries/structure/)
+	- generates data out of the [[#^properties|yaml properties]] of the notes
+	- lets you manipulate this data through queries
+	- _ubiquitous_
+- **TagFolder**
+	- `Ctrl + P + Show Tag Folder`
+	- shows tags like folders
+	- ~~i know right~~
+- **[[LaTeX suite]]** ^latex-suite
+	- adds snippets that look like [these](https://castel.dev/post/lecture-notes-1/)
+	- you can add your snippets in the settings
 - **Synchronization**
 	- Discussion [thread](https://www.reddit.com/r/ObsidianMD/comments/v6otbu/how_to_sync_your_obsidian_vault_on_mobile_using/) on [[Git]] syncing
 	- Remotely Save
@@ -125,9 +126,13 @@ tags:
 	- Codeblock Customizer
 		- Terrible
 		- Don't waste time
+- **Linter**
+	- fixes ordered lists getting fucked up (and everything)
 - **Links**
 	- [Bald guy](https://www.youtube.com/watch?v=Yzi1o-BH6QQ&ab_channel=ChristianLempa)
 	- [Redhead](https://www.youtube.com/watch?v=W7kTtn9empU&ab_channel=NicolevanderHoeven)
+	- [average joe](https://www.youtube.com/watch?v=sTSgD4784gM)
+	- [Omix](https://www.youtube.com/watch?v=AaCVP7zqOMU&ab_channel=Omix)
 	
 ---
 
@@ -195,6 +200,134 @@ tags:
 	
 ---
 
+### CSS Snippets
+
+- **Add a snippet**
+	- Settings
+	- Appearance
+	- CSS Snippets
+	- Open snippets folder
+	- add a `.css` file
+- **Note width**
+	- [Source](https://forum.obsidian.md/t/how-to-get-a-lager-page-width-in-both-editing-mode-and-preview-mode/7555/4)
+	- notes are not very wide on desktop
+	- Fix:
+		- Settings
+		- Editor
+		- `Readable line length` ${ \to }$ off
+		- NOW IT'S TOO WIDE
+		- add this snippet to cap the size
+			```css
+			.markdown-source-view, .markdown-preview-view {
+				max-width: 1500px;
+				margin: auto;
+			}
+			```
+- **Invert images on dark mode**
+	- you have to add `#invert_B` (or any other thing listed here) to the image you want to invert at the end of an image link, like _\!\[\[image#invert_B\]\]_
+	```css
+	/* General and default image blending */
+	.theme-dark img {
+	    display: block;
+	    max-width: 80%;
+	    padding: 0 auto 0 auto;
+	    outline: none;
+	    margin-left: auto;
+	    margin-right: auto;
+	    mix-blend-mode: screen;
+	    filter: opacity(1);
+	}
+	  
+	.theme-light img {
+	    display: block;
+	    max-width: 80%;
+	    padding: 0 auto 0 auto;
+	    outline: none;
+	    margin-left: auto;
+	    margin-right: auto;
+	    mix-blend-mode: multiply;
+	    filter: opacity(0.95);
+	}
+	  
+	/*Emblemed images blending tweaks */
+	  
+	.theme-dark .popover.hover-popover .markdown-preview-view img {
+	    mix-blend-mode: screen;
+	    /*filter: opacity(1);*/
+	}
+	  
+	.theme-light .popover.hover-popover .markdown-preview-view img {
+	    mix-blend-mode: multiply;
+	    /*filter: opacity(0.95);*/
+	}
+	  
+	/* Image dynamic colors inversion */
+	/* Aggiungi class per applicare l'effetto solo alle immagini SVG */
+	  
+	.theme-dark img[alt$="invert_B"] {
+	  filter: invert(1) brightness(100%) saturate(3)
+	}
+	  
+	.theme-light img[img$="#invert_W"] {
+	  filter: invert(1) brightness(100%) saturate(0) hue-rotate(180deg);
+	}
+	  
+	.theme-dark img[img$="invert_B_C"] {
+	  filter: invert(1) brightness(100%) saturate(0) hue-rotate(180deg) contrast(1.5);
+	}
+	  
+	.theme-light img[img$="#invert_W_C"] {
+	  filter: invert(1) brightness(100%) saturate(0) hue-rotate(180deg) contrast(1.45);
+	}
+	```
+
+- **Zoom on images when clicking them**
+	```css
+	.view-content img {
+		max-width:100%;
+		cursor:zoom-in;
+	}
+	
+	.view-content img:active {
+		cursor:zoom-out;
+	}
+	.view-content .markdown-preview-view img[referrerpolicy='no-referrer']:active,
+	.view-content .image-embed:active {
+		background:var(--background-primary);
+		cursor:zoom-out;
+		display:block;
+		z-index:200;
+		position:fixed;
+		max-height:100%;
+		max-width:100%;
+		height:100%;
+		width:100%;
+		object-fit:contain;
+		margin:0 auto;
+		text-align:center;
+		padding:0;
+		left:0;
+		right:0;
+		bottom:0;
+	}
+	.view-content .image-embed:active img {
+		top:50%;
+		transform:translateY(-50%);
+		padding:0;
+		margin:0 auto;
+		width:100%;
+		max-height:100vh;
+		object-fit:contain;
+		left:0;
+		right:0;
+		bottom:0;
+		position:absolute;
+		opacity:1;
+	}
+	```
+
+---
+
 ### Spell check
 
 - The custom dictionary is located in
@@ -205,36 +338,20 @@ tags:
 	- they're not exactly hard settings to find
 	- which means, I'm _not_ gonna explain the procedure step by step
 	- ~~you absolute fucking moron~~
-	
----
 
-### CSS Customization
-
-- **Add a snippet**
-	- Settings
-	- Appearance
-	- CSS Snippets
-	- Open snippets folder
-	- add a `.css` file
-- Notes are not very wide on desktop. [Fix](https://forum.obsidian.md/t/how-to-get-a-lager-page-width-in-both-editing-mode-and-preview-mode/7555/4):
-	- TL;DR:
-		- Settings
-		- Editor
-		- Readable line length > off
-		- NOW IT'S TOO WIDE
-		- add this snippet to cap the size
-			```css
-			.markdown-source-view, .markdown-preview-view {
-				max-width: 1500px;
-				margin: auto;
-			}
-			```
-		
 ---
 
 ### Automatic last vault opening
 
 https://www.reddit.com/r/ObsidianMD/comments/p5f3m5/disable_automatic_open_of_last_vault/
+
+---
+
+### Ordered lists
+
+https://forum.obsidian.md/t/automatically-keep-numbered-list-ordered-in-editor-adding-removing-swapping-pasting/28428/34?page=2
+
+de-indent and then re-indent the first list item to fix the list
 
 ---
 

@@ -104,6 +104,8 @@ tags:
 		- has to be a symbol, can't be [[#^text]]
 	- `{latex}$\stackrel{above}{center}$`
 		- ${ \stackrel{above}{center} }$
+	- `{latex}$\underset$`
+		- ${ \underset{below}{center} }$
 	- `{latex}$\sim$`
 		- $\sim$
 	- `{latex}$\circ$`

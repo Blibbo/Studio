@@ -144,4 +144,17 @@ tags:
 	    // }
 	}
 	```
-	
+
+---
+
+### Tabs
+
+- everything here is in the settings
+- `Editor: `
+	- `Detect Indentation` OFF
+	- `Tab Size` 4
+	- `Indent Size` tabSize (4^^^)
+	- `Insert Spaces` OFF
+- `Prettier: `
+	- `Use Tabs`
+	- `Tab Width`

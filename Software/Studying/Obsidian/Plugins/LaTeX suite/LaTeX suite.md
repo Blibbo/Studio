@@ -184,6 +184,12 @@ tags: []
 		- ${ \Leftrightarrow }$
 	- `<==>`
 		- ${ \Longleftrightarrow }$
+	- `=>`
+		- `{latex}$\Rightarrow$`
+		- ${ \Rightarrow }$
+	- `==>`
+		- `{latex}$\implies$`
+		- ${ \implies }$
 - **Deleted from default:**
 	- `case`
 		- replaced with inline case environment (the same but no `\n`)
@@ -192,4 +198,8 @@ tags: []
 	- `align`
 		- replaced with an inline align
 	- `<=>`
-		- replaced with `<==>`. `<=>` is now being used for the short one
+		- replaced with `<==>`.
+		- `<=>` is now being used for the short one
+	- `=>`
+		- replaced with `==>`.
+		- `=>` is now being used for the short one

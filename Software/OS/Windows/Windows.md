@@ -109,14 +109,9 @@ WHERE file.name != this.file.name
 		- `devmgmt.msc`
 			- device manager
 			- you can see USBs that fail to connect there
-	
-
----
-
-### Tools to install
-
-- `dumpbin`
-	- basically [[Unix#^objdump|objdump]]
+	- **Non-native (to install)**
+		- `dumpbin`
+			- basically [[Unix#^objdump|objdump]]
 
 ---
 
@@ -150,6 +145,13 @@ WHERE file.name != this.file.name
 			- `HKEY_CLASSES_ROOT\Directory\Background\shell\YourProgram`
 	- remove both entries for that program, and it'll stop appearing in your context menu
 	
+---
+
+### Hosts file
+
+- located in `C:\Windows\System32\drivers\etc\`
+- contains [[DNS]] entries that you don't need to look up with dns requests
+
 ---
 
 ### Shortcuts

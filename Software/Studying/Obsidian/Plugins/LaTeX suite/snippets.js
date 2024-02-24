@@ -142,9 +142,9 @@
 	{trigger: "\\subset eq", replacement: "\\subseteq", options: "mA"},
 	{trigger: "eset", replacement: "\\emptyset", options: "mA"},
 	{trigger: "set", replacement: "\\{ $0 \\}$1", options: "mA"},
-	{trigger: "=>", replacement: "\\implies", options: "mA"},
+	//{trigger: "=>", replacement: "\\implies", options: "mA"},
 	{trigger: "=<", replacement: "\\impliedby", options: "mA"},
-	//???{trigger: "\\leq>", replacement: "\\Longleftrightarrow", options: "mA"},
+	//{trigger: "\\leq>", replacement: "\\Longleftrightarrow", options: "mA"},
 	{trigger: "iff", replacement: "\\iff", options: "mA"},
 	{trigger: "e\\xi sts", replacement: "\\exists", options: "mA", priority: 1},
 	{trigger: "===", replacement: "\\equiv", options: "mA"},
@@ -289,18 +289,23 @@
 	{trigger: "tabb", replacement: "\\quad", options: "mA"},
 	{trigger: "\\quadb", replacement: "\\qquad", options: "mA"},
 	{trigger: "-->", replacement: "\\longrightarrow", options: "mA"},
-	{trigger: "\\leq>", replacement: "\\Leftrightarrow", options: "mA"},
+	{trigger: "\\leq>", replacement: "\\Leftrightarrow", options: "mA"}, //<->
 	{trigger: "\\leftarrow>", replacement: "\\leftrightarrow", options: "mA"},
 	{trigger: "\\leftarrow-", replacement: "\\longleftarrow", options: "mA"},
 	{trigger: "\\longleftarrow>", replacement: "\\longleftrightarrow", options: "mA"},
-	{trigger: "\\leq=>", replacement: "\\Longleftrightarrow", options: "mA"},
-	{trigger: "stack\\mathrm{Re}l", replacement: "\\stackrel{$1}{$0}$2", options: "mA"},
+	{trigger: "\\leq=>", replacement: "\\Longleftrightarrow", options: "mA"},//<==>
+	{trigger: "stack\\mathrm{Re}l", replacement: "\\stackrel{$1}{$0}$2", options: "mA"}, //stackrel
 	{trigger: "circ", replacement: "\\circ", options: "mAw"},
-	{trigger: "([A-z])line", replacement: "\\overline{[[0]]}", options: "rmAw"},
-	{trigger: "b\\otimes ed", replacement: "\\boxed{$0}$1", options: "mA"},
+	{trigger: "([A-z])line", replacement: "\\overline{[[0]]}", options: "rmAw"}, //xline
+	{trigger: "b\\otimes ed", replacement: "\\boxed{$0}$1", options: "mA"}, //boxed
 	{trigger: "canc", replacement: "\\cancel{$0}$1", options: "mA"},
-	{trigger: "ne\\xi sts", replacement: "\\nexists", options: "mA", priority: 1},
+	{trigger: "ne\\xi sts", replacement: "\\nexists", options: "mA", priority: 1}, //nexists
 	{trigger: "overline", replacement: "\\overline{$0}$1", options: "mA"},
+	{trigger: "=DEF", replacement: "\\stackrel{\\text{DEF}}{=}", options: "mAw"},
+	{trigger: "=def", replacement: "\\stackrel{\\text{DEF}}{=}", options: "mAw"},
+	{trigger: "\\underline{erset", replacement: "\\underset{$1}{$0", options: "mAw", priority: 1}, //underset
+	{trigger: "=>", replacement: "\\Rightarrow", options: "mA"},
+	{trigger: "==>", replacement: "\\implies", options: "mA"},
 	
 	{trigger: "QQ", replacement: "\\mathbb{Q}", options: "mA"},
 	
