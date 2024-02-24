@@ -73,3 +73,22 @@ it's jan 2024. Still no news
 		- remove all of them (the whole key) or just the ones you need
 		- just fyi `HKLM/Software/Microsoft/Windows Defender/Exclusions` are the non greyed out ones (yours, don't remove)
 	- in my pc it's actually `Computer/HKEY_LOCAL_MACHINE/Software/Policies/Microsoft/Windows Defender/Policy Manager` and then `ExcludePaths`
+
+---
+
+### Recycle bin refuses to empty for no reason
+
+- PORCO DIO WINDOWS.
+- [this thread](https://answers.microsoft.com/en-us/windows/forum/all/recycle-bin-not-emptying/404e6fbc-3647-403e-84a1-b53821b119a6) says to run `rd /s /q C:\$Recycle.bin`, restart your pc and create and delete a text file to get the recycle bin back
+- IT WORKS!
+
+---
+
+### Can't pin files to the taskbar
+
+- https://www.youtube.com/watch?v=g-fmssCWEuo
+- copy the file, turn it into an exe
+- shift right click the pinned thing
+- go to "properties"
+- change the "target" property to the right extension
+- you can delete the exe now. It works.
