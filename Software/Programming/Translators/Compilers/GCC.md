@@ -16,7 +16,7 @@ aliases:
 ### On [[Windows]]
 
 - [[MinGW#Installation|Installation]]
-- look for any of the shits, like [[gcc.exe]], on [[Everything.exe]] or through [[Windows#^search-file|this]] command
+- look for any of the shits, like [[gcc.exe]], on [[Everything.exe]] or through [[Command Prompt#^search-file|this]] command
 - go to the folder, put in [[Windows#Environment variables|path]]
 
 ---

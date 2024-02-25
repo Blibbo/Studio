@@ -4,15 +4,11 @@ aliases:
 tags:
   - open-source
 ---
----
-
-### About BSD
-
-- [[Unix]] variant
+[[Unix]] variant.
 
 ---
 
-### List of OSs
+### Distributions
 
 ```dataview
 LIST FROM "Software/OS/BSD"

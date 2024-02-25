@@ -10,12 +10,9 @@ aliases:
   - ISO C
   - C Standard
 ---
----
+C source files have a `.c` extension.
 
-### About C
-
-- source files have a `.c` extension
-- [Reference](https://devdocs.io/c/)
+Here's my [API Reference](https://devdocs.io/c/) of choice for the C standard library.
 
 ---
 

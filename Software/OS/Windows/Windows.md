@@ -24,8 +24,9 @@ WHERE file.name != this.file.name
 ### Userland
 
 - **Default Start Menu:**
-	- `Edit the system environment variables`
-	- `Edit environment variables for your acccount`
+	- **Environment variables:** ^edit-variables
+		- `Edit the system environment variables`
+		- `Edit environment variables for your acccount`
 	- `System Information`
 		- it's [[#^msinfo32]].exe
 	- `Defragment and Optimize Drives`
@@ -43,47 +44,16 @@ WHERE file.name != this.file.name
 			- `PCI Express`
 			- `Link State Power Management`
 			- `Setting: Off`
-- **Commands:** ^commands
-	- `cd path/to/directory` ^cd
-		- change directory
-	- `dir` ^dir
-		- list files and directories in current dir
-		- `dir FolderName`
-			- lists stuff in that folder without moving (like [[#^cd]] makes you do)
-		- `dir myFile.txt`
-			- looks for a file named that way in the current directory
-		- `dir /s`
-			- list files in subdirectories, too
-		- `dir /a`
-			- list all, hidden items included
-		- `dir /b`
-			- strips off all info except for file path
-			- "bare"
-		- `dir /s /b filename.ext` ^search-file
-			- looks for any file called `filename.ext` that's a descendant of your current directory
-			- if you go to the root of your system, it's basically what [[Everything.exe]] does
-	- `find`
-		- filters output
-		- `dir | find ".txt"`
-			- only show .txt files in the current folder
-	- `pause`
-		- pauses the prompt until a key is pressed
-		- you could replicate this program in [[c]] by calling [[C#^getchar|getchar]] and ignoring the return value
-		- useful for [[Command Prompt#Batch files|batch files]] or for programs to keep a prompt from closing automatically
-	- `REM any string here`
-		- remark. A comment. Does nothing
-		- used in [[Command Prompt|batch]] files
-	- `call otherbatch`
-		- call another batch file without passing control to it
-		- changes these called batch files make persist (variables, `cd`)
-	- `set VAR=initial_value`
-		- set a variable value. read it with `%VAR%` in [[Command Prompt|batch]] files
-	- `echo string`
-		- echoes the string in the prompt
-		- `echo off` ^echo-off
-			- stops echoing commands automatically (also stops displaying the current working directory)
-		- `echo on`
-			- undoes the thing
+- **Shell independent commands:** ^commands
+	- They're actual executables, that behave as if they were in the [[#^path]].
+	  
+	  It means that physically they're like different from shell commands:
+		- they can be called through [[#^win-r]]
+		- they can be called from any shell you install
+		-  These are programs dude, you can make them too.
+	- [[Command Prompt|cmd.exe]]
+		- starts the command prompt.
+		- Yes, you can run a command prompt from inside a command prompt.
 	- `where commandorexecutable`
 		- if it recognizes the command (either it's in the current dir or [[Windows#^path|available everywhere]]) it'll tell you where it is
 		- if it finds multiple, it tells you the location of every single one
@@ -117,18 +87,26 @@ WHERE file.name != this.file.name
 
 ### Environment variables
 
-- **Editing environment variables:**
-	- start menu
-	- look for "environment variables"
-	- either open the one for your account or the one for the system
-	- click "environment variables" on the window that opens
-	- double click on any specific variable to edit it
-- **Path** ^path
-	- this variable stores a list of directories
-	- every executable file (`.exe`, `.batch`, `.cmd`) that's directly inside the directories contained here is available everywhere on your system
-	- priority is based on order
-	- super useful for executable files that you want to turn into commands available anywhere, like [[Git]] or [[php.exe]]
-	- when you install git, it goes in the path automatically. But you get what I mean
+- **To edit them (without commands):**
+	- [[#^edit-variables]]
+- `%PATH%` ^path
+	- This variable stores a list of directories.
+	  
+	  Every executable file (`.exe`, `.batch`, `.cmd`) that's directly inside the directories contained here is available as a command everywhere on your system.
+	  
+	  Priority (same name, who launches?) is based on the order they're written in.
+	  
+	  Super useful for executable files that you want to turn into commands available anywhere. Examples: [[Git]] and [[php.exe]].
+	  
+	  When you install command line tools and they ask for administrator permission, one of the things they do is simply put themselves here.
+	  
+	  If a bigger program installs a command line tool as a dependency, it will probably not put the command in the path. So if you roam around and figure out you have a `git.exe` installed but the command doesn't work, it's because you have to put the directory `git.exe` is in, in the path.
+
+---
+
+### Recycle bin
+
+- `C:\$Recycle.bin` is the path of the recycle bin
 
 ---
 
@@ -156,7 +134,7 @@ WHERE file.name != this.file.name
 
 ### Shortcuts
 
-- `Win + R`
+- `Win + R` ^win-r
 	- execute a [[#^commands|command]] (or .exe in the [[#^path]])
 - `Win + X`
 	- it's like a right click on the windows button

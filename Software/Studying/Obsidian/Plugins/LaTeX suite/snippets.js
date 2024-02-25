@@ -329,7 +329,7 @@
 	
 	// Markdown
 	{trigger: "bld", replacement: "**$0**$1", options: "tAw"},
-	{trigger: "italic", replacement: "*$0*$1", options: "tAw"},
+	{trigger: "ita", replacement: "*$0*$1", options: "tAw"},
 	{trigger: "strike", replacement: "~~$0~~$1", options: "tAw"},
 	{trigger: "[[", replacement: "[[$0]]$1", options: "tA"},
 	{trigger: "ck", replacement: "- [ ] ", options: "tAw"},
