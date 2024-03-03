@@ -3,6 +3,8 @@ tags:
   - scripting
   - language
   - interpreter
+aliases:
+  - powershell.exe
 ---
 Scripting language, command line interpreter and terminal for [[Windows]].
 Successor to the [[command prompt]].

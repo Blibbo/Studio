@@ -21,86 +21,109 @@ WHERE file.name != this.file.name
 
 ---
 
-### Userland
+### Executables
 
-- **Default Start Menu:**
-	- **Environment variables:** ^edit-variables
-		- `Edit the system environment variables`
-		- `Edit environment variables for your acccount`
-	- `System Information`
-		- it's [[#^msinfo32]].exe
-	- `Defragment and Optimize Drives`
-		- see what kind of drives you have (ssd, hdd)
-		- optimize the drives
-			- defragmentation for hdds
-			- trimming for ssds
-				- trimming happens based on the table the garbage collector in the ssd makes
-				- if the microcontroller hasn't been alimented and stayed idle long enough, the table isn't updated
-	- `Power Options`
-		- it's also in the control panel
-		- Disable power management for ssds and make them consume all the time (needed to for the garbage collector to index stuff when idle)
-			- `Change plan settings` on the plan in use
-			- `Change advanced power settings`
-			- `PCI Express`
-			- `Link State Power Management`
-			- `Setting: Off`
-- **Shell independent commands:** ^commands
-	- They're actual executables, that behave as if they were in the [[#^path]].
-	  
-	  It means that physically they're like different from shell commands:
-		- they can be called through [[#^win-r]]
-		- they can be called from any shell you install
-		-  These are programs dude, you can make them too.
-	- [[Command Prompt|cmd.exe]]
-		- starts the command prompt.
-		- Yes, you can run a command prompt from inside a command prompt.
-	- `where commandorexecutable`
-		- if it recognizes the command (either it's in the current dir or [[Windows#^path|available everywhere]]) it'll tell you where it is
-		- if it finds multiple, it tells you the location of every single one
-	- `tree`
-		- view the folder tree of the directory you're in
-	- `systeminfo`
-		- info about the system
-	- `wmic get cpu`
-		- tells you info about the cpu
-		- `wmic get cpu caption`
-			- returns the caption of the CPU (the essential details)
-	- `type file.txt`
-		- show file contents
-	- `more`
-		- same as `type`(???)
-	- **Commands that open another window**
-		- `regedit` ^regedit
-			- open system registries editor
-		- `msinfo32` ^msinfo32
-			- info about the system
-			- `System Model`
-				- what laptop you're using
-		- `devmgmt.msc`
-			- device manager
-			- you can see USBs that fail to connect there
-	- **Non-native (to install)**
-		- `dumpbin`
-			- basically [[Unix#^objdump|objdump]]
+Executable files on Windows are `.exe`, `.bat` or `.cmd` files.
+
+---
+
+## Userland
+
+### Default Start Menu
+
+- `Command Prompt`
+	- opens the command prompt
+- `Edit the system environment variables`
+- `Edit environment variables for your acccount`
+- `System Information`
+	- it's [[#^msinfo32]].exe
+- `Defragment and Optimize Drives`
+	- See what kind of drives you have (ssd, hdd).
+	  You can optimize them here:
+		- defragmentation, for [[HDD|HDDs]]
+		- trimming, for [[SSD|SSDs]]
+- `Power Options`
+	- it's also in the control panel
+	- Disable power management for ssds and make them consume all the time (needed to for the garbage collector to index stuff when idle)
+		- `Change plan settings` on the plan in use
+		- `Change advanced power settings`
+		- `PCI Express`
+		- `Link State Power Management`
+		- `Setting: Off`
+
+---
+
+### Commands
+
+They're executables in the [[#^path]], and other executables that behave as if they were in the [[#^path]].
+
+#### Where to run commands?
+
+There are various places you can run commands from.
+- [[win-r]]
+- any terminal (windows has the [[Command Prompt]] and [[Powershell]] installed already)
+- the long bar on top of the [[explorer.exe|file explorer]] where the current path is written (yes. LOL.) 
+
+#### Commands meant to run inside terminals
+
+- `where commandorexecutable`
+	- if it recognizes the command (either it's in the current dir or [[Windows#^path|available everywhere]]) it'll tell you where it is
+	- if it finds multiple, it tells you the location of every single one
+- `tree`
+	- view the folder tree of the directory you're in
+- `systeminfo`
+	- info about the system
+- `wmic get cpu`
+	- tells you info about the cpu
+	- `wmic get cpu caption`
+		- returns the caption of the CPU (the essential details)
+- `type file.txt`
+	- show file contents
+- `more`
+	- same as `type`(???)
+
+#### Commands that open their own window
+
+- `cmd`
+	- opens the [[command prompt]] terminal
+	- when ran inside a terminal, it doesn't open another terminal
+	- it does hijack the terminal though. (Starts interpreting batch commands)
+- `powershell`
+	- opens the [[powershell]] terminal
+	- when ran inside a terminal, it doesn't open another terminal
+	- it does hijack the terminal though. (Starts interpreting powershell commands)
+- `regedit` ^regedit
+	- open system registries editor
+- `msinfo32` ^msinfo32
+	- info about the system
+	- `System Model`
+		- what laptop you're using
+- `devmgmt.msc`
+	- device manager
+	- you can see USBs that fail to connect there
+
+- **Non-native (to install)**
+	- `dumpbin`
+		- basically [[Unix#^objdump|objdump]]
 
 ---
 
 ### Environment variables
 
-- **To edit them (without commands):**
+- **To edit them (without using commands):**
 	- [[#^edit-variables]]
 - `%PATH%` ^path
 	- This variable stores a list of directories.
 	  
-	  Every executable file (`.exe`, `.batch`, `.cmd`) that's directly inside the directories contained here is available as a command everywhere on your system.
+	  Every [[#Executables|executable]] that's directly inside these directories is available as a command everywhere on your system.
 	  
 	  Priority (same name, who launches?) is based on the order they're written in.
 	  
-	  Super useful for executable files that you want to turn into commands available anywhere. Examples: [[Git]] and [[php.exe]].
+	  Super useful for executable files that you want to turn into commands available everywhere. Examples: [[Git]] and [[php.exe]].
 	  
-	  When you install command line tools and they ask for administrator permission, one of the things they do is simply put themselves here.
+	  When you install command line tools and they ask for administrator permission, one of the things they do is simply put themselves here automatically.
 	  
-	  If a bigger program installs a command line tool as a dependency, it will probably not put the command in the path. So if you roam around and figure out you have a `git.exe` installed but the command doesn't work, it's because you have to put the directory `git.exe` is in, in the path.
+	  If a bigger program installs a command line tool as a dependency, it will probably not put the command in the path. So if you roam around and figure out you have a `git.exe` somewhere but the command doesn't work, it's because you have to put the directory `git.exe` is in, in this variable.
 
 ---
 

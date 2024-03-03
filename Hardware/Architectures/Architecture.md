@@ -1,7 +1,7 @@
-### About architectures
+An architecture is a specification for how a kind of hardware component must work. It's a standard.
 
-- they're an abstraction for hardware.
-- you follow this abstraction to build real hardware that adheres to the standard
-- the term is very broad. Every hardware component must be made in a way that makes sense for other people. Typically, the distinction is:
-	- if you'd be capable of building that component (a logic gate) then it's inappropriate to call it an architecture. Way too simple
-	- if it's alien tech (a [[Microprocessor]] or an [[SSD]]) then I'll put the note in this "architectures" folder.
+The reason we need this specification is because while there are many ways to do things, we also want things made by different people to work together.
+
+For example, [[microprocessor]] architectures serve the purpose of making [[software]] work in every new machine you make.
+
+No corporation would be interested in making a new cpu that can't run any existing [[firmware]]. It's just dumb
