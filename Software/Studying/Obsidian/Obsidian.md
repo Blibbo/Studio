@@ -82,7 +82,7 @@ tags:
 	- split right
 - `sdown`
 	- split down
-- `odefap`
+- `defapp`
 	- `open in default app`
 - `add file property` ^add-property-command
 	- [[#^add-property-shortcut]]
@@ -139,6 +139,7 @@ tags:
 ### Themes
 
 - **Tokyo Night**: ^tokyo-night
+	- `Accent: 255 128 251`
 	- Pleasant
 	- colors different header levels differently
 	- colors bold text differently

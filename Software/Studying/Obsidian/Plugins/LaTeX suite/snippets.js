@@ -315,7 +315,7 @@
 
 	
 	// Code
-	{trigger: "cd", replacement: "`$0`$1", options: "tw"},
+	{trigger: "cd", replacement: "`$0`$1", options: "tAw"},
 	{trigger: "fence", replacement: "```", options: "tcA"},
 	{trigger: "bt", replacement: "`", options: "t"},
 	{trigger: "js", replacement: "`{js}$0`$1", options: "tw"},
@@ -326,6 +326,9 @@
 	{trigger: "html", replacement: "`{html}$0`$1", options: "tw"},
 	{trigger: "python", replacement: "`{python}$0`$1", options: "tw"},
 	{trigger: "dataview", replacement: "```dataview\n$0\n```$1", options: "tAw"},
+	{trigger: "batch", replacement: "`{batch}$0`$1", options: "tw"},
+	{trigger: "bat", replacement: "`{bat}$0`$1", options: "tw"},
+	{trigger: "cmd", replacement: "`{cmd}$0`$1", options: "tw"},
 	
 	// Markdown
 	{trigger: "bld", replacement: "**$0**$1", options: "tAw"},

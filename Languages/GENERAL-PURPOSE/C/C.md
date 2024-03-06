@@ -10,9 +10,11 @@ aliases:
   - ISO C
   - C Standard
 ---
-C source files have a `.c` extension.
+Statically typed programming language.
+The standard for this language is composed of syntax + a standard library. The standard library implementation may vary, but the [[interface]] is the same everywhere.
 
-Here's my [API Reference](https://devdocs.io/c/) of choice for the C standard library.
+C source files have a `.c` extension.
+Here's my [Reference](https://devdocs.io/c/) of choice for the C standard library.
 
 ---
 

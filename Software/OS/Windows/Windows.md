@@ -55,12 +55,13 @@ Executable files on Windows are `.exe`, `.bat` or `.cmd` files.
 
 ### Commands
 
-They're executables in the [[#^path]], and other executables that behave as if they were in the [[#^path]].
+They're executables that behave as if they were in the [[#^path]].
+Executable that also actually are in the [[#^path]] also count, but I'm documenting the default native ones to Windows.
 
 #### Where to run commands?
 
 There are various places you can run commands from.
-- [[win-r]]
+- [[#^win-r]]
 - any terminal (windows has the [[Command Prompt]] and [[Powershell]] installed already)
 - the long bar on top of the [[explorer.exe|file explorer]] where the current path is written (yes. LOL.) 
 
@@ -159,6 +160,7 @@ There are various places you can run commands from.
 
 - `Win + R` ^win-r
 	- execute a [[#^commands|command]] (or .exe in the [[#^path]])
+	- also called `Stard` ${ \to }$ `Run`
 - `Win + X`
 	- it's like a right click on the windows button
 	- `Up/Down` keys to navigate it
