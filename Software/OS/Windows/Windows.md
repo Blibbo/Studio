@@ -3,16 +3,12 @@ tags:
   - closed-source
   - operating-system
 ---
----
-
-### About Windows
-
-- bloatware, with a functioning operating system hidden in there
-- made in [[C++]]
+Bloatware, with a functioning operating system hidden in there.
+Made in [[C++]]
 
 ---
 
-### List of OSs this page is valid for
+### Releases
 
 ```dataview
 LIST from "Software/OS/Windows" AND !"Software/OS/Windows/RELATED"

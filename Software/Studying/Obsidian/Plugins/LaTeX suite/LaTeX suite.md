@@ -116,6 +116,10 @@ tags: []
 			- ${ \underline{x} }$
 			- works for any letter AND latex symbol
 				- **ex: ** `@aund` ${ \implies \underline{\alpha} }$
+		- `xhat`
+			- ${ \hat{x} }$
+		- `xvec`
+			- ${ \vec{x} }$
 	- **Number sets:**
 		- `NN`
 			- `{latex}\mathbb(N)`
