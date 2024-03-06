@@ -41,8 +41,6 @@ Here are the variables the terminal adds:
 Here are the variables Windows adds:
 ![[Windows#Environment variables]]
 
----
-
 ### Syntax
 
 - `command (code block)`

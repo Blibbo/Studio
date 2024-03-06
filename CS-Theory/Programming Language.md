@@ -28,11 +28,11 @@ We can't make programming languages just plain like EASY to read: a program is m
 
 However, this *does* have the unwanted result of making higher level languages slower and just generally worse performing.
 We say they "have other strengths". ~~like we do to special needs children~~
-Online, they call the newest ones "toy languages" because they're dicks. Don't worry about it.
+Online, they call the newest ones "toy languages" because they're dicks. Don't worry about it
 
 Jokes aside, if you have a broad idea about what you want to do and want to make a quick draft, a toy language will aid you in quickly seeing your idea in action and see if your brain farted or whether it's actually doable.
 Whenever you decide to stop fucking around, it's easy to see how working *with* the machine is way faster than avoiding it like the plague.
 
 Though if I'm being honest, nobody who doubts lower level tools is going to build a project big and computationally intensive enough (save programs with shitty algorithms) to even see the difference between these tools, so of course the readable one is better. Fuck's sake.
 
-At the moment, we have fucking like THREE of these super fast tools that are actually used and they're [[C]], [[C++]] and god damn [[Rust]]. Have **YOU** heard of Rust? If not, stop fucking saying C is pointless god DAMN IT.
+At the moment, we have like THREE of these super fast tools that are actually used and they're [[C]], [[C++]] and m-fing [[Rust]]. Have **YOU** heard of Rust? If not, stop saying C is pointless, DAMN IT.
