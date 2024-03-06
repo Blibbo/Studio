@@ -209,6 +209,21 @@ There are various places you can run commands from.
 
 ---
 
+## Customization
+
+### Icons
+
+You can change them in a file's properties.
+It's not an available option for any executable file. I guess the idea is to make it evident what it is because they're the most dangerous files.
+It's not like it's physically impossible, windows is just trying to prevent you from doing it.
+There are programs that allow you to alter executables to get a custom item.
+All info in the links below
+
+https://www.makeuseof.com/tag/customize-icon-windows/
+https://www.makeuseof.com/windows-10-icon-packs/
+
+---
+
 ### Related
 
 ```dataview
