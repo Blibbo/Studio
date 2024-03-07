@@ -1,0 +1,51 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:Software  ",
+      "color": {
+        "a": 1,
+        "rgb": 52414
+      }
+    },
+    {
+      "query": "path:Hardware",
+      "color": {
+        "a": 1,
+        "rgb": 11370240
+      }
+    },
+    {
+      "query": "path:Physics",
+      "color": {
+        "a": 1,
+        "rgb": 65378
+      }
+    },
+    {
+      "query": "path:Maths  ",
+      "color": {
+        "a": 1,
+        "rgb": 16721408
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 2.755675960631156,
+  "close": true
+}

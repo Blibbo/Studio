@@ -2,15 +2,13 @@
 tags:
   - open-source
 ---
----
+Open source text editor. Coding oriented.
 
-### About Notepad++
-
-- released under the [[GPL]]
+Released under the [[GPL]]
 
 ---
 
-### Shortcuts
+## Shortcuts
 
 - `Ctrl + D`
 	- duplicate line
@@ -25,7 +23,17 @@ tags:
 
 ---
 
-### Trivia
+## Customization
+
+- `Settings > Preferences > Dark Mode >`
+	- `Enable Dark Mode`
+	- `Black Tone`
+- `Settings > Style > Theme >`
+	- `Twilight`
+
+---
+
+## Trivia
 
 - I'm very fond of this editor
 - this and the [[gcc]] make for a very comforting combo

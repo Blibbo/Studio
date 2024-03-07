@@ -140,12 +140,15 @@ tags:
 
 - **Tokyo Night**: ^tokyo-night
 	- `Accent: 255 128 251`
-	- Pleasant
-	- colors different header levels differently
-	- colors bold text differently
+	- each header level has a unique color
+	- _italic text_ is colored (a little aggressively)
 	- code isn't dim like in the standard theme
-	- optimal for notes
-	- _just use this please_
+	- very bad ==highlighting==
+- **Blue Topaz**
+	- uniquely colored headers
+	- strong **bold**
+	- _italic text_ is colored, but not aggressive
+	- good ==highlighting==
 
 ---
 

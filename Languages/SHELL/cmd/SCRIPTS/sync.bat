@@ -24,4 +24,6 @@ set commit_msg=commit from %device%
 echo on
 git pull && git add * && git commit -a -m "%commit_msg%" && git push
 
+@echo off
 endlocal
+exit /b %errorlevel%

@@ -1,0 +1,9 @@
+{
+  "showUnsupportedFiles": true,
+  "spellcheck": false,
+  "alwaysUpdateLinks": true,
+  "promptDelete": false,
+  "autoPairBrackets": false,
+  "autoPairMarkdown": true,
+  "showLineNumber": true
+}

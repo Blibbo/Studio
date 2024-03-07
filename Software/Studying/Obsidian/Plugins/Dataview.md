@@ -1,19 +1,14 @@
 ---
 aliases:
 ---
----
+Dataview is an [[Obsidian]] plugin that allows you to do exactly two things: [[#Indexing|index]] and [[#Querying|query]] your vault.
 
-### About dataview
-
-- [[Obsidian]] plugin
-- index and query your vault
-- [dataview](https://github.com/blacksmithgu/obsidian-dataview) on [[GitHub]]
-- [documentation](https://blacksmithgu.github.io/obsidian-dataview/)
-- it generates data out of [[#^index-data|indexed information]] in the note
+[documentation](https://blacksmithgu.github.io/obsidian-dataview/)
+[dataview](https://github.com/blacksmithgu/obsidian-dataview) on [[GitHub]]
 
 ---
 
-### Configuration
+## Configuration
 
 - `Settings > Dataview > Inline Field Highlighting in Reading View > false`
 	- otherwise it conflicts with [[Code Styler]]
