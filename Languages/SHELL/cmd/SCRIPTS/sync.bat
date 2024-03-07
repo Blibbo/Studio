@@ -1,5 +1,4 @@
 @echo off
-REM Enable delayed expansion
 setlocal enabledelayedexpansion
 
 if "%1" neq "" (
