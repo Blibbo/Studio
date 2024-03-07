@@ -18,6 +18,12 @@ A reference for all the available commands in the terminal can be found
 - [here](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) by microsoft. The official one. It sucks balls
 - [here](https://ss64.com/nt/) an unofficial one, it has a little dot next to the commands that are exclusive to the command prompt, and the other ones are native to Windows (those can be run by [[Powershell]] too)
 
+Scripts are text files with `.bat` or `.cmd` extensions. They don't need to be compiled and are natively executable on Windows.
+They contain series of commands. Each line is its own command, executed sequentially.
+
+The scripting language isn't super intuitive, here's a link that helps:
+https://stackoverflow.com/a/64324969
+
 ---
 
 ### Environment
@@ -58,14 +64,29 @@ Here are the variables Windows adds:
 	- by _input_ and _output_ I'm talking about when the programs write in the console window.
 	- That normally happens through streams called [[C#^stdin|stdin]] and [[C#^stdout|stdout]] (they'll have other names in other languages but it's still them)
 	- to make programs communicate in fancier ways look into [[IPC]]
-- `%variable%` ^variable-syntax
-	- this expands to the value of the environment variable.
-	- `{batch}%variable:c=d%`
-		- expands to the variable, but replaces `c` with `d`
-		- you can also replace with nothing, to make substrings
-- `!variable!`
-	- correctly scoped variable in blocks
-	- more info [[#Language quirks|here]]
+- **Variables**
+	- **Declaration**
+		- `{batch}set my_Variable = 3`
+		- [[#^]]
+	- **Parsing**
+		- Variables mentioned within the code expand to their value before the line OR BLOCK (if you're inside a block) is executed.
+		  This can mean you might not be able to access your newly set variable inside a block. This problem is addressed [[#^block-variable|here]]
+		- `%variable%` ^variable-syntax
+			- this expands to the value of the environment variable.
+			- `{batch}%variable:c=d%`
+				- expands to the variable, but replaces `c` with `d`
+				- you can also replace with nothing, to make substrings
+		- `{batch}!variable!` ^block-variable
+			- correct scope for blocks
+			- requires `{batch}SETLOCAL ENABLEDELAYEDEXPANSION` to be written anywhere before this line (even outside the block)
+			- https://stackoverflow.com/a/21389931
+	- **Default**
+		- `{batch}%errorlevel%` contains the last error code
+			- typically returned by functions
+		- `{batch}%1 %2 %3 etc` contain the parameters passed to the script/function within the script
+		- `{batch}%~1` is a modifier that removes any quotation marks from the variable `{batch}%1`
+		- `{batch}%*` contains all the parameters as a single string
+		- `{batch}%~dp0` contains the path of the currently executing script
 - `%CD%`
 	- current directory
 - `@command` ^silence
@@ -78,28 +99,37 @@ Here are the variables Windows adds:
 		:my_function
 			REM your code here. %1 -> 3
 		exit /b
+		REM "goto :eof" is equivalent and works too
 		```
+		- the function declaration has to be skipped somehow (see [[#^goto]].
+		  The default behavior of the script is reading and executing everything: even the definition with non-existent formal parameters.
 	- **Call**
 		- `{batch}call :my_function 3`
-
+	- **Example**
+		```batch
+		@echo off
+		goto :main
+		
+		:my_function
+			echo Parameter: %1
+		exit /b %errorlevel%
+		
+		:main
+			call :my_function 3
+			call :my_function 4
+		exit /b %errorlevel%
+		```
+		- **Output:**
+			```
+			Parameter: 3
+			Parameter: 4
+			```
 - **Labels**
 	- they're places in the code you can jump to
 	- `:my_label`
 	- `goto :my_label`
 	- **Default labels**
 		- `:eof` end of file
-
----
-
-### Language quirks
-
-In batch files, when a line **OR BLOCK** is reached, it gets parsed before being executed.
-Variables expand to the value they had **BEFORE** the line/block was reached.
-Meaning, if you set a variable in a block, you can't access your newly set variable right after, in the same block, by default.
-That behavior gets fixed by inserting this line at the start of the script:
-`{batch}setlocal EnableDelayedExpansion`
-and by using `{batch}!this_syntax!` to refer to variables, instead of [[#^variable-syntax|this one]]
-https://stackoverflow.com/a/21389931
 
 ---
 
@@ -185,31 +215,9 @@ These are called **Internal Commands** because they're unique to this shell
 
 ---
 
-### Scripts
-
-They're files with a `.bat` or `.cmd` extension.
-
-#### Script unique stuff
-
-`%1`, `%2`, `%3` etc are [[#Variables]] that contain arguments passed when the script was [[#^call|called]]. If no arguments were passed, they default to `""`
-
-`{batch}%~dp0` is a variable containing the path of the currently executing script
-
-#### Examples
-
-```batch
-@echo off
-echo print something
-pause
-```
-
----
-
 ### External commands
 
 ![[Windows#^commands]]
-
----
 
 ### Debugging
 
