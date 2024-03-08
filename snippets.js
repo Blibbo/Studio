@@ -338,5 +338,5 @@
 	{trigger: "ck", replacement: "- [ ] ", options: "tAw"},
 	
 	// Emojis
-	{trigger: ":thumbsup:", replacement: "👍", options: "tA"},
+	{trigger: ":thumbsup:", replacement: "👍", options: "tcmA"},
 ]

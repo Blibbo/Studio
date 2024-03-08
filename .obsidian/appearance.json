@@ -1,4 +1,10 @@
 {
   "accentColor": "",
-  "cssTheme": "Blue Topaz"
+  "theme": "obsidian",
+  "baseFontSize": 19,
+  "cssTheme": "Blue Topaz",
+  "interfaceFontFamily": "Inter",
+  "monospaceFontFamily": "Lucida Console",
+  "textFontFamily": "Arial,Lucida Sans Unicode",
+  "baseFontSizeAction": true
 }

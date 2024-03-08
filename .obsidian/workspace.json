@@ -13,13 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Studying/Obsidian/Obsidian.md",
+                "file": "Software/Studying/Obsidian/Plugins/Dataview.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "8c4b2d65dce566a3",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +102,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Studying/Obsidian/Obsidian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +118,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Studying/Obsidian/Obsidian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +139,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Software/Studying/Obsidian/Obsidian.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -157,14 +162,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "fd618a3abb01f6db",
+  "active": "8c4b2d65dce566a3",
   "lastOpenFiles": [
-    "Software/Programming/Text Editors/Notepad++.md",
-    "Software/Studying/Obsidian/Obsidian.md",
-    "Software/Studying/Obsidian/Plugins/LaTeX suite/LaTeX suite.md",
     "Software/Studying/Obsidian/Plugins/Dataview.md",
-    "Templates/Definition.md",
     "Languages/SHELL/cmd/Command Prompt.md",
+    "Software/Studying/Obsidian/Obsidian.md",
+    "Software/Programming/Text Editors/Notepad++.md",
+    "Software/Studying/Obsidian/Plugins/LaTeX suite/LaTeX suite.md",
+    "Templates/Definition.md",
     "Templates",
     "Software/OS/Windows/Windows.md",
     "Software/OS/Windows/RELATED/FileTypesMan.md",

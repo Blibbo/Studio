@@ -67,7 +67,7 @@ Here are the variables Windows adds:
 - **Variables**
 	- **Declaration**
 		- `{batch}set my_Variable = 3`
-		- [[#^]]
+		- [[#^set]]
 	- **Parsing**
 		- Variables mentioned within the code expand to their value before the line OR BLOCK (if you're inside a block) is executed.
 		  This can mean you might not be able to access your newly set variable inside a block. This problem is addressed [[#^block-variable|here]]

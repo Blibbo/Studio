@@ -12,182 +12,207 @@ Dataview is an [[Obsidian]] plugin that allows you to do exactly two things: [[#
 
 - `Settings > Dataview > Inline Field Highlighting in Reading View > false`
 	- otherwise it conflicts with [[Code Styler]]
-- `Inline Query Prefix`
-	- {dataview}
-- `JavaScript Inline Query Prefix`
-	- {dataviewjs}
+- `Inline Query Prefix` ^dql-prefix
+	- _{dataview}_
+- `JavaScript Inline Query Prefix` ^dvjs-prefix
+	- _{dataviewjs}_
 
 ---
 
-### Syntax
+## Indexing
 
-- **Index data in your note:** ^index-data
-	- **Tags:**
-		- [[Obsidian#^tags|Obsidian tags]]
-	- **Bullet points:**
-		- regular markdown [[Markdown#^unordered-list|unordered list]]
-		- has to do with [[YAML]] but idk what.
-		- how these get indexed is a mistery for now
-	- **Front matter:**
-		- [[YAML]] at the top of each file
-		- already in the [[Obsidian#^properties|Obsidian specification]]
-	- **Inline fields:** ^inline-fields
-		- `Field Name:: value` ^values
-			- if the field is alone in the line
-		- surround with square brackets `[]` for putting it between sentences (multiple are allowed per line)
-		- surround with parentheses `()` to hide the field name (still shows the value)
-- **Data types:**
+Dataview generates data out of indexed information.
+
+Not everything gets indexed. You can't just refer to specific blocks as each one of them would have to be indexed by the plugin, which could become expensive.
+
+Things that are automatically indexed are:
+- all file names and their location
+- every bullet point and task within every file
+- obsidian tags
+- Frontmatter in YAML format
+
+### File properties
+
+Write a line in the file with just this: `Field Name:: field value`
+
+### Inline fields
+
+Inline fields are like [[#file properties]], but they can be put in any line or block.
+Surround `Field Name:: field value` with `[]` to make an inline field.
+Surround it with `()` instead to hide the name and only show the value
+Example: [Author:: John Smith] vs (Author:: John Smith)
+
+---
+
+## Querying
+
+You can query the indexed information through a dedicated [[DML]] called **[[#DQL]]** (**Dataview Query Language**) or through [[JavaScript]] (**[[#Dataviewjs]]**)
+
+### DQL
+
+It's a [[DML]] that resembles [[SQL]]
+
+#### Data types
+
+Based on how you write values, dataview can decide to interpret your data as being of either of the following types:
+- `text`
+	- for text wrapped in `""`
+- `date`
+	- for dates written in this format: [[Date formats#ISO Date Format|YYYY-MM-DD]]
+- `object`
+	- for objects that follow [[YAML]] syntax
+- `link`
+	- [[Obsidian#^backlinks|obsidian links]]
+- `list`
+	- [[JavaScript#ARRAYS|javascript arrays]]
+- `boolean`
+- `number`
+
+#### Syntax
+
+The basic query is a codeblock with this shape:
+
+~~~sql
+```dataview
+<query type>
+FROM <source> (optional)
+<data commands> (optional)
+```
+~~~
+
+##### Query types
+
+- `LIST` ^dql-list
+	- lists files
+	- `LIST WITHOUT ID`
+		- if you print [[#^dql-additional-info|additional info]], it won't print the original link to the file
+		- won't print the group name in case of [[#^dql-group-by|group by]]
+	- `LIST "File Path: " + file.folder + " _(created: " + file.cday + ")_"` ^dql-additional-info
+		- Output: `- League of Legends: File Path: Games _(created: May 13, 2021)_`
+- `TABLE`
 	- **Info:**
-		- based on how you write [[#^values|values]] dataview indexes stuff according to the few types described here
-	- `text`
-		- for text wrapped in `""`
-	- `date`
-		- for dates written in this format: [[Date formats#ISO Date Format|YYYY-MM-DD]]
-	- `object`
-		- for objects that follow [[YAML]] syntax
-	- `link`
-		- [[Obsidian#^backlinks|obsidian links]]
-	- `list`
-		- [[JavaScript#ARRAYS|javascript arrays]]
-	- `boolean`
-	- `number`
-- **Query your data:**
-	- **DQL** (**Dataview Query Language**) ^DQL
-		- **Info:**
-			- reminiscent of [[SQL]]
-			- also an [[DSL#External DSL (eDSL)|eDSL]]
-			- how2query in your note:
-				~~~
-				```dataview
-				query type
-				FROM source (optional)
-				data commands (optional)
-				```
-				~~~
-		- **Query types:** ^dql-query-types
-			- `LIST` ^dql-list
-				- lists files
-				- `LIST WITHOUT ID`
-					- if you print [[#^dql-additional-info|additional info]], it won't print the original link to the file
-					- won't print the group name in case of [[#^dql-group-by|group by]]
-				- `LIST "File Path: " + file.folder + " _(created: " + file.cday + ")_"` ^dql-additional-info
-					- Output: `- League of Legends: File Path: Games _(created: May 13, 2021)_`
-			- `TABLE`
-				- **Info:**
-					- similar to [[#^dql-list|list]] but displays in tabular view
-				- `TABLE WITHOUT ID`
-					- to remove the header
-				- `TABLE started, file.folder AS Path, file.etags AS "File Tags"`
-					- multiple fields
-			- `TASK`
-				- [[#^tasks|tasks]] are the top level information
-				- you can check/uncheck tasks
-				- **Examples:**
-					~~~
-					```dataview
-					TASK
-					WHERE !completed
-					SORT created ASC
-					LIMIT 10
-					GROUP BY file.link
-					SORT rows.file.ctime ASC
-					```
-					~~~
-			- `CALENDAR`
-				- requires a field of type `date`
-				- **Examples:**
-					- Display a calendar where each note is a creation date
-						~~~
-						```dataview
-						CALENDAR file.cday
-						```
-						~~~
-		- **Sources:**
-			- `#a-tag`
-				- `#a-nested/tag`
-			- `"full/folder/path"`
-				- case sensitive
-			- `"full/file/path.md"`
-				- case sensitive
-			- _\[\[note\]\]_
-				- every note that links to _note_ (every [[Obsidian#^backlinks|backlink]])
-			- _outgoing(\[\[note\]\])_
-				- every link inside _note_
-			- _\[\[\]\]_
-				- every link to the current note
-				- also _\[\[#\]\]_
-			- **Additionally:**
-				- `!`
-					- "not"
-					- blacklist that source
-				- `and`
-					- combines multiple sources
-					- Ex: `#tag and folder`
-						- both from that tag and in that folder
-					- Ex: `#food and !#fastfood`
-						- food and not fastfood
-				- `or`
-					- also combines multiple sources
-					- Ex: `#tag or folder`
-					- everything in that tag and also everything in that folder
-				- `()`
-					- group logically. For complex sources
-					- Ex: `(#tag1 or #tag2) and (#tag3 or #tag4)`
-		- **Data Commands:** ^dql-data-commands
-			- `WHERE boolean expression`
-				- returns pages where the boolean expression is true
-				- **Examples:**
-					- `WHERE key = "value"`
-					- `LIST WHERE file.mtime >= date(today) - dur(1 day)`
-						- files modified in the last 24 hours
-					- arbitrary field `completed` set to false, more than a month old:
-						- `LIST FROM #projects WHERE !completed AND file.ctime <= date(today) - dur(1 month)`
-			- `SORT field1 order, field2 order`
-				- you can sort on 1 or more fields. `field1` has priority in this case
-				- **Orders:**
-					- `ASC`: also `ASCENDING`
-					- `DESC`: also `DESCENDING`
-			- `GROUP BY (field) AS column-name` ^dql-group-by
-				- displays only the keys by default (no repeats)
-				- `{js}rows`
-					- implicit field added
-					- list of matching items per that field
-					- you can chain it with a property of the individual field (like a foreach)
-					- see first example to make it make sense
-				- **Examples:**
-					- `LIST rows.file.link GROUP BY type`
-						- common use case to also display the content:
-			- `FLATTEN (field) AS column-name`
-				- only works if field-name is an array
-				- **Example:**
-					- `TABLE authors FROM #LiteratureNote FLATTEN authors`
-						- authors is a list field
-						- you'll see each entry individually now
-						- a "file" column will be repeated once for every author in the literature note
-			- `LIMIT 5`
-				- the limit is 5
-	- **Inline query:**
-		- `` `=your query` ``
-		- **Limitations:**
-			- cannot access multiple files
-			- no [[#^dql-query-types|query types]]
-			- no [[#^dql-data-commands|data commands]]
-		- **Available stuff:**
-			- `this`
-				- current file
-			- _\[\[other page\]\]_
-				- another file
-			- every dql expression is valid
-		- **Examples:**
-			- `` `= this.file.name` ``
-	- **[[JavaScript]] API**
+		- similar to [[#^dql-list|list]] but displays in tabular view
+	- `TABLE WITHOUT ID`
+		- to remove the header
+	- `TABLE started, file.folder AS Path, file.etags AS "File Tags"`
+		- multiple fields
+- `TASK`
+	- [[#^tasks|tasks]] are the top level information
+	- you can check/uncheck tasks
+	- **Examples:**
 		~~~
-		```dataviewjs
-		JavaScript here
+		```dataview
+		TASK
+		WHERE !completed
+		SORT created ASC
+		LIMIT 10
+		GROUP BY file.link
+		SORT rows.file.ctime ASC
 		```
 		~~~
-	- **Inline Dataview JS**
-		- `` `$=dv.current().file.mtime` ``
+- `CALENDAR`
+	- requires a field of type `date`
+	- **Examples:**
+		- Display a calendar where each note is a creation date
+			~~~
+			```dataview
+			CALENDAR file.cday
+			```
+			~~~
+- **Sources:**
+	- `#a-tag`
+		- `#a-nested/tag`
+	- `"full/folder/path"`
+		- case sensitive
+	- `"full/file/path.md"`
+		- case sensitive
+	- _\[\[note\]\]_
+		- every note that links to _note_ (every [[Obsidian#^backlinks|backlink]])
+	- _outgoing(\[\[note\]\])_
+		- every link inside _note_
+	- _\[\[\]\]_
+		- every link to the current note
+		- also _\[\[#\]\]_
+- **Additionally:**
+	- `!`
+		- "not"
+		- blacklist that source
+	- `and`
+		- combines multiple sources
+		- Ex: `#tag and folder`
+			- both from that tag and in that folder
+		- Ex: `#food and !#fastfood`
+			- food and not fastfood
+	- `or`
+		- also combines multiple sources
+		- Ex: `#tag or folder`
+		- everything in that tag and also everything in that folder
+	- `()`
+		- group logically. For complex sources
+		- Ex: `(#tag1 or #tag2) and (#tag3 or #tag4)`
+- **Data Commands:** ^dql-data-commands
+	- `WHERE boolean expression`
+		- returns pages where the boolean expression is true
+		- **Examples:**
+			- `WHERE key = "value"`
+			- `LIST WHERE file.mtime >= date(today) - dur(1 day)`
+				- files modified in the last 24 hours
+			- arbitrary field `completed` set to false, more than a month old:
+				- `LIST FROM #projects WHERE !completed AND file.ctime <= date(today) - dur(1 month)`
+	- `SORT field1 order, field2 order`
+		- you can sort on 1 or more fields. `field1` has priority in this case
+		- **Orders:**
+			- `ASC`: also `ASCENDING`
+			- `DESC`: also `DESCENDING`
+	- `GROUP BY (field) AS column-name` ^dql-group-by
+		- displays only the keys by default (no repeats)
+		- `{js}rows`
+			- implicit field added
+			- list of matching items per that field
+			- you can chain it with a property of the individual field (like a foreach)
+			- see first example to make it make sense
+		- **Examples:**
+			- `LIST rows.file.link GROUP BY type`
+				- common use case to also display the content:
+	- `FLATTEN (field) AS column-name`
+		- only works if field-name is an array
+		- **Example:**
+			- `TABLE authors FROM #LiteratureNote FLATTEN authors`
+				- authors is a list field
+				- you'll see each entry individually now
+				- a "file" column will be repeated once for every author in the literature note
+	- `LIMIT 5`
+		- the limit is 5
+
+##### Inline queries
+
+`` `=your query` ``
+replace `=` with your prefix, if you changed it in the [[#configuration]]
+
+**Limitations:**
+- cannot access multiple files
+- no [[#^dql-query-types|query types]]
+- no [[#^dql-data-commands|data commands]]
+**Available stuff:**
+- `this`
+	- current file
+- _\[\[other page\]\]_
+	- another file
+- every dql expression
+
+###### Examples
+
+`` `= this.file.name` ``
+
+
+### Dataview js
+	~~~
+	```dataviewjs
+	JavaScript here
+	```
+	~~~
+- **Inline Dataview JS**
+	- `` `$=dv.current().file.mtime` ``
 		
 ---
 
