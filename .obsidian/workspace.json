@@ -4,31 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "1199cc418404a03d",
+        "id": "83ab87280b4b81c6",
         "type": "tabs",
         "children": [
           {
-            "id": "fd618a3abb01f6db",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software/Studying/Obsidian/Plugins/Dataview.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8c4b2d65dce566a3",
+            "id": "1437fc823cdc0aa7",
             "type": "leaf",
             "state": {
               "type": "empty",
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Studying/Obsidian/Plugins/Dataview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Studying/Obsidian/Plugins/Dataview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Software/Studying/Obsidian/Plugins/Dataview.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -166,7 +149,7 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "8c4b2d65dce566a3",
+  "active": "1437fc823cdc0aa7",
   "lastOpenFiles": [
     "Software/Studying/Obsidian/Plugins/Dataview.md",
     "Languages/SHELL/cmd/Command Prompt.md",
