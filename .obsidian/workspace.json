@@ -11,8 +11,12 @@
             "id": "1437fc823cdc0aa7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Languages/DSL/SQL/SQL.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Languages/DSL/SQL/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Languages/DSL/SQL/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Languages/DSL/SQL/SQL.md"
+              }
             }
           }
         ],
@@ -151,6 +159,20 @@
   },
   "active": "1437fc823cdc0aa7",
   "lastOpenFiles": [
+    "CS-Theory/Problems/off-by-one error.md",
+    "Software/Programming/DBMS/MySQL/mysqld.exe.md",
+    "CS-Theory/Problems",
+    "Software/Programming/DBMS/MySQL/mysql.exe.md",
+    "Software/Programming/DBMS/Access.md",
+    "Software/Programming/DBMS/DBMS.md",
+    "Software/Programming/DBMS/SQLite.md",
+    "Software/Programming/DBMS/MySQL/FORKS/MariaDB.md",
+    "Software/Programming/DBMS/MySQL/FORKS",
+    "Languages/DSL/SQL/SQL.md",
+    "Languages/DSL/SQL",
+    "Languages/DSL",
+    "Software/Programming/DBMS/MySQL",
+    "Software/Programming/DBMS",
     "Software/Studying/Obsidian/Plugins/Dataview.md",
     "Languages/SHELL/cmd/Command Prompt.md",
     "Software/Studying/Obsidian/Obsidian.md",
@@ -172,21 +194,7 @@
     "Maths/Calculus",
     "Physics/Mechanics/Dynamics/Models",
     "Physics/Thermodynamics/Thermodynamics.md",
-    "Physics/Thermodynamics/Untitled.md",
-    "Physics/Fundamental quantities/SI.md",
-    "Physics/Models.md",
     "Physics/Models",
-    "Physics/Thermodynamics",
-    "Physics/Fundamental quantities",
-    "CS-Theory/Algorithms/Binary Search/Binary Search.md",
-    "Physics/Mechanics/Kinematics",
-    "Physics/Mechanics",
-    "Physics/Mechanics/Dynamics",
-    "Languages/MARKUP/LATEX/LaTeX.md",
-    "Physics",
-    "CS-Theory/Turing Machine.md",
-    "CS-Theory/Programming Language.md",
-    "CS-Theory/Memory/Memory.md",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/x,y spherical coordinates.png",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar to cartesian.png",
