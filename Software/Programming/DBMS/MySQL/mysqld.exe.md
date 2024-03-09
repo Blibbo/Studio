@@ -12,6 +12,6 @@ tags:
 	- server output goes to the console the command is being run from
 	- the output goes in the log files by default otherwise
 - `{batch}mysqld --datadir=C:/my/dir`
-	- tells mysql where the database directory is
-	- the directory must exist
+	- tells mysql where your actual data is
+	- the directory must actually exist, it won't create it
 	- the default directory is the same as this command's directory, but in a `/data` subdirectory

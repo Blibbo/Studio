@@ -212,6 +212,8 @@ LIST FROM "Software/Programming/Translators/Compilers" AND [[C]]
 				}
 				v = vAux;
 				```
+		- `{c}qsort(array, arrayDim, elmSizeInBytes, compareFunction);`
+			- `compareFunction`
 - `{c}string.h`
 	- **Functions:**
 		- `{c}strcmp(firstString, secondString);`

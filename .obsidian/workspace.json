@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/DSL/SQL/SQL.md",
+                "file": "Languages/GENERAL-PURPOSE/C++/C++.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/DSL/SQL/SQL.md",
+                "file": "Languages/GENERAL-PURPOSE/C++/C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/DSL/SQL/SQL.md",
+                "file": "Languages/GENERAL-PURPOSE/C++/C++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Languages/DSL/SQL/SQL.md"
+                "file": "Languages/GENERAL-PURPOSE/C++/C++.md"
               }
             }
           }
@@ -159,42 +159,42 @@
   },
   "active": "1437fc823cdc0aa7",
   "lastOpenFiles": [
-    "CS-Theory/Problems/off-by-one error.md",
+    "Languages/GENERAL-PURPOSE/C/C.md",
+    "CS-Theory/Algorithms/Sorting/Insertion Sort/Insertion Sort.md",
+    "CS-Theory/Algorithms/Sorting/Shaker Sort/Shaker Sort.md",
+    "CS-Theory/Algorithms/Sorting/Insertion Sort",
+    "CS-Theory/Algorithms/Sorting/Naïve Sort/Naïve sort.md",
+    "CS-Theory/Algorithms/Sorting/Bubble Sort/Bubble sort.md",
+    "CS-Theory/Algorithms/Sorting/Shaker Sort/Untitled",
+    "CS-Theory/Algorithms/Sorting/Shaker Sort",
+    "CS-Theory/Algorithms/Sorting/Bubble Sort/bubblesort.c",
+    "CS-Theory/Algorithms/Sorting/Bubble Sort/New Text Document.txt",
+    "CS-Theory/Algorithms/Sorting/Naïve Sort/naivesort.exe",
+    "CS-Theory/Algorithms/Sorting/Naïve Sort/naivesort.c",
+    "CS-Theory/Algorithms/Sorting/Naïve Sort/New Text Document.txt",
+    "CS-Theory/Algorithms/Sorting/Naïve Sort",
+    "Software/Programming/Ecosystems/XAMPP/MAMP.md",
+    "CS-Theory/Algorithms/Sorting/Bubble Sort",
     "Software/Programming/DBMS/MySQL/mysqld.exe.md",
-    "CS-Theory/Problems",
     "Software/Programming/DBMS/MySQL/mysql.exe.md",
+    "Languages/DSL/SQL/SQL.md",
+    "CS-Theory/Problems/off-by-one error.md",
     "Software/Programming/DBMS/Access.md",
     "Software/Programming/DBMS/DBMS.md",
     "Software/Programming/DBMS/SQLite.md",
     "Software/Programming/DBMS/MySQL/FORKS/MariaDB.md",
-    "Software/Programming/DBMS/MySQL/FORKS",
-    "Languages/DSL/SQL/SQL.md",
-    "Languages/DSL/SQL",
-    "Languages/DSL",
-    "Software/Programming/DBMS/MySQL",
-    "Software/Programming/DBMS",
     "Software/Studying/Obsidian/Plugins/Dataview.md",
     "Languages/SHELL/cmd/Command Prompt.md",
     "Software/Studying/Obsidian/Obsidian.md",
     "Software/Programming/Text Editors/Notepad++.md",
     "Software/Studying/Obsidian/Plugins/LaTeX suite/LaTeX suite.md",
     "Templates/Definition.md",
-    "Templates",
     "Software/OS/Windows/Windows.md",
     "Software/OS/Windows/RELATED/FileTypesMan.md",
     "Physics/Mechanics/Kinematics/Kinematics.md",
     "Physics/Fundamental quantities/Length.md",
     "Physics/Mechanics/Dynamics/Point Particle Model.md",
     "Physics/Mechanics/Dynamics/Uniform rectilinean motion.md",
-    "Physics/Mechanics/Dynamics/Dynamics.md",
-    "Physics/Physics.md",
-    "Physics/Kinematic Law.md",
-    "Physics/Mechanics/Dynamics/One dimensional motion of a point particle.md",
-    "Maths/Calculus/Integrals.md",
-    "Maths/Calculus",
-    "Physics/Mechanics/Dynamics/Models",
-    "Physics/Thermodynamics/Thermodynamics.md",
-    "Physics/Models",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/x,y spherical coordinates.png",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar to cartesian.png",

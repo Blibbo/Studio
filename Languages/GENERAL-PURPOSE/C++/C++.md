@@ -7,17 +7,15 @@ tags:
 aliases:
   - CPP
 ---
----
+Superset of the [[C]] programming language.
 
-### About C++
-
-- source files have `.cpp` extension
+Source files have a `.cpp` extension
 
 ---
 
 ### Syntax
 
-- **VARIABLES**
+- **Variables**
 	- **Initializer lists**
 		- _C++11+_
 		- allows you to "assign" to constant variables?
