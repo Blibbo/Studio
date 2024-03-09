@@ -22,17 +22,17 @@ Source files have a `.cpp` extension
 		- can do this cool "range based" `{cpp}for` loop
 			- don't bother with indexes, just use the value. No off-by-one errors
 		- `{cpp}for(const int v : {-129, -128, -1, 0, 42, 127, 128, 255, 256}){}`
-- **CLASSES**
-	- **PROPERTIES**
+- **Classes**
+	- **Properties**
 		- contiguous in memory. That's the case for structs as well.
-			- **EXAMPLE:**
+			- **Example:**
 				- `{cpp}T x, y, z;`
 				- `{cpp}(&x)[1] == y`. That's true.
-	- **METHODS**
-		- **CONST METHOD**
+	- **Methods**
+		- **Const method**
 			- `{cpp}int myMethod() const {}`
 			- the state of the object won't change through the function
-		- **METHOD CHAINING**
+		- **Method chaining**
 			- `{cpp}return` type of your method must be a reference type to its own class
 			- `{cpp}return` value of your method must be the own object (content of "`{cpp}this`" pointer)
 			```cpp
@@ -41,17 +41,13 @@ Source files have a `.cpp` extension
 			}
 			```
 			- then `{cpp}obj.chainableMethod().chainableMethod().chainableMethod()`
-		- **CONSTRUCTOR**
-			- **MEMBER INITIALIZER LISTS**
-				- **USAGE:**
-					- constructor for a class called Example with x and y as int properties
-					- `{cpp}Example(int a, int b) : x(a), y(b) {}`
-				- **NOTES:**
-					- the member initializer syntax initializes the members (wow)
-					- initializing follows order of declaration INSIDE THE CLASS
-					- order in which you write them INSIDE THE INITIALIZER is arbitrary and it does not matter
-					- only way to initialize constant members
-					- good practice regardless (for non constant members too)
+		- **Constructor**
+			- **Member initializer lists**
+				- `{cpp}ExampleConstructor(int a, int b) : x(a), y(b) {}`
+				- This is a syntax to initialize members of a class within a constructor.
+				  Within this syntax, the order in which you mention the members is meaningless: the _actual_ order in which it initializes properties is the order in which the members are defined within the class.
+				  It's the only way to initialize constant members.
+				  It's a good practice to use for any member, it's supposed to be more efficient for some reason.
 	- **IN-CLASS MEMBER INITIALIZATION**
 		- **USAGE:**
 			- declare and initialize a property directly in the class

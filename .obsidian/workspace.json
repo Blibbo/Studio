@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/GENERAL-PURPOSE/C++/C++.md",
+                "file": "CS-Theory/Programming Language.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/GENERAL-PURPOSE/C++/C++.md",
+                "file": "CS-Theory/Programming Language.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/GENERAL-PURPOSE/C++/C++.md",
+                "file": "CS-Theory/Programming Language.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Languages/GENERAL-PURPOSE/C++/C++.md"
+                "file": "CS-Theory/Programming Language.md"
               }
             }
           }
@@ -160,6 +160,9 @@
   "active": "1437fc823cdc0aa7",
   "lastOpenFiles": [
     "Languages/GENERAL-PURPOSE/C/C.md",
+    "Languages/GENERAL-PURPOSE/C++/C++.md",
+    "CS-Theory/Paradygms/OOP",
+    "CS-Theory/Paradygms",
     "CS-Theory/Algorithms/Sorting/Insertion Sort/Insertion Sort.md",
     "CS-Theory/Algorithms/Sorting/Shaker Sort/Shaker Sort.md",
     "CS-Theory/Algorithms/Sorting/Insertion Sort",
@@ -172,9 +175,7 @@
     "CS-Theory/Algorithms/Sorting/Naïve Sort/naivesort.exe",
     "CS-Theory/Algorithms/Sorting/Naïve Sort/naivesort.c",
     "CS-Theory/Algorithms/Sorting/Naïve Sort/New Text Document.txt",
-    "CS-Theory/Algorithms/Sorting/Naïve Sort",
     "Software/Programming/Ecosystems/XAMPP/MAMP.md",
-    "CS-Theory/Algorithms/Sorting/Bubble Sort",
     "Software/Programming/DBMS/MySQL/mysqld.exe.md",
     "Software/Programming/DBMS/MySQL/mysql.exe.md",
     "Languages/DSL/SQL/SQL.md",
@@ -194,7 +195,6 @@
     "Physics/Mechanics/Kinematics/Kinematics.md",
     "Physics/Fundamental quantities/Length.md",
     "Physics/Mechanics/Dynamics/Point Particle Model.md",
-    "Physics/Mechanics/Dynamics/Uniform rectilinean motion.md",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/x,y spherical coordinates.png",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar to cartesian.png",
