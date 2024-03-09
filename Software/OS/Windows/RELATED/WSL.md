@@ -4,9 +4,14 @@ aliases:
   - wsl.exe
   - Windows Subsystem for Linux
 ---
+Optional [[Windows]] feature that offers [[Linux]] compatibility.
+Allows you to install as many [[Linux#distros]] as you like.
+
+Linux files are in a virtual disk named `ext4.vhdx`, located typically in `%userprofile%\AppData\Local\Packages\Canonical...\LocalState\ext4.vhdx`
+
 ---
 
-### Installation
+## Installation
 
 - [Docs by Microsoft](https://learn.microsoft.com/en-us/windows/wsl/install)
 - requires a [[Windows 10]] build above **19041** or a subsequent [[Windows]] version
@@ -17,7 +22,7 @@ aliases:
 
 ---
 
-### Commands
+## Commands
 
 - **Info:**
 	- if you run any of these inside a wsl, you must use `wsl.exe` instead of just `wsl`
@@ -50,28 +55,46 @@ aliases:
 
 ---
 
-### Troubleshooting
+## Communicating with Windows
 
-- **This error:**
-	```shell
-	WSL is finishing an upgrade...
-	Update failed (exit code: 1603).
-	Error code: Wsl/CallMsi/E_ABORT
-	```
-	- apparently wsl was already installed and it said this whenever i tried using any command
-	- i didnt remember installing wsl at all. i didn't use it on that laptop
-		- it was a windows 10 build 19045 laptop (compatible)
-	- **I'm not sure what fixed it**
-	- first, I did this after lurking the web for a while:
-		- opened an administrator mode [[Powershell]]
-		- entered this `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
-		- didn't do shit
-		- idk y i thought it'd work. [here](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting)'s the article i was reading
-	- then, i used [[Revo Uninstaller]] to cancel wsl from the face of the planet
-	- restarted my pc
-	- installed wsl from the microsoft store
-	- restarted my pc
-	- used `wsl --install` (ubuntu didnt prompt me to create an user. it asked to reboot the pc instead)
-	- restarted my pc
-	- `wsl` said i didnt install distros yet. I did `wsl --install` again and ubuntu finally prompted me to make an user
-	- **works :thumbsup:**
+To access WSL files from Windows, you can use the `\\wsl$\<distro_name>` path, or the newer `\\wsl.localhost\<distro_name>`.
+Within this `<distro_name>` directory (e.g. `Ubuntu`) your filesystem is in `\home\nkp68`
+
+To access Windows drives (e.g. `C:\`) from WSL you can use the `/mnt/<drive>` path, for example `/mnt/c`
+
+https://askubuntu.com/questions/1380253/where-is-wsl-located-on-my-computer
+
+---
+
+## Troubleshooting
+
+#### `Wsl/CallMsi/E_ABORT` error
+
+```shell
+WSL is finishing an upgrade...
+Update failed (exit code: 1603).
+Error code: Wsl/CallMsi/E_ABORT
+```
+- apparently wsl was already installed and it said this whenever i tried using any command
+- i didnt remember installing wsl at all. i didn't use it on that laptop
+	- it was a windows 10 build 19045 laptop (compatible)
+- **I'm not sure what fixed it**
+- first, I did this after lurking the web for a while:
+	- opened an administrator mode [[Powershell]]
+	- entered this `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+	- didn't do shit
+	- idk y i thought it'd work. [here](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting)'s the article i was reading
+- then, i used [[Revo Uninstaller]] to cancel wsl from the face of the planet
+- restarted my pc
+- installed wsl from the microsoft store
+- restarted my pc
+- used `wsl --install` (ubuntu didnt prompt me to create an user. it asked to reboot the pc instead)
+- restarted my pc
+- `wsl` said i didnt install distros yet. I did `wsl --install` again and ubuntu finally prompted me to make an user
+- **works :thumbsup:**
+
+#### I can't see Linux on the explorer anymore
+
+this thread: https://answers.microsoft.com/en-us/windows/forum/all/why-there-is-linux-in-my-file-explorer-bar/c7aaca2b-7e7d-4cd2-bb80-6a4cde330433
+
+it totally doesn't work btw. I don't have it on the explorer anymore and that's that

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "83ab87280b4b81c6",
+        "id": "c9f8c34f7653e870",
         "type": "tabs",
         "children": [
           {
-            "id": "1437fc823cdc0aa7",
+            "id": "7e1f906b4f160c2d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS-Theory/Programming Language.md",
+                "file": "Software/OS/Windows/RELATED/WSL.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 211.50260543823242
+    "width": 207.50260543823242
   },
   "right": {
     "id": "65e831f7a11449c1",
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS-Theory/Programming Language.md",
+                "file": "Software/OS/Windows/RELATED/WSL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS-Theory/Programming Language.md",
+                "file": "Software/OS/Windows/RELATED/WSL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS-Theory/Programming Language.md"
+                "file": "Software/OS/Windows/RELATED/WSL.md"
               }
             }
           }
@@ -157,8 +157,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "1437fc823cdc0aa7",
+  "active": "7e1f906b4f160c2d",
   "lastOpenFiles": [
+    "CS-Theory/Programming Language.md",
+    "Languages/PROPRIETARY-INTEGRATED/REGISTRY/Registry.md",
+    "Software/OS/Windows/RELATED/WSL.md",
+    "Software/OS/Linux/Linux.md",
+    "Software/OS/Linux/GNU/coreutils.md",
+    "Languages/PROPRIETARY-INTEGRATED/REGISTRY/EXPERIMENTS",
+    "Languages/PROPRIETARY-INTEGRATED/REGISTRY/EXPERIMENTS/linux.reg",
+    "Languages/PROPRIETARY-INTEGRATED/REGISTRY",
+    "Software/OS/Windows/Windows.md",
     "Languages/GENERAL-PURPOSE/C/C.md",
     "Languages/GENERAL-PURPOSE/C++/C++.md",
     "CS-Theory/Paradygms/OOP",
@@ -172,9 +181,6 @@
     "CS-Theory/Algorithms/Sorting/Shaker Sort",
     "CS-Theory/Algorithms/Sorting/Bubble Sort/bubblesort.c",
     "CS-Theory/Algorithms/Sorting/Bubble Sort/New Text Document.txt",
-    "CS-Theory/Algorithms/Sorting/Naïve Sort/naivesort.exe",
-    "CS-Theory/Algorithms/Sorting/Naïve Sort/naivesort.c",
-    "CS-Theory/Algorithms/Sorting/Naïve Sort/New Text Document.txt",
     "Software/Programming/Ecosystems/XAMPP/MAMP.md",
     "Software/Programming/DBMS/MySQL/mysqld.exe.md",
     "Software/Programming/DBMS/MySQL/mysql.exe.md",
@@ -189,12 +195,6 @@
     "Software/Studying/Obsidian/Obsidian.md",
     "Software/Programming/Text Editors/Notepad++.md",
     "Software/Studying/Obsidian/Plugins/LaTeX suite/LaTeX suite.md",
-    "Templates/Definition.md",
-    "Software/OS/Windows/Windows.md",
-    "Software/OS/Windows/RELATED/FileTypesMan.md",
-    "Physics/Mechanics/Kinematics/Kinematics.md",
-    "Physics/Fundamental quantities/Length.md",
-    "Physics/Mechanics/Dynamics/Point Particle Model.md",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/x,y spherical coordinates.png",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar to cartesian.png",
