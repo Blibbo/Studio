@@ -1,3 +1,5 @@
+[Status:: unfinished]
+
 It's a format in which you write text, so that the text can be turned into [[software]]. Translation is handled by *other* software (see [[Translators]]).
 
 People make different programming languages because **they don't want to deal with how things are happening**, they just want to make them happen.
@@ -36,3 +38,19 @@ Whenever you decide to stop fucking around, it's easy to see how working *with* 
 Though if I'm being honest, nobody who doubts lower level tools is going to build a project big and computationally intensive enough (save programs with shitty algorithms) to even see the difference between these tools, so of course the readable one is better. Fuck's sake.
 
 At the moment, we have like THREE of these super fast tools that are actually used and they're [[C]], [[C++]] and m-fing [[Rust]]. Have **YOU** heard of Rust? If not, stop saying C is pointless, DAMN IT.
+
+
+
+
+# Abstraction
+
+
+
+# Low level languages
+
+
+
+# High level languages
+
+
+

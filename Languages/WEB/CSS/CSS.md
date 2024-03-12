@@ -2,19 +2,15 @@
 tags:
   - web-development
   - front-end
-  - dsl
   - language
+aliases:
+  - Cascading Style Sheets
 ---
----
-
-### About CSS
-
-- stands for **Cascading Style Sheets**
-- it's an [[DSL#External DSL (eDSL)|eDSL]] of [[HTML]] made for styling the document
+It's an [[DSL#External DSL (eDSL)|eDSL]] of [[HTML]] made for styling the document.
 
 ---
 
-### Syntax
+## Syntax
 
 - **Generic rule:**
 	- `{css}selector{ property: value }`
@@ -31,15 +27,16 @@ tags:
 	
 ---
 
-### Properties
+## Properties
 
 - `{css}transform:`
 	- `{css}rotate(30deg)`
 		- rotation is clockwise
+		- center of rotation is
 		
 ---
 
-### Quick snippets
+## Quick snippets
 
 - **NOT DRAGGABLE**
 	```css

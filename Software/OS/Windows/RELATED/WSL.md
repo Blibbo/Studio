@@ -98,3 +98,5 @@ Error code: Wsl/CallMsi/E_ABORT
 this thread: https://answers.microsoft.com/en-us/windows/forum/all/why-there-is-linux-in-my-file-explorer-bar/c7aaca2b-7e7d-4cd2-bb80-6a4cde330433
 
 it totally doesn't work btw. I don't have it on the explorer anymore and that's that
+
+Correction: it did do something. It created a "Linux" folder on the desktop that I can't open. Still didn't work though

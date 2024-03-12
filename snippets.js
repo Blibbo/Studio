@@ -334,7 +334,7 @@
 	{trigger: "bld", replacement: "**$0**$1", options: "tAw"},
 	{trigger: "ita", replacement: "_$0_$1", options: "tAw"},
 	{trigger: "strike", replacement: "~~$0~~$1", options: "tAw"},
-	{trigger: "[[", replacement: "[[$0]]$1", options: "tA"},
+	// {trigger: "[[", replacement: "[[$0]]$1", options: "tA"},
 	{trigger: "ck", replacement: "- [ ] ", options: "tAw"},
 	
 	// Emojis

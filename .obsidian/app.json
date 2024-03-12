@@ -5,5 +5,7 @@
   "promptDelete": false,
   "autoPairBrackets": false,
   "autoPairMarkdown": true,
-  "showLineNumber": true
+  "showLineNumber": true,
+  "attachmentFolderPath": "./attachments",
+  "newFileLocation": "current"
 }
