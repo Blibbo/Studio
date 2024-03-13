@@ -7,7 +7,8 @@ tags:
 aliases:
   - CPP
 ---
-Superset of the [[C]] programming language.
+Superset of [[C]].
+Implements [[Object-Oriented Programming]].
 
 Source files have a `.cpp` extension
 

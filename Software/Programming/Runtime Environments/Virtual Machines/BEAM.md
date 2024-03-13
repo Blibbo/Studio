@@ -1,12 +1,11 @@
 ---
-tags:
-  - software
+tags: []
 ---
----
+[[Virtual Machine]].
 
-### About BEAM
+## Languages
 
-- the following programming languages run on this [[Virtual Machines|VM]]:
-	```dataview
-	LIST FROM #language and [[BEAM]]
-	```
+These languages run on BEAM:
+```dataview
+TABLE FROM #language and [[BEAM]]
+```

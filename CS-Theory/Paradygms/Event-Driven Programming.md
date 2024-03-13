@@ -1,0 +1,4 @@
+---
+aliases:
+  - Programmazione a eventi
+---

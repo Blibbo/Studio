@@ -4,11 +4,7 @@ tags:
   - programming
   - language
 ---
----
+[[Programming Language]] that implements [[Functional Programming]].
 
-### About Haskell
-
-- doesn't provide loops
-	- relies on recursive function calls
-- only has immutable variables
-- [[Tail Call Optimization]]
+Doesn't provide loops.
+Uses [[Tail Call Optimization]] for function calls.

@@ -4,18 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "aac170ea04073922",
+        "id": "9021799dc5665422",
         "type": "tabs",
         "children": [
           {
-            "id": "14194d11cc52ed7d",
+            "id": "9afd78b227da2f14",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CS-Theory/Paradygms/Logic Programming.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "11e181399f7b1563",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hardware/Architectures/Microprocessors/Imaginary/WebAssembly.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -44,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "runtime environment",
+                "query": "Virtual Machine",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,11 +86,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 207.50260543823242
+    "width": 211.50260543823242
   },
   "right": {
     "id": "65e831f7a11449c1",
@@ -89,6 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Hardware/Architectures/Microprocessors/Imaginary/WebAssembly.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Hardware/Architectures/Microprocessors/Imaginary/WebAssembly.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +146,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Hardware/Architectures/Microprocessors/Imaginary/WebAssembly.md"
+              }
             }
           }
         ],
@@ -149,53 +171,53 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "14194d11cc52ed7d",
+  "active": "11e181399f7b1563",
   "lastOpenFiles": [
-    "Pasted image 20240312211716.png",
-    "UniCT/UniCT.md",
-    "UniCT/Ingegneria Informatica.md",
-    "UniCT/attachments/1° sem L-8 INF. orari.pdf",
-    "UniCT/FISICA/Fisica I.md",
-    "UniCT/ANALISI I/Analisi 1.md",
-    "UniCT/ALGEBRA LINEARE E GEOMETRIA ANALITICA/prove/esercizio e soluzione/soluzione.jpg",
-    "UniCT/ALGEBRA LINEARE E GEOMETRIA ANALITICA/prove/esercizio e soluzione/domanda.jpg",
-    "UniCT/ALGEBRA LINEARE E GEOMETRIA ANALITICA/prove/esercizio e soluzione/WhatsApp Image 2024-02-26 at 04.39.43_83a75eb4.jpg",
-    "UniCT/ALGEBRA LINEARE E GEOMETRIA ANALITICA/prove/esercizio e soluzione/WhatsApp Image 2024-02-26 at 04.39.42_77f0c469.jpg",
-    "UniCT/ALGEBRA LINEARE E GEOMETRIA ANALITICA/prove/esercizio e soluzione",
-    "UniCT/ALGEBRA LINEARE E GEOMETRIA ANALITICA/prove/New folder",
-    "UniCT/ALGEBRA LINEARE E GEOMETRIA ANALITICA/prove/prova esame ora.jpg",
-    "UniCT/ALGEBRA LINEARE E GEOMETRIA ANALITICA/prove/Sol20230627.pdf",
-    "UniCT/ALGEBRA LINEARE E GEOMETRIA ANALITICA/prove/domande esame vecchie.jpg",
-    "UniCT/ALGEBRA LINEARE E GEOMETRIA ANALITICA/prove/WhatsApp Image 2024-02-28 at 20.54.24_38ba93e1.jpg",
-    "UniCT/ALGEBRA LINEARE E GEOMETRIA ANALITICA/prove",
-    "UniCT/ALGEBRA LINEARE E GEOMETRIA ANALITICA/New folder",
-    "UniCT/attachments/2° sem L-8 INF.png",
-    "UniCT/attachments",
-    "UniCT/Pasted image 20240311161138.png",
-    "UniCT/ANALISI I/Appunti disordinati/Teorema sulla natura dei punti stazionari di una funzione che soddisfano questa ipotesi.md",
-    "UniCT/ANALISI I/Appunti disordinati/Teorema di Taylor.md",
-    "UniCT/ANALISI I/Appunti disordinati/Differenziale.md",
-    "UniCT/ANALISI I/Appunti disordinati/Calcolo integrale.md",
-    "UniCT/ANALISI I/Analisi I.md",
-    "CS-Theory/Programming Language.md",
-    "r.md",
-    "Software/OS/Windows/RELATED/WSL.md",
-    "Languages/PROPRIETARY-INTEGRATED/REGISTRY/Registry.md",
-    "Software/OS/Linux/Linux.md",
-    "Software/OS/Linux/GNU/coreutils.md",
-    "Languages/PROPRIETARY-INTEGRATED/REGISTRY/EXPERIMENTS",
-    "Languages/PROPRIETARY-INTEGRATED/REGISTRY/EXPERIMENTS/linux.reg",
-    "Languages/PROPRIETARY-INTEGRATED/REGISTRY",
-    "Software/OS/Windows/Windows.md",
-    "Languages/GENERAL-PURPOSE/C/C.md",
+    "Software/Programming/Runtime Environments/Virtual Machines/BEAM.md",
+    "Languages/GENERAL-PURPOSE/ERLANG/Erlang.md",
+    "Hardware/Architectures/Microprocessors/Imaginary/Binary Instruction Formats.md",
+    "Software/Programming/Runtime Environments/Virtual Machines/Virtual Machine.md",
+    "Languages/GENERAL-PURPOSE/JAVA/Java.md",
+    "CS-Theory/Paradygms/Object-Oriented Programming.md",
     "Languages/GENERAL-PURPOSE/C++/C++.md",
-    "CS-Theory/Algorithms/Sorting/Insertion Sort/Insertion Sort.md",
-    "CS-Theory/Algorithms/Sorting/Shaker Sort/Shaker Sort.md",
-    "CS-Theory/Algorithms/Sorting/Naïve Sort/Naïve sort.md",
+    "Languages/GENERAL-PURPOSE/FORTRAN/Fortran.md",
+    "CS-Theory/Paradygms/Imperative Programming.md",
+    "Languages/GENERAL-PURPOSE/FORTRAN",
+    "Languages/GENERAL-PURPOSE/PASCAL/Pascal.md",
+    "Languages/GENERAL-PURPOSE/HASKELL/Haskell.md",
+    "Languages/GENERAL-PURPOSE/PASCAL",
+    "CS-Theory/Paradygms/Functional Programming.md",
+    "Languages/GENERAL-PURPOSE/C/C.md",
+    "CS-Theory/Paradygms/Logic Programming.md",
+    "CS-Theory/Paradygms/Concurrent Programming.md",
+    "CS-Theory/Paradygms/Aspect-Oriented Programming.md",
+    "CS-Theory/Paradygms/Declarative Programming.md",
+    "CS-Theory/Paradygms/Parallel Programming.md",
+    "CS-Theory/Paradygms/Event-Driven Programming.md",
+    "CS-Theory/Paradygms/Parallel Programming",
+    "CS-Theory/Paradygms/Logic Programming",
+    "CS-Theory/Paradygms/Procedural programming.md",
+    "CS-Theory/Paradygms/Event-Driven Programming",
+    "CS-Theory/Paradygms/AOP",
+    "CS-Theory/Algorithms/Sorting/Quick sort/Quick sort.md",
+    "CS-Theory/Algorithms/Sorting/Merge sort/Merge sort.md",
+    "CS-Theory/Algorithms/Sorting/Sorting algorithm.md",
+    "CS-Theory/Algorithms/Algorithm.md",
+    "Standards-Conventions/Naming conventions.md",
     "CS-Theory/Algorithms/Sorting/Bubble Sort/Bubble sort.md",
-    "Software/Programming/Ecosystems/XAMPP/MAMP.md",
-    "Software/Programming/DBMS/MySQL/mysqld.exe.md",
-    "Software/Programming/DBMS/MySQL/mysql.exe.md",
-    "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png"
+    "CS-Theory/Algorithms/Sorting/Quick sort",
+    "CS-Theory/Algorithms/Untitled",
+    "CS-Theory/Algorithms/Sorting/Merge sort",
+    "CS-Theory/Errors",
+    "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
+    "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/x,y spherical coordinates.png",
+    "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar to cartesian.png",
+    "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar formula.png",
+    "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/azimuth formula.png",
+    "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/azimuth formula but the atan doesn't suck.png",
+    "Maths/CG/scratchapixel/screenshots/spherical coordinates/Z is up in spherical coordinates.png",
+    "Maths/CG/scratchapixel/screenshots/spherical coordinates/polar and azimuth.png",
+    "Maths/CG/scratchapixel/screenshots/not very useful/GPU rendering pipeline.png",
+    "Maths/CG/scratchapixel/screenshots/Matrices/Scaling matrix.png"
   ]
 }

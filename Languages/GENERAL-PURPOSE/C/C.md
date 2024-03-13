@@ -10,7 +10,9 @@ aliases:
   - ISO C
   - C Standard
 ---
-Statically typed programming language.
+Statically typed [[programming language]].
+Implements [[Functional Programming]], [[Imperative Programming]].
+
 The standard for this language is composed of syntax + a standard library. The standard library implementation may vary, but the [[interface]] is the same everywhere.
 
 C source files have a `.c` extension.

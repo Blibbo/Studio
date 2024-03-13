@@ -3,7 +3,7 @@ tags:
   - software
 aliases:
   - VM
-  - Virtual Machine
+  - Virtual Machines
 ---
 ---
 

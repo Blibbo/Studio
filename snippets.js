@@ -216,7 +216,8 @@
 	{trigger: "oint", replacement: "\\oint", options: "mA"},
 	{trigger: "iiint", replacement: "\\iiint", options: "mA"},
 	{trigger: "iint", replacement: "\\iint", options: "mA"},
-	{trigger: "int", replacement: "\\int $0 \\, d${1:x} $2", options: "mA"},
+	//{trigger: "int", replacement: "\\int $0 \\, d${1:x} $2", options: "mA"},
+	{trigger: "int", replacement: "\\int", options: "mA"},
 
 
 	// Physics

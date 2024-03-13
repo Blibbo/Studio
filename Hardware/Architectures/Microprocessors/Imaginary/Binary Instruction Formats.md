@@ -15,4 +15,4 @@ aliases:
 
 ### Abstraction for real hardware
 
-- the idea is to have actual software somehow make sense of the made up software. This software is a [[Runtime Environments|Runtime Environment]] or a [[Virtual Machines|Virtual Machine]]
+- the idea is to have actual software somehow make sense of the made up software. This software is a [[Runtime Environments|Runtime Environment]] or a [[Virtual Machine]]

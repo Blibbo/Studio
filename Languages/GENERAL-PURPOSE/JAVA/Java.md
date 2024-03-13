@@ -7,12 +7,12 @@ tags:
 aliases:
   - Java SE
 ---
----
+[[Programming Language]] that implements [[Object-Oriented Programming]].
+The idea is for it to run on a [[virtual machine]] to be cross platfom.
 
-### About Java
+It's not particularly fast (its resources are limited by the [[virtual machine]] it runs in) but it doesn't suck by any means.
 
-- the extension for java source code files is `.java`
-- it's supposed to run in a specific runtime environment, the [[JDK#JRE]], to make it cross-platform
+The extension for java source code files is `.java`
 
 ---
 
@@ -42,8 +42,16 @@ By processing I mean "what the fuck do you do with java code"
 
 ---
 
+## Oracle Java
+
 ### Standard Edition API modules
 
 ---
 
 ### [[JDK]] modules
+
+---
+
+## Trivia
+
+There was a lot of hype around it when it came out, people made tons of android apps and desktop games with it.
