@@ -1,10 +1,17 @@
 {
   "accentColor": "",
   "theme": "obsidian",
-  "baseFontSize": 19,
+  "baseFontSize": 24,
   "cssTheme": "Blue Topaz",
   "interfaceFontFamily": "Inter",
   "monospaceFontFamily": "Lucida Console",
   "textFontFamily": "Arial,Lucida Sans Unicode",
-  "baseFontSizeAction": true
+  "baseFontSizeAction": true,
+  "enabledCssSnippets": [
+    "note-width",
+    "adaptive_images",
+    "image_zoom2"
+  ],
+  "translucency": false,
+  "nativeMenus": false
 }
