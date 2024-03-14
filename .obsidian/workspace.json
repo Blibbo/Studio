@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Physics/Mechanics/Dynamics/Simple Armonic Motion.md",
+                "file": "Hardware/Architectures/Microprocessors/CISC.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Physics/Mechanics/Dynamics/Simple Armonic Motion.md",
+                "file": "Hardware/Architectures/Microprocessors/CISC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Physics/Mechanics/Dynamics/Simple Armonic Motion.md",
+                "file": "Hardware/Architectures/Microprocessors/CISC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Physics/Mechanics/Dynamics/Simple Armonic Motion.md"
+                "file": "Hardware/Architectures/Microprocessors/CISC.md"
               }
             }
           }
@@ -159,8 +159,9 @@
   },
   "active": "48a041df2d3c7d96",
   "lastOpenFiles": [
-    "Physics/Mechanics/Dynamics/Uniformly Accelerated Rectilinear Motion.md",
+    "Software/Programming/Package managers/pip.md",
     "Physics/Mechanics/Dynamics/Simple Armonic Motion.md",
+    "Physics/Mechanics/Dynamics/Uniformly Accelerated Rectilinear Motion.md",
     "Physics/Mechanics/Dynamics/Uniform rectilinean motion.md",
     "Physics/Mechanics/Dynamics/One dimensional motion of a point particle.md",
     "CS-Theory/Paradygms/Event-Driven Programming.md",
@@ -189,7 +190,6 @@
     "CS-Theory/Paradygms/Object-Oriented Programming.md",
     "CS-Theory/Data structures/Queue.md",
     "CS-Theory/Data structures/FIFO.md",
-    "CS-Theory/Data structures/Stack.md",
     "CS-Theory/Paradygms/PROCEDURAL",
     "Languages/GENERAL-PURPOSE/SCALA",
     "Languages/GENERAL-PURPOSE/PROLOG",

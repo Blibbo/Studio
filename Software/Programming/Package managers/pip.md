@@ -1,10 +1,5 @@
 ---
 tags:
   - package-manager
-  - software
 ---
----
-
-### About pip
-
-- package manager for [[Python]]
+Pip is a package manager for [[Python]]

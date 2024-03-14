@@ -2,11 +2,7 @@
 aliases:
   - Complex Instruction Set Computing
 ---
----
-
-### About CISC
-
-- [[ISA|Instruction Set]] architecture
+CISC is an [[ISA|Instruction Set]] architecture.
 
 ---
 
