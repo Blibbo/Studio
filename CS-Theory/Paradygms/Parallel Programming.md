@@ -1,0 +1,1 @@
+Executing multiple shits at the same time. Distributed application. Multi-core stuff.

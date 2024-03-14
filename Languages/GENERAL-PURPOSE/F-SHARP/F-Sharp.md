@@ -1,8 +1,5 @@
 ---
-tags:
-  - functional
-  - programming
-  - language
+tags: []
 aliases:
   - F#
   - F Sharp

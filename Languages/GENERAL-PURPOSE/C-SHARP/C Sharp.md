@@ -4,16 +4,11 @@ aliases:
   - C-Sharp
 tags:
   - object-oriented
-  - programming
-  - language
 ---
----
+[[Object-Oriented Programming]] [[Programming Language|Language]].
 
-### About C Sharp
-
-- source files have a `.cs` extension
-- [[NET Core|.NET]] language
-- compiles to: [[CIL]]
+Source files have a `.cs` extension.
+This is a [[NET Core|.NET]] language, meaning it runs on [[CLR]] and compiles to [[CIL]].
 
 ---
 

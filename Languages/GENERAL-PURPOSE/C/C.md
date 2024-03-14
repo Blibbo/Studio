@@ -1,7 +1,5 @@
 ---
 tags:
-  - programming
-  - language
   - standard
   - strongly-typed
 aliases:
@@ -11,7 +9,7 @@ aliases:
   - C Standard
 ---
 Statically typed [[programming language]].
-Implements [[Functional Programming]], [[Imperative Programming]].
+Implements [[Imperative Programming]] and [[Procedural programming]].
 
 The standard for this language is composed of syntax + a standard library. The standard library implementation may vary, but the [[interface]] is the same everywhere.
 

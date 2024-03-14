@@ -122,7 +122,7 @@
 	{trigger: "ooo", replacement: "\\infty", options: "mA"},
 	{trigger: "sum", replacement: "\\sum", options: "mA"},
 	{trigger: "prod", replacement: "\\prod", options: "mA"},
-	{trigger: "lim", replacement: "\\lim_{ ${0:n} \\to ${1:\\infty} } $2", options: "mA"},
+	//{trigger: "lim", replacement: "\\lim_{ ${0:n} \\to ${1:\\infty} } $2", options: "mA"},
 	{trigger: "([^\\\\])pm", replacement: "[[0]]\\pm", options: "rm"},
 	{trigger: "([^\\\\])mp", replacement: "[[0]]\\mp", options: "rm"},
 	{trigger: "+-", replacement: "\\pm", options: "mA"},
@@ -307,6 +307,7 @@
 	{trigger: "\\underline{erset", replacement: "\\underset{$1}{$0", options: "mAw", priority: 1}, //underset
 	{trigger: "=>", replacement: "\\Rightarrow", options: "mA"},
 	{trigger: "==>", replacement: "\\implies", options: "mA"},
+	{trigger: "lim", replacement: "\\underset{ ${0:n} \\to ${1:\\infty} }{\\lim} $2", options: "mA"},
 	
 	{trigger: "QQ", replacement: "\\mathbb{Q}", options: "mA"},
 	

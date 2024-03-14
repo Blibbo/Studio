@@ -1,0 +1,1 @@
+It's basically the ability of objects to have stuff in them. This is like _the_ fundamental relation in [[Set Theory]].

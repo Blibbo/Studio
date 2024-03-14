@@ -2,10 +2,10 @@
 
 ---
 
-# Formally
+## Formally
 
 
 
 ---
 
-# Inferential
+## Inferential

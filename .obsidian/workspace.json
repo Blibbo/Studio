@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9afd78b227da2f14",
+            "id": "48a041df2d3c7d96",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS-Theory/Paradygms/Logic Programming.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "11e181399f7b1563",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software/Programming/Container management/Containers.md",
+                "file": "Physics/Mechanics/Dynamics/Simple Armonic Motion.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Virtual Machine",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -107,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Programming/Container management/Containers.md",
+                "file": "Physics/Mechanics/Dynamics/Simple Armonic Motion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Programming/Container management/Containers.md",
+                "file": "Physics/Mechanics/Dynamics/Simple Armonic Motion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Programming/Container management/Containers.md"
+                "file": "Physics/Mechanics/Dynamics/Simple Armonic Motion.md"
               }
             }
           }
@@ -171,44 +157,45 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "11e181399f7b1563",
+  "active": "48a041df2d3c7d96",
   "lastOpenFiles": [
-    "Hardware/Architectures/Microprocessors/Imaginary/WebAssembly.md",
-    "Software/Programming/Runtime Environments/Virtual Machines/BEAM.md",
-    "Languages/GENERAL-PURPOSE/ERLANG/Erlang.md",
-    "Hardware/Architectures/Microprocessors/Imaginary/Binary Instruction Formats.md",
-    "Software/Programming/Runtime Environments/Virtual Machines/Virtual Machine.md",
-    "Languages/GENERAL-PURPOSE/JAVA/Java.md",
-    "CS-Theory/Paradygms/Object-Oriented Programming.md",
-    "Languages/GENERAL-PURPOSE/C++/C++.md",
-    "Languages/GENERAL-PURPOSE/FORTRAN/Fortran.md",
-    "CS-Theory/Paradygms/Imperative Programming.md",
-    "Languages/GENERAL-PURPOSE/FORTRAN",
-    "Languages/GENERAL-PURPOSE/PASCAL/Pascal.md",
-    "Languages/GENERAL-PURPOSE/HASKELL/Haskell.md",
-    "Languages/GENERAL-PURPOSE/PASCAL",
-    "CS-Theory/Paradygms/Functional Programming.md",
-    "Languages/GENERAL-PURPOSE/C/C.md",
-    "CS-Theory/Paradygms/Logic Programming.md",
+    "Physics/Mechanics/Dynamics/Uniformly Accelerated Rectilinear Motion.md",
+    "Physics/Mechanics/Dynamics/Simple Armonic Motion.md",
+    "Physics/Mechanics/Dynamics/Uniform rectilinean motion.md",
+    "Physics/Mechanics/Dynamics/One dimensional motion of a point particle.md",
+    "CS-Theory/Paradygms/Event-Driven Programming.md",
+    "CS-Theory/Paradygms/Declarative Programming.md",
+    "Physics/Mechanics/Dynamics/Point Particle.md",
+    "Physics/Fundamental quantities/Length.md",
+    "Physics/Kinematic Law.md",
+    "Maths/Logic.md",
+    "Maths/Predicate Logic/Predicate Logic.md",
+    "Maths/Propositional Logic/Propositional Logic.md",
+    "Maths/Higher-order logic",
+    "Maths/Predicate Logic/Universal generalization.md",
+    "Maths/Propositional Logic",
+    "Maths/Untitled.canvas",
+    "Maths/Set Theory/Subset.md",
+    "Maths/Predicate Logic",
+    "Maths/Set Theory/Set.md",
+    "Maths/Set Theory/Set Theory.md",
+    "Maths/Set Theory/Membership relation.md",
+    "Templates/Definition.md",
+    "Languages/DSL/SQL/SQL.md",
+    "Maths/Set Theory",
     "CS-Theory/Paradygms/Concurrent Programming.md",
     "CS-Theory/Paradygms/Aspect-Oriented Programming.md",
-    "CS-Theory/Paradygms/Declarative Programming.md",
-    "CS-Theory/Paradygms/Parallel Programming.md",
-    "CS-Theory/Paradygms/Event-Driven Programming.md",
-    "CS-Theory/Paradygms/Parallel Programming",
-    "CS-Theory/Paradygms/Logic Programming",
     "CS-Theory/Paradygms/Procedural programming.md",
-    "CS-Theory/Paradygms/Event-Driven Programming",
-    "CS-Theory/Paradygms/AOP",
-    "CS-Theory/Algorithms/Sorting/Quick sort/Quick sort.md",
-    "CS-Theory/Algorithms/Sorting/Merge sort/Merge sort.md",
-    "CS-Theory/Algorithms/Sorting/Sorting algorithm.md",
-    "CS-Theory/Algorithms/Algorithm.md",
-    "Standards-Conventions/Naming conventions.md",
-    "CS-Theory/Algorithms/Sorting/Quick sort",
-    "CS-Theory/Algorithms/Untitled",
-    "CS-Theory/Algorithms/Sorting/Merge sort",
-    "CS-Theory/Errors",
+    "CS-Theory/Paradygms/Object-Oriented Programming.md",
+    "CS-Theory/Data structures/Queue.md",
+    "CS-Theory/Data structures/FIFO.md",
+    "CS-Theory/Data structures/Stack.md",
+    "CS-Theory/Paradygms/PROCEDURAL",
+    "Languages/GENERAL-PURPOSE/SCALA",
+    "Languages/GENERAL-PURPOSE/PROLOG",
+    "Languages/GENERAL-PURPOSE/FORTRAN",
+    "Languages/GENERAL-PURPOSE/PASCAL",
+    "CS-Theory/Paradygms/Parallel Programming",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/x,y spherical coordinates.png",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar to cartesian.png",

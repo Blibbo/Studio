@@ -3,8 +3,8 @@ aliases:
   - Structured Query Language
 ---
 It's a [[DSL]] that allows you to interact with [[Databases]].
+This DSL follows the principle of [[Declarative Programming]].
 It's divided into four sub-languages: [[#DDL]], [[#DML]], [[#DQL]], [[#DCL]].
-We call this a **declarative language** because we don't use it to describe algorithms to do what we want to do: we just declare _that_ we want to do it.
 
 ## DDL
 

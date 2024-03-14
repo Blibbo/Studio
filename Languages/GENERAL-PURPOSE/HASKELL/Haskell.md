@@ -1,10 +1,15 @@
 ---
-tags:
-  - functional
-  - programming
-  - language
+tags: []
 ---
-[[Programming Language]] that implements [[Functional Programming]].
+[[Functional Programming]] [[Programming Language|language]].
 
 Doesn't provide loops.
 Uses [[Tail Call Optimization]] for function calls.
+
+---
+
+## Stuff made in Haskell
+
+```dataview
+TABLE FROM "Software" AND [[Haskell]]
+```

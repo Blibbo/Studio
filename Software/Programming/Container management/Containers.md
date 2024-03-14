@@ -4,15 +4,14 @@ tags:
   - programming
   - tool
 ---
----
+Containers are like [[Virtual Machine|virtual machines]] but friendlier with the hardware, because they use your resources.
+They're composed of a filesystem and some metadata.
+Metadata is similar to [[Git#^commits|git commits]].
+The **image** of your container is the filesystem with all the changes in the metadata applied to it.
 
-### About containers
+Each container manager has lots of base images. Here are [[Docker#^images|docker's]]
 
-- [intro video](https://www.youtube.com/watch?v=J0NuOlA2xDc&ab_channel=Coderized)
-- they're like [[Virtual Machine]] but friendlier with the hardware (they use your resources)
-- they're composed of a filesystem and some metadata that works similarly to how a [[Git#^commits|git commit]] works
-- the **image** of your container is the filesystem with all the changes in the metadata applied to it
-- lots of base images exist for each container manager, example for [[Docker#^images|docker]]
+[Introductive video](https://www.youtube.com/watch?v=J0NuOlA2xDc&ab_channel=Coderized)
 
 ---
 

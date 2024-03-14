@@ -4,16 +4,12 @@ tags:
   - back-end
   - front-end
 ---
----
-
-### About Electron
-
-- developed by [[GitHub]]
+[[JavaScript]] framework developed by [[GitHub]].
 
 ---
 
 ### Stuff made in Electron
 
 ```dataview
-LIST FROM "Software" and [[Electron]]
+TABLE FROM "Software" and [[Electron]]
 ```

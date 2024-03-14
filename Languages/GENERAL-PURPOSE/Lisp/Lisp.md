@@ -5,13 +5,11 @@ tags:
 aliases:
   - List Processing
 ---
----
+[[Functional Programming]] [[Programming Language|language]].
 
-### About Lisp
-
-- there isn't "one" unique lisp
-- has "metaprogramming" capabilities. Perfect for making [[DSL]]s
-	- ~~whatever the fuck that means~~
+There isn't "one" unique lisp
+Has "metaprogramming" capabilities. Perfect for making [[DSL]]s
+- ~~whatever the fuck that means~~
 
 ---
 
