@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hardware/Architectures/Microprocessors/Imaginary/WebAssembly.md",
+                "file": "Software/Programming/Container management/Containers.md",
                 "mode": "source",
                 "source": false
               }
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardware/Architectures/Microprocessors/Imaginary/WebAssembly.md",
+                "file": "Software/Programming/Container management/Containers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hardware/Architectures/Microprocessors/Imaginary/WebAssembly.md",
+                "file": "Software/Programming/Container management/Containers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hardware/Architectures/Microprocessors/Imaginary/WebAssembly.md"
+                "file": "Software/Programming/Container management/Containers.md"
               }
             }
           }
@@ -173,6 +173,7 @@
   },
   "active": "11e181399f7b1563",
   "lastOpenFiles": [
+    "Hardware/Architectures/Microprocessors/Imaginary/WebAssembly.md",
     "Software/Programming/Runtime Environments/Virtual Machines/BEAM.md",
     "Languages/GENERAL-PURPOSE/ERLANG/Erlang.md",
     "Hardware/Architectures/Microprocessors/Imaginary/Binary Instruction Formats.md",
@@ -204,7 +205,6 @@
     "CS-Theory/Algorithms/Sorting/Sorting algorithm.md",
     "CS-Theory/Algorithms/Algorithm.md",
     "Standards-Conventions/Naming conventions.md",
-    "CS-Theory/Algorithms/Sorting/Bubble Sort/Bubble sort.md",
     "CS-Theory/Algorithms/Sorting/Quick sort",
     "CS-Theory/Algorithms/Untitled",
     "CS-Theory/Algorithms/Sorting/Merge sort",
