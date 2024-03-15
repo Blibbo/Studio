@@ -14,7 +14,7 @@ tags:
 
 ---
 
-### Usage
+## Usage
 
 ```html
 <!-- Create a textarea or other element to turn into CodeMirror -->

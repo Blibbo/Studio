@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hardware/Architectures/Microprocessors/CISC.md",
+                "file": "Maths/Relational Algebra/Operators/Selection.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardware/Architectures/Microprocessors/CISC.md",
+                "file": "Maths/Relational Algebra/Operators/Selection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hardware/Architectures/Microprocessors/CISC.md",
+                "file": "Maths/Relational Algebra/Operators/Selection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hardware/Architectures/Microprocessors/CISC.md"
+                "file": "Maths/Relational Algebra/Operators/Selection.md"
               }
             }
           }
@@ -159,6 +159,17 @@
   },
   "active": "48a041df2d3c7d96",
   "lastOpenFiles": [
+    "Maths/Relational Algebra/Operators/Rename.md",
+    "Maths/Relational Algebra/Operators/Projection.md",
+    "Maths/Relational Algebra/Operators/Natural join.md",
+    "Maths/Relational Algebra/Operators/Selection.md",
+    "Maths/Relational Algebra/Queries/Max.md",
+    "Maths/Relational Algebra/Queries",
+    "Languages/WEB/JAVASCRIPT/LIBRARIES/CodeMirror/CodeMirror.md",
+    "Maths/Relational Algebra/Relational Algebra.md",
+    "Maths/Relational Algebra/Operators",
+    "Hardware/Architectures/Microprocessors/CISC.md",
+    "Maths/Relational Algebra",
     "Software/Programming/Package managers/pip.md",
     "Physics/Mechanics/Dynamics/Simple Armonic Motion.md",
     "Physics/Mechanics/Dynamics/Uniformly Accelerated Rectilinear Motion.md",
@@ -180,22 +191,10 @@
     "Maths/Predicate Logic",
     "Maths/Set Theory/Set.md",
     "Maths/Set Theory/Set Theory.md",
-    "Maths/Set Theory/Membership relation.md",
-    "Templates/Definition.md",
-    "Languages/DSL/SQL/SQL.md",
     "Maths/Set Theory",
-    "CS-Theory/Paradygms/Concurrent Programming.md",
-    "CS-Theory/Paradygms/Aspect-Oriented Programming.md",
-    "CS-Theory/Paradygms/Procedural programming.md",
-    "CS-Theory/Paradygms/Object-Oriented Programming.md",
-    "CS-Theory/Data structures/Queue.md",
-    "CS-Theory/Data structures/FIFO.md",
     "CS-Theory/Paradygms/PROCEDURAL",
     "Languages/GENERAL-PURPOSE/SCALA",
     "Languages/GENERAL-PURPOSE/PROLOG",
-    "Languages/GENERAL-PURPOSE/FORTRAN",
-    "Languages/GENERAL-PURPOSE/PASCAL",
-    "CS-Theory/Paradygms/Parallel Programming",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/x,y spherical coordinates.png",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar to cartesian.png",
