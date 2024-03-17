@@ -17,6 +17,7 @@ Stands for **Data Manipulation Language**. It works with actual data.
 ## DQL
 
 Stands for **Data Query Language**. Allows you to query your data without interacting with it. It's just for reading it.
+Implements [[Relational Algebra]] on your database.
 
 ## DCL
 

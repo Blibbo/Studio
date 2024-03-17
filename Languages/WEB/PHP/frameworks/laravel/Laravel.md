@@ -4,8 +4,5 @@ tags:
   - back-end
   - framework
 ---
----
-
-### About Laravel
-
-- uses [[Symfony]]
+[[PHP]]-based back end web development framework.
+Uses [[Symfony]]
