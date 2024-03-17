@@ -92,3 +92,11 @@ it's jan 2024. Still no news
 - go to "properties"
 - change the "target" property to the right extension
 - you can delete the exe now. It works.
+
+---
+
+## Connect HUAWEI Phone through USB-C
+
+https://consumer.huawei.com/en/community/details/Huawei-drivers-incompatible-with-Windows-10-11-memory-integrity-feature/topicId_172765/
+
+simply laugh it off. It's not doable. Both companies suck and need to burn
