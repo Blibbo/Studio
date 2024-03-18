@@ -13,15 +13,44 @@ Implements [[Imperative Programming]] and [[Procedural programming]].
 
 The standard for this language is composed of syntax + a standard library. The standard library implementation may vary, but the [[interface]] is the same everywhere.
 
-C source files have a `.c` extension.
+
 Here's my [Reference](https://devdocs.io/c/) of choice for the C standard library.
 
 ---
 
-### Compilers
+## Build process
+
+The whole process is somewhat mistakenly called "compilation"; though compilation is also the name of the middle step of the build process for C programs.
+
+Your [[source file]]s  should typically have a `.c` extension.
+
+### Preprocessing
+
+The **preprocessor** is a text replacement tool that cuts out all preprocessor code ([[#^comments]] and [[#preprocessor directives]]), often highlighted green in code editors.
+When green code gets cut out, operations get performed to the whole document.
+
+By the time the preprocessor is done preprocessing, your source file looks very different and is now called a **translation unit**.
+
+### Compiling
+
+The **compiler** is a tool that is able to translate the translation units.
+It translates them into **object files**, which are essentially machine code, flagged with **symbols**.
+Symbols are all the names contained in your code: variable names, functions, etc.
+
+Object files typically have a `.o` extension
+
+### Linking
+
+The linker is a tool that resolves symbols and tries to build an executable that only strictly has the symbol definitions required for the "main" function to execute.
+
+If the linker finds a single symbol defined twice, it throws an error.
+
+### Tools
+
+The following software has all you need to get started (I suggest gcc):
 
 ```dataview
-LIST FROM "Software/Programming/Translators/Compilers" AND [[C]]
+TABLE FROM "Software/Programming/Translators/Compilers" AND [[C]]
 ```
 
 ---

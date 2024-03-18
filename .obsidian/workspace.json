@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/OS/Windows/Windows 11.md",
+                "file": "Software/Programming/Text Editors/TECO.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Virtual Machine",
+                "query": "stallman",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/OS/Windows/Windows 11.md",
+                "file": "Software/Programming/Text Editors/TECO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/OS/Windows/Windows 11.md",
+                "file": "Software/Programming/Text Editors/TECO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/OS/Windows/Windows 11.md"
+                "file": "Software/Programming/Text Editors/TECO.md"
               }
             }
           }
@@ -173,6 +173,11 @@
   },
   "active": "11e181399f7b1563",
   "lastOpenFiles": [
+    "Software/OS/Linux/GNU/GNU.md",
+    "Software/Programming/Translators/Compilers/gcc.exe.md",
+    "Languages/GENERAL-PURPOSE/C/C.md",
+    "Languages/SHELL/cmd/Command Prompt.md",
+    "Software/OS/Windows/Windows 11.md",
     "Software/Programming/Container management/Containers.md",
     "Languages/GENERAL-PURPOSE/SCALA/Scala.md",
     "Languages/GENERAL-PURPOSE/SCALA",
@@ -204,11 +209,6 @@
     "Maths/Predicate Logic",
     "Maths/Logic.md",
     "Languages/WEB/JAVASCRIPT/LIBRARIES/CodeMirror/example.html",
-    "CS-Theory/Data structures/LIFO.md",
-    "CS-Theory/Data structures/FIFO.md",
-    "Hardware/Architectures/Microprocessors/Imaginary/WebAssembly.md",
-    "Software/Programming/Runtime Environments/Virtual Machines/BEAM.md",
-    "Languages/GENERAL-PURPOSE/ERLANG/Erlang.md",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/x,y spherical coordinates.png",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar to cartesian.png",

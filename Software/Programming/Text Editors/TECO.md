@@ -15,6 +15,6 @@ aliases:
 
 - super old
 - original **DEC TECO** by **DEC** (**Digital Equipment Corporation**) 
-- Stallmanin made [[Emacs]] with it
+- Stallman made [[Emacs]] with it
 - predates open-source as we know it today ([[GPL]])
 - the source code has always been available just for a matter of convenience

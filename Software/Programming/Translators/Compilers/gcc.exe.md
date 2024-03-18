@@ -4,12 +4,8 @@ tags:
 aliases:
   - GNU C Compiler
 ---
----
-
-### About gcc.exe
-
-- [[C]] compiler from [[GNU]]
-- it's the first compiler they made in the [[GCC]]
+[[C]] compiler from [[GNU]].
+It's the first compiler they made in the [[GCC|GNU Compiler Collection]], to
 
 ---
 
