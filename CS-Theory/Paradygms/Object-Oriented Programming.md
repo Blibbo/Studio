@@ -3,7 +3,8 @@ aliases:
   - OOP
 ---
 In programming, an object is something that stores data and executes functions.
-Abstracting this concept: an object has characteristics and behavior
+Abstracting this concept: an object has characteristics and behavior.
+Behavior is usually implemented through [[Method|methods]].
 
 When designing your program, you imagine a few abstractions for types of **objects** your program needs.
 These abstractions (called **classes**) are a generic "object of _that kind_". I'll use the example of a class called "Animal" for this note.
@@ -32,7 +33,7 @@ A more specific type, a subclass, could be a "Dog". One if its specialized behav
 When objects specialize, their behaviors might change. This is the case of **overriding**.
 Overriding is when the specialized object retains the **same interface** but changes its behavior.
 
-Not to be confused with **overloading**, which can be done within the same class and it's the case of a **different behavior** with a **different interface** that has the same name.
+Not to be confused with [[overloading]], which can be done within the same class and it's the case of a **different behavior** with a **different interface** that has the same name.
 
 ## Languages
 

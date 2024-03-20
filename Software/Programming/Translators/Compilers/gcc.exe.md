@@ -1,11 +1,10 @@
 ---
-tags:
-  - software
+tags: []
 aliases:
   - GNU C Compiler
 ---
 [[C]] compiler from [[GNU]].
-It's the first compiler they made in the [[GCC|GNU Compiler Collection]], to
+Part of the [[GCC|GNU Compiler Collection]]
 
 ---
 
@@ -62,3 +61,9 @@ It's the first compiler they made in the [[GCC|GNU Compiler Collection]], to
 	- **check for AVX2 or AVX-512**
 		- `{bash}gcc -march=native -E - < /dev/null | grep avx2`
 		- `{bash}gcc -march=native -E - < /dev/null | grep avx512`
+
+---
+
+## Trivia
+
+First [[GCC]] compiler, made in 1987

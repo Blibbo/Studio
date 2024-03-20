@@ -1,6 +1,7 @@
 ---
 aliases:
   - Language
+  - languages
 ---
 
 

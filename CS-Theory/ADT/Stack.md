@@ -8,3 +8,4 @@ Data structure with **Last-In, First-Out** access to data.
 
 - **push**: put an element in
 - **pop**: extract the last element pushed
+- **top** return the top element

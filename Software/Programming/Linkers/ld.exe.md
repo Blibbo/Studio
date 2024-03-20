@@ -2,12 +2,7 @@
 tags:
   - open-source
 ---
-
----
-
-### About ld.exe
-
-- [[GCC]] linker for [[C]]
+[[GCC]] linker for [[C]].
 
 ---
 

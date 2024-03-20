@@ -4,12 +4,9 @@ tags:
 aliases:
   - nm
 ---
----
+[[GCC]] utility. I don't know its full capabilities, but it's a debugging tool as far as I can see.
 
-### About nm.exe
-
-- part of the [[GCC]] utilities
-- on [[MinGW]] the file is nm.exe because [[Windows]] and stuff
+On [[MinGW]] this program is is nm.exe because [[Windows]] and stuff
 
 ---
 

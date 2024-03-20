@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "84d68470a5fc1c40",
+        "id": "6adba5a7e973d369",
         "type": "tabs",
         "children": [
           {
-            "id": "9afd78b227da2f14",
+            "id": "3281012811266223",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS-Theory/Paradygms/Logic Programming.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "11e181399f7b1563",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software/Programming/Text Editors/TECO.md",
+                "file": "CS-Theory/Subprograms/FFI.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "stallman",
+                "query": "overriding",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -107,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Programming/Text Editors/TECO.md",
+                "file": "CS-Theory/Subprograms/FFI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Programming/Text Editors/TECO.md",
+                "file": "CS-Theory/Subprograms/FFI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Programming/Text Editors/TECO.md"
+                "file": "CS-Theory/Subprograms/FFI.md"
               }
             }
           }
@@ -171,44 +157,44 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "11e181399f7b1563",
+  "active": "3281012811266223",
   "lastOpenFiles": [
-    "Software/OS/Linux/GNU/GNU.md",
-    "Software/Programming/Translators/Compilers/gcc.exe.md",
+    "CS-Theory/Subprograms/Name Mangling.md",
+    "CS-Theory/Subprograms/FFI.md",
+    "CS-Theory/ABI.md",
+    "CS-Theory/Subprograms/Subprogram.md",
+    "CS-Theory/Subprograms/Overloading.md",
+    "CS-Theory/Paradygms/Object-Oriented Programming.md",
+    "CS-Theory/Subprograms/IMPLEMENTATIONS/Procedure.md",
+    "CS-Theory/Subprograms/IMPLEMENTATIONS/Method.md",
+    "CS-Theory/Subprograms/IMPLEMENTATIONS/Function (programming).md",
+    "CS-Theory/Paradygms/Untitled",
+    "CS-Theory/Paradygms/Procedural programming.md",
+    "CS-Theory/Subprograms/Subroutine.md",
+    "CS-Theory/Subprograms/IMPLEMENTATIONS",
+    "CS-Theory/ABI",
+    "CS-Theory/Subprograms",
+    "CS-Theory/Programming Language.md",
+    "CS-Theory/Subprograms/Calling Conventions/Calling Convention.md",
+    "Hardware/Architectures/Microprocessors/8086/Intel 8086.md",
+    "CS-Theory/Subprograms/Calling Conventions/cdecl.md",
+    "CS-Theory/Subprograms/Calling Conventions/fastcall.md",
+    "CS-Theory/Subprograms/Calling Conventions/stdcall.md",
+    "CS-Theory/Subprograms/Calling Conventions/thiscall.md",
+    "CS-Theory/Subprograms/Calling Conventions",
+    "CS-Theory/Function Call Stack.md",
+    "Stack Frame.md",
+    "CS-Theory/Heap Memory.md",
+    "CS-Theory/Paradygms/Procedural Programming/Related concepts",
+    "CS-Theory/Paradygms/Procedural Programming",
     "Languages/GENERAL-PURPOSE/C/C.md",
-    "Languages/SHELL/cmd/Command Prompt.md",
-    "Software/OS/Windows/Windows 11.md",
-    "Software/Programming/Container management/Containers.md",
-    "Languages/GENERAL-PURPOSE/SCALA/Scala.md",
+    "CS-Theory/ADT/Stack.md",
+    "CS-Theory/ADT/Queue.md",
+    "Software/Programming/Debugging/GDB.md",
+    "Software/Programming/Translators/Compilers/GCC.md",
+    "Software/Programming/Debugging",
     "Languages/GENERAL-PURPOSE/SCALA",
-    "Languages/GENERAL-PURPOSE/PROLOG/Prolog.md",
     "Languages/GENERAL-PURPOSE/PROLOG",
-    "CS-Theory/Units of Memory/Nibble.md",
-    "CS-Theory/Units of Memory/Byte.md",
-    "CS-Theory/Units of Memory/Memory.md",
-    "CS-Theory/Units of Memory/bit.md",
-    "CS-Theory/Units of Memory",
-    "Maths/Set Theory/Set.md",
-    "Maths/Set Theory/Subset.md",
-    "Maths/Set Theory/Set Theory.md",
-    "Maths/Set Theory/Membership relation.md",
-    "Maths/Set Theory",
-    "Maths/Relational Algebra/Operators/Selection.md",
-    "Maths/Relational Algebra/Queries/Max.md",
-    "Maths/Relational Algebra/Operators/Rename.md",
-    "Maths/Relational Algebra/Operators/Natural join.md",
-    "Maths/Relational Algebra/Operators/Projection.md",
-    "Maths/Relational Algebra/Relational Algebra.md",
-    "Maths/Relational Algebra/Queries",
-    "Maths/Relational Algebra/Operators",
-    "Maths/Relational Algebra",
-    "Maths/Propositional Logic/Propositional Logic.md",
-    "Maths/Propositional Logic",
-    "Maths/Predicate Logic/Predicate Logic.md",
-    "Maths/Predicate Logic/Universal generalization.md",
-    "Maths/Predicate Logic",
-    "Maths/Logic.md",
-    "Languages/WEB/JAVASCRIPT/LIBRARIES/CodeMirror/example.html",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/x,y spherical coordinates.png",
     "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar to cartesian.png",

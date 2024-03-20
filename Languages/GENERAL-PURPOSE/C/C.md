@@ -8,10 +8,12 @@ aliases:
   - ISO C
   - C Standard
 ---
+[Status::unfinished]
+[[#^quirky-headers]]
 Statically typed [[programming language]].
 Implements [[Imperative Programming]] and [[Procedural programming]].
 
-The standard for this language is composed of syntax + a standard library. The standard library implementation may vary, but the [[interface]] is the same everywhere.
+The standard for this language is composed of its syntax + a standard library. The standard library implementation may vary, but the [[interface]] is the same everywhere.
 
 
 Here's my [Reference](https://devdocs.io/c/) of choice for the C standard library.
@@ -26,10 +28,10 @@ Your [[source file]]s  should typically have a `.c` extension.
 
 ### Preprocessing
 
-The **preprocessor** is a text replacement tool that cuts out all preprocessor code ([[#^comments]] and [[#preprocessor directives]]), often highlighted green in code editors.
-When green code gets cut out, operations get performed to the whole document.
+The **preprocessor** is a text replacement tool that cuts out all preprocessor code ([[#^comments]] and [[#preprocessor directives]]) from your source files. These pieces of code are often highlighted in green in code editors.
+When green code gets cut out, based on the directive, different operations get performed to the text file.
 
-By the time the preprocessor is done preprocessing, your source file looks very different and is now called a **translation unit**.
+By the time the preprocessor is done preprocessing, your source file may look significantly different from how you wrote it. This preprocessed source file is now called a **translation unit**.
 
 ### Compiling
 
@@ -39,23 +41,36 @@ Symbols are all the names contained in your code: variable names, functions, etc
 
 Object files typically have a `.o` extension
 
+The compiler acts individually on translation units, so if the program as a whole (in its multiple source files) isn't coherent, it will not know, as long as each unit is consistent with its symbols (i.e if they all exist and don't contradict each other).
+
+The compiler throws an error when it encounters an unknown symbol, which is why we have [[#^function-signatures]]: to tell it to shut up, because the symbol is known and is simply in another file.
+
 ### Linking
 
-The linker is a tool that resolves symbols and tries to build an executable that only strictly has the symbol definitions required for the "main" function to execute.
+The linker is a tool that resolves symbols among multiple object files and tries to build an executable that only strictly has the symbol definitions required for the "main" function to execute.
+The process of stripping away unused symbols and their relative code is called **dead code elimination**.
 
-If the linker finds a single symbol defined twice, it throws an error.
+The linker will throw an error if it sees symbols with multiple definitions.
+
+The [[ODR|One Definition Rule]] says that each symbol has to be defined once when a program reaches this point in the build process.
+However, if you think about header files and about how you define structs once PER translation unit that uses the header, you're always violating the ODR.
+The linker is able to merge struct definitions because they are simple layout descriptions. (same as function signatures, which are also merged into one definition)
+Complex scenarios (things you can't declare in header files included by multiple sources) are:
+- inline functions (even just the signatures)
+- static variables
+- elements with actual executable code (function implementations etc)
 
 ### Tools
 
-The following software has all you need to get started (I suggest gcc):
+The following software is a mix of tools, but i suggest [[gcc]] because it's the most complete.
 
 ```dataview
-TABLE FROM "Software/Programming/Translators/Compilers" AND [[C]]
+TABLE FROM ("Software/Programming/Translators" OR "Software/Programming/Linkers" OR "Software/Programming/Debugging") AND [[C]]
 ```
 
 ---
 
-### Standard Library Headers
+## Standard Library Headers
 
 - **About the headers**
 	- **The basics:**
@@ -93,15 +108,16 @@ TABLE FROM "Software/Programming/Translators/Compilers" AND [[C]]
 			- `{c}"%d"` 'digit'. Prints in `{c}int` ('A' will be printed as 65)
 			- `{c}"%f"` prints in `{c}float`
 			- `{c}"%.2f"` prints in `{c}float` with a precision of 2
-			- `{c}"lf"` prints in `{c}double`
-			- `{c}".2lf"` prints in `{c}double`, precision of 2
-			- `{c}"Lf"` prints in `{c}long double`
-			- `{c}".2Lf"` prints in `{c}long double`, precision of 2
+			- `{c}"%lf"` prints in `{c}double`
+			- `{c}"%.2lf"` prints in `{c}double`, precision of 2
+			- `{c}"%Lf"` prints in `{c}long double`
+			- `{c}"%.2Lf"` prints in `{c}long double`, precision of 2
 			- `{c}"%c"` prints in `{c}char`
 			- `{c}"%p"` prints memory address
 			- `{c}"%ld"` prints in `{c}long int`
 			- `{c}"%s"` prints string (`{c}char*`)
 			- `{c}"%zu"` prints in `{c}size_t`
+			- `{c}"%lu` prints in `{c}long unsigned`
 			- **How to use them:**
 				- add as many as you like in a format string parameter
 				- the following parameters will fill in the spaces of the format describers within the string
@@ -221,6 +237,7 @@ TABLE FROM "Software/Programming/Translators/Compilers" AND [[C]]
 		- `{c}calloc(arrayLen, singleCellLengthInBytes);` ^calloc
 			- same thing as malloc, but sets allocated memory to 0
 			- just use calloc.
+			- you don't need to typecast it
 		- `{c}free(pointer);`
 			- free my boy
 			- `{c}pointer==NULL` NOT guaranteed
@@ -275,7 +292,9 @@ TABLE FROM "Software/Programming/Translators/Compilers" AND [[C]]
 		- `{c}int16_t` 16 bytes signed
 		- `{c}uint16_t` 16 bytes unsigned
 - `{c}limits.h`
-	- **Constants:**
+	- **Macros:**
+		- `{c}ULLONG_MAX` _C99+_
+			- biggest number for `{c}unsigned long long`
 		- `{c}SHRT_MAX`
 		- `{c}INT_MAX` biggest value for the int data type
 		- `{c}INT_MIN` take a wild guess homeboy
@@ -328,45 +347,56 @@ TABLE FROM "Software/Programming/Translators/Compilers" AND [[C]]
 	
 ---
 
-### Syntax
+## Syntax
 
-- **Preprocessor directives**
-	- **Info:**
-		- they're all text replacement tools
-		- the preprocessor does the replacing
-	- `{c}#include <libhd.h>` ^include-standard-header
-		- include library header from the standard library
-		- the preprocessor literally picks the text from the header file you're referencing and it slaps it in your code, replacing this `{c} #include` statement
-	- `{c}#include "your_header.h"` ^include-file
-		- include text from any file in your code (mostly makes sense with headers)
-		- please no spaces. It probably works but just don't
-	- `{c}#define MY_MACRO 3` ^macros
-		- define macros
-		- they're kinda like constants but inlined because text replacement
-		- no type check
-	- `{c}#if MY_MACRO` ^conditional-compilation
-		- compiles if the macro exists
-	- `{c}#endif`
-	- `{c}#define ... __VA_ARGS__` ^variadic-macro
-		- _C99+_
-		- `{c}...`
-			- Variadic macro/ellipsis
-			- represents a variable number of arguments
-		- `{c}__VA_ARGS__`
-			- in your own macro declarations, `{c}...` gets replaced with this
-			- `{c}#define PRINT(format, ...) printf(format, __VA_ARGS__)`
-- **Code flow structures**
-	- **Switch:** ^switch
-		```c
-		switch(selector){
-			case 1:
-				/* instruction */;
-				break;
-				
-			case 2: //and so on
-			default: /*not mandatory*/;
-		}
-		```
+This is the syntax of the language according to the standard.
+I put the version of the standard in some of these.
+
+### Preprocessor directives
+
+- `{c}#include <libhd.h>` ^include-standard-header
+	- include library header from the standard library
+	- the preprocessor literally picks the text from the header file you're referencing and it slaps it in your code, replacing this `{c} #include` statement
+- `{c}#include "your_header.h"` ^include-file
+	- include text from any file in your code (mostly makes sense with headers)
+	- please no spaces. It probably works but just don't
+- `{c}#define MY_MACRO 3` ^macros
+	- define macros
+	- they're kinda like constants but inlined because text replacement
+	- no type check
+- `{c}#if MY_MACRO` ^conditional-compilation
+	- compiles if the macro exists
+- `{c}#endif`
+- `{c}#define ... __VA_ARGS__` ^variadic-macro
+	- this is called the **variadic macro**
+	- _C99+_
+	- `{c}...`
+		- Variadic macro/ellipsis
+		- represents a variable number of arguments
+	- `{c}__VA_ARGS__`
+		- in your own macro declarations, `{c}...` gets replaced with this
+		- `{c}#define PRINT(format, ...) printf(format, __VA_ARGS__)`
+		
+### Code flow instructions
+
+- **Switch:** ^switch
+	```c
+	switch(selector){
+		case 1:
+			/* instruction */;
+			break;
+			
+		case 2: //and so on
+		default: /*not mandatory*/;
+	}
+	```
+
+### Literals
+
+- **Compound literal**
+	- `{c}(int){0}` is a nameless integer variable
+	- `{c}(int[10]){0}` nameless array of size 10, initialized
+
 - **Typecasting** ^typecasting
 	- `{c}(int)charVariable`
 		- changes the type
@@ -618,7 +648,7 @@ TABLE FROM "Software/Programming/Translators/Compilers" AND [[C]]
 
 ---
 
-### Platform-specific code
+## Platform-specific code
 
 - **[[POSIX]]:**
 	- `{c}errno.h`
@@ -711,7 +741,7 @@ TABLE FROM "Software/Programming/Translators/Compilers" AND [[C]]
 
 ---
 
-### Libraries
+## Libraries
 
 - **MSVCRT** ^msvcrt
 	- [[Visual Studio]]'s implementation of the standard library
@@ -749,7 +779,7 @@ TABLE FROM "Software/Programming/Translators/Compilers" AND [[C]]
 
 ---
 
-### Trivia
+## Trivia
 
 - **Creation:**
 	- C was made by **Dennis Ritchie** in the early **'70s** at **Bell Labs**
