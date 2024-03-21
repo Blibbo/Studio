@@ -13,9 +13,16 @@ TABLE FROM "Languages/MARKUP/LATEX/DISTRIBUTIONS"
 
 ---
 
-## LaTeX Engines
+## TeX Engines
 
-The underlying typesetting engine for LaTeX is called [[TeX]].
+The underlying typesetting engine for LaTeX is called [[TeX]], which is an old program. However, they made new engines and they're listed here. They're all TeX engines, but newer.
+
+They're basically compilers. They take your code and produce a formatted document with a proper format, for example [[pdf]], [[DVI]] (Device Independent) or [[PostScript]]. An engine's job is to:
+- interpreting LaTeX markup
+- executing macros
+- resolving cross-references
+- managing fonts
+- generating the output file
 
 ```dataview
 TABLE FROM "Languages/MARKUP/LATEX/ENGINES"
@@ -35,49 +42,49 @@ TABLE FROM "Languages/MARKUP/LATEX/EDITORS"
 
 ## LaTeX Syntax
 
+The syntax for this markup language consists in plain text mixed with commands.
+Commands are preceded by backslashes (`\`).
+There are a few additional syntax elements, like the comment (ignored by compilers):
 
-- **Comments:**
-	- `{latex}% this is a comment`
-- **Commands:** 
-	- `{latex}\documentclass{classname}` ^documentclass
-		- **valid classnames:**
-			- `article`
-	- `{latex}\usepackage{packagename}`
-		- typically done in the preamble (zone between [[#^documentclass|documentclass]] and [[#^begin-document|begin document]])
-		- adding packages adds features to the document
-			- examples are font styles, mathematical symbols, graphics support and much more
-		- **Packages:**
-			- **ADD TO NOTES:** ^incomplete
-				- stuff from [this](https://www.physicsread.com/latex-real-number/) link
-			- `amsmath` ^amsmath
-				- Math stuff.
-			- `babel` ^babel
-			- `biblatex` ^biblatex
-			- `fancyhdr` ^fancyhdr
-				- Fancy headers and footers.
-			- `geometry` ^geometry
-				- Customize the page structure with more advanced geometry
-			- `hyperref` ^hyperref
-			- `listings` ^listings
-				- Code listings (wtf is that???)
-			- `natbib` ^natbib
-			- `tikz` ^tikz
-				- Graphs and stuff.
-			```dataview
-			LIST
-			FROM "Languages/MARKUP/LATEX/Packages"
-			```
-	- `{latex}\begin{document}` ^begin-document
-	- `{latex}$inline maths$` = `{latex}\(inline math\)` ^inline-math
-		- $inline maths$
-		- enter inline math mode
-	- `{latex}$$math block$$` = `{latex}\[math block\]` ^math-block
-		- $$math block$$
-		- enter math block mode
-		- takes a lot of space
-		- it's centered
-		- typically written over multiple lines
-	- `{latex}\end{document}`
+- `{latex}% this is a comment`
+
+### Commands
+
+- `{latex}\documentclass{classname}` ^documentclass
+	- **valid classnames:**
+		- `article`
+- `{latex}\usepackage{packagename}`
+	- typically done in the preamble (zone between [[#^documentclass|documentclass]] and [[#^begin-document|begin document]])
+	- adding packages adds features to the document
+		- examples are font styles, mathematical symbols, graphics support and much more
+	- **Packages:**
+		- **ADD TO NOTES:** ^incomplete
+			- stuff from [this](https://www.physicsread.com/latex-real-number/) link
+		- `amsmath` ^amsmath
+			- Math stuff.
+		- `babel` ^babel
+		- `biblatex` ^biblatex
+		- `fancyhdr` ^fancyhdr
+			- Fancy headers and footers.
+		- `geometry` ^geometry
+			- Customize the page structure with more advanced geometry
+		- `hyperref` ^hyperref
+		- `listings` ^listings
+			- Code listings (wtf is that???)
+		- `natbib` ^natbib
+		- `tikz` ^tikz
+			- Graphs and stuff.
+- `{latex}\begin{document}` ^begin-document
+- `{latex}$inline maths$` = `{latex}\(inline math\)` ^inline-math
+	- $inline maths$
+	- enter inline math mode
+- `{latex}$$math block$$` = `{latex}\[math block\]` ^math-block
+	- $$math block$$
+	- enter math block mode
+	- takes a lot of space
+	- it's centered
+	- typically written over multiple lines
+- `{latex}\end{document}`
 
 ### Math Mode
 
@@ -86,9 +93,12 @@ Example: `{latex}A^3` vs `{latex}A^{3}`
 
 [LaTeX Formal Methods Reference](https://www.cs.put.poznan.pl/ksiek/latexmath.html)
 
+#### Commands
+
 - `{latex}\{\}`
 	- $\{\}$
-	- normally, they refer to parameters
+	- escape curly brackets to actually write them
+	- normally, they refer to parameters for other commands. That's why there's this syntax
 - `{latex}\text{plain text}` [Package::amsmath] ^text
 	- whitespace in text gets normally erased in math mode
 	- this fixes that

@@ -4,35 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6adba5a7e973d369",
+        "id": "42c9c3d490e9bd3b",
         "type": "tabs",
         "children": [
           {
-            "id": "bff74063c039f1cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Languages/MARKUP/LATEX/ENGINES/pdfTeX.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "997723165a532e85",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Languages/GENERAL-PURPOSE/C/C.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0acf747d5bfb4f93",
+            "id": "1136ff9891c89430",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -43,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -182,44 +157,45 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "0acf747d5bfb4f93",
+  "active": "1136ff9891c89430",
   "lastOpenFiles": [
+    "CS-Theory/CDT/Concrete Data Types.md",
+    "CS-Theory/ADT/Abstract Data Type.md",
+    "Maths/Geometry/Pythagorean theorem.md",
     "Languages/GENERAL-PURPOSE/C/C.md",
+    "Maths/Geometry/attachments/Pasted image 20240321151401.png",
+    "Maths/Geometry/attachments",
+    "Maths/Geometry/Right triangle.md",
     "Languages/MARKUP/LATEX/ENGINES/pdfTeX.md",
+    "Maths/Geometry/right tirna.md",
+    "Maths/Geometry/Analitic geometry/Segment.md",
+    "Templates/Definition.md",
+    "Maths/Geometry/Goniometry/Goniometric circumference.md",
+    "Maths/Geometry/Analitic geometry",
+    "Maths/Geometry/Goniometry/Goniometry.md",
+    "Maths/Geometry/Trigonometry/Trigonometry.md",
+    "Maths/Mathematics.md",
+    "Maths/Geometry/Goniometry",
+    "Maths/Geometry/Trigonometry",
+    "Maths/Calculus/Calculus.md",
+    "Maths/Analysis/Mathematical Analysis.md",
+    "Maths/Logic/Logic.md",
     "Languages/MARKUP/LATEX/LaTeX.md",
-    "Languages/MARKUP/LATEX/ENGINES/TeX.md",
     "Languages/MARKUP/LATEX/ENGINES/pdflatex.md",
+    "Standards-Conventions/Firmware/BIOS.md",
+    "Standards-Conventions/Firmware/UEFI.md",
+    "Languages/SHELL/cmd/Command Prompt.md",
+    "Software/OS/Windows/Windows.md",
+    "Languages/MARKUP/LATEX/ENGINES/TeX.md",
     "Languages/MARKUP/LATEX/COMPILERS",
     "Languages/MARKUP/LATEX/EDITORS/TeXShop.md",
     "Languages/MARKUP/LATEX/EDITORS/TeXstudio.md",
     "Languages/MARKUP/LATEX/EDITORS/TeXworks.md",
-    "Languages/MARKUP/LATEX/EDITORS/Overleaf.md",
     "Languages/MARKUP/LATEX/EDITORS",
-    "Languages/MARKUP/LATEX/ENGINES/XeTeX.md",
-    "Languages/MARKUP/LATEX/ENGINES/LuaTeX.md",
-    "Languages/MARKUP/LATEX/DISTRIBUTIONS/MacTeX.md",
     "Languages/MARKUP/LATEX/ENGINES",
-    "Languages/MARKUP/LATEX/Untitled.md",
-    "Languages/MARKUP/LATEX/DISTRIBUTIONS/MiKTeX.md",
-    "Languages/MARKUP/LATEX/DISTRIBUTIONS/TeX Live.md",
     "Languages/MARKUP/LATEX/DISTRIBUTIONS",
-    "Languages/MARKUP/LATEX/Packages/tikz.md",
-    "Languages/MARKUP/LATEX/Packages/natbib.md",
-    "Languages/MARKUP/LATEX/Packages/listings.md",
-    "Languages/MARKUP/LATEX/Packages/hyperref.md",
-    "Languages/MARKUP/LATEX/Packages/graphicx.md",
-    "Languages/MARKUP/LATEX/Packages/geometry.md",
-    "Languages/MARKUP/LATEX/Packages/fancyhdr.md",
-    "Languages/MARKUP/LATEX/Packages/biblatex.md",
-    "Languages/MARKUP/LATEX/Packages/babel.md",
-    "Languages/MARKUP/LATEX/Packages/amsmath.md",
-    "Maths/Algebra/Linear Algebra/Linear Algebra.md",
     "Maths/Algebra/Boolean Algebra",
     "Maths/Logic/Mathematical Logic/Recursion Theory",
-    "Maths/Analysis",
-    "Maths/Logic/Mathematical Logic/Proof Theory",
-    "Maths/Logic/Mathematical Logic/Model Theory",
-    "Maths/Number Theory",
     "Maths/attachments/Pasted image 20240320141722.png",
     "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
     "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/x,y spherical coordinates.png",
@@ -228,7 +204,6 @@
     "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/azimuth formula.png",
     "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/azimuth formula but the atan doesn't suck.png",
     "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/Z is up in spherical coordinates.png",
-    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/polar and azimuth.png",
-    "CS-Theory/CG/scratchapixel/screenshots/not very useful/GPU rendering pipeline.png"
+    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/polar and azimuth.png"
   ]
 }

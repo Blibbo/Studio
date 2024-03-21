@@ -11,7 +11,7 @@ aliases:
 ---
 It's made out of two things: a scripting language interpreter and a terminal.
 You can write either commands or file names (to open those files) from this terminal.
-Some commands are built into [[Windows]] (and can be run on their own), others are built into this terminal only.
+Some commands are built into [[Windows]] (and could be run on their own, without this terminal), others are built into this terminal only.
 
 Commands I listed [[#Commands|here]] are the ones exclusive to the command prompt.
 A reference for all the available commands in the terminal can be found
@@ -49,14 +49,22 @@ Here are the variables Windows adds:
 
 ### Syntax
 
-- `command (code block)`
-	- the code block can span multiple lines
-	- a space is required between the command and the parentheses
+- `^`
+	- Escape the next character. Allows you to treat pieces of batch syntax as strings.
+	  It itself is a piece of syntax. It works on itself.
+	- ==Examples:==
+		- `^^` outputs `^`
+		- `^>` ${ \to }$ `>`
+		- `^<` ${ \to }$ `<`
+		- `^&` ${ \to }$ `&`
+		- `^&^&` ${ \to }$ `&&`
 - `executablename`
 	- runs the executable
 	- it has a `.exe` extension but you can ~~and should~~ omit it
 	- `"executable name"`
 		- if it has spaces, it needs the quotation marks
+- `{batch}command /?`
+	- tells you information about the command. VERY verbose.
 - `command && aftercommand`
 	- execute `command` and `aftercommand` right after
 - `command | othercommand`
@@ -64,7 +72,10 @@ Here are the variables Windows adds:
 	- by _input_ and _output_ I'm talking about when the programs write in the console window.
 	- That normally happens through streams called [[C#^stdin|stdin]] and [[C#^stdout|stdout]] (they'll have other names in other languages but it's still them)
 	- to make programs communicate in fancier ways look into [[IPC]]
-- **Variables**
+- `command (code block)`
+	- the code block can span multiple lines
+	- a space is required between the command and the parentheses
+- **Variables** ^variables-syntax
 	- **Declaration**
 		- `{batch}set my_Variable = 3`
 		- [[#^set]]
@@ -80,13 +91,6 @@ Here are the variables Windows adds:
 			- correct scope for blocks
 			- requires `{batch}SETLOCAL ENABLEDELAYEDEXPANSION` to be written anywhere before this line (even outside the block)
 			- https://stackoverflow.com/a/21389931
-	- **Default**
-		- `{batch}%errorlevel%` contains the last error code
-			- typically returned by functions
-		- `{batch}%1 %2 %3 etc` contain the parameters passed to the script/function within the script
-		- `{batch}%~1` is a modifier that removes any quotation marks from the variable `{batch}%1`
-		- `{batch}%*` contains all the parameters as a single string
-		- `{batch}%~dp0` contains the path of the currently executing script
 - `%CD%`
 	- current directory
 - `@command` ^silence
@@ -132,6 +136,16 @@ Here are the variables Windows adds:
 		- `:eof` end of file
 
 ---
+
+### Variables
+
+- `%0` is the name of the command (or script)
+- `{batch}%1 %2 %3 etc` contain the parameters passed to the script/function within the script
+- `{batch}%*` contains all the parameters as a single string
+- `{batch}%ERRORLEVEL%` contains the last error code
+	- typically returned by functions
+- `{batch}%~1` is a modifier that removes any quotation marks from the variable `{batch}%1`
+- `{batch}%~dp0` contains the path of the currently executing script
 
 ### Commands
 
@@ -190,11 +204,13 @@ These are called **Internal Commands** because they're unique to this shell
 		- options are y/n/a (yes, no, all)
 	- `/Y` suppresses the confirmation prompt and just does what you asked
 	- `/s` copies subdirectories recursively
-- `{batch}set VAR=initial_value` ^set
-	- set a variable value. read it with [[#^variable-syntax|%VAR%]]
+- `{batch}set` ^set
+	- prints to the console every environment variable and their values
+	- `{batch}set VAR=initial_value`
+		- set a variable value. read it with [[#^variable-syntax|%VAR%]]
+		- `/a` evaluate the expression after `=` as arithmetic
 	- `{batch}set /p name=Enter your name:`
 		- prompt the user for a name. The `Enter your name:` string does NOT go in the variable too. Just the actual name, once the user enters it.
-	- `/a` evaluate the expression after `=` as arithmetic
 - `{batch}setlocal` ^setlocal
 	- local environment for environment variables
 - `{batch}endlocal`
