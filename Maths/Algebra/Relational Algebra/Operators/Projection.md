@@ -1,4 +1,4 @@
-[[Relational algebra]] operator that gives you a vertical cut of your [[relation]].
+[[Relational Algebra]] operator that gives you a vertical cut of your [[relation]].
 If there are identical fields, projection removes the redundancy.
 
 ## Notation

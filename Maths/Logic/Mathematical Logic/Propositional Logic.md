@@ -6,4 +6,4 @@ aliases:
   - Sentential logic
   - Zeroth-order logic
 ---
-A branch of [[logic]]
+A branch of [[Logic]]

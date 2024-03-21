@@ -8,18 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3281012811266223",
+            "id": "bff74063c039f1cb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS-Theory/Subprograms/FFI.md",
+                "file": "Languages/MARKUP/LATEX/ENGINES/pdfTeX.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "997723165a532e85",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Languages/GENERAL-PURPOSE/C/C.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS-Theory/Subprograms/FFI.md",
+                "file": "Languages/GENERAL-PURPOSE/C/C.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS-Theory/Subprograms/FFI.md",
+                "file": "Languages/GENERAL-PURPOSE/C/C.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS-Theory/Subprograms/FFI.md"
+                "file": "Languages/GENERAL-PURPOSE/C/C.md"
               }
             }
           }
@@ -157,52 +170,53 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "3281012811266223",
+  "active": "997723165a532e85",
   "lastOpenFiles": [
-    "CS-Theory/Subprograms/Name Mangling.md",
-    "CS-Theory/Subprograms/FFI.md",
-    "CS-Theory/ABI.md",
-    "CS-Theory/Subprograms/Subprogram.md",
-    "CS-Theory/Subprograms/Overloading.md",
-    "CS-Theory/Paradygms/Object-Oriented Programming.md",
-    "CS-Theory/Subprograms/IMPLEMENTATIONS/Procedure.md",
-    "CS-Theory/Subprograms/IMPLEMENTATIONS/Method.md",
-    "CS-Theory/Subprograms/IMPLEMENTATIONS/Function (programming).md",
-    "CS-Theory/Paradygms/Untitled",
-    "CS-Theory/Paradygms/Procedural programming.md",
-    "CS-Theory/Subprograms/Subroutine.md",
-    "CS-Theory/Subprograms/IMPLEMENTATIONS",
-    "CS-Theory/ABI",
-    "CS-Theory/Subprograms",
-    "CS-Theory/Programming Language.md",
-    "CS-Theory/Subprograms/Calling Conventions/Calling Convention.md",
-    "Hardware/Architectures/Microprocessors/8086/Intel 8086.md",
-    "CS-Theory/Subprograms/Calling Conventions/cdecl.md",
-    "CS-Theory/Subprograms/Calling Conventions/fastcall.md",
-    "CS-Theory/Subprograms/Calling Conventions/stdcall.md",
-    "CS-Theory/Subprograms/Calling Conventions/thiscall.md",
-    "CS-Theory/Subprograms/Calling Conventions",
-    "CS-Theory/Function Call Stack.md",
-    "Stack Frame.md",
-    "CS-Theory/Heap Memory.md",
-    "CS-Theory/Paradygms/Procedural Programming/Related concepts",
-    "CS-Theory/Paradygms/Procedural Programming",
-    "Languages/GENERAL-PURPOSE/C/C.md",
-    "CS-Theory/ADT/Stack.md",
-    "CS-Theory/ADT/Queue.md",
-    "Software/Programming/Debugging/GDB.md",
-    "Software/Programming/Translators/Compilers/GCC.md",
-    "Software/Programming/Debugging",
-    "Languages/GENERAL-PURPOSE/SCALA",
-    "Languages/GENERAL-PURPOSE/PROLOG",
-    "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
-    "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/x,y spherical coordinates.png",
-    "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar to cartesian.png",
-    "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar formula.png",
-    "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/azimuth formula.png",
-    "Maths/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/azimuth formula but the atan doesn't suck.png",
-    "Maths/CG/scratchapixel/screenshots/spherical coordinates/Z is up in spherical coordinates.png",
-    "Maths/CG/scratchapixel/screenshots/spherical coordinates/polar and azimuth.png",
-    "Maths/CG/scratchapixel/screenshots/not very useful/GPU rendering pipeline.png"
+    "Languages/MARKUP/LATEX/ENGINES/pdfTeX.md",
+    "Languages/MARKUP/LATEX/LaTeX.md",
+    "Languages/MARKUP/LATEX/ENGINES/TeX.md",
+    "Languages/MARKUP/LATEX/ENGINES/pdflatex.md",
+    "Languages/MARKUP/LATEX/COMPILERS",
+    "Languages/MARKUP/LATEX/EDITORS/TeXShop.md",
+    "Languages/MARKUP/LATEX/EDITORS/TeXstudio.md",
+    "Languages/MARKUP/LATEX/EDITORS/TeXworks.md",
+    "Languages/MARKUP/LATEX/EDITORS/Overleaf.md",
+    "Languages/MARKUP/LATEX/EDITORS",
+    "Languages/MARKUP/LATEX/ENGINES/XeTeX.md",
+    "Languages/MARKUP/LATEX/ENGINES/LuaTeX.md",
+    "Languages/MARKUP/LATEX/DISTRIBUTIONS/MacTeX.md",
+    "Languages/MARKUP/LATEX/ENGINES",
+    "Languages/MARKUP/LATEX/Untitled.md",
+    "Languages/MARKUP/LATEX/DISTRIBUTIONS/MiKTeX.md",
+    "Languages/MARKUP/LATEX/DISTRIBUTIONS/TeX Live.md",
+    "Languages/MARKUP/LATEX/DISTRIBUTIONS",
+    "Languages/MARKUP/LATEX/Packages/tikz.md",
+    "Languages/MARKUP/LATEX/Packages/natbib.md",
+    "Languages/MARKUP/LATEX/Packages/listings.md",
+    "Languages/MARKUP/LATEX/Packages/hyperref.md",
+    "Languages/MARKUP/LATEX/Packages/graphicx.md",
+    "Languages/MARKUP/LATEX/Packages/geometry.md",
+    "Languages/MARKUP/LATEX/Packages/fancyhdr.md",
+    "Languages/MARKUP/LATEX/Packages/biblatex.md",
+    "Languages/MARKUP/LATEX/Packages/babel.md",
+    "Languages/MARKUP/LATEX/Packages/amsmath.md",
+    "Maths/Algebra/Linear Algebra/Linear Algebra.md",
+    "Maths/Axiom.md",
+    "Maths/Algebra/Boolean Algebra",
+    "Maths/Logic/Mathematical Logic/Recursion Theory",
+    "Maths/Analysis",
+    "Maths/Logic/Mathematical Logic/Proof Theory",
+    "Maths/Logic/Mathematical Logic/Model Theory",
+    "Maths/Number Theory",
+    "Maths/attachments/Pasted image 20240320141722.png",
+    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
+    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/x,y spherical coordinates.png",
+    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar to cartesian.png",
+    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar formula.png",
+    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/azimuth formula.png",
+    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/azimuth formula but the atan doesn't suck.png",
+    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/Z is up in spherical coordinates.png",
+    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/polar and azimuth.png",
+    "CS-Theory/CG/scratchapixel/screenshots/not very useful/GPU rendering pipeline.png"
   ]
 }

@@ -7,4 +7,4 @@ aliases:
   - Teoria del primo ordine
   - Calcolo dei predicati
 ---
-Extends [[propositional logic]]
+Extends [[Propositional Logic]]

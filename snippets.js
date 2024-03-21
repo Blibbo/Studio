@@ -321,7 +321,7 @@
 	{trigger: "fence", replacement: "```", options: "tcA"},
 	{trigger: "bt", replacement: "`", options: "t"},
 	{trigger: "js", replacement: "`{js}$0`$1", options: "tw"},
-	{trigger: "latex", replacement: "`{latex}$$0$`$1", options: "tw"},
+	{trigger: "latex", replacement: "`{latex}$0`$1", options: "tw"},
 	{trigger: "bash", replacement: "`{bash}$0`$1", options: "tw"},
 	{trigger: "c", replacement: "`{c}$0`$1", options: "tw"},
 	{trigger: "cpp", replacement: "`{cpp}$0`$1", options: "twA"},

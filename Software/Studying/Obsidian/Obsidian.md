@@ -200,7 +200,7 @@ tags:
 	- `{latex}$$ latex math goes here $$`
 	- `{latex}$ inline math $` can be fused with other text (like I'm doing with inline code and this text)
 	- that's it.
-	- check [[LaTeX#^math-mode |this note]] to see wtf to put between `{latex}$$`
+	- check [[LaTeX#^math-mode|this note]] to see wtf to put between `{latex}$$`
 	
 ---
 
