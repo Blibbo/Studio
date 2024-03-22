@@ -10,7 +10,8 @@
   "enabledCssSnippets": [
     "note-width",
     "adaptive_images",
-    "image_zoom2"
+    "image_zoom2",
+    "image_background"
   ],
   "translucency": false,
   "nativeMenus": false

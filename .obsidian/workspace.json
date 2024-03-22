@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hardware/Architectures/Microprocessors/8086/Intel 8086.md",
-                "mode": "source",
+                "file": "Maths/Geometry/Pythagorean theorem.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardware/Architectures/Microprocessors/8086/Intel 8086.md",
+                "file": "Maths/Geometry/Pythagorean theorem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hardware/Architectures/Microprocessors/8086/Intel 8086.md",
+                "file": "Maths/Geometry/Pythagorean theorem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hardware/Architectures/Microprocessors/8086/Intel 8086.md"
+                "file": "Maths/Geometry/Pythagorean theorem.md"
               }
             }
           }
@@ -159,6 +159,7 @@
   },
   "active": "1136ff9891c89430",
   "lastOpenFiles": [
+    "Hardware/Architectures/Microprocessors/8086/Intel 8086.md",
     "Languages/SHELL/cmd/Command Prompt.md",
     "CS-Theory/CDT/Concrete Data Types.md",
     "CS-Theory/ADT/Abstract Data Type.md",
@@ -190,7 +191,6 @@
     "Languages/MARKUP/LATEX/COMPILERS",
     "Languages/MARKUP/LATEX/EDITORS/TeXShop.md",
     "Languages/MARKUP/LATEX/EDITORS/TeXstudio.md",
-    "Languages/MARKUP/LATEX/EDITORS/TeXworks.md",
     "Languages/MARKUP/LATEX/EDITORS",
     "Languages/MARKUP/LATEX/ENGINES",
     "Languages/MARKUP/LATEX/DISTRIBUTIONS",

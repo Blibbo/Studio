@@ -38,17 +38,17 @@
 /* Aggiungi class per applicare l'effetto solo alle immagini SVG */
 
 .theme-dark img[alt$="invert_B"] {
-  filter: invert(1) brightness(100%) saturate(3)
+	filter: invert(1) brightness(100%) saturate(3);
 }
 
 .theme-light img[img$="#invert_W"] {
-  filter: invert(1) brightness(100%) saturate(0) hue-rotate(180deg);
+	filter: invert(1) brightness(100%) saturate(0) hue-rotate(180deg);
 }
 
 .theme-dark img[img$="invert_B_C"] {
-  filter: invert(1) brightness(100%) saturate(0) hue-rotate(180deg) contrast(1.5);
+	filter: invert(1) brightness(100%) saturate(0) hue-rotate(180deg) contrast(1.5);
 }
 
 .theme-light img[img$="#invert_W_C"] {
-  filter: invert(1) brightness(100%) saturate(0) hue-rotate(180deg) contrast(1.45);
+	filter: invert(1) brightness(100%) saturate(0) hue-rotate(180deg) contrast(1.45);
 }

@@ -8,7 +8,7 @@
 }
 .view-content .markdown-preview-view img[referrerpolicy='no-referrer']:active,
 .view-content .image-embed:active {
-	background:var(--background-primary);
+	/*background:var(--background-primary);*/
 	cursor:zoom-out;
 	display:block;
 	z-index:200;
