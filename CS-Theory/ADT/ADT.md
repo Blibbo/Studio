@@ -7,10 +7,10 @@ What these models strive to do is understand what the [[#domain]] of this type i
 
 Abstract data types  coincide with [[algebraic structure|algebraic structures]] in maths.
 
-## Domain
+There are two core elements to ADTs:
+- the **domain** is the set of possible values this data type can assume
+- **operations**: all the ways you can interact with the values in the domain.
 
-Possible values this data type can assume
+## Linear
 
-## Operations
-
-All the ways you can interact with the values in the domain.
+Linear data structures see elements ordered in one dimension.

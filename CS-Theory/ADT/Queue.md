@@ -2,7 +2,7 @@
 aliases:
   - Coda
 ---
-Data structure with **First-In, First-Out** access to data.
+[[ADT#Linear|Linear abstract data structure]] with **First-In, First-Out** access to data.
 
 ## Operations
 

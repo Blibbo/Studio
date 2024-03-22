@@ -2,7 +2,7 @@
 aliases:
   - Pila
 ---
-Data structure with **Last-In, First-Out** access to data.
+[[ADT#Linear|Linear abstract data structure]] with **Last-In, First-Out** access to data.
 
 ## Operations
 

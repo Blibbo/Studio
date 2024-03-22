@@ -6,6 +6,9 @@ It's a [[DSL]] that allows you to interact with [[Databases]].
 This DSL follows the principle of [[Declarative Programming]].
 It's divided into four sub-languages: [[#DDL]], [[#DML]], [[#DQL]], [[#DCL]].
 
+"SQL" refers to the standard. It's the ideal version.
+There are many implementations of this standard, one of which is [[mysql.exe|MySQL]]
+
 ## DDL
 
 Stands for **Data Definition Language**. Its purpose is working with definitions.

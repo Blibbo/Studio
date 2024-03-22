@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "42c9c3d490e9bd3b",
+        "id": "b8a40685972f6da6",
         "type": "tabs",
         "children": [
           {
-            "id": "1136ff9891c89430",
+            "id": "6f8cc1a9f5cb8e3e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/Geometry/Pythagorean theorem.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -93,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Maths/Geometry/Pythagorean theorem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Maths/Geometry/Pythagorean theorem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Maths/Geometry/Pythagorean theorem.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -157,40 +149,40 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "1136ff9891c89430",
+  "active": "6f8cc1a9f5cb8e3e",
   "lastOpenFiles": [
-    "Languages/GENERAL-PURPOSE/C/C.md",
+    "CS-Theory/Subprograms/Stack Frame.md",
+    "CS-Theory/Subprograms/Function Call Stack.md",
+    "CS-Theory/Units of Memory/Memory.md",
+    "CS-Theory/Units of Memory/Nibble.md",
+    "CS-Theory/Units of Memory/Byte.md",
+    "CS-Theory/Units of Memory/bit.md",
+    "CS-Theory/ADT/Stack.md",
+    "CS-Theory/ADT/Tree.md",
+    "CS-Theory/ADT/Queue.md",
+    "CS-Theory/ADT/Segment Tree.md",
+    "CS-Theory/ADT/Set (ADT).md",
+    "CS-Theory/ADT/List.md",
+    "CS-Theory/ADT/Hash Table.md",
+    "CS-Theory/ADT/Array (ADT).md",
+    "CS-Theory/ADT/ADT.md",
+    "CS-Theory/ADT/Multi-Set.md",
+    "CS-Theory/ADT/Linear ADT.md",
+    "Languages/DSL/SQL/SQL.md",
     "Maths/Geometry/Pythagorean theorem.md",
+    "Software/Programming/DBMS/MySQL/mysql.exe.md",
+    "Languages/GENERAL-PURPOSE/C/C.md",
     "Maths/Geometry/Right triangle.md",
     "Hardware/Architectures/Microprocessors/8086/Intel 8086.md",
     "Languages/SHELL/cmd/Command Prompt.md",
-    "CS-Theory/CDT/Concrete Data Types.md",
-    "CS-Theory/ADT/Abstract Data Type.md",
+    "CS-Theory/CDT/CDT.md",
     "Maths/Geometry/attachments/Pasted image 20240321151401.png",
     "Maths/Geometry/attachments",
     "Languages/MARKUP/LATEX/ENGINES/pdfTeX.md",
-    "Maths/Geometry/right tirna.md",
-    "Maths/Geometry/Analitic geometry/Segment.md",
-    "Templates/Definition.md",
-    "Maths/Geometry/Goniometry/Goniometric circumference.md",
     "Maths/Geometry/Analitic geometry",
-    "Maths/Geometry/Goniometry/Goniometry.md",
-    "Maths/Geometry/Trigonometry/Trigonometry.md",
-    "Maths/Mathematics.md",
     "Maths/Geometry/Goniometry",
     "Maths/Geometry/Trigonometry",
-    "Maths/Calculus/Calculus.md",
-    "Maths/Analysis/Mathematical Analysis.md",
-    "Maths/Logic/Logic.md",
-    "Languages/MARKUP/LATEX/LaTeX.md",
-    "Languages/MARKUP/LATEX/ENGINES/pdflatex.md",
-    "Standards-Conventions/Firmware/BIOS.md",
-    "Standards-Conventions/Firmware/UEFI.md",
-    "Software/OS/Windows/Windows.md",
-    "Languages/MARKUP/LATEX/ENGINES/TeX.md",
     "Languages/MARKUP/LATEX/COMPILERS",
-    "Languages/MARKUP/LATEX/EDITORS/TeXShop.md",
-    "Languages/MARKUP/LATEX/EDITORS/TeXstudio.md",
     "Languages/MARKUP/LATEX/EDITORS",
     "Languages/MARKUP/LATEX/ENGINES",
     "Languages/MARKUP/LATEX/DISTRIBUTIONS",
