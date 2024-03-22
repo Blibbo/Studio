@@ -24,6 +24,8 @@ ${ c = \text{hypothenuse} }$
 
 ## Inferential
 
+Nothing yet
+
 ---
 
 ## Trivia

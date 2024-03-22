@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/Geometry/Pythagorean theorem.md",
+                "file": "Languages/GENERAL-PURPOSE/C/C.md",
                 "mode": "preview",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Maths/Geometry/Pythagorean theorem.md",
+                "file": "Languages/GENERAL-PURPOSE/C/C.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Maths/Geometry/Pythagorean theorem.md",
+                "file": "Languages/GENERAL-PURPOSE/C/C.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Maths/Geometry/Pythagorean theorem.md"
+                "file": "Languages/GENERAL-PURPOSE/C/C.md"
               }
             }
           }
@@ -159,15 +159,15 @@
   },
   "active": "1136ff9891c89430",
   "lastOpenFiles": [
+    "Maths/Geometry/Pythagorean theorem.md",
+    "Maths/Geometry/Right triangle.md",
     "Hardware/Architectures/Microprocessors/8086/Intel 8086.md",
     "Languages/SHELL/cmd/Command Prompt.md",
     "CS-Theory/CDT/Concrete Data Types.md",
     "CS-Theory/ADT/Abstract Data Type.md",
-    "Maths/Geometry/Pythagorean theorem.md",
     "Languages/GENERAL-PURPOSE/C/C.md",
     "Maths/Geometry/attachments/Pasted image 20240321151401.png",
     "Maths/Geometry/attachments",
-    "Maths/Geometry/Right triangle.md",
     "Languages/MARKUP/LATEX/ENGINES/pdfTeX.md",
     "Maths/Geometry/right tirna.md",
     "Maths/Geometry/Analitic geometry/Segment.md",
