@@ -20,6 +20,15 @@ ${ a = \text{leg of right triangle} }$
 ${ b = \text{leg of right triangle} }$
 ${ c = \text{hypothenuse} }$
 
+Solve for ${ a }$
+${ \sqrt{ c^{2}-b^{2} } }$
+
+Solve for ${ b }$
+${ \sqrt{ c^{2}-a^{2} } }$
+
+Solve for ${ c }$
+${ \sqrt{ a^{2}+b^{2} } }$
+
 ---
 
 ## Inferential
