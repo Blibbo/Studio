@@ -16,7 +16,7 @@ Some commands are built into [[Windows]] (and could be run on their own, without
 Commands I listed [[#Commands|here]] are the ones exclusive to the command prompt.
 A reference for all the available commands in the terminal can be found
 - [here](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) by microsoft. The official one. It sucks balls
-- [here](https://ss64.com/nt/) an unofficial one, it has a little dot next to the commands that are exclusive to the command prompt, and the other ones are native to Windows (those can be run by [[Powershell]] too)
+- ==[here](https://ss64.com/nt/)== an unofficial one, it has a little dot next to the commands that are exclusive to the command prompt, and the other ones are native to Windows (those can be run by [[Powershell]] too)
 
 Scripts are text files with `.bat` or `.cmd` extensions. They don't need to be compiled and are natively executable on Windows.
 They contain series of commands. Each line is its own command, executed sequentially.
@@ -30,7 +30,7 @@ https://stackoverflow.com/a/64324969
 
 In each terminal session, there's some "environment" information.
 
-At its lowest level, this information is:
+As far as I know, this information is:
 - what directory you're in
 - the variables in your environment
 
@@ -58,6 +58,8 @@ Here are the variables Windows adds:
 		- `^<` ${ \to }$ `<`
 		- `^&` ${ \to }$ `&`
 		- `^&^&` ${ \to }$ `&&`
+	- ==N.B.== If it's the last token in a command, it escapes the newline and it's as if everything is in the same line
+		- If there is nothing in the next line, you'll be prompted for more.
 - `executablename`
 	- runs the executable
 	- it has a `.exe` extension but you can ~~and should~~ omit it
@@ -143,9 +145,11 @@ Here are the variables Windows adds:
 - `{batch}%1 %2 %3 etc` contain the parameters passed to the script/function within the script
 - `{batch}%*` contains all the parameters as a single string
 - `{batch}%ERRORLEVEL%` contains the last error code
-	- typically returned by functions
+	- functions typically return this variable
 - `{batch}%~1` is a modifier that removes any quotation marks from the variable `{batch}%1`
 - `{batch}%~dp0` contains the path of the currently executing script
+
+---
 
 ### Commands
 

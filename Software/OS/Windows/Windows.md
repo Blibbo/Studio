@@ -8,7 +8,7 @@ Made in [[C++]]
 
 ---
 
-### Releases
+## Releases
 
 ```dataview
 LIST from "Software/OS/Windows" AND !"Software/OS/Windows/RELATED"
@@ -17,7 +17,7 @@ WHERE file.name != this.file.name
 
 ---
 
-### Executables
+## Executables
 
 Executable files on Windows are `.exe`, `.bat` or `.cmd` files.
 
@@ -63,6 +63,10 @@ There are various places you can run commands from.
 
 #### Commands meant to run inside terminals
 
+These commands don't really make sense if you run them outside of a terminal because they prints stuff.
+This means that if you were to open them or run them with [[#^start]] they'd print stuff and immediately disappear.
+Not necessarily, because some prompt you for inputs, but still. They aren't meant to be run as standalone executables.
+
 - `where commandorexecutable`
 	- if it recognizes the command (either it's in the current dir or [[Windows#^path|available everywhere]]) it'll tell you where it is
 	- if it finds multiple, it tells you the location of every single one
@@ -89,6 +93,27 @@ There are various places you can run commands from.
 	- opens the [[powershell]] terminal
 	- when ran inside a terminal, it doesn't open another terminal
 	- it does hijack the terminal though. (Starts interpreting powershell commands)
+- `wt`
+	- **Windows Terminal** opens the default terminal for the operating system. It's typically powershell. A shorthand.
+	- `{batch}wt batch1; batch2; batch3;`
+- `{batch}start <file path/directory>` ^start
+	- equates to a double click on something.
+	- if it's a directory, it opens it on `{batch}explorer`
+	- if it's a file, it opens it in the default app for the file extension
+	- if it's an executable, it runs
+		- commands that normally don't open their own window, WILL open their own window
+	- `{batch}start "Window Title" "<path to program>" "<path to open>"`
+		- this equates to "open with" in the context menu.
+		- window title is a weird parameter to have, but you have it.
+		- ==Ex:== `{batch}start "" "C:\Windows\System32\notepad.exe" "C:\path\to\example.txt"`
+- `{batch}explorer` ^explorer
+	- opens the file explorer on the home directory
+	- `{batch}explorer <directory>`
+		- opens the explorer at the specified directory
+		- if the specified path isn't a directory but a file, i'm not sure what it does.
+			- i've seen it open the user documents directory no matter what i put, as long as it's an incorrect path
+	- MULTIPLE TABS: there's no command to handle them yet
+		- https://answers.microsoft.com/en-us/windows/forum/all/windows-11-22h2-explorerexe-command-line-switch-to/b0958474-6124-44c9-b01a-7e6952317848
 - `regedit` ^regedit
 	- open system registries editor
 - `msinfo32` ^msinfo32
@@ -209,9 +234,9 @@ There are various places you can run commands from.
 
 ---
 
-## Customization
+### Customization
 
-### Icons
+#### Icons
 
 You can change them in a file's properties.
 It's not an available option for any executable file. I guess the idea is to make it evident what it is because they're the most dangerous files.
@@ -224,7 +249,7 @@ https://www.makeuseof.com/windows-10-icon-packs/
 
 ---
 
-### Related
+## Related Software
 
 ```dataview
 LIST FROM "Software/OS/Windows/RELATED"
