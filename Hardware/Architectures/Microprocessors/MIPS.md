@@ -3,10 +3,4 @@ tags:
 aliases:
   - Microprocessor without Interlocked Pipeline Stages
 ---
----
-
-### About MIPS
-
-- [[ISA|Instruction Set]] architecture
-- apparently good for learning
-- very old
+Very old [[ISA|Instruction Set Architecture]] that's apparently good for learning.

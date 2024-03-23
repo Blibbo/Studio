@@ -1,3 +1,9 @@
+---
+aliases:
+  - stack memory
+  - memoria stack
+---
+
 It's a [[stack]] data structure that contains [[Stack Frame|Activation Records]].
 
 You push a new record every time you **call** a function.
@@ -15,4 +21,4 @@ Now, the average return in a programming language looks like this: `{c}return st
 We said **return** is what deallocates an entire frame: formal parameters, all variables, everything.
 So what the fuck does it mean that we're returning a specific variable?
 
-It means we're **copying one** of those variables before deallocating everything. Salvaging just 1 singular piece of information before shutting the whole thing down. That copied piece of information is given to 
+It means we're **copying one** of those variables before deallocating everything. Salvaging just 1 singular piece of information before shutting the whole thing down. That copied piece of information is given to the EAX [[Register]] according to most [[Calling Convention|calling conventions]].

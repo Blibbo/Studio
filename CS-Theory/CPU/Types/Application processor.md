@@ -3,7 +3,7 @@
 
 ### About application processors
 
-- [[Microprocessor|Microprocessors]] designed for handling applications
+- [[CPU|Microprocessors]] designed for handling applications
 - for tablets and phones, pretty much
 - includes an integrated [[GPU]]
 - integrated connectivity features

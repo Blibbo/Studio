@@ -8,7 +8,7 @@ aliases:
 
 - a format for binary instructions.
 - At its fundamental level (machine code), it coincides with the phrase [[ISA|"Instruction Set"]]
-- the reason why we have the phrase _"binary instruction format"_ is because sometimes these binary instructions aren't part of an existing instruction set built into a real [[Microprocessor]]
+- the reason why we have the phrase _"binary instruction format"_ is because sometimes these binary instructions aren't part of an existing instruction set built into a real [[CPU]]
 - so when you see "binary instruction format", we're typically talking about **made up hardware** that will execute the format. Abstraction for real hardware.
 
 ---

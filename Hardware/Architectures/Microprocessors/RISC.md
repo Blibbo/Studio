@@ -2,17 +2,12 @@
 aliases:
   - Reduced Instruction Set Computing
 ---
----
-
-### About
-
-- [[ISA|Instruction Set]] architecture
-- for mobile devices
+[[ISA|Instruction Set]] architecture meant for mobile devices.
 
 ---
 
 ### RISC Architectures
 
 ```dataview
-LIST FROM "Hardware/Architectures/Microprocessors" AND [[RISC]]
+TABLE FROM "Hardware/Architectures/Microprocessors" AND [[RISC]]
 ```

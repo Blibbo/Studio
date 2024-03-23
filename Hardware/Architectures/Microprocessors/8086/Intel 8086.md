@@ -5,7 +5,7 @@ aliases:
   - x86
   - x86 architectures
 ---
-[[Microprocessor]] with a 16-bit data bus and a 20-bit address bus (1MB).
+[[CPU|Microprocessor]] with a 16-bit data bus and a 20-bit address bus (1MB).
 Has a [[CISC]] architecture.
 
 This is both a microprocessor and a microprocessor architecture. It's like ever since it came out, it set the standard for CISC general-purpose computing.

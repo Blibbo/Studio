@@ -9,7 +9,7 @@ aliases:
 
 - they're a list of binary instruction addresses that translate to mnemonic codes
 - instruction addresses are variable in length
-- they're built into the [[microprocessor]]
+- they're built into the [[CPU]]
 - it's the foundation of software. This is what allows you to write code and interact with the hardware
 - if you don't like the instruction set, you **buy a new processor** or use a [[Runtime Environments|Runtime Environment]]. There's no way to modify an already built processor
 

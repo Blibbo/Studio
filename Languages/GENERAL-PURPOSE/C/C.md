@@ -226,7 +226,7 @@ TABLE FROM ("Software/Programming/Translators" OR "Software/Programming/Linkers"
 			- `{c}main` throws an error
 	- **Functions:**
 		- `{c}system("command && othercommand");` ^system
-			- execute one [[Command Prompt|batch]] line
+			- execute one [[CMD|batch]] line
 		- `{c}malloc(bytesNum);` ^malloc
 			- allocates memory
 			- the memory to allocate gets picked from the heap
@@ -319,7 +319,7 @@ TABLE FROM ("Software/Programming/Translators" OR "Software/Programming/Linkers"
 - `{c}unistd.h`
 	- **Functions:**
 		- `{c}getcwd(stringVar, stringSize);`
-			- get your current path in the [[Command Prompt]] when you execute this .exe
+			- get your current path in the [[CMD|Command Prompt]] when you execute this .exe
 			- can fail, use [[#^perror]]
 			- NOT the path the .exe is contained in (_can_ be the same though)
 			- rewrites `{c}stringVar` so that it contains the path

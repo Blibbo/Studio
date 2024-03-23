@@ -35,7 +35,7 @@ tags:
 		- [[g++.exe]]
 - `pkg uninstall packagename`
 - `dir`
-	- emulation of `dir` from the [[Windows]] [[Command Prompt]]
+	- emulation of `dir` from [[CMD]]
 	- options must have a hyphen. It's still a Linux environment
 	- **Example:**
 		- `{bash}dir -a` to list hidden items too

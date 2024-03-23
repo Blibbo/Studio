@@ -13,7 +13,7 @@ People make different programming languages because **they don't want to deal wi
 Based on what these things are, they will **abstract** the previous language in a certain way.
 
 Before abstracting anything, the first code you can write is machine code.
-Machine code is a sequence of instructions your [[microprocessor]] is capable of executing directly.
+Machine code is a sequence of instructions your [[CPU]] is capable of executing directly.
 These instructions are documented in your cpu's [[ISA]] and they're binary because to tell the cpu to do something you pass your 0s and 1s in the form of current or tension or some shit idk.
 What this code does is work with the microprocessor's little memories (called registers) and other bullshit in the chip.
 

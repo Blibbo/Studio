@@ -1,13 +1,9 @@
----
-tags: 
-aliases:
-  - Microprocessors
-  - CPU
-  - Central Processing Unit
----
----
+[[IC|Integrated circuit]] that implements a [[CPU]].
 
-### About Microprocessors
+## Components
 
-- they're fast 👍
-- integrated circuits that contain one or multiple CPU cores on a single chip
+- [[ALU]]
+- [[CU]]
+- [[Register|Registers]]
+- [[GPU]]
+	- they typically have a fully functional, but low-end [[GPU]] inside.

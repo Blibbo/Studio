@@ -58,7 +58,7 @@ Executable that also actually are in the [[#^path]] also count, but I'm document
 
 There are various places you can run commands from.
 - [[#^win-r]]
-- any terminal (windows has the [[Command Prompt]] and [[Powershell]] installed already)
+- any terminal (windows has [[CMD]] and [[Powershell]] installed already)
 - the long bar on top of the [[explorer.exe|file explorer]] where the current path is written (yes. LOL.) 
 
 #### Commands meant to run inside terminals
@@ -86,7 +86,7 @@ Not necessarily, because some prompt you for inputs, but still. They aren't mean
 #### Commands that open their own window
 
 - `cmd`
-	- opens the [[command prompt]] terminal
+	- opens the [[CMD]] terminal
 	- when ran inside a terminal, it doesn't open another terminal
 	- it does hijack the terminal though. (Starts interpreting batch commands)
 - `powershell`
@@ -97,15 +97,14 @@ Not necessarily, because some prompt you for inputs, but still. They aren't mean
 	- **Windows Terminal** opens the default terminal for the operating system. It's typically powershell. A shorthand.
 	- `{batch}wt batch1; batch2; batch3;`
 - `{batch}start <file path/directory>` ^start
-	- equates to a double click on something.
-	- if it's a directory, it opens it on `{batch}explorer`
-	- if it's a file, it opens it in the default app for the file extension
-	- if it's an executable, it runs
-		- commands that normally don't open their own window, WILL open their own window
+	- equates to a double click on something. Opens the thing in the default app
 	- `{batch}start "Window Title" "<path to program>" "<path to open>"`
 		- this equates to "open with" in the context menu.
 		- window title is a weird parameter to have, but you have it.
 		- ==Ex:== `{batch}start "" "C:\Windows\System32\notepad.exe" "C:\path\to\example.txt"`
+	- ==N.B.== if the file path contains spaces, you are FORCED to specify the app you're opening it with
+		- this is because normally you'd use `""`, but in here, `""` triggers the second version of the command, where you have to specify the path.
+		- **ex:** `{batch}start "explorer" "path with spaces"`
 - `{batch}explorer` ^explorer
 	- opens the file explorer on the home directory
 	- `{batch}explorer <directory>`
@@ -186,7 +185,7 @@ Not necessarily, because some prompt you for inputs, but still. They aren't mean
 	- it's like a right click on the windows button
 	- `Up/Down` keys to navigate it
 	- one of the options opens the default shell
-		- can customize it to open [[Powershell]] instead of [[Command Prompt]]
+		- can customize it to open [[Powershell]] instead of [[CMD]]
 - `Alt + Enter`
 	- full screen on some applications
 - `F11`
