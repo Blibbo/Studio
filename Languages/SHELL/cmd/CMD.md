@@ -10,7 +10,7 @@ aliases:
   - Command Prompt Interpreter
   - Command Prompt
 ---
-It's made out of two things: a scripting language interpreter and a terminal.
+It's made out of two things: a scripting language [[interpreter]] and a [[terminal]].
 You can write either commands or file names (to open those files) from this terminal.
 
 ---
@@ -161,7 +161,7 @@ These get used by the operating system to do all sorts of things. You can read t
 ## Scripts
 
 They're text files with a `.bat` or `.cmd` extension.
-On windows, they're [[executable|executables]].
+On windows, they're [[Executable|executables]].
 
 write blocks
 

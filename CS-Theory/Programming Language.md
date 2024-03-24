@@ -7,7 +7,7 @@ aliases:
 
 [Status:: unfinished]
 
-It's a format in which you write text, so that the text can be turned into [[software]]. Translation is handled by *other* software (see [[Translators]]).
+It's a format in which you write text, so that the text can be turned into [[software]]. Translation is handled by *other* software (see [[Translator|translators]]).
 
 People make different programming languages because **they don't want to deal with how things are happening**, they just want to make them happen.
 Based on what these things are, they will **abstract** the previous language in a certain way.

@@ -6,17 +6,27 @@ tags:
 aliases:
   - HyperText Markup Language
 ---
----
+[[Rich text]] format and [[markup language]].
 
-### About HTML
 
-- not entirely [[XML]] compatible. XML's Syntax is stricter:
-	- html has [[#^void-elements|self-closing tags]]
-- an XML compatible version exists in the form of [[XHTML]]
+
 
 ---
 
-### Tags
+## Syntax
+
+The most important element of syntax is the **tag**.
+Each tag represents a [[Box Model]] in the [[DOM|DOM Tree]].
+
+`{html}<my-tag>my box model content</my-tag>`
+
+Tags
+
+Tags can have attributes:
+
+`{html}<my-tag my-attribute="my value">`
+
+## Tags
 
 - **Common attributes**
 	- **Info:**
@@ -70,7 +80,7 @@ aliases:
 	
 ---
 
-### Character Entities
+## Character Entities
 
 - Entity names
 	- `&entity_name;`
@@ -106,7 +116,13 @@ aliases:
 
 ---
 
-### Trivia
+## Trivia
+
+HTML's syntax is not entirely [[XML]] compatible.
+XML's Syntax is stricter: HTML has [[#^void-elements|self-closing tags]].
+An XML compatible version exists, it's called [[XHTML]]
+
+### History
 
 - HTML was introduced by Tim Berners-Lee in the early 90's
 - the idea was to have a markup language to structure documents on the web

@@ -1,7 +1,7 @@
 ---
 tags: []
 ---
-[[Virtual Machine]].
+[[VM]].
 
 ## Languages
 

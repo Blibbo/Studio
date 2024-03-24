@@ -24,7 +24,7 @@ Here's my [Reference](https://devdocs.io/c/) of choice for the C standard librar
 
 The whole process is somewhat mistakenly called "compilation"; though compilation is also the name of the middle step of the build process for C programs.
 
-Your [[source file]]s  should typically have a `.c` extension.
+Your [[Source File]]s  should typically have a `.c` extension.
 
 ### Preprocessing
 

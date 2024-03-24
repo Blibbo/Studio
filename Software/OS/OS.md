@@ -1,4 +1,9 @@
-It's an interface between you and your hardware.
+---
+aliases:
+  - operating system
+  - operating systems
+---
+Piece of [[software]] that provides an interface between you and your hardware.
 
 It's composed of a [[#kernel]] and an [[#userland]].
 

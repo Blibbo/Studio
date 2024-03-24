@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/SHELL/cmd/CMD.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "33ee70a1408e1bf6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS-Theory/Executables.md",
+                "file": "Languages/WEB/HTML/HTML.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cmd",
+                "query": "translators",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -107,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS-Theory/Executables.md",
+                "file": "Languages/WEB/HTML/HTML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS-Theory/Executables.md",
+                "file": "Languages/WEB/HTML/HTML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS-Theory/Executables.md"
+                "file": "Languages/WEB/HTML/HTML.md"
               }
             }
           }
@@ -171,10 +157,32 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "33ee70a1408e1bf6",
+  "active": "c2e54c62cde9434c",
   "lastOpenFiles": [
+    "Languages/WEB/HTML/DOM.md",
+    "Languages/WEB/HTML/HTML.md",
+    "Languages/WEB/HTML/Box Model.md",
+    "CS-Theory/Jargon/Data/Rich Text.md",
+    "CS-Theory/Jargon/Data/Plain Text.md",
+    "CS-Theory/Jargon/Data/Information.md",
+    "CS-Theory/Jargon/Data/Data.md",
+    "CS-Theory/Jargon/Files/Text File.md",
+    "Software/OS/macOS/macOS.md",
+    "CS-Theory/Jargon/Data",
+    "CS-Theory/Jargon/Files/Executable.md",
+    "CS-Theory/Jargon/Files/Source File.md",
+    "CS-Theory/Jargon/Program.md",
+    "CS-Theory/Jargon/Source Code.md",
+    "Software/OS/OS.md",
+    "CS-Theory/Programming Language.md",
+    "CS-Theory/Terminology/Coding",
+    "CS-Theory/Jargon",
+    "Untitled",
+    "CS-Theory/Jargon/Files",
     "Languages/SHELL/cmd/CMD.md",
-    "CS-Theory/Executables.md",
+    "Software/Programming/Runtime Environments/Virtual Machines/VM.md",
+    "Software/Programming/Runtime Environments/Runtime Environment.md",
+    "Hardware/Architectures/Microprocessors/Imaginary/Binary Instruction Format.md",
     "Software/OS/Windows/Windows 11.md",
     "Software/OS/Windows/Windows.md",
     "Software/Programming/Shells/Mobile/Termux.md",
@@ -182,34 +190,12 @@
     "Languages/GENERAL-PURPOSE/C/C.md",
     "CS-Theory/CPU/ALU.md",
     "CS-Theory/CPU/ID.md",
-    "CS-Theory/CPU/CU.md",
-    "Hardware/Architectures/Microprocessors/Microprocessor.md",
-    "CS-Theory/CPU/Register.md",
-    "Hardware/Architectures/Microprocessors/MIPS.md",
-    "Hardware/Architectures/Microprocessors/RISC.md",
-    "Hardware/Architectures/Microprocessors/ISA.md",
-    "CS-Theory/CPU/Types/Specialized/Specialized Processors.md",
-    "CS-Theory/CPU/Types/Specialized/GPU.md",
-    "CS-Theory/CPU/CPU.md",
     "CS-Theory/CPU",
-    "Hardware/Architectures/Microprocessors/ARM/ARM.md",
-    "Hardware/Architectures/Microprocessors/8086/Intel 8086.md",
-    "CS-Theory/Subprograms/Function Call Stack.md",
     "CS-Theory/Memory/Storages",
     "CS-Theory/Memory",
-    "CS-Theory/Subprograms/Calling Conventions/Calling Convention.md",
-    "Software/OS/Operating System.md",
     "Terminology",
-    "Maths/Algebra/Linear Algebra/Linear Algebra.md",
-    "CS-Theory/Subprograms/Stack Frame.md",
-    "CS-Theory/Memory/Units/Memory.md",
     "Maths/Geometry/attachments/Pasted image 20240321151401.png",
     "Maths/Geometry/attachments",
-    "Maths/Geometry/Analitic geometry",
-    "Maths/Geometry/Goniometry",
-    "Maths/Geometry/Trigonometry",
-    "Languages/MARKUP/LATEX/COMPILERS",
-    "Languages/MARKUP/LATEX/EDITORS",
     "Maths/attachments/Pasted image 20240320141722.png",
     "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
     "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/x,y spherical coordinates.png",

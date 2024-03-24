@@ -8,9 +8,9 @@ aliases:
   - Java SE
 ---
 [[Programming Language]] that implements [[Object-Oriented Programming]].
-The idea is for it to run on a [[virtual machine]] to be cross platfom.
+The idea is for it to run on a [[VM]] to be cross platfom.
 
-It's not particularly fast (its resources are limited by the [[virtual machine]] it runs in) but it doesn't suck by any means.
+It's not particularly fast (its resources are limited by the [[VM]] it runs in) but it doesn't suck by any means.
 
 The extension for java source code files is `.java`
 
