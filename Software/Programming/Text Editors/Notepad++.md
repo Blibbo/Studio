@@ -30,6 +30,7 @@ Released under the [[GPL]]
 	- `Black Tone`
 - `Settings > Style > Theme >`
 	- `Twilight`
+	- or https://github.com/60ss/Npp-1-Dark
 
 ---
 

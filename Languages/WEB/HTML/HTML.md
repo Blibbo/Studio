@@ -15,68 +15,97 @@ aliases:
 
 ## Syntax
 
+HTML's syntax looks similar to that of [[XML]], with a few additions.
+
+### Tags
+
 The most important element of syntax is the **tag**.
 Each tag represents a [[Box Model]] in the [[DOM|DOM Tree]].
 
+You can write anything as a tag name, and the tag will just inherit from the [[#^html]] tag.
+There are tons of [[#Existing Tags]] though, the whole point of the language is to use those.
+
+#### Paired tags
+
 `{html}<my-tag>my box model content</my-tag>`
 
-Tags
+Paired tags are tags that must be closed. There's an opening and a closing tag.
+The difference is the closing tag has a slash `/` before the tag name.
 
-Tags can have attributes:
+This syntax exists because you're allowed to write inside, in the _box model content_.
 
-`{html}<my-tag my-attribute="my value">`
+#### Self-closing tags
 
-## Tags
+`{html}<my-tag>`
+Self-closing tags, or **void elements**, don't have a closing tag.
+Nothing more to it. You can't write in the content box.
 
-- **Common attributes**
-	- **Info:**
-		- `{html}<my-tag my-attribute='attribute value'>`
-		- this is what an attribute looks like
-	- these work on lots of tags
-	- **List:**
-		- `{javascript}title='a title'`
-			- appears when you hover over the tag
-- **Void elements** ^void-elements
-	- A.K.A self-closing tags
-	- they have no content
-	- **List:**
-		- `{html}<hr>`
-			- horizontal row
-		- `{html}<br>`
-			- line break
-		- `{html}<img src='same-folder-image.jpg' alt="for when the image doesn't load">`
-			- block with image
-- **Paired tags**
-	- they have an end tag
-	- `{html}<my-tag> content </my-tag>`
-	- most common tags
-	- **List:**
-		- `{html}<h1> header level 1 </h1>`
-			- `{html}<h2> level 2 </h2>`
-			- `{html}<h6> last available header level </h6>`
-			- they're headers. Search engines apparently use them to figure out what's going on in your page
-		- `{html}<p>a paragraph</p>`
-		- `{html}<textarea>default text</textarea>`
-			- you can text inside this tag
-		- **Inline blocks**
-			- `{html}some text <span style="color:orange">inline stuff</span> more text`
-				- generic inline element. Doesn't do much on its own
-				- give it attributes to make this meaningful
-				- this specific one renders as
-					- some text <span style="color:orange">inline stuff</span> more text
-			- `{html}<a href='url'>my anchor</a>`
-				- alternative usage for href:
-					- `{javascript}href='mailto:email@address.com'`
-						- opens your email client automatically
-					- `{javascript}href='#id-within-the-page'`
-						- makes you jump to that place in the page
-						- if you want to make this jump smooth you can use [[CSS#^smooth-scrolling|smooth scrolling]]
-			- `{html}<strike>striked text</strike>`
-				- <strike>striked text</strike>
-			- `{html}<sub>subscript</sub>`
-				- <sub>subscript</sub>
-			- `{html}<sup>superscript</sup>`
-				- <sup>superscript</sup>
+### Attributes
+
+`{html}<my-tag my-attribute="my value"></my-tag>`
+They're properties. Information about the tags.
+
+there are lots of [[#Existing Attributes]] and the point, again, is to use those.
+Attributes do all sorts of things to the tag.
+Generally, their purpose is altering the box model or handling events.
+
+---
+
+## Existing Attributes
+
+Most tags have these:
+
+- `{javascript}title='a title'`
+	- `{js}"a title"` appears when you hover your mouse over the tag
+
+---
+
+## Existing Tags
+
+Most of these are the same box model but with different default properties.
+You can overwrite these default properties and then the distinction between different tags becomes irrelevant.
+Some tags are truly special though
+
+### Tweaked box models
+
+These are the trivial tags I was talking about. You could turn any of these into any other of these.
+
+**Self-closing**
+- `{html}<hr>`
+	- horizontal row
+- `{html}<br>`
+	- line break
+- `{html}<img src='same-folder-image.jpg' alt="for when the image doesn't load">`
+	- block with image
+
+**Paired tags**
+
+- `{html}<h1> header level 1 </h1>`
+	- `{html}<h2> level 2 </h2>`
+	- `{html}<h6> last available header level </h6>`
+	- they're headers. Search engines apparently use them to figure out what's going on in your page
+- `{html}<p>a paragraph</p>`
+- `{html}<textarea>default text</textarea>`
+	- you can text inside this tag
+- **Inline blocks**
+	- `{html}some text <span style="color:orange">inline stuff</span> more text`
+		- generic inline element. Doesn't do much on its own
+		- give it attributes to make this meaningful
+		- this specific one renders as
+			- some text <span style="color:orange">inline stuff</span> more text
+	- `{html}<a href='url'>my anchor</a>`
+		- alternative usage for href:
+			- `{javascript}href='mailto:email@address.com'`
+				- opens your email client automatically
+			- `{javascript}href='#id-within-the-page'`
+				- makes you jump to that place in the page
+				- if you want to make this jump smooth you can use [[CSS#^smooth-scrolling|smooth scrolling]]
+	- `{html}<strike>striked text</strike>`
+		- <strike>striked text</strike>
+	- `{html}<sub>subscript</sub>`
+		- <sub>subscript</sub>
+	- `{html}<sup>superscript</sup>`
+		- <sup>superscript</sup>
 	
 ---
 
