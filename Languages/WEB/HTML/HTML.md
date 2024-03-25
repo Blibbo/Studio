@@ -8,9 +8,6 @@ aliases:
 ---
 [[Rich text]] format and [[markup language]].
 
-
-
-
 ---
 
 ## Syntax
@@ -45,6 +42,9 @@ Nothing more to it. You can't write in the content box.
 `{html}<my-tag my-attribute="my value"></my-tag>`
 They're properties. Information about the tags.
 
+Both `{js}"my value"` and `{js}'my value'` are accepted.
+Numeric values don't want quotation marks
+
 there are lots of [[#Existing Attributes]] and the point, again, is to use those.
 Attributes do all sorts of things to the tag.
 Generally, their purpose is altering the box model or handling events.
@@ -55,57 +55,86 @@ Generally, their purpose is altering the box model or handling events.
 
 Most tags have these:
 
-- `{javascript}title='a title'`
+- `{js}style="property1: value1; property2: value2"`
+	- applies [[CSS#Properties]] to the tag
+- `{javascript}title="a title"`
 	- `{js}"a title"` appears when you hover your mouse over the tag
 
 ---
 
 ## Existing Tags
 
-Most of these are the same box model but with different default properties.
+Most of these are just the box model but with different default properties.
 You can overwrite these default properties and then the distinction between different tags becomes irrelevant.
-Some tags are truly special though
 
-### Tweaked box models
+Default tags are not guaranteed to look the same in every browser, so you probably SHOULD overwrite their properties to make them look however you want them to look.
 
-These are the trivial tags I was talking about. You could turn any of these into any other of these.
+### Self-closing
 
-**Self-closing**
-- `{html}<hr>`
-	- horizontal row
-- `{html}<br>`
-	- line break
-- `{html}<img src='same-folder-image.jpg' alt="for when the image doesn't load">`
-	- block with image
+- `{html}<hr>` ~~human resour~~Horizontal row
+	- Very thin and very wide block.
+- `{html}<br>` line break
+	- Breaks text to go to the next line.
+- `{html}<img>` image
+	- Block containing an image.
+	- `{js}src='<image path>.jpg'` where the image comes from
+	- `{js}alt="text describing the image"`
+		- for when the image doesn't load and for [[WCAG|Web Accessibility Guidelines]]
 
-**Paired tags**
+### Paired
 
-- `{html}<h1> header level 1 </h1>`
-	- `{html}<h2> level 2 </h2>`
-	- `{html}<h6> last available header level </h6>`
-	- they're headers. Search engines apparently use them to figure out what's going on in your page
-- `{html}<p>a paragraph</p>`
+If they made a default tag paired, you can assume it's not for no reason. Content matters here.
+
+- `{html}<html></html>`
+	- The king of tags. Every tag inherits this tag's properties.
+- `{html}<div></div>` division/divider ^div
+	- Generic block. It's the quintessential box model: it doesn't carry specific semantic meaning.
+- `{html}<p></p>` paragraph
 - `{html}<textarea>default text</textarea>`
-	- you can text inside this tag
-- **Inline blocks**
+	- The end user can write text inside this tag.
+
+#### Headers
+
+Content inside a header tag becomes a "big" header.
+
+- `{html}<h1></h1>` header level 1
+- `{html}<h2></h2>`
+- `{html}<h3></h3>`
+- `{html}<h4></h4>`
+- `{html}<h5></h5>`
+- `{html}<h6></h6>` header level 6
+
+In practice, browsers have different opinions on what "big" means, so it's not a good idea to rely on their default style.
+You should overwrite their style to get consistent render, so why not overwrite a [[#^div]]'s properties?
+Do we _need_ header tags?
+
+We do, because they're the **convention**:
+- They get used in [[SEO]]. We settled on this tag name. Abide by the convention, get SEO privileges.
+- If you follow the convention and make [[CSS#Rules]] that specify how these different header levels work, it'll be so much easier (for EVERYONE) to read and write `{html}<h1>`, rather than something like `{html}<div class="header-level-1">`
+
+#### Inline Blocks
+
+These blocks go in between words. Useful when, for example, when you want a specific word to be <span style="color:lime">green</span>.
+
+- `{html}<span></span>`
+	- Quintessential inline element.
+	- This is the [[#^div]] of inline elements. No semantic meaning beyond being "inline".
+	- ==Example:==
 	- `{html}some text <span style="color:orange">inline stuff</span> more text`
-		- generic inline element. Doesn't do much on its own
-		- give it attributes to make this meaningful
-		- this specific one renders as
-			- some text <span style="color:orange">inline stuff</span> more text
-	- `{html}<a href='url'>my anchor</a>`
-		- alternative usage for href:
-			- `{javascript}href='mailto:email@address.com'`
-				- opens your email client automatically
-			- `{javascript}href='#id-within-the-page'`
-				- makes you jump to that place in the page
-				- if you want to make this jump smooth you can use [[CSS#^smooth-scrolling|smooth scrolling]]
-	- `{html}<strike>striked text</strike>`
-		- <strike>striked text</strike>
-	- `{html}<sub>subscript</sub>`
-		- <sub>subscript</sub>
-	- `{html}<sup>superscript</sup>`
-		- <sup>superscript</sup>
+	- some text <span style="color:orange">inline stuff</span> more text
+- `{html}<a href='url'>my anchor</a>`
+	- alternative usage for href:
+	- `{javascript}href='mailto:email@address.com'`
+		- opens your email client automatically
+	- `{javascript}href='#id-within-the-page'`
+		- makes you jump to that place in the page
+		- if you want to make this jump smooth you can use [[CSS#^smooth-scrolling|smooth scrolling]]
+- `{html}<strike>striked text</strike>`
+	- <strike>striked text</strike>
+- `{html}<sub>subscript</sub>`
+	- <sub>subscript</sub>
+- `{html}<sup>superscript</sup>`
+	- <sup>superscript</sup>
 	
 ---
 

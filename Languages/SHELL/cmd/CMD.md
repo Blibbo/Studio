@@ -15,7 +15,7 @@ You can write either commands or file names (to open those files) from this term
 
 ---
 
-## Execution of commands
+## Execution
 
 There's an interpreter that executes every line you write.
 
@@ -27,9 +27,28 @@ Here's how the interpretation works:
 	- if there's no variable with that name, it fails
 	- ==N.B.== the whole block gets parsed here. AT THE SAME TIME. Not line per line.
 	  This means, if you set a variable within a block, you can't read your newly set value until the next line/block. It's TREMENDOUS.
-1. it executes the commands line per line. [[#^block]]s are now treated as made out of multiple lines
+3. it executes the commands line per line. [[#^block]]s are now treated as made out of multiple lines
 
 https://stackoverflow.com/a/64324969
+
+### Scripts
+
+They're text files with a `.bat` or `.cmd` extension.
+On windows, they're [[Executable|executables]].
+
+Upon execution (when opening these files) each line in the file is executed sequentially.
+It goes from the first line to the last line.
+This creates a problem in [[#function declaration|function declarations]].
+
+Before executing each line of a batch script, the interpreter executes the following line of code:
+`{batch}@echo %cd%^>%0 %*`
+To stop doing this, use [[#^echo-off]].
+
+#### Existing labels
+
+Scripts have these pre-defined labels. See [[#Labels]] for more.
+
+- `{batch}:eof` end of file
 
 ---
 
@@ -41,10 +60,10 @@ As far as I know, this information is:
 - what directory you're in
 - the variables in your environment
 
-### Variables
+### Existing Variables
 
-
-I'll list existing variables here.[[#^set]] command
+The [[#^set]] command allows you to create variables. See [[#variables]] for more.
+Tons of existing variables exist though, and they're listed here.
 
 #### Variables of the scripting language
 
@@ -52,9 +71,12 @@ These get created with each terminal session and don't really make sense outside
 
 - `%CD%`
 	- current directory
-- `%0` is the name of the command (or script)
+- `%0` is the name of the command (or script).
+	- ==only exists in [[#Scripts]]==
 - `{batch}%1 %2 %3 etc` contain the parameters passed to the script/function within the script
+	- ==only exists in [[#Scripts]]==
 - `{batch}%*` contains all the parameters as a single string
+	- ==only exists in [[#Scripts]]==
 - `{batch}%ERRORLEVEL%` contains the last error code
 	- functions typically return this variable
 - `{batch}%~1` is a modifier that removes any quotation marks from the variable `{batch}%1`
@@ -68,7 +90,7 @@ These get used by the operating system to do all sorts of things. You can read t
 
 ## Syntax
 
-- `^`
+- `^` ^escape-characters
 	- Escape the next character. Allows you to treat pieces of batch syntax as strings.
 	  It itself is a piece of syntax. It works on itself.
 	- ==Examples:==
@@ -96,74 +118,115 @@ These get used by the operating system to do all sorts of things. You can read t
 - `command (code block)`
 	- the code block can span multiple lines
 	- a space is required between the command and the parentheses
-- **Variables** ^variables-syntax
-	- **Declaration**
-		- `{batch}set my_Variable = 3`
-		- [[#^set]]
-	- **Parsing**
-		- Variables mentioned within the code expand to their value before the line OR BLOCK (if you're inside a block) is executed.
-		  This can mean you might not be able to access your newly set variable inside a block. This problem is addressed [[#^block-variable|here]]
-		- `%variable%` ^variable-syntax
-			- this expands to the value of the environment variable.
-			- `{batch}%variable:c=d%`
-				- expands to the variable, but replaces `c` with `d`
-				- you can also replace with nothing, to make substrings
-		- `{batch}!variable!` ^block-variable
-			- correct scope for blocks
-			- requires `{batch}SETLOCAL ENABLEDELAYEDEXPANSION` to be written anywhere before this line (even outside the block)
-			- https://stackoverflow.com/a/21389931
 - `%CD%`
 	- current directory
 - `@command` ^silence
 	- don't echo this command to the console
 - `{batch}<nul`
 	- when you want to provide an empty input to a command
-- **Functions**
-	- **Declaration**
-		```batch
-		:my_function
-			REM your code here. %1 -> 3
-		exit /b
-		REM "goto :eof" is equivalent and works too
-		```
-		- the function declaration has to be skipped somehow (see [[#^goto]].
-		  The default behavior of the script is reading and executing everything: even the definition with non-existent formal parameters.
-	- **Call**
-		- `{batch}call :my_function 3`
-	- **Example**
-		```batch
-		@echo off
-		goto :main
-		
-		:my_function
-			echo Parameter: %1
-		exit /b %errorlevel%
-		
-		:main
-			call :my_function 3
-			call :my_function 4
-		exit /b %errorlevel%
-		```
-		- **Output:**
-			```
-			Parameter: 3
-			Parameter: 4
-			```
-- **Labels**
-	- they're places in the code you can jump to
-	- `:my_label`
-	- `goto :my_label`
-	- **Default labels**
-		- `:eof` end of file
 
----
+### Blocks
 
-## Scripts
+Blocks are groups of lines that count as "one single line" in some cases and as "several different lines" in other cases
+Their syntax is composed of parentheses `{batch}()`.
 
-They're text files with a `.bat` or `.cmd` extension.
-On windows, they're [[Executable|executables]].
+Blocks can technically be written inline and in more lines, however:
+`{batch}( my_command )` ${ \leftarrow }$ pointless. Blocks are for **more than one** instruction, that's the whole point.
 
-write blocks
+This is what they actually look like usually:
+```batch
+(
+	command1
+	command2
+)
+```
+
+#### How blocks get treated
+
+Blocks get treated as:
+- **a single instruction** when you pass them as an argument to commands like [[#^if]].
+- **a single instruction** when [[#Parsing]] variables.
+- **multiple instructions** when executing commands inside.
+
+
+### Variables
+
+They're [[variable|variables]]. Like in any other language.
+
+#### Declaration
+
+- `{batch}set my_Variable = 3` see [[#^set]] for more.
+
+#### Parsing
+
+Variables expand to (a.k.a. _"their text gets replaced with"_) their corresponding value before the line _**==OR BLOCK==**_ is executed. See [[#Execution]] for more info.
+Anyways, this creates problems. These pieces of syntax below address it.
+
+- `%variable%` ^variable-syntax
+	- Syntax for normal variables. This expands to the value of the environment variable.
+	  It has scoping problems with [[#Blocks]].
+	  
+	- `{batch}%variable:c=d%`
+		- expands to the variable, but replaces `c` with `d`
+		- you can also replace with nothing, to make substrings
+- `{batch}!variable!` ^block-variable
+	- Refer to the variable, using the correct scope for [[#blocks]]. Fixes the problem.
+	- This syntax requires `{batch}SETLOCAL ENABLEDELAYEDEXPANSION` to be written anywhere before this line (even outside the block)
+	- https://stackoverflow.com/a/21389931
+
+### Labels
+
+==They only exist in [[#Scripts]]==
+Labels are places in the code that you can jump to.
+You create them through this syntax:
+`:my_label`
+
+You jump to them through
+`goto :my_label`
+see [[#^goto]] for more.
+
+### Functions
+
+==They only exist in [[#Scripts]]==
+[[Subprogram|Subroutines]] for this language.
+
+#### Function declaration
+
+Due to how [[#Scripts]] work (everything gets executed), the function declaration must somehow be skipped explicitly.
+The way to do it is with the [[#^goto]] instruction and [[#Labels]].
+
+```batch
+:my_function
+	REM your code here. %1 -> 3
+exit /b
+REM "goto :eof" is equivalent and works too
+```
+
+#### Function call
+
+- `{batch}call :my_function 3`
+
+#### Example script with functions
+
+```batch
+@echo off
+goto :main
+
+:my_function
+	echo Parameter: %1
+exit /b %errorlevel%
+
+:main
+	call :my_function 3
+	call :my_function 4
+exit /b %errorlevel%
+```
+
+**Output:**
+```
+Parameter: 3
+Parameter: 4
+```
 
 ---
 
@@ -240,9 +303,15 @@ write blocks
 	- you can only copy into a file if you're copying a file. ~~(duh. Don't copy directories into files dumbass)~~
 - `{batch}set` ^set
 	- prints to the console every environment variable and their values
-	- `{batch}set VAR=initial_value`
-		- set a variable value. read it with [[#^variable-syntax|%VAR%]]
-		- `/a` evaluate the expression after `=` as arithmetic
+	- `{batch}set my_var=my string`
+		- Set a variable value. See [[#Variables]].
+		  You can't put spaces around the equal sign `{batch}=`.
+		  All values you write are strings by default.
+		  You can't use [[#^escape-characters]] for some reason.
+		- `{batch}set "my-var=my string^>"`
+			- This syntax allows you to make any variable value that normally doesn't work, work.
+			  Notice how the double quotes are _before the name_ and _after the value_.
+		- `/a` evaluate the expression after `=` as arithmetic: **not** a string.
 	- `{batch}set /p name=Enter your name:`
 		- prompt the user for a name. The `Enter your name:` string does NOT go in the variable too. Just the actual name, once the user enters it.
 - `{batch}setlocal` ^setlocal
@@ -256,6 +325,9 @@ write blocks
 - `{batch}call otherbatch` ^call
 	- call another batch file without passing control to it
 	- changes these called batch files make persist (variables, `cd`)
+- `{batch}goto :label` ^goto
+	- ==only exists in [[#Scripts]]==
+	- jumps to the [[#Labels|label]] and starts executing from there
 - `{batch}exit`
 	- exit the current script
 	- `/b`

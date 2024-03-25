@@ -12,18 +12,26 @@ It's an [[DSL#External DSL (eDSL)|eDSL]] of [[HTML]] made for styling the docume
 
 ## Syntax
 
-- **Generic rule:**
-	- `{css}selector{ property: value }`
-	- a rule is a way to apply style to elements described by a [[#^selectors|selector]]
+### Rules
 
-- **Selectors:** ^selectors
-	- `{css}my-tag`
-		- style applies to every `{html}<my-tag></my-tag>` in the document
-	- `{css}.my-class`
-		- style applies to every `{html}<my-tag class="my-class"></my-tag>` in the document
-	- `{css}#my-id`
-		- style applies to `{html}<my-tag id="my-id"></my-tag>`
-		- there can only be one
+Rules are the main feature of css.
+A rule is a way to apply style to elements.
+To make a rule, you choose your elements through a [[#selectors|selector]], and you write [[#properties]] inside.
+
+Properties are where the actual style comes from: TONS of properties exist.
+This is a generic rule: `{css}selector{ property: value; other-property: other-value }`
+
+### Selectors
+
+- `{css}my-tag`
+	- style applies to every `{html}<my-tag>` in the document
+- `{css}.my-class`
+	- style applies to every `{html}<my-tag class="my-class">` in the document
+- `{css}#my-id`
+	- style applies to `{html}<my-tag id="my-id">`
+	- there can only be one
+- `{css}first-tag second-tag`
+	- style applies to every `{html}<second-tag>` that is found inside a `{html}<first-tag></first-tag>`
 	
 ---
 

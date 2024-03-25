@@ -3,8 +3,6 @@ aliases:
   - Language
   - languages
 ---
-
-
 [Status:: unfinished]
 
 It's a format in which you write text, so that the text can be turned into [[software]]. Translation is handled by *other* software (see [[Translator|translators]]).

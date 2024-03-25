@@ -5,4 +5,4 @@ It's theorized that this simple machine can calculate anything.
 
 ## History
 
-Proposed by Alan Turing in
+Proposed by Alan Turing in [status::unfinished]

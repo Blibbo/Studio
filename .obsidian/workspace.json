@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/WEB/HTML/HTML.md",
-                "mode": "preview",
+                "file": "Languages/SHELL/cmd/CMD.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "translators",
+                "query": "integrated circuit",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/WEB/HTML/HTML.md",
+                "file": "Languages/SHELL/cmd/CMD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/WEB/HTML/HTML.md",
+                "file": "Languages/SHELL/cmd/CMD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Languages/WEB/HTML/HTML.md"
+                "file": "Languages/SHELL/cmd/CMD.md"
               }
             }
           }
@@ -159,9 +159,23 @@
   },
   "active": "c2e54c62cde9434c",
   "lastOpenFiles": [
+    "Hardware/Components/IC.md",
+    "Languages/SHELL/cmd/CMD.md",
+    "Hardware/Components/NAND flash memory cell.md",
+    "CS-Theory/CPU/CPU.md",
+    "Software/OS/Windows/Windows.md",
+    "CS-Theory/Programming Language.md",
+    "CS-Theory/Turing Machine.md",
+    "CS-Theory/Heap Memory.md",
+    "CS-Theory/Jargon/Program.md",
+    "CS-Theory/ABI.md",
+    "CS-Theory/Jargon/Web/Web Page.md",
+    "Languages/WEB/HTML/HTML.md",
+    "Languages/WEB/CSS/CSS.md",
+    "CS-Theory/Jargon/Web/SEO.md",
+    "CS-Theory/Jargon/Web",
     "Languages/MARKUP/RTF/RTF.md",
     "Languages/MARKUP/SGML/SGML.md",
-    "Languages/WEB/HTML/HTML.md",
     "Software/Programming/IDEs/ISE/ISE.md",
     "Languages/GENERAL-PURPOSE/C/C.md",
     "Software/Programming/Text Editors/Notepad++.md",
@@ -175,26 +189,12 @@
     "CS-Theory/Jargon/Data/Information.md",
     "CS-Theory/Jargon/Data/Data.md",
     "CS-Theory/Jargon/Files/Text File.md",
-    "Software/OS/macOS/macOS.md",
     "CS-Theory/Jargon/Data",
-    "CS-Theory/Jargon/Files/Executable.md",
-    "CS-Theory/Jargon/Files/Source File.md",
-    "CS-Theory/Jargon/Program.md",
-    "CS-Theory/Jargon/Source Code.md",
-    "Software/OS/OS.md",
-    "CS-Theory/Programming Language.md",
     "CS-Theory/Terminology/Coding",
     "CS-Theory/Jargon",
     "Untitled",
     "CS-Theory/Jargon/Files",
-    "Languages/SHELL/cmd/CMD.md",
-    "Software/Programming/Runtime Environments/Virtual Machines/VM.md",
-    "Software/Programming/Runtime Environments/Runtime Environment.md",
-    "Hardware/Architectures/Microprocessors/Imaginary/Binary Instruction Format.md",
-    "Software/OS/Windows/Windows 11.md",
-    "Software/OS/Windows/Windows.md",
     "CS-Theory/CPU",
-    "CS-Theory/Memory/Storages",
     "Maths/Geometry/attachments/Pasted image 20240321151401.png",
     "Maths/attachments/Pasted image 20240320141722.png",
     "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
