@@ -289,11 +289,12 @@ Parameter: 4
 	- `/s` delete subdirectories and files inside, too
 	- `/q` suppresses confirmation prompts
 - `{batch}xcopy <source> <dest>`
+	- https://stackoverflow.com/a/33770152/22217504
+	  you desperately need this. its behavior is very specific
 	- copies the content of `source` into `dest`.
 	- `{batch}source` can be either a file or a directory
 	- `{batch}dest` is a file if it has a backslash at the end, like `{batch}path\to\dest\` or a directory if it doesn't
 		- in case of ambiguity (no backslash but file extension, like a file) it prompts you for more info. I can't suppress this. Just make it not ambiguous
-		- SCENARIOS: https://stackoverflow.com/a/33770152/22217504
 	- doesn't delete already existing files in dest
 	- doesn't copy subfolders
 	- prompts you on whether to overwrite files with the same name

@@ -1,29 +1,2 @@
-SELECTORS
-	*{}				/*every tag				*/
-	.myClass{}		/*your class			*/
-	#myId{}			/*your id				*/
-	h1 p{}			/*p tags inside any h1	*/
-	
-UNITS OF MEASURE
-	rem			<-relative to the font size of the root element of the document (1 is 16px usually)
-	em			<-relative to the font size of the current element
-	px			<-fucking guess
-	%			<-percentage of the parent's size.
-					N.B: the parent's size can be a percentage too, but at least one ancestor must have a set size in pixels
-	
-	
-SCREEN SIZE
-	@media screen and (max-width: 768px) {
-	  /* styles to apply on screens with a max width of 768px */
-	}
-	
-	@media screen and (min-width: 992px) {
-	  /* styles to apply on screens with a min width of 992px */
-	}
-
-	@media only screen and (min-width: 320px) and (max-width: 1440px) {
-	  /* styles for devices with a screen width between 320px and 1440px */
-	}
-	
 BOX SHADOW
 	box-shadow = 1px 1px 1px 1px rgb(255, 0, 0) inset; /* x y blur radius */

@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "fe69a8ce76bf6c86",
+            "id": "a108a5660c07688a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS-Theory/Jargon/Data/sz.md",
+                "file": "Languages/WEB/CSS/CSS.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS-Theory/Jargon/Data/sz.md",
+                "file": "Languages/WEB/CSS/CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS-Theory/Jargon/Data/sz.md",
+                "file": "Languages/WEB/CSS/CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS-Theory/Jargon/Data/sz.md"
+                "file": "Languages/WEB/CSS/CSS.md"
               }
             }
           }
@@ -170,11 +170,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "fe69a8ce76bf6c86",
+  "active": "a108a5660c07688a",
   "lastOpenFiles": [
-    "Languages/GENERAL-PURPOSE/C/C.md",
-    "CS-Theory/Jargon/Data/sz.md",
     "Software/Programming/IDEs/Visual Studio/Visual Studio.md",
+    "Languages/WEB/CSS/CSS.md",
+    "Languages/SHELL/cmd/CMD.md",
+    "Languages/MARKUP/RTF/RTF.md",
+    "CS-Theory/Jargon/Data/sz.md",
+    "Languages/GENERAL-PURPOSE/C/C.md",
     "Software/Web/Browsers/IE.md",
     "Software/Programming/IDEs/Visual Studio/Visual Studio for Mac.md",
     "Software/Programming/IDEs/Visual Studio/Visual Studio Tools for Unity.md",
@@ -196,10 +199,7 @@
     "Maths/Number Theory/Number Theory.md",
     "Maths/Algebra/Algebra.md",
     "Maths/Arithmetic/Arithmetic.md",
-    "Languages/SHELL/cmd/CMD.md",
     "Maths/Axiom.md",
-    "Maths/De Morgan's Theorem.md",
-    "Maths/Mathematics.md",
     "CS-Theory/Jargon/Programs",
     "Software/AI",
     "CS-Theory/Jargon/AI",

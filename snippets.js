@@ -326,6 +326,7 @@
 	{trigger: "c", replacement: "`{c}$0`$1", options: "tw"},
 	{trigger: "cpp", replacement: "`{cpp}$0`$1", options: "twA"},
 	{trigger: "html", replacement: "`{html}$0`$1", options: "tw"},
+	{trigger: "css", replacement: "`{css}$0`$1", options: "tw"},
 	{trigger: "python", replacement: "`{python}$0`$1", options: "tw"},
 	{trigger: "dataview", replacement: "```dataview\n$0\n```$1", options: "tAw"},
 	{trigger: "batch", replacement: "`{batch}$0`$1", options: "tw"},
@@ -341,4 +342,5 @@
 	
 	// Emojis
 	{trigger: ":thumbsup:", replacement: "👍", options: "tcmA"},
+	{trigger: ":sparkles:", replacement: "✨", options: "tcmA"},
 ]
