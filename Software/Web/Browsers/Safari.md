@@ -8,5 +8,5 @@ aliases:
 ### About Safari
 
 - apple merda
-- uses [[webkit]]
+- uses [[WebKit]]
 - uses [[JavaScriptCore]]

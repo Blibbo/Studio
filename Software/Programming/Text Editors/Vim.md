@@ -5,21 +5,20 @@ aliases:
   - v
   - Vi Improved
 ---
+~~text editor for elitist pricks~~
+[[Text Editor]] that's a successor to [[Vi]]
+
+Its design philosophy is _"never touch your mouse"_.
+It's notorious for being a text editor that has a [[#^keybindings|trillion keybindings]] that are very popular to move through text.
+
+Typically associated with [[Unix]] environments.
+Already installed by default on some Unix systems.
+
+[[Windows]] versions exist too.
+
 ---
 
-### About Vim
-
-- ~~text editor for elitist pricks~~
-- successor to [[Vi]]
-- typically [[Unix]]
-- already installed by default on some Unix systems
-- [[Windows]] versions exist too
-- it's a text editor that has a [[#^keybindings|trillion keybindings]] that are very popular to move through text
-- [[Microsoft]] might have made [[Visual Studio Code]] because Vim is so popular as a text editor and microsoft had nothing on them
-
----
-
-### Keybindings ^keybindings
+### Keybindings
 
 1. **Movement Commands:**
     - `h`, `j`, `k`, `l`: Move left, down, up, and right respectively.

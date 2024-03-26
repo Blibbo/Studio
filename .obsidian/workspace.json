@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/SHELL/cmd/CMD.md",
+                "file": "Software/Programming/IDEs/Visual Studio/Visual Studio.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "integrated circuit",
+                "query": "at&t",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/SHELL/cmd/CMD.md",
+                "file": "Software/Programming/IDEs/Visual Studio/Visual Studio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/SHELL/cmd/CMD.md",
+                "file": "Software/Programming/IDEs/Visual Studio/Visual Studio.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Languages/SHELL/cmd/CMD.md"
+                "file": "Software/Programming/IDEs/Visual Studio/Visual Studio.md"
               }
             }
           }
@@ -159,42 +159,42 @@
   },
   "active": "c2e54c62cde9434c",
   "lastOpenFiles": [
-    "Hardware/Components/IC.md",
-    "Languages/SHELL/cmd/CMD.md",
-    "Hardware/Components/NAND flash memory cell.md",
+    "Software/Web/Browsers/IE.md",
+    "Software/Programming/IDEs/Visual Studio/Visual Studio.md",
+    "Software/Programming/IDEs/Visual Studio/Visual Studio for Mac.md",
+    "Software/Programming/IDEs/Visual Studio/Visual Studio Tools for Unity.md",
+    "Software/Programming/IDEs/Visual Studio/Xamarin.md",
+    "Software/Programming/IDEs/Visual Studio/Visual Studio Online.md",
+    "CS-Theory/Analog Computer.md",
+    "CS-Theory/Digital Computer.md",
+    "CS-Theory/Logic Gate.md",
+    "CS-Theory/Half Adder.md",
+    "CS-Theory/Untitled",
+    "Hardware/Components/LEDs/Blue/Blue LEDs.md",
     "CS-Theory/CPU/CPU.md",
-    "Software/OS/Windows/Windows.md",
-    "CS-Theory/Programming Language.md",
-    "CS-Theory/Turing Machine.md",
-    "CS-Theory/Heap Memory.md",
-    "CS-Theory/Jargon/Program.md",
-    "CS-Theory/ABI.md",
-    "CS-Theory/Jargon/Web/Web Page.md",
-    "Languages/WEB/HTML/HTML.md",
-    "Languages/WEB/CSS/CSS.md",
-    "CS-Theory/Jargon/Web/SEO.md",
+    "CS-Theory/CPU/Register.md",
+    "CS-Theory/CPU/ID.md",
+    "CS-Theory/CPU/CU.md",
+    "CS-Theory/CPU/ALU.md",
+    "Maths/Number Theory/Modular Arithmetic/Modular Arithmetic.md",
+    "Maths/Number Theory/Modular Arithmetic",
+    "Maths/Number Theory/Number Theory.md",
+    "Maths/Algebra/Algebra.md",
+    "Maths/Arithmetic/Arithmetic.md",
+    "Languages/SHELL/cmd/CMD.md",
+    "Maths/Axiom.md",
+    "Maths/De Morgan's Theorem.md",
+    "Maths/Mathematics.md",
+    "Software/Web/Browsers/Firefox.md",
+    "STS/Mozilla.md",
+    "CS-Theory/Jargon/Programs",
+    "Software/AI",
+    "CS-Theory/Jargon/AI",
+    "STS",
+    "Maths/Arithmetic",
     "CS-Theory/Jargon/Web",
-    "Languages/MARKUP/RTF/RTF.md",
-    "Languages/MARKUP/SGML/SGML.md",
-    "Software/Programming/IDEs/ISE/ISE.md",
-    "Languages/GENERAL-PURPOSE/C/C.md",
-    "Software/Programming/Text Editors/Notepad++.md",
     "Languages/MARKUP/RTF",
     "Languages/MARKUP/SGML",
-    "Software/Programming/IDEs/ISE",
-    "Languages/WEB/HTML/DOM.md",
-    "Languages/WEB/HTML/Box Model.md",
-    "CS-Theory/Jargon/Data/Rich Text.md",
-    "CS-Theory/Jargon/Data/Plain Text.md",
-    "CS-Theory/Jargon/Data/Information.md",
-    "CS-Theory/Jargon/Data/Data.md",
-    "CS-Theory/Jargon/Files/Text File.md",
-    "CS-Theory/Jargon/Data",
-    "CS-Theory/Terminology/Coding",
-    "CS-Theory/Jargon",
-    "Untitled",
-    "CS-Theory/Jargon/Files",
-    "CS-Theory/CPU",
     "Maths/Geometry/attachments/Pasted image 20240321151401.png",
     "Maths/attachments/Pasted image 20240320141722.png",
     "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",

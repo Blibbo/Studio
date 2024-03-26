@@ -3,8 +3,10 @@ aliases:
   - Leggi di De Morgan
   - De Morgan's Laws
 ---
-${ \text{not } (A \text{ and } B) \longrightarrow \text{not } A \text{ or not } B }$
+Theorem in [[boolean algebra]] that's relevant in many subjects, ranging from [[propositional logic]] to [[set theory]] to [[Logic Gate|computer science]].
 
+The theorem's thesis is the following:
+${ \text{not } (A \text{ and } B) \longrightarrow \text{not } A \text{ or not } B }$
 
 ---
 
@@ -12,6 +14,9 @@ ${ \text{not } (A \text{ and } B) \longrightarrow \text{not } A \text{ or not } 
 
 It can be written in many ways.
 ${ \overline{A \cdot B} \equiv \overline{A} + \overline{B} }$
+
+### Proof
+
 
 
 ---
@@ -24,6 +29,6 @@ ${ \overline{A \cdot B} \equiv \overline{A} + \overline{B} }$
 TABLE FROM [[De Morgan's Theorem]]
 ```
 
-### In [[Logic Gates]]
+### In [[Logic Gate|Logic Gates]]
 
 ![[Pasted image 20240320141722.png#invert_B]]

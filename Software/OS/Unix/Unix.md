@@ -4,12 +4,14 @@ tags:
   - closed-source
   - operating-system
 ---
+Historical [[OS|operating system]] developed at [[Bell Labs]].
+
 ---
 
 ### Open-source
 
 - **Original Unix:**
-	- System V Release 4 (**SVR4**): AT&T released the source code for one of the later versions of Unix but not under an open-source license. It had restrictive licensing terms
+	- System V Release 4 (**SVR4**): [[AT&T]] released the source code for one of the later versions of Unix but not under an open-source license. It had restrictive licensing terms
 - **Unix-based (not Unix. I mean yeah Unix, but not original Unix):**
 	- [[Linux|GNU/Linux]]: biggest open-source unix-based os
 	- [[BSD]]: the weird one ^bsd
@@ -74,7 +76,7 @@ tags:
 
 ### Trivia
 
-- developed at **Bell Labs** in the 70's
+- developed at [[Bell Labs]] in the 70's
 - they were using [[B]] to develop it, then they invented [[C]] and switched to it
-- distributed by the parent company of Bell Labs (**AT&T**) as proprietary software
+- distributed by [[AT&T]] as proprietary software
 - to this day the original Unix's source code has not been officially released as open-source

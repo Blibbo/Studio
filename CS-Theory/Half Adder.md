@@ -1,0 +1,1 @@
+A specific combination of [[Logic Gate|logic gates]] that returns the result of a [[binary]] [[sumn]].

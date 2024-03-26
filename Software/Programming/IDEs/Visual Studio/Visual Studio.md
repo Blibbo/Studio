@@ -4,11 +4,10 @@ tags:
   - closed-source
   - free
 ---
----
-
-### About Visual Studio
-
-- powerful [[IDE]] for the [[Windows]] environment
+**Visual Studio** is a powerful [[IDE]] by [[Microsoft]] for the [[Windows]] environment.
+It's strictly for Windows.
+They want to force you to use their products, it's a deliberate business choice.
+Microsoft always pulls this shit whenever it can, just go see the notes on [[IE#Trivia|Internet Explorer]].
 
 ---
 

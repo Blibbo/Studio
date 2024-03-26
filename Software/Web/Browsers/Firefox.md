@@ -1,20 +1,17 @@
 ---
 tags:
   - open-source
+aliases:
+  - Mozilla Firefox
 ---
----
-
-### About Firefox
-
-- uses [[SpiderMonkey]]
-- uses [[Gecko]]
+[[Browser|Web browser]] that uses [[SpiderMonkey]] and [[Gecko]].
 
 ---
 
 ### USB Debugging
 
-- `about:debugging`
-	- in the address bar
+Connect your phone to your pc through an [[USB-C]] cable.
+Type `about:debugging` in the address bar.
 
 ---
 
@@ -45,3 +42,9 @@ tags:
 - **Laptop touchpad scrolling** didn't work.
 	- disable that "hardware acceleration" thing in the settings
 	- close and reopen firefox
+
+---
+
+### Trivia
+
+The first version was released by [[Mozilla]] in 2004

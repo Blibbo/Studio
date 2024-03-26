@@ -1,0 +1,1 @@
+Extends beyond basic [[arithmetic]], working with the study of **symbols**, [[equation|equations]], [[variable|variables]], [[exponent|exponents]], [[polynomial|polynomials]], [[function|functions]] and more abstract mathematical structures.
