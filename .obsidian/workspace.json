@@ -20,19 +20,31 @@
             }
           },
           {
-            "id": "a108a5660c07688a",
+            "id": "fe69a8ce76bf6c86",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/WEB/CSS/CSS.md",
+                "file": "CS-Theory/Language/Translation/Interpreted Languages.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6652ba81e1c5175a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Languages/GENERAL-PURPOSE/C/C.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -61,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "at&t",
+                "query": "dangling pointer",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/WEB/CSS/CSS.md",
+                "file": "Languages/GENERAL-PURPOSE/C/C.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/WEB/CSS/CSS.md",
+                "file": "Languages/GENERAL-PURPOSE/C/C.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Languages/WEB/CSS/CSS.md"
+                "file": "Languages/GENERAL-PURPOSE/C/C.md"
               }
             }
           }
@@ -170,44 +182,44 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "a108a5660c07688a",
+  "active": "6652ba81e1c5175a",
   "lastOpenFiles": [
-    "Software/Programming/IDEs/Visual Studio/Visual Studio.md",
-    "Languages/WEB/CSS/CSS.md",
-    "Languages/SHELL/cmd/CMD.md",
-    "Languages/MARKUP/RTF/RTF.md",
-    "CS-Theory/Jargon/Data/sz.md",
+    "Vault Queries.md",
     "Languages/GENERAL-PURPOSE/C/C.md",
-    "Software/Web/Browsers/IE.md",
-    "Software/Programming/IDEs/Visual Studio/Visual Studio for Mac.md",
-    "Software/Programming/IDEs/Visual Studio/Visual Studio Tools for Unity.md",
-    "Software/Programming/IDEs/Visual Studio/Xamarin.md",
-    "Software/Programming/IDEs/Visual Studio/Visual Studio Online.md",
-    "CS-Theory/Analog Computer.md",
-    "CS-Theory/Digital Computer.md",
-    "CS-Theory/Logic Gate.md",
-    "CS-Theory/Half Adder.md",
-    "CS-Theory/Untitled",
-    "Hardware/Components/LEDs/Blue/Blue LEDs.md",
-    "CS-Theory/CPU/CPU.md",
-    "CS-Theory/CPU/Register.md",
-    "CS-Theory/CPU/ID.md",
-    "CS-Theory/CPU/CU.md",
-    "CS-Theory/CPU/ALU.md",
-    "Maths/Number Theory/Modular Arithmetic/Modular Arithmetic.md",
+    "Maths/Logic/Mathematical Logic/Higher-order logic/Set Theory/Set.md",
+    "CS-Theory/CDT/Array (CDT).md",
+    "CS-Theory/ADT/Access policies/Random access.md",
+    "CS-Theory/ADT/Access policies/LIFO.md",
+    "CS-Theory/ADT/Access policies/FIFO.md",
+    "CS-Theory/ADT/Access policies/Sequential access.md",
+    "CS-Theory/ADT/Access policies",
+    "CS-Theory/ADT/Array (ADT).md",
+    "CS-Theory/Jargon/Programs/Dangling Pointer.md",
+    "Languages/GENERAL-PURPOSE/C/Pointer.md",
+    "Standards-Conventions/What the fuck is a kilometer 🦅🦅🦅/ANSI/ASCII.md",
+    "CS-Theory/Language/Translation/Interpreted Languages.md",
+    "CS-Theory/Language/Translation/Compiled Languages.md",
+    "CS-Theory/Language/Paradygms/Aspect-Oriented Programming.md",
+    "CS-Theory/Language/Paradygms/Procedural programming.md",
+    "CS-Theory/Language/Paradygms/Concurrent Programming.md",
+    "CS-Theory/Language/Paradygms/Declarative Programming.md",
+    "CS-Theory/Language/Paradygms/Logic Programming.md",
+    "CS-Theory/Language/Paradygms/Imperative Programming.md",
+    "CS-Theory/Language/Translation",
+    "CS-Theory/Language",
+    "Languages/GENERAL-PURPOSE/FORTRAN/Fortran.md",
+    "CS-Theory/Subprograms/IMPLEMENTATIONS/Function (programming).md",
+    "CS-Theory/Subprograms/Subprogram.md",
+    "CS-Theory/Subprograms/IMPLEMENTATIONS/Procedure.md",
+    "CS-Theory/Jargon/Data/sz.md",
+    "Languages/WEB/CSS/PROJECTS/UNDERTALE PORCODIO/FUOCO.html",
+    "Languages/WEB/CSS/PROJECTS/UNDERTALE PORCODIO/FOGO.ttf",
+    "Languages/WEB/CSS/PROJECTS/UNDERTALE PORCODIO",
+    "Languages/WEB/CSS/PROJECTS",
+    "Software/Programming/IDEs/Visual Studio/Visual Studio.md",
     "Maths/Number Theory/Modular Arithmetic",
-    "Maths/Number Theory/Number Theory.md",
-    "Maths/Algebra/Algebra.md",
-    "Maths/Arithmetic/Arithmetic.md",
-    "Maths/Axiom.md",
     "CS-Theory/Jargon/Programs",
     "Software/AI",
-    "CS-Theory/Jargon/AI",
-    "STS",
-    "Maths/Arithmetic",
-    "CS-Theory/Jargon/Web",
-    "Languages/MARKUP/RTF",
-    "Languages/MARKUP/SGML",
     "Maths/Geometry/attachments/Pasted image 20240321151401.png",
     "Maths/attachments/Pasted image 20240320141722.png",
     "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",

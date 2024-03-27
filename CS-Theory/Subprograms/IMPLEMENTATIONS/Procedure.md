@@ -3,4 +3,4 @@ aliases:
   - procedures
   - procedure
 ---
-Subroutine that either returns no value, or returns [[void]].
+[[Subprogram|Subroutine]] that either returns no value, or returns [[void]].

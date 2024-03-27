@@ -5,10 +5,6 @@ tags:
 aliases:
   - American Standard Code for Information Interchange
 ---
----
-
-### About ASCII
-
 - only uses 7 bits
 - 0 to 31 (first 32) are control characters
 - 32 to 126 (next 95) are printable

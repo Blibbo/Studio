@@ -1,3 +1,1 @@
-## Dangling pointer
-
-Pointer to a deallocated memory location
+[[Variable]] that contains memory addresses.

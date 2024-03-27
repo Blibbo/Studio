@@ -1,0 +1,4 @@
+---
+aliases:
+  - Accesso sequenziale
+---
