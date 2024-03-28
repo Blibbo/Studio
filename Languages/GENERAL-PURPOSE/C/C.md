@@ -446,6 +446,16 @@ They require manual deallocation through [[#^free]].
 - `{c}int* vAux = realloc(v, arrayLen, sizeof(int));`
 	- See [[#^realloc]] for context.
 
+###### Multi-dimensional arrays
+
+An one dimensional array can be seen as a [[vector]], a two-dimensional one can be seen as a [[matrix]].
+An array in C can be declared with **any** number of dimensions.
+There's a caveat though: every dimension except for the first must have an **explicit size**.
+
+`{c}int matrix[][3] = {{8, 5, 9}, {10, 72, 1}}`
+
+This matrix looks like ${ \left( \begin{matrix} 8 & 5 & 9 \\ 10 & 72 & 1\end{matrix} \right) }$
+
 ##### String
 
 `{c}char*` or `{c}char[]`.
@@ -633,13 +643,20 @@ They are only assignable **upon declaration**.
 #### String Literal
 
 [[#Literals|Literal]] for [[#string|strings]].
-`{c}"This is a string literal."`, `{c}{"I think this is equally as valid."}`
+`{c}"This is a string literal."`, `{c}{"This is equally as valid."}`
 Notice the double quotes. As opposed to the [[#character literal]]'s single quotes.
+The literal that looks like `{c}{"this"}` is a mixture of this literal and the [[#Array Literals|array literal]].
 
 It's only usable in specific scenarios:
 - can assign it to an array **exclusively upon declaration**:
-  `{c}char string[] = "my string literal"`
+  `{c}char string[] = "my string literal";`
 - can pass it to a function
+- can be returned from functions. (don't though)
+  The **literal** can be returned from functions.
+  Normal static string variables would be deallocated (see [[Function Call Stack|stack memory]]), but the literal is the exception to the rule.
+  It's a behavior worthy of discussion. See this link: https://stackoverflow.com/a/1496328
+  
+  Long story short: you shouldn't. If you do, the return type of the function should be `{c}const char*`
 
 ---
 

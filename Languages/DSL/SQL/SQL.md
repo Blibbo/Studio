@@ -22,6 +22,18 @@ Stands for **Data Manipulation Language**. It works with actual data.
 Stands for **Data Query Language**. Allows you to query your data without interacting with it. It's just for reading it.
 Implements [[Relational Algebra]] on your database.
 
+### Join
+
+[[Cartesian Product]]/[[cross product]] in SQL.
+
+### Where
+
+[[Selection]] in SQL
+
+#### Operators
+
+
+
 ## DCL
 
 Stands for **Data Control Language**. Manages which users have access to which data.
