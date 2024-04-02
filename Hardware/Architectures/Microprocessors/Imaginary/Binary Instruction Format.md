@@ -10,4 +10,4 @@ The reason why we have the phrase _"binary instruction format"_ is because somet
 When you see the phrase "binary instruction format", we're typically talking about **made up hardware** that will execute the format. Abstraction for real hardware.
 
 The made up hardware is simulated by actual software written in actual machine code.
-This specialized software that simulates hardware is called a [[Runtime Environment]] or a [[VM]].
+This specialized software that simulates hardware is called a [[runtime environment]] or a [[VM]].

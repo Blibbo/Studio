@@ -3,11 +3,11 @@ tags:
   - programming
   - language
 ---
----
+**Python** is a [[high-level language|high-level]] [[general-purpose language|general-purpose]] [[programming language]].
+It's a [[multi-paradygm programming language]].
+Its strong feature is readability. It forces [[code indentation]].
 
-### About Python
-
-- lol
+It's used in [[automation language|automation]].
 
 ---
 
@@ -25,3 +25,9 @@ with open('myfile.txt', 'rb') as f:
         print("Unknown line endings")
 
 ```
+
+---
+
+## Trivia
+
+The inside joke about python is that you can do anything with a minuscule amount of lines of code.

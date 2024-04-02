@@ -11,8 +11,12 @@
             "id": "d86dd33c857718cd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CS/Applied CS/Software engineering/Software classification/Service.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dangling pointer",
+                "query": "multi-parad",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CS/Applied CS/Software engineering/Software classification/Service.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "CS/Applied CS/Software engineering/Software classification/Service.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "CS/Applied CS/Software engineering/Software classification/Service.md"
+              }
             }
           }
         ],
@@ -151,43 +159,43 @@
   },
   "active": "d86dd33c857718cd",
   "lastOpenFiles": [
-    "CS/TCS/TOC/Computability Theory/Turing Machine.md",
-    "Software/OBS.md",
-    "CS/TCS/TOC/Automata Theory/automata theory.md",
-    "Software/Programming/IDEs/Visual Studio/Visual Studio.md",
-    "CS/TCS/TOC/Computability Theory/Turing completeness.md",
+    "CS/Applied CS/Software engineering/Software classification/source code.md",
+    "CS/Applied CS/Software engineering/Software classification/DB/DBMS.md",
+    "CS/Applied CS/Software engineering/Language classification/scripting language.md",
+    "CS/Applied CS/Software engineering/Software classification/REPL.md",
+    "CS/Applied CS/Software engineering/Language classification/low-level.md",
+    "CS/Applied CS/Software engineering/Language classification/high-level.md",
+    "CS/Applied CS/Software engineering/Language classification/DSL.md",
+    "CS/Applied CS/Software engineering/Language classification/DML.md",
+    "CS/Applied CS/Software engineering/Language classification/dynamic language.md",
+    "CS/Applied CS/Software engineering/Language classification/static language.md",
+    "Languages/GENERAL-PURPOSE/PERL/Perl.md",
+    "Languages/PROPRIETARY-INTEGRATED/GDSCRIPT/GDScript.md",
+    "Languages/GENERAL-PURPOSE/PYTHON/Python.md",
+    "Languages/GENERAL-PURPOSE/PERL",
+    "CS/Applied CS/Software engineering/Language classification/automation language.md",
+    "Software/Programming/Engines/Runtime/runtime environment.md",
+    "Languages/GENERAL-PURPOSE/C++/C++.md",
+    "CS/Applied CS/Software engineering/Memory management",
+    "CS/Applied CS/Software engineering/Software classification",
+    "CS/Applied CS/Software engineering/Language classification",
     "CS/Applied CS/Software engineering/Licensing/GPL/GPLv3.md",
     "CS/Applied CS/Software engineering/Licensing/GPL/GPLv2.md",
-    "Maths/Logic/Mathematical Logic/Higher-order logic/Set Theory/Set.md",
+    "CS/Applied CS/Software engineering/Licensing/GPL/GPL.md",
+    "CS/Applied CS/Software engineering/Licensing/proprietary software.md",
+    "STS/People/ESR.md",
+    "STS/Works/The Cathedral and the Bazaar.md",
+    "STS/People/Bill Gates.md",
+    "STS/People/Alan Kay.md",
+    "STS/For-profit entities/Microsoft/Microsoft.md",
+    "STS/People/Paul Allen.md",
     "CS/Applied CS/Software engineering/Licensing/GPL",
-    "Maths/Logic/Mathematical Logic/Higher-order logic/universal generalization.md",
-    "Maths/Logic/Mathematical Logic/Higher-order logic/predicate logic.md",
-    "Maths/Logic/Mathematical Logic/propositional logic.md",
-    "Maths/Logic/Mathematical Logic/Higher-order logic/Set Theory/subset.md",
-    "Maths/Logic/Logic.md",
-    "Maths/Logic/logical connective.md",
-    "Maths/Logic/negation.md",
-    "Maths/mathematics.md",
-    "Maths/Logic/Mathematical Logic/atomic formula.md",
-    "Maths/Logic/Mathematical Logic/mathematical logic.md",
-    "CS/TCS/TOC/Formal language theory/formal language.md",
-    "Maths/lambda calculus.md",
-    "CS/TCS/TOC/Formal language theory/formal language theory.md",
-    "CS/TCS/PLT/programming language.md",
-    "CS/TCS/PLT/PLT.md",
-    "Maths/Geometry/Goniometry/Goniometry.md",
-    "Maths/Geometry/Trigonometry/Trigonometry.md",
-    "Maths/Logic/Mathematical Logic/Higher-order logic/Set Theory/set theory.md",
     "UNKNOWN/Producing energy.canvas",
     "UNKNOWN/Producing energy",
     "UNKNOWN",
     "Standards-Conventions/Standards Organizations/W3C",
     "Standards-Conventions/Standards Organizations/IEEE",
     "Standards-Conventions/Standards Organizations/ECMA",
-    "Standards-Conventions/Standards Organizations/IETF",
-    "Standards-Conventions/Standards Organizations/ANSI",
-    "Standards-Conventions/Standards Organizations",
-    "Software/Web/SCHEMAS",
     "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Rate of Fire II.png",
     "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Rate of Fire IV.png",
     "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Rate of Fire III.png",

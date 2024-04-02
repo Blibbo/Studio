@@ -1,6 +1,8 @@
 ---
 aliases:
   - code
+  - codice sorgente
+  - source
 ---
 Text describing how your program works, written in a way that abides by the rules of a specific [[translator]].
 

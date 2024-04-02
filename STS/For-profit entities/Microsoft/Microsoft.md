@@ -1,1 +1,1 @@
-Tech giant that needs no introduction.
+Tech giant founded by [[Bill Gates]] and [[Paul Allen]]

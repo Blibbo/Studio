@@ -6,7 +6,7 @@ aliases:
   - virtual machine
   - virtual machines
 ---
-VMs are a specific type of [[Runtime Environment|Runtime Environment]].
+VMs are a specific type of [[runtime environment|runtime environment]].
 The distinction is that virtual machines specifically try to emulate hardware that's not there.
 A generic runtime environment doesn't necessarily do that, it just sorta executes stuff.
 

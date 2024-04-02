@@ -1,17 +1,12 @@
 ---
 tags:
-  - convention
   - jargon
 aliases:
   - Domain Specific Language
 ---
----
-
-### About DSLs
-
-- we call a **Domain Specific Language** a language meant for a specific task
-- they provide focused and expressive syntax for that domain
-- ~~this page is about random jargon~~
+We call a **Domain Specific Language** a language meant for a specific task
+They provide focused and expressive syntax for that domain
+~~this page is about random jargon~~
 
 ---
 

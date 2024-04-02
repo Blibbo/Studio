@@ -1,10 +1,4 @@
 ---
-tags:
-  - scripting
-  - language
+tags: []
 ---
----
-
-### About GDScript
-
-- used in the [[Godot]] game engine
+[[GDScript]] is a [[scripting language]] used in the [[Godot]] game engine.

@@ -8,6 +8,6 @@ tags:
 
 ### About CLR
 
-- it's a [[Runtime Environment|Runtime Environment]]
+- it's a [[runtime environment|runtime environment]]
 - for the [[NET Core|.NET Framework]]
 - provides runtime garbage collection and exception handling and stuff
