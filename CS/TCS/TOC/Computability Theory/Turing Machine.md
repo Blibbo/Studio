@@ -7,6 +7,8 @@ Turing machines are used to model general computing devices.
 
 ![[1024px-Maquina.png]]
 
+https://en.wikipedia.org/wiki/Turing_machine
+
 ## History
 
 Proposed by Alan Turing in [status::unfinished]

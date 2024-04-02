@@ -1,5 +1,8 @@
 ---
 aliases:
-  - Generalization
-  - Universal introduction
+  - generalization
+  - universal introduction
 ---
+
+
+https://en.wikipedia.org/wiki/Universal_generalization

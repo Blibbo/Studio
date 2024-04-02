@@ -1,11 +1,13 @@
 ---
 aliases:
-  - Subset Relation
-  - Subset Inclusion
-  - Sottoinsieme
+  - subset relation
+  - subset inclusion
+  - sottoinsieme
 ---
 It's a set within the set. It's pretty intuitive.
 A set is technically a subset of itself though, which could be counterintuitive. Check the definition below to see why.
+
+https://en.wikipedia.org/wiki/Subset
 
 ---
 

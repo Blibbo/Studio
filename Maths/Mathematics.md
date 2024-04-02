@@ -10,6 +10,9 @@ These objects are either abstractions from nature, or they're made the fuck up.
 
 The made-up objects have made-up properties, called [[axiom|axioms]].
 
+https://en.wikipedia.org/wiki/Mathematics
+https://byjus.com/maths/branches-of-mathematics/
+
 ---
 
 ## Pure Mathematics

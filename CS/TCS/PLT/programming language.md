@@ -4,7 +4,7 @@ aliases:
   - language
   - languages
 ---
-
+A **programming language** is a type of [[formal language theory]]
 
 
 # Abstraction

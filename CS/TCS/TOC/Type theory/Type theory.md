@@ -1,3 +1,3 @@
-In [[Mathematics]] and [[TCS]]
+In [[mathematics]] and [[TCS]]
 
 https://en.wikipedia.org/wiki/Type_theory

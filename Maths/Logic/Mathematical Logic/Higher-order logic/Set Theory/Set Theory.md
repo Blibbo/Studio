@@ -7,6 +7,8 @@ Sets are collections of objects. Objects of any kind.
 
 This is the foundation of mathematics as a whole.
 
+https://en.wikipedia.org/wiki/Set_theory
+
 ## Membership relation
 
 ${ o \in A }$

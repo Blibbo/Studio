@@ -1,4 +1,6 @@
-[status::unfinished]
+
+
+https://en.wikipedia.org/wiki/Set_(mathematics)
 
 ---
 
