@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "9e9f42ce8674f9ef",
+        "id": "b8a40685972f6da6",
         "type": "tabs",
         "children": [
           {
-            "id": "6fec9a56d97eb3be",
+            "id": "c2e54c62cde9434c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "STS/Works/The Elements.md",
+                "file": "Software/Programming/IDEs/Visual Studio/Visual Studio.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6652ba81e1c5175a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS/TCS/TOC/Automata Theory/Automata Theory.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tim berners",
+                "query": "dangling pointer",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 355.5
+    "width": 211.50260543823242
   },
   "right": {
     "id": "65e831f7a11449c1",
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "STS/Works/The Elements.md",
+                "file": "CS/TCS/TOC/Automata Theory/Automata Theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "STS/Works/The Elements.md",
+                "file": "CS/TCS/TOC/Automata Theory/Automata Theory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "STS/Works/The Elements.md"
+                "file": "CS/TCS/TOC/Automata Theory/Automata Theory.md"
               }
             }
           }
@@ -157,54 +170,54 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "6fec9a56d97eb3be",
+  "active": "6652ba81e1c5175a",
   "lastOpenFiles": [
-    "STS/People/Euclid.md",
-    "STS/Works/The Elements.md",
-    "STS/Works/The Cathedral and the Bazaar.md",
-    "STS/Works/Lambda papers.md",
-    "CS/TCS/PLT/programming language.md",
-    "STS/Works",
-    "CS/TCS/PLT/PLT.md",
-    "CS/TCS/CS.md",
-    "Languages/WEB/JAVASCRIPT/JavaScript.md",
-    "Software/Programming/IDEs/Visual Studio/Visual Studio.md",
-    "Software/Programming/Engines/Applications/Qt/Qt.md",
-    "CS/Applied CS/Software engineering/Licensing/copyleft.md",
-    "CS/Applied CS/Software engineering/software engineering.md",
-    "CS/Applied CS/Software engineering/DB/DBA.md",
-    "CS/Applied CS/Software engineering/DB/DBMS.md",
-    "CS/Applied CS/Software engineering/DB/OODBMS.md",
-    "CS/Applied CS/Software engineering/DB/RDBMS.md",
-    "CS/TCS/Data Structures/DB/TYPES/Relational Database.md",
-    "CS/Applied CS/Software engineering/DB",
-    "CS/TCS/Data Structures/DB/ERD.md",
-    "CS/TCS/Data Structures/DB/TYPES/OODB.md",
-    "CS/TCS/Data Structures/DB/DB.md",
-    "CS/TCS/PLT/Paradygms/OOP.md",
-    "Software/Web/Browsers/Netscape.md",
-    "STS/For-profit entities/Netscape Communications Corporation.md",
-    "STS/People/Alan Kay.md",
-    "CS/TCS/Data Structures/Data/schema.md",
-    "CS/Applied CS/Software engineering/Subprograms/overloading.md",
-    "Languages/GENERAL-PURPOSE/SMALLTALK",
-    "Languages/GENERAL-PURPOSE/LISP/DIALECTS/attachments/profoto-albert-watson-steve-jobs-pinned-image-3840x2160px-2.jpg",
-    "Languages/GENERAL-PURPOSE/LISP/DIALECTS/attachments",
-    "Languages/MARKUP/MARKDOWN/FLAVORS",
-    "STS/People/attachments/profoto-albert-watson-steve-jobs-pinned-image-3840x2160px-2.jpg",
-    "STS/Nonprofit Organizations/attachments/040JHoVNgc1gh2e7sunj82k-1.webp",
-    "STS/Nonprofit Organizations/attachments",
-    "STS/People/attachments/Linus Torvalds flipping you off.webp",
-    "STS/People/attachments",
-    "Software/Programming/Engines",
-    "Software/Programming/Engines/Applications/Flutter",
-    "Software/Programming/Engines/Applications/Xamarin",
-    "CS/TCS/TOC/Computability Theory/attachments/1024px-Maquina.png",
+    "Languages/GENERAL-PURPOSE/C/C.md",
+    "UNKNOWN/Producing energy/Water wheel.md",
+    "UNKNOWN/Producing energy/Photovoltaic Panel.md",
+    "UNKNOWN/Producing energy/Turbine.md",
     "UNKNOWN/Producing energy.canvas",
-    "Maths/Geometry/attachments/Pasted image 20240321151401.png",
-    "Maths/attachments/Pasted image 20240320141722.png",
-    "CS/TCS/TOC/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
-    "CS/TCS/TOC/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/x,y spherical coordinates.png",
-    "CS/TCS/TOC/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar to cartesian.png"
+    "UNKNOWN/Academic discipline.md",
+    "UNKNOWN/Producing energy",
+    "UNKNOWN",
+    "Standards-Conventions/Standards Organizations/W3C/WCAG.md",
+    "Standards-Conventions/Standards Organizations/IEEE/POSIX.md",
+    "Standards-Conventions/Standards Organizations/W3C/W3C.md",
+    "Standards-Conventions/Standards Organizations/IEEE/IEEE.md",
+    "Standards-Conventions/Standards Organizations/ECMA/ECMA.md",
+    "Standards-Conventions/Standards Organizations/IETF/IETF.md",
+    "Standards-Conventions/Standards Organizations/ANSI/ANSI.md",
+    "Standards-Conventions/Standards Organizations/ANSI/ASCII.md",
+    "Standards-Conventions/Standards Organizations/W3C",
+    "Standards-Conventions/Standards Organizations/IEEE",
+    "Standards-Conventions/Standards Organizations/ECMA",
+    "Standards-Conventions/Standards Organizations/IETF",
+    "Standards-Conventions/Standards Organizations/ANSI",
+    "Standards-Conventions/Standards Organizations",
+    "Software/Web/SCHEMAS/Schema.org.md",
+    "Software/Web/SCHEMAS",
+    "Software/Programming/Package managers/npm/npm.md",
+    "Software/Programming/Package managers/npm/packages.txt",
+    "Software/Programming/DB/DBMS/MySQL/CLIs/mysqld.exe.md",
+    "Software/Programming/DB/DBMS/MySQL/CLIs/mysql.exe.md",
+    "Software/Programming/DB/DBMS/SQLite/SQLite.md",
+    "Software/Programming/DB/DBMS/PostgreSQL/PostgreSQL.md",
+    "Software/Programming/DB/DBMS/Oracle Database/Oracle Database.md",
+    "Software/Programming/DB/DBMS/MySQL/MySQL.md",
+    "Software/Programming/DB/DBMS/MySQL/MySQL Heatwave.md",
+    "Software/Programming/DB/DBMS/MySQL/MDS.md",
+    "Software/Programming/DB/DBMS/Microsoft SQL/SQL Server.md",
+    "Software/Programming/DB/DBMS/Access/Access.md",
+    "Software/Programming/DB/DBMS/MariaDB/MariaDB.md",
+    "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Rate of Fire II.png",
+    "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Rate of Fire IV.png",
+    "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Rate of Fire III.png",
+    "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Rate of Fire I.png",
+    "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Default Turret.png",
+    "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Damage IV.png",
+    "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Bullet Speed III.png",
+    "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Damage III.png",
+    "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Damage II.png",
+    "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Damage I.png"
   ]
 }
