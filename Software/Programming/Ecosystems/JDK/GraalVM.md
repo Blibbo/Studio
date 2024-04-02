@@ -17,5 +17,5 @@
 
 ### Trivia
 
-- by Oracle
+- by [[Oracle]]
 - there's an Enterprise version

@@ -30,5 +30,5 @@ aliases:
 
 ### Trivia
 
-- the [[#Java Virtual Machine Specification]] is owned by Oracle and all JVMs must adhere
+- the [[#Java Virtual Machine Specification]] is owned by [[Oracle]] and all JVMs must adhere
 - the whole point was to have [[Java]] applications be cross-platform

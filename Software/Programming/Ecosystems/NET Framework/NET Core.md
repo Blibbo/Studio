@@ -34,7 +34,7 @@ LIST FROM [[NET Core]] AND "Languages"
 
 ### Trivia
 
-- by Microsoft
+- by [[Microsoft]]
 - the **.NET Framework** is old
 - Microsoft introduced **.NET Core** and later **NET 5** for modern development
 - **.NET 5** and later versions are part of a unified platform that includes elements from **.NET Core** and the traditional **.NET Framework**

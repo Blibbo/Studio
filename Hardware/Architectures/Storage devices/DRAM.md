@@ -8,6 +8,6 @@ absent = 1
 
 ## Trivia
 
-In 1978, Intel reported a problem in their 16 kilobit dram related to radioactive thorium and uranium present in the ceramics, releasing electrons and flipping bits, causing a [[seu]] 
+In 1978, Intel reported a problem in their 16 kilobit dram related to radioactive thorium and uranium present in the ceramics, releasing electrons and flipping bits, causing a [[SEU]] 
 
 Veritasium's "The Universe is Hostile to Computers" 

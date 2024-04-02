@@ -1,0 +1,2 @@
+A water wheel is a machine for converting the energy of flowing or falling water into useful forms of power, often in a watermill. A water wheel consists of a wheel (usually constructed from wood or metal), with a number of blades or buckets arranged on the outside rim forming the driving car
+https://en.wikipedia.org/wiki/Water_wheel

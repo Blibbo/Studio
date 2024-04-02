@@ -7,7 +7,7 @@ tags:
 aliases:
   - Java SE
 ---
-[[Programming Language]] that implements [[Object-Oriented Programming]].
+[[programming language]] that implements [[OOP]].
 The idea is for it to run on a [[VM]] to be cross platfom.
 
 It's not particularly fast (its resources are limited by the [[VM]] it runs in) but it doesn't suck by any means.
@@ -44,7 +44,7 @@ The extension for java source code files is `.java`
 
 ---
 
-## Oracle Java
+## [[Oracle]] Java
 
 ### SE API modules
 

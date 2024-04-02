@@ -1,0 +1,6 @@
+---
+aliases:
+  - graphs
+  - grafo
+  - grafi
+---

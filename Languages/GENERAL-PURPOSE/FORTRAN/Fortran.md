@@ -1,3 +1,3 @@
-[[Imperative Programming|Imperative]] [[Programming Language]].
+[[Imperative Programming|Imperative]] [[programming language]].
 
 Implements [[Procedural programming]].

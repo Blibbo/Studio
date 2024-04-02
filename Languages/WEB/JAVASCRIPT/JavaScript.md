@@ -7,11 +7,39 @@ tags:
   - language
 aliases:
   - ECMAScript
+  - LiveScript
+  - Mocha
+  - JS
 ---
+**JavaScript** is a general-purpose, [[multi-paradygm programming language]].
+It's used both for scripting and programming tasks.
+[[Browser|Web browsers]] have a built-in [[interpreter]] for this language.
 
 ---
 
-### SYNTAX
+## Built-in objects
+
+### Object
+
+### Array
+
+### Function
+
+### String
+
+### Number
+
+### Boolean
+
+### Date
+
+### Math
+
+### RegExp
+
+### Error
+
+## Syntax
 
 - VARIABLES
 	- `{javascript}const MY_CONSTANT='FOO_BAR'` ^const
@@ -444,45 +472,91 @@ aliases:
 	
 ---
 
-### Trivia
+## History
 
-- **Creation Odissey:**
-	- developed by Brendan Eich in 1995
-		- he made it very quickly
-	- he made it for [[Netscape]] while working for Netscape Communications Corporation. It was implemented in version 2.0 of the browser
-	- Netscape decided to call it **JavaScript** because [[Java]] was gaining popularity and they wanted to dick-ride the hype train. It's a misnomer.
-	- became too popular too quick. Browsers were doing their own thing, so Netscape submitted the language to [[ECMA|ECMA International]] in 1997 to standardize it
-	- JavaScript was a bad name because it's got nothing to do with Java. ECMA fixed it by like, _you know..._
-- **ECMAScript:**
-	- **ES1** (**1997**): exactly what Netscape submitted them
-	- **ES2** (**1998**): they just fixed bugs
-	- **ES3** (**1999**): improvements in structured programming, support for [[Regex|regular expressions]] and exception handling
-	- **ES4** (**Abandoned**): community backlash. They failed hard and stopped for like ten years
-	- **ES5** (**2009**): this is like when they started making doctor who again
-		- first time ECMA actually DID something
-		- [[JSON]] support (~~woulda been funny otherwise eh~~)
-		- [[#^strict-mode]]
-		- tons of new methods for [[#arrays]]
-		- the document where they defined this is called ECMA-262.
-			- idk what to do with this information
-	- **ES6** (**2015**) / **ES2015**: they changed naming conventions ^es6
-		- =ES6 are the most common versions people develop for
-		- [[#^arrow-functions]]
-		- [[#^classes]]
-		- [[#^template-literals]]
-		- [[#^let]] and [[#^const]] (thank god)
-		- [[#^import]] and [[#^export]] (thank god v2)
-		- that's it, it's a programming language from now on
-	- **ES2016** to **18**:
-		- [[#^async-functions]]
-		- [[#^exponentiation-operator]]
-	- **ES2019**:
-		- [[#^array-flat]]
-		- [[#^array-flat-map]]
-	- **ES2020**:
-		- [[#^null-chaining]]
-		- [[#^nullish-coalescing-operator]]
-		- [[#^big-int]]
-	- **ES2021**:
-		- [[#^promise-all-settled]]
-		- [[#^string-replace-all]]
+### TL;DR
+
+It was born as a [[scripting language]] for [[front-end]] work on browsers.
+It was heavily standardized by [[ECMA]] and over the course of twenty years it became a full fledged programming language.
+It can now be ~~(and is inexorably being)~~ used for any and everything.
+
+### Timeline
+
+- May 1995: a scripting language for [[Netscape]] begins being developed by [[Brendan Eich]].
+  [[Netscape Communications Corporation|Netscape]] co-founder [[Marc Andreessen]] decides to call it **Mocha**.
+  Brendan finishes developing Mocha in just **10 days**.
+- December 1995: The language is released under the name **LiveScript** in Netscape Navigator 2.0 Beta
+- December 1995: Netscape collaborates with [[Sun Microsystems]]. LiveScript's name is changed to **JavaScript**.
+  This name was chosen to capitalize on the popularity of [[Java]]. It's a misnomer.
+- 1997: Netscape submits their language to [[ECMA|ECMA International]] to standardize it (it was getting out of hand)
+  ECMA calls the standard for the language **ECMAScript**.
+  ECMA releases **ES1**, the first version of the standard, containing Netscape's submission, unchanged.
+
+### Standards
+
+[[ECMA]] has been standardizing JavaScript since 1997.
+
+#### ES1
+
+The first version of the standard contains the original submission by [[Netscape Communications Corporation|Netscape]], untouched.
+
+#### ES2
+
+1998\. Minor bug fixes.
+
+#### ES3
+
+1999\. Improvements in structured programming, support for [[Regex|regular expressions]] and exception handling
+
+#### ES4
+
+Abandoned for community backlash. ECMA failed hard and stopped for like ten years.
+
+#### ES5
+
+ 2009\. This is like when they started making doctor who again.
+This is the first time ECMA actually DID something.
+
+ECMA-262 adds:
+- [[JSON]] support (~~woulda been funny otherwise eh~~)
+- [[#^strict-mode]]
+- Tons of new methods for [[#arrays]]
+
+#### ES6 / ES2015
+
+ECMA changed naming conventions for the standard. They're now using years instead of version numbers. ^es6
+This is the oldest version people still [[transpiler|transpile]] to sometimes.
+
+ES6 adds:
+- [[#^arrow-functions]]
+- [[#^classes]]
+- [[#^template-literals]]
+- [[#^let]] and [[#^const]] (thank god)
+- [[#^import]] and [[#^export]] (thank god v2)
+
+That's it, it's an actual programming language from now on
+
+#### ES2016 to 18
+
+Major features:
+- [[#^async-functions]]
+- [[#^exponentiation-operator]]
+
+#### ES2019
+
+Major features:
+- [[#^array-flat]]
+- [[#^array-flat-map]]
+
+#### ES2020
+
+Major features:
+- [[#^null-chaining]]
+- [[#^nullish-coalescing-operator]]
+- [[#^big-int]]
+
+#### ES2021
+
+Major features:
+- [[#^promise-all-settled]]
+- [[#^string-replace-all]]

@@ -1,10 +1,5 @@
 ---
-tags:
-  - open-source
+tags: []
 ---
----
-
-### About WebKit
-
-- rendering engine for browsers
-- uses [[JavaScriptCore]] (part of the same project)
+[[open source|Open-source]] Rendering engine for [[Browser|browsers]].
+Paired with [[JavaScriptCore]] (part of the same project)

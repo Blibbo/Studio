@@ -23,5 +23,5 @@ Compiled assemblies are stored in `.exe`s or `.dll`s. The binary format in which
 
 These are languages that compile to this.
 ```dataview
-LIST FROM "Languages/GENERAL-PURPOSE" AND [[CIL]]
+TABLE FROM "Languages/GENERAL-PURPOSE" AND [[CIL]]
 ```

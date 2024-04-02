@@ -1,1 +1,1 @@
-[[Functional Programming]] [[Programming Language|Language]].
+[[Functional Programming]] [[programming language|Language]].

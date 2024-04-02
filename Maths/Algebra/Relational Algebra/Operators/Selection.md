@@ -1,3 +1,9 @@
+---
+aliases:
+  - restriction
+  - selezione
+  - restrizione
+---
 [[Relational Algebra]] operator to produce a horizontal cut of your [[relation]].
 
 ## Notation

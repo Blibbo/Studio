@@ -1,0 +1,1 @@
+Storage engine where tables store indexes and data separately in `.MYD` and `.MYI` files.

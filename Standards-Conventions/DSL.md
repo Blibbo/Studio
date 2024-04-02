@@ -1,6 +1,7 @@
 ---
 tags:
   - convention
+  - jargon
 aliases:
   - Domain Specific Language
 ---

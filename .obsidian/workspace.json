@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "b8a40685972f6da6",
+        "id": "9e9f42ce8674f9ef",
         "type": "tabs",
         "children": [
           {
-            "id": "c2e54c62cde9434c",
+            "id": "6fec9a56d97eb3be",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/Logic/Mathematical Logic/Higher-order logic/Set Theory/Set.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a243c20498c723b1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Languages/GENERAL-PURPOSE/C/C.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c23b1b7b9668da1f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Languages/DSL/SQL/SQL.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9b503e03b1ae784b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/Algebra/Relational Algebra/Operators/Selection.md",
+                "file": "STS/Works/The Elements.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -85,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dangling pointer",
+                "query": "tim berners",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 211.50260543823242
+    "width": 355.5
   },
   "right": {
     "id": "65e831f7a11449c1",
@@ -130,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/DSL/SQL/SQL.md",
+                "file": "STS/Works/The Elements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/DSL/SQL/SQL.md",
+                "file": "STS/Works/The Elements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Languages/DSL/SQL/SQL.md"
+                "file": "STS/Works/The Elements.md"
               }
             }
           }
@@ -194,53 +157,54 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "c23b1b7b9668da1f",
+  "active": "6fec9a56d97eb3be",
   "lastOpenFiles": [
-    "Maths/Algebra/Relational Algebra/Operators/Selection.md",
-    "Languages/DSL/SQL/SQL.md",
-    "Languages/GENERAL-PURPOSE/C/C.md",
-    "Languages/GENERAL-PURPOSE/JAVA/Java.md",
-    "Maths/Logic/Mathematical Logic/Higher-order logic/Set Theory/Set.md",
+    "STS/People/Euclid.md",
+    "STS/Works/The Elements.md",
+    "STS/Works/The Cathedral and the Bazaar.md",
+    "STS/Works/Lambda papers.md",
+    "CS/TCS/PLT/programming language.md",
+    "STS/Works",
+    "CS/TCS/PLT/PLT.md",
+    "CS/TCS/CS.md",
+    "Languages/WEB/JAVASCRIPT/JavaScript.md",
     "Software/Programming/IDEs/Visual Studio/Visual Studio.md",
-    "CS-Theory/Language/Translation/Interpreted Languages.md",
-    "Vault Queries.md",
-    "CS-Theory/CDT/Array (CDT).md",
-    "CS-Theory/ADT/Access policies/Random access.md",
-    "CS-Theory/ADT/Access policies/LIFO.md",
-    "CS-Theory/ADT/Access policies/FIFO.md",
-    "CS-Theory/ADT/Access policies/Sequential access.md",
-    "CS-Theory/ADT/Access policies",
-    "CS-Theory/ADT/Array (ADT).md",
-    "CS-Theory/Jargon/Programs/Dangling Pointer.md",
-    "Languages/GENERAL-PURPOSE/C/Pointer.md",
-    "Standards-Conventions/What the fuck is a kilometer 🦅🦅🦅/ANSI/ASCII.md",
-    "CS-Theory/Language/Translation/Compiled Languages.md",
-    "CS-Theory/Language/Paradygms/Aspect-Oriented Programming.md",
-    "CS-Theory/Language/Paradygms/Procedural programming.md",
-    "CS-Theory/Language/Paradygms/Concurrent Programming.md",
-    "CS-Theory/Language/Paradygms/Declarative Programming.md",
-    "CS-Theory/Language/Paradygms/Logic Programming.md",
-    "CS-Theory/Language/Paradygms/Imperative Programming.md",
-    "CS-Theory/Language/Translation",
-    "CS-Theory/Language",
-    "Languages/GENERAL-PURPOSE/FORTRAN/Fortran.md",
-    "CS-Theory/Subprograms/IMPLEMENTATIONS/Function (programming).md",
-    "Languages/WEB/CSS/PROJECTS/UNDERTALE PORCODIO/FUOCO.html",
-    "Languages/WEB/CSS/PROJECTS/UNDERTALE PORCODIO/FOGO.ttf",
-    "Languages/WEB/CSS/PROJECTS/UNDERTALE PORCODIO",
-    "Languages/WEB/CSS/PROJECTS",
-    "Maths/Number Theory/Modular Arithmetic",
-    "CS-Theory/Jargon/Programs",
-    "Software/AI",
+    "Software/Programming/Engines/Applications/Qt/Qt.md",
+    "CS/Applied CS/Software engineering/Licensing/copyleft.md",
+    "CS/Applied CS/Software engineering/software engineering.md",
+    "CS/Applied CS/Software engineering/DB/DBA.md",
+    "CS/Applied CS/Software engineering/DB/DBMS.md",
+    "CS/Applied CS/Software engineering/DB/OODBMS.md",
+    "CS/Applied CS/Software engineering/DB/RDBMS.md",
+    "CS/TCS/Data Structures/DB/TYPES/Relational Database.md",
+    "CS/Applied CS/Software engineering/DB",
+    "CS/TCS/Data Structures/DB/ERD.md",
+    "CS/TCS/Data Structures/DB/TYPES/OODB.md",
+    "CS/TCS/Data Structures/DB/DB.md",
+    "CS/TCS/PLT/Paradygms/OOP.md",
+    "Software/Web/Browsers/Netscape.md",
+    "STS/For-profit entities/Netscape Communications Corporation.md",
+    "STS/People/Alan Kay.md",
+    "CS/TCS/Data Structures/Data/schema.md",
+    "CS/Applied CS/Software engineering/Subprograms/overloading.md",
+    "Languages/GENERAL-PURPOSE/SMALLTALK",
+    "Languages/GENERAL-PURPOSE/LISP/DIALECTS/attachments/profoto-albert-watson-steve-jobs-pinned-image-3840x2160px-2.jpg",
+    "Languages/GENERAL-PURPOSE/LISP/DIALECTS/attachments",
+    "Languages/MARKUP/MARKDOWN/FLAVORS",
+    "STS/People/attachments/profoto-albert-watson-steve-jobs-pinned-image-3840x2160px-2.jpg",
+    "STS/Nonprofit Organizations/attachments/040JHoVNgc1gh2e7sunj82k-1.webp",
+    "STS/Nonprofit Organizations/attachments",
+    "STS/People/attachments/Linus Torvalds flipping you off.webp",
+    "STS/People/attachments",
+    "Software/Programming/Engines",
+    "Software/Programming/Engines/Applications/Flutter",
+    "Software/Programming/Engines/Applications/Xamarin",
+    "CS/TCS/TOC/Computability Theory/attachments/1024px-Maquina.png",
+    "UNKNOWN/Producing energy.canvas",
     "Maths/Geometry/attachments/Pasted image 20240321151401.png",
     "Maths/attachments/Pasted image 20240320141722.png",
-    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
-    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/x,y spherical coordinates.png",
-    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar to cartesian.png",
-    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar formula.png",
-    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/azimuth formula.png",
-    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/azimuth formula but the atan doesn't suck.png",
-    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/Z is up in spherical coordinates.png",
-    "CS-Theory/CG/scratchapixel/screenshots/spherical coordinates/polar and azimuth.png"
+    "CS/TCS/TOC/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
+    "CS/TCS/TOC/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/x,y spherical coordinates.png",
+    "CS/TCS/TOC/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar to cartesian.png"
   ]
 }

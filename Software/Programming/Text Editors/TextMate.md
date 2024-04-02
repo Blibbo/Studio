@@ -6,7 +6,7 @@ tags:
 
 ### About TextMate
 
-- for [[MacOS]]
+- for [[macOS]]
 
 ---
 

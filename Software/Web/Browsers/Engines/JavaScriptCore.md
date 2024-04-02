@@ -1,19 +1,8 @@
 ---
 aliases:
   - Nitro
-tags:
-  - open-source
+tags: []
 ---
+[[open source|Open-source]] [[JavaScript]] engine, part of the [[WebKit]] project.
 
----
-
-### About JSC
-
-- [[JavaScript]] engine
-- has some support for [[WebAssembly|Wasm]]
-
----
-
-### Trivia
-
-- part of the [[WebKit]] project
+Supports [[WebAssembly]].

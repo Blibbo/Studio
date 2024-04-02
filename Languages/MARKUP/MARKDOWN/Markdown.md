@@ -55,7 +55,7 @@ https://www.markdownguide.org/basic-syntax/
 			- number of # doesn't matter, it's always just one in identifiers
 			- you can generate the identifier manually:
 				- `` # My Header {#my-identifier}
-			- reported not to work for [[GitHub]] (which part? I must run some tests)
+			- reported not to work for [[Github]] (which part? I must run some tests)
 - **Code**
 	- Basic code "block":
 		- indent the line at its beginning.

@@ -96,7 +96,7 @@ tags:
 
 ### Community plugins
 
-- **[[Software/Studying/Obsidian/Plugins/Dataview]]**
+- **[[Dataview]]**
 	- [Documentation](https://blacksmithgu.github.io/obsidian-dataview/queries/structure/)
 	- generates data out of the [[#^properties|yaml properties]] of the notes
 	- lets you manipulate this data through queries

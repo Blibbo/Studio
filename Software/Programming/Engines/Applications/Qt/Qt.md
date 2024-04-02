@@ -1,0 +1,1 @@
+**Qt** is a framework for native desktop applications

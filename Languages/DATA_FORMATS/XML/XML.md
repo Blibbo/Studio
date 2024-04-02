@@ -6,18 +6,14 @@ tags:
 aliases:
   - eXtensible Markup Language
 ---
----
-
-### About XML
-
-- hierarchical structure
-- uses tags
-- its files have `.xml` extension
+It's a [[markup language]] format to describe hierarchically structured data.
+XML files have `.xml` extension.
 
 ---
 
-### Syntax
+## Syntax
 
+XML's syntax is composed of tags.
 - `{xml}<?xml version="1.0" encoding="UTF-8"?>`
 	- this is called the XML prolog
 	- it should be optional by now, but I'm not sure whether parsers are just adding the line behind the scenes with default values
@@ -28,7 +24,13 @@ aliases:
 
 ---
 
-### Example XML file
+## Schema
+
+**XSD** (**XML Schema Definition**) is a standard way to describe the elements in an XML document and the relationships between them.
+
+---
+
+## Example XML file
 
 - via [w3schools](https://www.w3schools.com/xml/xml_examples.asp)
 ```xml

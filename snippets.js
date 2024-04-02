@@ -332,6 +332,9 @@
 	{trigger: "batch", replacement: "`{batch}$0`$1", options: "tw"},
 	{trigger: "bat", replacement: "`{bat}$0`$1", options: "tw"},
 	{trigger: "cmd", replacement: "`{cmd}$0`$1", options: "tw"},
+	{trigger: "sql", replacement: "`{sql}$0`$1", options: "tw"},
+	{trigger: "perl", replacement: "`{perl}$0`$1", options: "tw"},
+
 	
 	// Markdown
 	{trigger: "bld", replacement: "**$0**$1", options: "tAw"},
@@ -343,4 +346,5 @@
 	// Emojis
 	{trigger: ":thumbsup:", replacement: "👍", options: "tcmA"},
 	{trigger: ":sparkles:", replacement: "✨", options: "tcmA"},
+	{trigger: ":eagle:", replacement: "🦅", options: "tcmA"},
 ]

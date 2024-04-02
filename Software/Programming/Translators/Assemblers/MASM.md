@@ -4,8 +4,6 @@ tags:
 aliases:
   - Microsoft Macro Assembler
 ---
----
+[[Assembler]] from [[Microsoft]].
 
-### About MASM
-
-- [[x86-64 Assembly]]
+Supports [[Assembly x64]].

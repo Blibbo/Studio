@@ -12,7 +12,7 @@ tags:
 			- has a free plan
 			- server side computation ([[php]] allowed)
 			- limited storage (no [[Laravel]])
-		- [[GitHub]]
+		- [[Github]]
 			- free
 			- no server side computation
 				- no php, no database

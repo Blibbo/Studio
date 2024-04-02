@@ -1,3 +1,3 @@
-[[Programming Language]]. It implements:
+[[programming language]]. It implements:
 - [[Imperative Programming]]
 - [[Procedural programming]]

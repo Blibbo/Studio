@@ -6,7 +6,7 @@ tags:
 aliases:
   - HyperText Markup Language
 ---
-[[Rich text]] format and [[markup language]].
+[[Rich Text]] format and [[markup language]] made to structure documents on the [[web]].
 
 ---
 
@@ -182,8 +182,8 @@ An XML compatible version exists, it's called [[XHTML]]
 
 ### History
 
-- HTML was introduced by Tim Berners-Lee in the early 90's
-- the idea was to have a markup language to structure documents on the web
+HTML was introduced by [[Tim Berners-Lee]] in the early 90's.
+
 - **History: (chat gpt, ill fix l8er)**
 	- **other answer**
 		- HTML5 was developed by the Web Hypertext Application Technology Working Group (WHATWG) and later by the World Wide Web Consortium (W3C)

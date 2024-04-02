@@ -7,14 +7,20 @@ tags:
 aliases:
   - CPP
 ---
-Superset of [[C]].
-Implements [[Object-Oriented Programming]].
+[[OOP]] [[programming language|Language]] that's a [[superset]] of [[C]].
 
 Source files have a `.cpp` extension
 
 ---
 
-### Syntax
+## Syntax
+
+### Literals
+
+#### String Literal
+
+[[C#String Literal]]
+The type of the string literal is `{cpp}const char*` here, not `{cpp}char*`.
 
 - **Variables**
 	- **Initializer lists**
@@ -486,7 +492,7 @@ Source files have a `.cpp` extension
 
 ---
 			
-### Standard Library Headers (#include <your_standard_library>)
+## Standard Library Headers (#include <your_standard_library>)
 
 - **NOTES**
 	- transition of standard libraries from C to C++:
@@ -556,7 +562,7 @@ Source files have a `.cpp` extension
 
 ---
 
-### Libraries
+## Libraries
 
 - **[[GCC]]:**
 	- **libstdc++** ^libstdcpp
@@ -567,7 +573,7 @@ Source files have a `.cpp` extension
 
 ---
 
-### About making programs
+## About making programs
 
 - **TRANSLATION UNITS**
 	- they're the output of the preprocessing stage
@@ -638,3 +644,9 @@ Source files have a `.cpp` extension
 		- **EXAMPLE**
 			- `{cpp}int main(int argc, char* argv[]){}`
 			- `{batch}myprogram.exe fortnite balls`
+
+## Trivia
+
+[[Linus Torvalds|Linus]] has mad beef with C++
+
+![[Linus Torvalds#c++]]

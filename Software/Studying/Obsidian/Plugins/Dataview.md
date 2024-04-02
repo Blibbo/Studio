@@ -4,7 +4,7 @@ aliases:
 Dataview is an [[Obsidian]] plugin that allows you to do exactly two things: [[#Indexing|index]] and [[#Querying|query]] your vault.
 
 [documentation](https://blacksmithgu.github.io/obsidian-dataview/)
-[dataview](https://github.com/blacksmithgu/obsidian-dataview) on [[GitHub]]
+[dataview](https://github.com/blacksmithgu/obsidian-dataview) on [[Github]]
 
 ---
 

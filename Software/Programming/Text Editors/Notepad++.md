@@ -37,4 +37,4 @@ Released under the [[GPL]]
 ## Trivia
 
 - I'm very fond of this editor
-- this and the [[gcc]] make for a very comforting combo
+- this and the [[GCC]] make for a very comforting combo

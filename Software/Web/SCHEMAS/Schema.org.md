@@ -1,0 +1,1 @@
+[[Semantic Web]] schema by [[Microsoft]] and a bunch of other tech big shots.

@@ -88,6 +88,8 @@ These get used by the operating system to do all sorts of things. You can read t
 
 ![[Windows#Environment variables]]
 
+---
+
 ## Syntax
 
 - `^` ^escape-characters
@@ -350,6 +352,19 @@ To debug variables:
 Common errors:
 - `<token> was unexpected at this time.`
 	- there's a syntax error, but it will keep you guessing.
+
+---
+
+## Shortcuts
+
+Shortcuts for the terminal.
+- `Up Arrow` ^up-arrow
+	- Previous command
+- `Down Arrow`
+	- Next command
+	- Doesn't do anything if you didn't use [[#^up-arrow]] before
+- `Ctrl + Down Arrow`
+	- Go down one line in the screen. As in, scrolling.
 
 ---
 

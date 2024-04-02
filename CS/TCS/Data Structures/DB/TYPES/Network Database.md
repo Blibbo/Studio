@@ -1,0 +1,1 @@
+[[DB]] type representable with [[Graph|graphs]].

@@ -1,0 +1,2 @@
+"A turbine is **a turbomachine with at least one moving part called a rotor assembly, which is a shaft or drum with blades attached**. Moving fluid acts on the blades so that they move and impart rotational energy to the rotor. Early turbine examples are windmills and waterwheels. A steam turbine with the case opened."
+https://en.wikipedia.org/wiki/Turbine

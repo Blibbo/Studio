@@ -21,5 +21,5 @@ aliases:
 
 ### Trivia
 
-- by Oracle
+- by [[Oracle]]
 - originally from someone else. I don't remember anymore, doesn't matter

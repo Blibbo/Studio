@@ -1,13 +1,7 @@
 ---
 tags:
-  - open-source
   - engine
 ---
+[[open source|Open-source]] [[Browser]] rendering engine, part of the [[Chromium]] project.
 
----
-
-### About Blink
-
-- rendering engine
-- fork of [[WebKit]]
-- used in the [[Chromium]] project
+It's a fork of [[WebKit]].

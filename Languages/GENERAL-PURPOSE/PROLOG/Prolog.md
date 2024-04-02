@@ -1,1 +1,1 @@
-[[Programming Language]] that implements [[Logic Programming]].
+[[programming language]] that implements [[Logic Programming]].

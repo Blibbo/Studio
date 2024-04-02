@@ -4,7 +4,7 @@ tags:
 aliases:
   - VSCode
 ---
-[[Open source]] [[code editor]] made in [[Electron]].
+[[open source]] [[Code Editor]] made in [[Electron]].
 
 Its UI is deeply integrated with [[Git]].
 

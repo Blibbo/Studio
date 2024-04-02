@@ -1,21 +1,19 @@
 ---
-tags:
-  - open-source
+tags: []
 ---
----
+**Git** is an [[open source|open-source]] [[SCM]] tool developed by [[Linus Torvalds]] using the [[C]] [[programming language]].
+Git is distributed under the [[GPL]].
 
-### About Git
-
- - [Guide](https://dev.to/g_abud/advanced-git-reference-1o9j)
+[Guide](https://dev.to/g_abud/advanced-git-reference-1o9j)
 
 ---
 
-### Tools
+## Tools
 
 - **Remote services**
-	- [[GitHub]]
-	- GitLab
-	- Bitbucket
+	- [[Github]]
+	- [[GitLab]]
+	- [[Bitbucket]]
 - [[Git Bash]]
 	- comes with git
 - [[Git GUI]]
@@ -23,7 +21,7 @@ tags:
 	
 ---
 
-### Commands
+## Commands
 
 - **Configuration**
 	- [Help](https://www.linode.com/docs/guides/how-to-install-git-and-clone-a-github-repository/)
@@ -39,7 +37,7 @@ tags:
 			- from this point on, you can use git commands on the directory
 			- it's pointless to make a repo locally if you don't have the command to upload it to github
 			- and i didn't look it up
-			- JUST CREATE THE REPO FROM THE [[GitHub]] WEBSITE
+			- JUST CREATE THE REPO FROM THE [[Github]] WEBSITE
 			- **DON'T GIT INIT YOURSELF**
 - **INTER-BRANCH**
 	- `{bash}git branch`
@@ -115,7 +113,7 @@ tags:
 		
 ---
 
-### .gitignore files
+## .gitignore
 
 - [Documentation](https://git-scm.com/docs/gitignore)
 - **Patterns:**
@@ -145,7 +143,9 @@ tags:
 		
 ---
 
-### Branch naming conventions
+## Conventions
+
+### Branch naming
 
 1. **Master/Main Branch:** ^main-branch
     - `master` (for Git) or `main` (an increasingly popular alternative) is typically used for the main development branch where the latest stable code resides.
@@ -175,17 +175,14 @@ tags:
 	
 ---
 
-### Repositories within repositories
+## Submodules
 
 - check out [this](https://www.reddit.com/r/webdev/comments/yhie92/git_repo_inside_of_another_git_repo_is_this_an/) thread
 - and [this](https://git-scm.com/book/en/v2/Git-Tools-Submodules) git feature
 
 ---
 
-### Trivia
+## Trivia
 
-- by Linus Torvalds
-- yep, _him_
-- protected by the [[GPL]]
-- from the Git [Github repo](https://github.com/git/git) it appears to be developed in [[C]]
-- ~~how do they push to the repo? is git being developed with git?~~
+It has a github repo: [Github repo](https://github.com/git/git)
+~~how do they push to the repo? [[#^git-push]]? is git being developed with git?~~

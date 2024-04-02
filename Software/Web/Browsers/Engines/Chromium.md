@@ -1,16 +1,9 @@
 ---
 tags:
-  - open-source
   - engine
 ---
----
-
-### About Chromium
-
-- open-source browser engine
-- uses [[Blink]] (part of the same Chromium project)
-- it's basically a fully functioning, complete browser
-- any additional layer is either a frivolous feature/spyware
+[[open source|Open-source]] [[Browser]] engine.
+Its rendering engine is called [[Blink]].
 
 ---
 

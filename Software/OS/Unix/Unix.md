@@ -71,6 +71,8 @@ Historical [[OS|operating system]] developed at [[Bell Labs]].
 	- `{bash}cat -v file.txt`
 		- show non printing characters (???)
 		- it only shows the file's content from my experience
+	- `{bash}clear`
+		- Clear screen
 
 ---
 

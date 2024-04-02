@@ -76,4 +76,4 @@ Generally, you have 2 types of URLs
 
 ### Trivia
 
-- now owned by Microsoft
+Github is now owned by [[Microsoft]]

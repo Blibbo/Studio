@@ -1,0 +1,1 @@
+Files are [unstructured bags of bytes](https://www.reddit.com/r/programming/comments/r299vn/comment/hm7z4k6/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)

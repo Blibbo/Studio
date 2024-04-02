@@ -7,7 +7,8 @@ aliases:
 ---
 [[Unix]]-based operating system.
 
-Linux is developed by tons of people and lots of distributions of this operating system exist. These distributions get referred to as [[#distros]]
+Linux is developed by tons of people and lots of distributions of this operating system exist.
+Linux distributions commonly get referred to as [[#distros]].
 
 ---
 
@@ -24,19 +25,30 @@ Here are a bunch of Linux-unique utilities:
 	- info about the cpu
 	- check for "Flags" to see if AVX2 or AVX-512 is listed
 
+### Shortcuts
+
+- `Ctrl + L`
+	- Clear screen on shells
+
 ---
 
 ## Distros
 
 ```dataview
-LIST FROM "Software/OS/Linux/DISTROS"
+TABLE FROM "Software/OS/Linux/DISTROS"
 ```
 
 ---
 
 ## Trivia
 
-- the [[Linux kernel]] and [[GNU]] are the ones with the [[GPL]]. So those components are open-source.
+The [[Linux kernel]] and [[GNU]] are the ones with the [[GPL]]. So those components are open-source.
 - Technically, anything else a Linux distribution has can be proprietary and closed-source.
 - practically, no it's not lol
 - the whole point of this os is that open source = good
+
+### [[Linus Torvalds]] on why desktop Linux sucks
+
+https://www.reddit.com/r/programming/comments/r299vn/linus_torvalds_on_why_desktop_linux_sucks/
+
+https://www.youtube.com/watch?v=Pzl1B7nB9Kc

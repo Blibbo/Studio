@@ -5,6 +5,6 @@ This is one of the first, if not the first, [[Browser|web browsers]].
 
 ---
 
-### Trivia
+## History
 
-- Responsible for [[JavaScript]]. It's to blame.
+-  **Netscape 2.0** implemented [[JavaScript]].

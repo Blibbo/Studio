@@ -1,6 +1,4 @@
-### About x64 assembly
-
-- tailored for the [[x86-64]] architecture
+[[Assembly]] language tailored for the [[x86-64]] architecture.
 
 ---
 

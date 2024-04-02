@@ -9,6 +9,8 @@ It's strictly for Windows.
 They want to force you to use their products, it's a deliberate business choice.
 Microsoft always pulls this shit whenever it can, just go see the notes on [[IE#Trivia|Internet Explorer]].
 
+Visual Studio is mostly famous for [[C++]] and [[NET Core|.NET]] development, even though it does a little bit of everything.
+
 ---
 
 ### Solutions
@@ -24,7 +26,7 @@ Microsoft always pulls this shit whenever it can, just go see the notes on [[IE#
 - **Properties:**
 	- **Compiler flags**
 		- flags on the compiler
-		- you can check for stuff like AVX2 support
+		- you can check for stuff like [[AVX2]] support
 
 ---
 
@@ -63,7 +65,7 @@ Microsoft always pulls this shit whenever it can, just go see the notes on [[IE#
 
 ---
 
-### [[C]] and [[C++]]
+## [[C]] and [[C++]]
 
 - **Info:**
 	- [[#Projects]] have a `.vcxproj` extension (both C and C++)
@@ -117,17 +119,33 @@ Microsoft always pulls this shit whenever it can, just go see the notes on [[IE#
 	- change it to latest (20)
 	- there's also a C Language Standard you can change
 
+### Debugging [[C#Dynamically allocated arrays]]
+
+Open the watch window while debugging, then enter:
+`<array expression>,<number of elements>`
+Ex: `{c}myStructPtr->myArray, 100`
+https://stackoverflow.com/questions/972511/view-array-in-visual-studio-debugger
+
+also https://learn.microsoft.com/it-it/visualstudio/debugger/watch-and-quickwatch-windows?view=vs-2022
+https://learn.microsoft.com/it-it/visualstudio/debugger/debugger-feature-tour?view=vs-2022
+
 ---
 
-### Linux tools
-
-- `C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\usr\bin`
-	- i found a bunch of utilities in that directory. I'll just put them in the [[Windows#^path]]
-
----
-
-### [[NET Core|.NET]]
+## [[NET Core|.NET]]
 
 - **Info:**
 	- `.csproj` for [[C Sharp|C#]] projects
 	- `.vbproj` for [[VB.NET]] projects
+
+---
+
+## Dumb shit
+
+### Linux utilities???
+
+I found a bunch of Linux utilities in this directory:
+`C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\usr\bin`
+You can literally just put them in the [[Windows#^path]] and you'll have all those commands on your system.
+I have no clue why that stuff's there, they might be git dependencies
+
+---

@@ -1,0 +1,4 @@
+---
+aliases:
+  - Microsoft Management Console
+---

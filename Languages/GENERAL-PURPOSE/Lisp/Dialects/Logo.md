@@ -1,0 +1,1 @@
+**Logo** is a [[Lisp#Dialects|Lisp dialect]] that's meant to be educational.

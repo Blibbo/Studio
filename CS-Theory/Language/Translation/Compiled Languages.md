@@ -1,1 +1,0 @@
-Languages that need to be [[compiler|compiled]] to turn the [[source code]] into [[software]].

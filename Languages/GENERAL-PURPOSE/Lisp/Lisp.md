@@ -5,7 +5,7 @@ tags:
 aliases:
   - List Processing
 ---
-[[Functional Programming]] [[Programming Language|language]].
+[[Functional Programming]] [[programming language|language]].
 
 There isn't "one" unique lisp
 Has "metaprogramming" capabilities. Perfect for making [[DSL]]s
@@ -16,7 +16,7 @@ Has "metaprogramming" capabilities. Perfect for making [[DSL]]s
 ### Dialects
 
 ```dataview
-LIST FROM "Languages/GENERAL-PURPOSE/Lisp/Dialects"
+TABLE FROM "Languages/GENERAL-PURPOSE/LISP/DIALECTS"
 ```
 
 ---
@@ -24,6 +24,6 @@ LIST FROM "Languages/GENERAL-PURPOSE/Lisp/Dialects"
 ### Trivia
 
 - List Processing is a family of programming languages developed in the late '50s
-- initial design accredited to **John McCarthy**
+- initial design accredited to [[John McCarthy]]
 	- he wrote a seminal paper titled "**Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I**", published it in 1958 and won the award for the world's worst book name the same year. Nobody even came close
 - milestone in AI development

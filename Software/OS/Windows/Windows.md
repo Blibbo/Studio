@@ -11,7 +11,7 @@ Made in [[C++]]
 ## Releases
 
 ```dataview
-LIST from "Software/OS/Windows" AND !"Software/OS/Windows/RELATED"
+LIST from "Software/OS/Windows" AND !"Software/OS/Windows/RELATED" AND !"Software/OS/Windows/TOOLS"
 WHERE file.name != this.file.name
 ```
 
@@ -32,7 +32,9 @@ Executable files on Windows are `.exe`, `.bat` or `.cmd` files.
 - `Edit the system environment variables`
 - `Edit environment variables for your acccount`
 - `System Information`
-	- it's [[#^msinfo32]].exe
+	- It's [[#^msinfo32]].exe
+- `Services`
+	- It's [[#^services-msc]]
 - `Defragment and Optimize Drives`
 	- See what kind of drives you have (ssd, hdd).
 	  You can optimize them here:
@@ -72,6 +74,13 @@ Not necessarily, because some prompt you for inputs, but still. They aren't mean
 	- if it finds multiple, it tells you the location of every single one
 - `tree`
 	- view the folder tree of the directory you're in
+- `{batch}net` ^net
+	- `{batch}net start <servicename>`
+		- Start a service.
+		  If you installed a program and you want to know what their service name is, check [[#^services-msc]]
+		- Needs administrator mode.
+- `{batch}sc query <servicename>`
+	- Find out if the service is running correctly.
 - `systeminfo`
 	- info about the system
 - `wmic get cpu`
@@ -82,6 +91,11 @@ Not necessarily, because some prompt you for inputs, but still. They aren't mean
 	- show file contents
 - `more`
 	- same as `type`(???)
+
+##### Non-native (to install)
+
+- `dumpbin`
+	- basically [[Unix#^objdump|objdump]]
 
 #### Commands that open their own window
 
@@ -119,13 +133,15 @@ Not necessarily, because some prompt you for inputs, but still. They aren't mean
 	- info about the system
 	- `System Model`
 		- what laptop you're using
+- `services.msc` ^services-msc
+	- Find out what [[Service|services]] are installed.
+	  It's a [[MMC]] snap-in with a [[GUI]] to view, start, stop, pause, resume, or configure services on your system.
+	- `right click a service` > `Properties` > `General` > `Path to executable` ^port
+		- Contains **not only** the path to the executable the service is generated from, but also the **configuration options** it was launched with.
+		- This helps you find **config files** to figure out the port it's being served in.
 - `devmgmt.msc`
 	- device manager
 	- you can see USBs that fail to connect there
-
-- **Non-native (to install)**
-	- `dumpbin`
-		- basically [[Unix#^objdump|objdump]]
 
 ---
 
@@ -251,5 +267,5 @@ https://www.makeuseof.com/windows-10-icon-packs/
 ## Related Software
 
 ```dataview
-LIST FROM "Software/OS/Windows/RELATED"
+TABLE FROM "Software/OS/Windows/RELATED"
 ```

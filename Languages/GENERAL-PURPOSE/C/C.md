@@ -10,13 +10,475 @@ aliases:
 ---
 [Status::unfinished]
 [[#^quirky-headers]]
-Statically typed [[Programming Language]].
+Statically typed [[programming language]].
 Implements [[Imperative Programming]] and [[Procedural programming]].
 
 The standard for this language is composed of its syntax + a standard library. The standard library implementation may vary, but the [[interface]] is the same everywhere.
 
 
 Here's my [Reference](https://devdocs.io/c/) of choice for the C standard library.
+
+---
+
+## Syntax
+
+This is the syntax of the language according to the standard.
+I put the version of the standard in some of these.
+
+### Data Types
+
+#### Scalars
+
+##### Primitive Types
+
+- `{c}char` ^char
+	- Character type.
+	- 1 byte long.
+	- It's a number for all intents and purposes. However, it's meant to be codified through [[ASCII]].
+	  You can see it clearly on the [[#character literal]].
+- `{c}int` ^int
+	- [[Integer]] type.
+	- 2, 4 or 8 bytes (depends on the system's word).
+	- Accepts the [[#^short]], [[#^long]] and [[#^unsigned]] qualifiers.
+	  You can stack up to two `{c}long` qualifiers: `{c}long long int`.
+	- You can omit the `{c}int` keyword if you use any of the qualifiers.
+	  The qualifiers implicitly become integer types if no other is specified.
+- `{c}float` ^float
+	- [[Floating-point]] number type.
+	- Typically `4` bytes long.
+- `{c}double` ^double
+	- Floating-point
+	- Typically `8` bytes long.
+	- Accepts the `{c}long` qualifier. Just one. You can't stack them like with [[#^int]].
+
+##### User-defined Types
+
+User-defined types are types defined through code.
+To allow for this to happen, there are two keywords: `{c}enum` and `{c}typedef`.
+
+###### Enum
+
+Stands for **enumeration**.
+
+###### Typedef
+
+This keyword doesn't implement any new functionality to the language.
+All it does is allowing you to make shorthands for existing types, for brevity.
+
+**Examples:**
+```c
+typedef int myArrayType[10];
+myArrayType v;
+```
+
+This example replaces the tedious [[#^declare-struct|struct declaration syntax]] with this shorter one:
+```c
+struct myStruct{
+	char myChar;
+};
+	
+typedef myStruct myType;
+myType myRecord = {'c'}
+```
+
+---
+
+#### Structured types
+
+They represent organized structures of [[#primitive types|primitively typed]] variables.
+
+##### Array
+
+Implements [[Array (CDT)]].
+It accepts the [[#const]] qualifier. `{c}const` protects **all** the array elements.
+- `{c}const int vec[] = {1, 2, 3}`
+- `{c}const int *a = (int[]){1, 2, 3};`
+	- Assign an [[#Array Compound Literal]] to a pointer.
+
+- **Through functions:**
+	- `{c}void myFunction(int myArrayFormalParameter[]);`
+	- `{c}void myFunction(int* myArrayFormalParameter);`
+
+###### Statically allocated
+
+These arrays go in the [[Function Call Stack]].
+- `{c}int v[INT_MACRO];`
+- `{c}int v[3] = {1,2,3};`
+	- _C99+_
+- `{c}int v[] = {1,2,3};`
+
+###### Dynamically allocated arrays
+
+These arrays are allocated in the [[Heap Memory]] of the program.
+They require manual deallocation through [[#^free]].
+
+- `{c}int* v = malloc(arrayLen * sizeof(int));`
+	- See [[#^malloc]] for more.
+- `{c}int* v = calloc(arrayLen, sizeof(int
+	- See [[#^calloc]] for more.
+- `{c}int* vAux = realloc(v, arrayLen, sizeof(int));`
+	- See [[#^realloc]] for context.
+
+###### Multi-dimensional arrays
+
+An one dimensional array can be seen as a [[vector]], a two-dimensional one can be seen as a [[matrix]].
+An array in C can be declared with **any** number of dimensions.
+There's a caveat though: every dimension except for the first must have an **explicit size**.
+
+`{c}int matrix[][3] = {{8, 5, 9}, {10, 72, 1}}`
+
+This matrix looks like ${ \left( \begin{matrix} 8 & 5 & 9 \\ 10 & 72 & 1\end{matrix} \right) }$
+
+##### String
+
+`{c}char*` or `{c}char[]`.
+They're just [[#array|arrays]] of [[#^char|characters]].
+They're functionally identical to arrays, except for the fact that [[#String Literal|string literals]] can be directly returned by functions, while [[#Array Literals]] cannot.
+
+##### Struct
+
+Structs are heterogeneous data structures.
+They're passed by value by default. They are **not** pointed structures.
+```c
+struct myStruct{
+	char myString[20]; //<- will be passed by value along with the structure
+	int myInt;
+};
+```
+
+Example declaration:
+- `{c}struct myStruct myRecord = {"theString", 'c'};`
+	- can be shortened. See [[#^typedef|typedef]]
+
+Shorthand declaration:
+```c
+struct myStruct{
+	char myString[20];
+	int myInt;
+} record1, record2;
+```
+
+- **Through functions:**
+	- you have to write "struct" before it (unless [[#^typedef]])
+	- Ex: `{c}sizeof(struct myStruct);`
+
+##### Union
+
+The syntax is similar to that of a [[#Struct]], but its purpose is very different.
+All the different data types contained inside are mutually exclusive.
+An union variable can be **one** of the types contained in the union.
+The size in memory is equal to the biggest of all the types inside the union, so that it's just enough to contain anything.
+
+#### Pointers
+
+- 8 bytes long
+- **Declaration**
+	- `{c}typename* myPointer;`
+	- `{c}int* pointerToInt;`
+	- `{c}struct structName* pointerToStruct;`
+- initialize with [[#^null|NULL]]
+- don't get the declaration syntax messed up:
+	- `{c}int* x, *y, z;`
+	- `{c}x`: pointer
+	- `{c}y`: pointer
+	- `{c}z`: NOT a pointer, just an integer
+- **Example usage:**
+	```c
+	int a=10, *x;
+	x = &a; //(let's say a's address is 0xFFFFFF)
+	```
+	- `{c}a == 10`
+	- `{c}x == 0xFFFFFF` 
+	- `{c}&a == 0xFFFFFF`
+	- `{c}*x == 10`
+
+- **Pointer to struct (Arrow Syntax)** ^arrow-syntax
+	- basically dot notation for structured types that are pointed
+	```c
+	myStruct myRecord = {'c'}, *myPointer = &myRecord;
+	printf("%d", myPointerToStruct->charField); //prints 'c'
+	```
+	
+- **Pointer to function**
+	- necessary if you want to pass a function as a parameter to another function
+	- type of pointer must coincide with return type of function
+	- parameters must coincide
+	- syntax is weird
+	- ~~syntax is wack~~
+	```c
+	int (*p)();
+	p = myFunction;
+	
+	//call myFunction through its pointer:
+	(*p)(a,b);
+	
+	//alternative declaration
+	void (*fun_ptr)(int) = &myFn;
+	```
+			
+#### Qualifiers
+
+These are keywords you add in a variable declaration _before_ specifying its type.
+
+If you use multiple qualifiers on a variable, there's no particular order in which you should write them.
+`{c}unsigned long int` is as valid as `{c}long unsigned int`. The important part is that `{c}int` goes last.
+
+- `{c}const` ^const
+	- Variables of this type are read only. Assignations to these will throw errors.
+	- You can make a formal parameter `{c}const`, it'll only be read-only exclusively within the function.
+- `{c}signed`
+	- normally implicit
+	- works on every integer type
+- `{c}unsigned` ^unsigned
+	- no negative numbers -> double the size
+	- can't do it on floating-point types (inherently signed)
+	- works on every integer type
+- `{c}short` ^short
+	- `{c}int`
+- `{c}long` ^long
+	- `{c}int`
+		- even twice
+	- `{c}double`
+		- once max
+- **EXAMPLE:**
+	- `{c}unsigned long long int a=0;`
+	- `{c}signed char;`
+		- the standard doesn't say anything about whether default [[#^char]] is signed or not
+		- the standard guarantees there are 3 distinct types: `{c}signed char`, `{c}char` and `{c}unsigned char`
+		- ~~totally pointless. idk why im even telling you~~
+
+---
+
+#### Special types
+
+- `{c}void`
+	- 0 bytes long
+	- placeholder type for functions and pointers
+- `{c}_Bool` _C99+_
+	- Boolean type. Not really meant to be used. See [[#^4afc9b]]
+	- minimum 1 byte
+
+---
+
+### Literals
+
+Literlas are a syntax for constant values appearing directly in the source code.
+
+#### Integer Literal
+
+Literals assignable to [[#^int|integer]] variables.
+- `{c}3`
+	- Decimal notation. Pretty straight forward.
+	- `{c}int number = 3;`
+- `{c}010 == 8`
+	- [[Octal]] notation is written through a **leading zero** (zero before the number)
+	  To note: `{c}08 == 8`: it turns back to [[decimal]] because the octal notation has been broken.
+	  Any symbol unsupported in octal makes it turn back to a decimal.
+- `{c}0xF1 == 0XF1 == 16`
+	- Hexadecimal notation
+- `{c}0b1010 == 0B1010 == 10` _C99+_
+	- Binary notation
+
+---
+
+#### Character Literal
+
+[[#Literals]] for characters. They translate to the [[ASCII]] code of the character.
+`{c}char character = 'a';`
+
+- `{c}'A' == 65`
+- `{c}'Z' == 90`
+- `{c}'a' == 97`
+- `{c}'z' == 122`
+
+---
+
+#### Array Literals
+
+Literals assignable to [[#array|arrays]]. 
+They are only assignable **upon declaration**.
+==Subsequent assignations won't work==. They'll throw errors.
+- `{c}{}`
+	- Initializes no elements and it doesn't give out information about the size.
+	  It is however valid.
+- `{c}{5, 2, 64, 8}`
+	- Initializes these first four elements, which will be places in the first four indexes.
+
+**Declaration examples:**
+- `{c}int array[4] = {5, 2, 64, 8}`
+	- The size of the array is explicitly set to four,
+- `{c}int array[] = {5, 2, 64, 8};` ^implicit-array-size
+  In this case, the size is implicit. Four integers **will** be allocated.
+  This is an implicit way of declaring `{c}int array[4];`.
+  
+---
+
+#### String Literal
+
+[[#Literals|Literal]] for [[#string|strings]].
+`{c}"This is a string literal."`, `{c}{"This is equally as valid."}`
+Notice the double quotes. As opposed to the [[#character literal]]'s single quotes.
+The literal that looks like `{c}{"this"}` is a mixture of this literal and the [[#Array Literals|array literal]].
+
+This literal is of type `{c}char*`
+
+It's only usable in specific scenarios:
+- can assign it to an array **exclusively upon declaration**:
+  `{c}char string[] = "my string literal";`
+- can pass it to a function
+- can be returned from functions. (don't though)
+  The **literal** can be returned from functions.
+  Normal static string variables _cannot_ be returned because they would be deallocated (see [[Function Call Stack|stack memory]]).
+  The string literal is the exception to the rule.
+  Its behavior is worthy of discussion. See this link: https://stackoverflow.com/a/1496328
+  
+  Long story short: you shouldn't. If you do, the return type of the function should be `{c}const char*`
+
+---
+
+#### Compound Literal
+
+Compound [[#literals]] can be described as nameless variables.
+- `{c}(int){0}` is a nameless integer variable
+- `{c}&(int){0}` the address of a newly declared [[#^int]] variable
+
+##### Array Compound Literal
+
+[[#Compound Literal]] for [[#array|arrays]].
+- `{c}(int[]){}`
+	- Nameless array without a size and with no elements.
+	  I think this should be an error, or at least give out a compiler warning, but it doesn't.
+- `{c}(int[10]){}`
+	- This one allocates `{c}10` elements, so it's meaningful.
+- `{c}(int[2]){84, 100}`
+	- Allocates two explicitly and then initializes them.
+- `{c}(int[]){5, 4, 11}`
+	- Implicitly allocates three elements, other than initializing them.
+	  Analogous to [[#^implicit-array-size]].
+- `{c}(int[10]){0}`
+	- This is supposed to initialize the array, but I'm not sure it works.
+	  Normally, `{c}(int[10]){7}` assigns `{c}7` to the first index, and not to everything else.
+	  The claim of `{c}(int[10]){0}` is that it assigns `{c}0` to _every_ element.
+	  I'm not sure this claim is true.
+
+---
+
+### Preprocessor directives
+
+- `{c}#include <libhd.h>` ^include-standard-header
+	- include library header from the standard library
+	- the preprocessor literally picks the text from the header file you're referencing and it slaps it in your code, replacing this `{c} #include` statement
+- `{c}#include "your_header.h"` ^include-file
+	- include text from any file in your code (mostly makes sense with headers)
+	- please no spaces. It probably works but just don't
+- `{c}#define MY_MACRO 3` ^macros
+	- define macros
+	- they're kinda like constants but inlined because text replacement
+	- no type check
+- `{c}#if MY_MACRO` ^conditional-compilation
+	- This macro instruction gets referred to as **conditional compilation**.
+	  This is because if `MY_MACRO` doesn't exist, the following code until `{c}#endif` gets cut.
+	  Hence, that code doesn't make it to the [[#compilation]] phase.
+- `{c}#endif`
+- `{c}#define ... __VA_ARGS__` ^variadic-macro
+	- this is called the **variadic macro**
+	- _C99+_
+	- `{c}...`
+		- Variadic macro/ellipsis
+		- represents a variable number of arguments
+	- `{c}__VA_ARGS__`
+		- in your own macro declarations, `{c}...` gets replaced with this
+		- `{c}#define PRINT(format, ...) printf(format, __VA_ARGS__)`
+- `{c}#pragma` ^pragma
+	- The pragma directive is implementation defined.
+	  It's for any preprocessor directive a specific compiler wants to add.
+	  https://www.reddit.com/r/cpp_questions/comments/jy3zsh/when_will_the_c_c_standards_formally_recognize/
+	- There are a bunch of standard pragmas: https://www.ibm.com/docs/en/xl-c-and-cpp-aix/13.1.0?topic=directives-standard-pragmas-only
+
+### Code flow instructions
+
+- **Switch:** ^switch
+	```c
+	switch(selector){
+		case 1:
+			/* instruction */;
+			break;
+			
+		case 2: //and so on
+		default: /*not mandatory*/;
+	}
+	```
+- **Typecasting** ^typecasting
+	- `{c}(int)charVariable`
+		- changes the type
+		- in this example a char gets read as an integer according to [[ASCII]]
+		- can be done with lots of types
+		- it must make sense, like a number type to another number type or shit like that
+		- don't be a dumbass with this
+- **Operators** (_only a few notable ones_)
+	- **Any variable**
+		- `{c}sizeof(variable)`
+			- returns the size in bytes
+			- You can pass
+				- [[#^primitive-types]]
+				- [[#^arrays]]
+				- [[#^structs]]
+				- even [[#^user-defined]] types
+			- [[#^dynamically-allocated-arrays]] are of type [[#^pointers|pointer]] so their size will always be `{c}8`
+			- not quite a function
+			- compile-time unary operator
+				- it's a language construct
+				- no libraries to include
+				- ~~no chicanery~~
+	- **Scalars**
+		- **Increment/decrement:**
+			- these can't be chained
+			- :(
+			- `{c}n++`
+				- _suffix increment_
+				- decrements and returns how the value of `{c}n` was BEFORE the decrement
+				- possible implementation:
+					```cpp
+					int suffix_increment(int n){
+						n = n+1;
+						return n-1;
+					}
+					```
+			- `{c}++n`
+				- _prefix increment_
+				- decrements and returns the new value
+					```cpp
+					int prefix_increment(int n){
+						n = n+1;
+						return n;
+					}
+					```
+			- `{c}n--`
+				- _suffix decrement_
+				- decrements and returns how the value of `{c}n` was BEFORE the decrement
+				- possible implementation:
+					```cpp
+					int suffix_decrement(int n){
+						n = n-1;
+						return n+1;
+					}
+					```
+			- `{c}--n`
+				- _prefix decrement_
+				- decrements and returns the new value
+					```cpp
+					int prefix_decrement(int n){
+						n = n-1;
+						return n;
+					}
+					```
+	- **Char**
+		- `{c}'0'<'A'`
+			- `{c}0 < 65`
+			- [[ASCII]]
+		- `{c}'A'<'a'`
+			- `{c}65 < 97`
+			- [[ASCII]]
 
 ---
 
@@ -62,7 +524,7 @@ Complex scenarios (things you can't declare in header files included by multiple
 
 ### Tools
 
-The following software is a mix of tools, but i suggest [[gcc]] because it's the most complete.
+The following software is a mix of tools, but i suggest [[GCC]] because it's the most complete.
 
 ```dataview
 TABLE FROM ("Software/Programming/Translators" OR "Software/Programming/Linkers" OR "Software/Programming/Debugging") AND [[C]]
@@ -347,460 +809,10 @@ TABLE FROM ("Software/Programming/Translators" OR "Software/Programming/Linkers"
 	
 ---
 
-## Syntax
-
-This is the syntax of the language according to the standard.
-I put the version of the standard in some of these.
-
-### Data Types
-
-#### Scalars
-
-##### Primitive Types
-
-- `{c}char` ^char
-	- Character type.
-	- 1 byte long.
-	- It's a number for all intents and purposes. However, it's meant to be codified through [[ASCII]].
-	  You can see it clearly on the [[#character literal]].
-- `{c}int` ^int
-	- [[Integer]] type.
-	- 2, 4 or 8 bytes (depends on the system's word).
-	- Accepts the [[#^short]], [[#^long]] and [[#^unsigned]] qualifiers.
-	  You can stack up to two `{c}long` qualifiers: `{c}long long int`.
-	- You can omit the `{c}int` keyword if you use any of the qualifiers.
-	  The qualifiers implicitly become integer types if no other is specified.
-- `{c}float` ^float
-	- [[Floating-point]] number type.
-	- Typically `4` bytes long.
-- `{c}double` ^double
-	- Floating-point
-	- Typically `8` bytes long.
-	- Accepts the `{c}long` qualifier. Just one. You can't stack them like with [[#^int]].
-
-##### User-defined Types
-
-User-defined types are types defined through code.
-To allow for this to happen, there are two keywords: `{c}enum` and `{c}typedef`.
-
-###### Enum
-
-Stands for **enumeration**.
-
-###### Typedef
-
-This keyword doesn't implement any new functionality to the language.
-All it does is allowing you to make shorthands for existing types, for brevity.
-
-**Examples:**
-```c
-typedef int myArrayType[10];
-myArrayType v;
-```
-
-This example replaces the tedious [[#^declare-struct|struct declaration syntax]] with this shorter one:
-```c
-struct myStruct{
-	char myChar;
-};
-	
-typedef myStruct myType;
-myType myRecord = {'c'}
-```
-
----
-
-#### Structured types
-
-They represent organized structures of [[#primitive types|primitively typed]] variables.
-
-##### Array
-
-Implements [[Array (CDT)]].
-It accepts the [[#const]] qualifier. `{c}const` protects **all** the array elements.
-- `{c}const int vec[] = {1, 2, 3}`
-- `{c}const int *a = (int[]){1, 2, 3};`
-	- Assign an [[#Array Compound Literal]] to a pointer.
-
-- **Through functions:**
-	- `{c}void myFunction(int myArrayFormalParameter[]);`
-	- `{c}void myFunction(int* myArrayFormalParameter);`
-
-###### Statically allocated
-
-These arrays go in the [[Function Call Stack]].
-- `{c}int v[INT_MACRO];`
-- `{c}int v[3] = {1,2,3};`
-	- _C99+_
-- `{c}int v[] = {1,2,3};`
-
-###### Dynamically allocated arrays
-
-These arrays are allocated in the [[Heap Memory]] of the program.
-They require manual deallocation through [[#^free]].
-
-- `{c}int* v = malloc(arrayLen * sizeof(int));`
-	- See [[#^malloc]] for more.
-- `{c}int* v = calloc(arrayLen, sizeof(int
-	- See [[#^calloc]] for more.
-- `{c}int* vAux = realloc(v, arrayLen, sizeof(int));`
-	- See [[#^realloc]] for context.
-
-###### Multi-dimensional arrays
-
-An one dimensional array can be seen as a [[vector]], a two-dimensional one can be seen as a [[matrix]].
-An array in C can be declared with **any** number of dimensions.
-There's a caveat though: every dimension except for the first must have an **explicit size**.
-
-`{c}int matrix[][3] = {{8, 5, 9}, {10, 72, 1}}`
-
-This matrix looks like ${ \left( \begin{matrix} 8 & 5 & 9 \\ 10 & 72 & 1\end{matrix} \right) }$
-
-##### String
-
-`{c}char*` or `{c}char[]`.
-They're just [[#array|arrays]] of [[#^char|characters]].
-They're functionally identical to arrays, except for the fact that [[#String Literal|string literals]] can be directly returned by functions, while [[#Array Literals]] cannot.
-
-##### Struct
-
-Structs are heterogeneous data structures.
-They're passed by value by default. They are **not** pointed structures.
-```c
-struct myStruct{
-	char myString[20]; //<- will be passed by value along with the structure
-	int myInt;
-};
-```
-
-Example declaration:
-- `{c}struct myStruct myRecord = {"theString", 'c'};`
-	- can be shortened. See [[#^typedef|typedef]]
-
-Shorthand declaration:
-```c
-struct myStruct{
-	char myString[20];
-	int myInt;
-} record1, record2;
-```
-
-- **Through functions:**
-	- you have to write "struct" before it (unless [[#^typedef]])
-	- Ex: `{c}sizeof(struct myStruct);`
-
-##### Union
-
-The syntax is similar to that of a [[#Struct]], but its purpose is very different.
-All the different data types contained inside are mutually exclusive.
-An union variable can be **one** of the types contained in the union.
-The size in memory is equal to the biggest of all the types inside the union, so that it's just enough to contain anything.
-
-#### Pointers
-
-- 8 bytes long
-- **Declaration**
-	- `{c}typename* myPointer;`
-	- `{c}int* pointerToInt;`
-	- `{c}struct structName* pointerToStruct;`
-- initialize with [[#^null|NULL]]
-- don't get the declaration syntax messed up:
-	- `{c}int* x, *y, z;`
-	- `{c}x`: pointer
-	- `{c}y`: pointer
-	- `{c}z`: NOT a pointer, just an integer
-- **Example usage:**
-	```c
-	int a=10, *x;
-	x = &a; //(let's say a's address is 0xFFFFFF)
-	```
-	- `{c}a == 10`
-	- `{c}x == 0xFFFFFF` 
-	- `{c}&a == 0xFFFFFF`
-	- `{c}*x == 10`
-
-- **Pointer to struct (Arrow Syntax)** ^arrow-syntax
-	- basically dot notation for structured types that are pointed
-	```c
-	myStruct myRecord = {'c'}, *myPointer = &myRecord;
-	printf("%d", myPointerToStruct->charField); //prints 'c'
-	```
-	
-- **Pointer to function**
-	- necessary if you want to pass a function as a parameter to another function
-	- type of pointer must coincide with return type of function
-	- parameters must coincide
-	- syntax is weird
-	- ~~syntax is wack~~
-	```c
-	int (*p)();
-	p = myFunction;
-	
-	//call myFunction through its pointer:
-	(*p)(a,b);
-	
-	//alternative declaration
-	void (*fun_ptr)(int) = &myFn;
-	```
-			
-#### Qualifiers
-
-These are keywords you add in a variable declaration _before_ specifying its type.
-
-If you use multiple qualifiers on a variable, there's no particular order in which you should write them.
-`{c}unsigned long int` is as valid as `{c}long unsigned int`. The important part is that `{c}int` goes last.
-
-- `{c}const` ^const
-	- Variables of this type are read only. Assignations to these will throw errors.
-	- You can make a formal parameter `{c}const`, it'll only be read-only exclusively within the function.
-- `{c}signed`
-	- normally implicit
-	- works on every integer type
-- `{c}unsigned` ^unsigned
-	- no negative numbers -> double the size
-	- can't do it on floating-point types (inherently signed)
-	- works on every integer type
-- `{c}short` ^short
-	- `{c}int`
-- `{c}long` ^long
-	- `{c}int`
-		- even twice
-	- `{c}double`
-		- once max
-- **EXAMPLE:**
-	- `{c}unsigned long long int a=0;`
-	- `{c}signed char;`
-		- the standard doesn't say anything about whether default [[#^char]] is signed or not
-		- the standard guarantees there are 3 distinct types: `{c}signed char`, `{c}char` and `{c}unsigned char`
-		- ~~totally pointless. idk why im even telling you~~
-
----
-
-#### Special types
-
-- `{c}void`
-	- 0 bytes long
-	- placeholder type for functions and pointers
-- `{c}_Bool` _C99+_
-	- Boolean type. Not really meant to be used. See [[#^4afc9b]]
-	- minimum 1 byte
-
----
-
-### Literals
-
-Literlas are a syntax for constant values appearing directly in the source code.
-
-#### Integer Literal
-
-Literals assignable to [[#^int|integer]] variables.
-- `{c}3`
-	- Decimal notation. Pretty straight forward.
-	- `{c}int number = 3;`
-- `{c}010 == 8`
-	- [[Octal]] notation is written through a **leading zero** (zero before the number)
-	  To note: `{c}08 == 8`: it turns back to [[decimal]] because the octal notation has been broken.
-	  Any symbol unsupported in octal makes it turn back to a decimal.
-- `{c}0xF1 == 0XF1 == 16`
-	- Hexadecimal notation
-- `{c}0b1010 == 0B1010 == 10` _C99+_
-	- Binary notation
-
----
-
-#### Character Literal
-
-[[#Literals]] for characters. They translate to the [[ascii]] code of the character.
-`{c}char character = 'a';`
-
-- `{c}'A' == 65`
-- `{c}'Z' == 90`
-- `{c}'a' == 97`
-- `{c}'z' == 122`
-
----
-
-#### Array Literals
-
-Literals assignable to [[#array|arrays]]. 
-They are only assignable **upon declaration**.
-==Subsequent assignations won't work==. They'll throw errors.
-- `{c}{}`
-	- Initializes no elements and it doesn't give out information about the size.
-	  It is however valid.
-- `{c}{5, 2, 64, 8}`
-	- Initializes these first four elements, which will be places in the first four indexes.
-
-**Declaration examples:**
-- `{c}int array[4] = {5, 2, 64, 8}`
-	- The size of the array is explicitly set to four,
-- `{c}int array[] = {5, 2, 64, 8};` ^implicit-array-size
-  In this case, the size is implicit. Four integers **will** be allocated.
-  This is an implicit way of declaring `{c}int array[4];`.
-  
----
-
-#### String Literal
-
-[[#Literals|Literal]] for [[#string|strings]].
-`{c}"This is a string literal."`, `{c}{"This is equally as valid."}`
-Notice the double quotes. As opposed to the [[#character literal]]'s single quotes.
-The literal that looks like `{c}{"this"}` is a mixture of this literal and the [[#Array Literals|array literal]].
-
-It's only usable in specific scenarios:
-- can assign it to an array **exclusively upon declaration**:
-  `{c}char string[] = "my string literal";`
-- can pass it to a function
-- can be returned from functions. (don't though)
-  The **literal** can be returned from functions.
-  Normal static string variables would be deallocated (see [[Function Call Stack|stack memory]]), but the literal is the exception to the rule.
-  It's a behavior worthy of discussion. See this link: https://stackoverflow.com/a/1496328
-  
-  Long story short: you shouldn't. If you do, the return type of the function should be `{c}const char*`
-
----
-
-#### Compound Literal
-
-Compound [[#literals]] can be described as nameless variables.
-- `{c}(int){0}` is a nameless integer variable
-- `{c}&(int){0}` the address of a newly declared [[#^int]] variable
-
-##### Array Compound Literal
-
-[[#Compound Literal]] for [[#array|arrays]].
-- `{c}(int[]){}`
-	- Nameless array without a size and with no elements.
-	  I think this should be an error, or at least give out a compiler warning, but it doesn't.
-- `{c}(int[10]){}`
-	- This one allocates `{c}10` elements, so it's meaningful.
-- `{c}(int[2]){84, 100}`
-	- Allocates two explicitly and then initializes them.
-- `{c}(int[]){5, 4, 11}`
-	- Implicitly allocates three elements, other than initializing them.
-	  Analogous to [[#^implicit-array-size]].
-- `{c}(int[10]){0}`
-	- This is supposed to initialize the array, but I'm not sure it works.
-	  Normally, `{c}(int[10]){7}` assigns `{c}7` to the first index, and not to everything else.
-	  The claim of `{c}(int[10]){0}` is that it assigns `{c}0` to _every_ element.
-	  I'm not sure this claim is true.
-
----
-
-### Preprocessor directives
-
-- `{c}#include <libhd.h>` ^include-standard-header
-	- include library header from the standard library
-	- the preprocessor literally picks the text from the header file you're referencing and it slaps it in your code, replacing this `{c} #include` statement
-- `{c}#include "your_header.h"` ^include-file
-	- include text from any file in your code (mostly makes sense with headers)
-	- please no spaces. It probably works but just don't
-- `{c}#define MY_MACRO 3` ^macros
-	- define macros
-	- they're kinda like constants but inlined because text replacement
-	- no type check
-- `{c}#if MY_MACRO` ^conditional-compilation
-	- This macro instruction gets referred to as **conditional compilation**.
-	  This is because if `MY_MACRO` doesn't exist, the following code until `{c}#endif` gets cut.
-	  Hence, that code doesn't make it to the [[#compilation]] phase.
-- `{c}#endif`
-- `{c}#define ... __VA_ARGS__` ^variadic-macro
-	- this is called the **variadic macro**
-	- _C99+_
-	- `{c}...`
-		- Variadic macro/ellipsis
-		- represents a variable number of arguments
-	- `{c}__VA_ARGS__`
-		- in your own macro declarations, `{c}...` gets replaced with this
-		- `{c}#define PRINT(format, ...) printf(format, __VA_ARGS__)`
-		
-### Code flow instructions
-
-- **Switch:** ^switch
-	```c
-	switch(selector){
-		case 1:
-			/* instruction */;
-			break;
-			
-		case 2: //and so on
-		default: /*not mandatory*/;
-	}
-	```
-- **Typecasting** ^typecasting
-	- `{c}(int)charVariable`
-		- changes the type
-		- in this example a char gets read as an integer according to [[ASCII]]
-		- can be done with lots of types
-		- it must make sense, like a number type to another number type or shit like that
-		- don't be a dumbass with this
-- **Operators** (_only a few notable ones_)
-	- **Any variable**
-		- `{c}sizeof(variable)`
-			- returns the size in bytes
-			- You can pass
-				- [[#^primitive-types]]
-				- [[#^arrays]]
-				- [[#^structs]]
-				- even [[#^user-defined]] types
-			- [[#^dynamically-allocated-arrays]] are of type [[#^pointers|pointer]] so their size will always be `{c}8`
-			- not quite a function
-			- compile-time unary operator
-				- it's a language construct
-				- no libraries to include
-				- ~~no chicanery~~
-	- **Scalars**
-		- **Increment/decrement:**
-			- these can't be chained
-			- :(
-			- `{c}n++`
-				- _suffix increment_
-				- decrements and returns how the value of `{c}n` was BEFORE the decrement
-				- possible implementation:
-					```cpp
-					int suffix_increment(int n){
-						n = n+1;
-						return n-1;
-					}
-					```
-			- `{c}++n`
-				- _prefix increment_
-				- decrements and returns the new value
-					```cpp
-					int prefix_increment(int n){
-						n = n+1;
-						return n;
-					}
-					```
-			- `{c}n--`
-				- _suffix decrement_
-				- decrements and returns how the value of `{c}n` was BEFORE the decrement
-				- possible implementation:
-					```cpp
-					int suffix_decrement(int n){
-						n = n-1;
-						return n+1;
-					}
-					```
-			- `{c}--n`
-				- _prefix decrement_
-				- decrements and returns the new value
-					```cpp
-					int prefix_decrement(int n){
-						n = n-1;
-						return n;
-					}
-					```
-	- **Char**
-		- `{c}'0'<'A'`
-			- `{c}0 < 65`
-			- [[ASCII]]
-		- `{c}'A'<'a'`
-			- `{c}65 < 97`
-			- [[ASCII]]
-
----
-
+## Implementations
+### GCC
+### Clang
+### MSVC
 ## Platform-specific code
 
 - **[[POSIX]]:**
@@ -867,6 +879,7 @@ Compound [[#literals]] can be described as nameless variables.
 			- 0 if it fails
 				- `{c}ERROR_INSUFFICIENT_BUFFER` gets set as last error
 				- `{c}GetLastError` gives more info
+		- `{c}GetModuleFileNameEx();`
 - **[[MinGW]]:**
 	- uses [[#^msvcrt|MSVCRT]] on [[MinGW#^mingw-w64|MinGW-w64]]
 	- `{c}__MINGW32__`
@@ -936,7 +949,7 @@ Compound [[#literals]] can be described as nameless variables.
 ## Trivia
 
 - **Creation:**
-	- C was made by **Dennis Ritchie** in the early **'70s** at **Bell Labs**
+	- C was made by [[Dennis Ritchie]] in the early **'70s** at [[Bell Labs]]
 	- initially made to develop [[Unix]]
 	- before C, they were making Unix with [[B]] but they needed a more powerful language
 - **History of standardization:**

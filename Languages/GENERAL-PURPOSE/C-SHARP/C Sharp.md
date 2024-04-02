@@ -5,7 +5,7 @@ aliases:
 tags:
   - object-oriented
 ---
-[[Object-Oriented Programming]] [[Programming Language|Language]].
+[[OOP]] [[programming language|Language]].
 
 Source files have a `.cs` extension.
 This is a [[NET Core|.NET]] language, meaning it runs on [[CLR]] and compiles to [[CIL]].
