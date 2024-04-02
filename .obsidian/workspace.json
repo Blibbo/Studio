@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/Applied CS/Software engineering/Software classification/Service.md",
+                "file": "Software/Programming/Automation/Selenium.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/Applied CS/Software engineering/Software classification/Service.md",
+                "file": "Software/Programming/Automation/Selenium.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/Applied CS/Software engineering/Software classification/Service.md",
+                "file": "Software/Programming/Automation/Selenium.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/Applied CS/Software engineering/Software classification/Service.md"
+                "file": "Software/Programming/Automation/Selenium.md"
               }
             }
           }
@@ -157,8 +157,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "d86dd33c857718cd",
+  "active": "2c1699f16cf11769",
   "lastOpenFiles": [
+    "Software/Programming/SDK",
+    "Software/Programming/Software bundles",
+    "Software/Programming/TOO SPECIFIC/Terminal multiplexers",
+    "Software/Programming/Frameworks",
+    "CS/Applied CS/Software engineering/Software classification/Service.md",
+    "Software/Programming/Automation/Selenium.md",
+    "Software/Programming/Automation",
     "CS/Applied CS/Software engineering/Software classification/source code.md",
     "CS/Applied CS/Software engineering/Software classification/DB/DBMS.md",
     "CS/Applied CS/Software engineering/Language classification/scripting language.md",
@@ -186,16 +193,9 @@
     "STS/People/ESR.md",
     "STS/Works/The Cathedral and the Bazaar.md",
     "STS/People/Bill Gates.md",
-    "STS/People/Alan Kay.md",
-    "STS/For-profit entities/Microsoft/Microsoft.md",
-    "STS/People/Paul Allen.md",
     "CS/Applied CS/Software engineering/Licensing/GPL",
     "UNKNOWN/Producing energy.canvas",
     "UNKNOWN/Producing energy",
-    "UNKNOWN",
-    "Standards-Conventions/Standards Organizations/W3C",
-    "Standards-Conventions/Standards Organizations/IEEE",
-    "Standards-Conventions/Standards Organizations/ECMA",
     "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Rate of Fire II.png",
     "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Rate of Fire IV.png",
     "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Rate of Fire III.png",
