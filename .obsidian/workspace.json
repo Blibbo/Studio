@@ -25,14 +25,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/TCS/TOC/Automata Theory/Automata Theory.md",
+                "file": "CS/TCS/TOC/Automata Theory/automata theory.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8a6307cd3eae0f4b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/OBS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6493fa5c515b047c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Programming/Version control/Git/Git GUI.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -106,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/TCS/TOC/Automata Theory/Automata Theory.md",
+                "file": "Software/Programming/Version control/Git/Git GUI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/TCS/TOC/Automata Theory/Automata Theory.md",
+                "file": "Software/Programming/Version control/Git/Git GUI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/TCS/TOC/Automata Theory/Automata Theory.md"
+                "file": "Software/Programming/Version control/Git/Git GUI.md"
               }
             }
           }
@@ -170,8 +194,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "6652ba81e1c5175a",
+  "active": "6493fa5c515b047c",
   "lastOpenFiles": [
+    "Software/Programming/Version control/Git/Git.md",
+    "Software/OBS.md",
+    "CS/TCS/TOC/Automata Theory/automata theory.md",
     "Languages/GENERAL-PURPOSE/C/C.md",
     "UNKNOWN/Producing energy/Water wheel.md",
     "UNKNOWN/Producing energy/Photovoltaic Panel.md",
@@ -206,9 +233,6 @@
     "Software/Programming/DB/DBMS/MySQL/MySQL.md",
     "Software/Programming/DB/DBMS/MySQL/MySQL Heatwave.md",
     "Software/Programming/DB/DBMS/MySQL/MDS.md",
-    "Software/Programming/DB/DBMS/Microsoft SQL/SQL Server.md",
-    "Software/Programming/DB/DBMS/Access/Access.md",
-    "Software/Programming/DB/DBMS/MariaDB/MariaDB.md",
     "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Rate of Fire II.png",
     "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Rate of Fire IV.png",
     "Software/Programming/Engines/Game Engines/Roblox Studio/assets/Icons/Turret Icons/Rate of Fire III.png",

@@ -9,7 +9,7 @@ https://en.wikipedia.org/wiki/Theory_of_computation
 ## Branches
 
 It's divided into sub-branches:
-- [[Automata Theory]] and [[Formal language theory]]
+- [[automata theory]] and [[Formal language theory]]
 - [[Type theory]]
 - [[Computability Theory]] ${ \to }$ can something be computed?
 - [[Computational Complexity Theory]] ${ \to }$ _how fast_ can this thing be computed?

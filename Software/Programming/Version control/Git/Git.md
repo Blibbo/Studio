@@ -1,6 +1,14 @@
 ---
 tags: []
 ---
+
+
+
+
+
+
+
+
 **Git** is an [[open source|open-source]] [[SCM]] tool developed by [[Linus Torvalds]] using the [[C]] [[programming language]].
 Git is distributed under the [[GPL]].
 
