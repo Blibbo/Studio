@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "STS/People/Linus Torvalds.md",
+                "file": "Languages/DSL/SQL/SQL.md",
                 "mode": "preview",
                 "source": false
               }
             }
+          },
+          {
+            "id": "e1758d30c4e54fe7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 355.5
+    "width": 267.5
   },
   "right": {
     "id": "65e831f7a11449c1",
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "STS/People/Linus Torvalds.md",
+                "file": "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "STS/People/Linus Torvalds.md",
+                "file": "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "STS/People/Linus Torvalds.md"
+                "file": "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md"
               }
             }
           }
@@ -157,8 +170,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "a36a0bbcbd9b38a9",
+  "active": "e1758d30c4e54fe7",
   "lastOpenFiles": [
+    "Languages/DSL/SQL/SQL.md",
+    "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md",
+    "Software/Programming/Atomic tools/DBMS/MySQL/MySQL.md",
+    "Software/Web/Browsers/Firefox.md",
+    "STS/People/Linus Torvalds.md",
     "CS/TCS/Data Structures/ADT/List.md",
     "Software/Networking/Protocols/Communication/Remote control/Telnet.md",
     "Software/Programming/Frankenstein's tools/SDK/Visual C++.md",
@@ -190,11 +208,6 @@
     "CS/Applied CS/Software engineering/Software classification/DB/DBMS.md",
     "CS/Applied CS/Software engineering/Software classification/DB/DBA.md",
     "CS/Applied CS/Software engineering/Software classification/Text Editor.md",
-    "CS/Applied CS/Software engineering/Software classification/source code.md",
-    "CS/Applied CS/Software engineering/Software classification/Service.md",
-    "CS/Applied CS/Software engineering/Software classification/SCM.md",
-    "CS/Applied CS/Software engineering/Software classification/REPL.md",
-    "CS/Applied CS/Software engineering/Software classification/Program.md",
     "Languages/GENERAL-PURPOSE/LISP/DIALECTS/attachments/profoto-albert-watson-steve-jobs-pinned-image-3840x2160px-2.jpg",
     "STS/People/attachments/profoto-albert-watson-steve-jobs-pinned-image-3840x2160px-2.jpg",
     "STS/Nonprofit Organizations/attachments/040JHoVNgc1gh2e7sunj82k-1.webp",
