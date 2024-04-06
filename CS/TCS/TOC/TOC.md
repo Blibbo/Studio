@@ -2,7 +2,7 @@
 aliases:
   - Theory of Computation
 ---
-The **theory of computation** is a branch of [[TCS|Theoretical Computer Science]] that focuses on [[Computation]].
+The **theory of computation** is a branch of [[TCS|Theoretical Computer Science]] that focuses on [[computation]].
 
 https://en.wikipedia.org/wiki/Theory_of_computation
 

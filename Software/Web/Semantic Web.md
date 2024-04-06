@@ -1,4 +1,6 @@
-Turn [[Web Page|web pages]] into a machine-readable format.
+Series of standards meant to make the web more machine-readable proposed by [[Tim Berners-Lee]] in 2001
+
+https://en.wikipedia.org/wiki/Semantic_Web
 
 ## Schemas
 

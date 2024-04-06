@@ -1,6 +1,6 @@
 ---
 aliases:
-  - Binary Instruction Formats
+  - binary instruction formats
 ---
 A format for binary instructions.
 

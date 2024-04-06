@@ -1,18 +1,17 @@
 ---
-tags:
-  - standard
+tags: []
 aliases:
   - Portable Operating System Interface
   - IEEE POSIX
 ---
----
+>POSIX provides a set of common API specifications that aim to enable an application written for a POSIX conformant operating system to be compiled for another POSIX conformant operating system.
+- https://en.wikipedia.org/wiki/API
 
-### About POSIX
+**POSIX** is a [[standard]] that provides common [[API|APIs]] for [[OS|operating systems]].
+This standard is maintained by the [[IEEE]].
 
-- standardizes everything about the interfaces of operating systems
-- [[Unix]]-based, mostly
-- the point is to make software compatible
-- it specifies the [[API]] for operating systems
+This standard is mostly [[Unix]]-based.
+
 - [[Linux]] and various versions of [[Unix#^bsd|BSD]] adhere
 
 ---
@@ -28,9 +27,3 @@ aliases:
 4. **Threads Extensions (POSIX.1c):** Specifies thread creation, synchronization, and management.
     
 5. **Security Interfaces (POSIX.1e):** Defines security-related features.
-
----
-
-### Trivia
-
-- by the [[IEEE]]

@@ -8,7 +8,7 @@ aliases:
 tags:
   - open-source
 ---
-[[Binary Instruction Format|Binary Instruction Format]] executed by the [[CLR]]
+[[binary instruction format|binary instruction format]] executed by the [[CLR]]
 
 It has a stack-based architecture (idk what that means)
 

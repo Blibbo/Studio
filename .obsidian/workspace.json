@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/DSL/SQL/SQL.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e1758d30c4e54fe7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md",
+                "file": "CS/Applied CS/Software engineering/Interfaces/POSIX.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md",
+                "file": "CS/Applied CS/Software engineering/Interfaces/POSIX.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md",
+                "file": "CS/Applied CS/Software engineering/Interfaces/POSIX.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md"
+                "file": "CS/Applied CS/Software engineering/Interfaces/POSIX.md"
               }
             }
           }
@@ -170,44 +157,44 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "e1758d30c4e54fe7",
+  "active": "a36a0bbcbd9b38a9",
   "lastOpenFiles": [
-    "Languages/DSL/SQL/SQL.md",
-    "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md",
-    "Software/Programming/Atomic tools/DBMS/MySQL/MySQL.md",
-    "Software/Web/Browsers/Firefox.md",
-    "STS/People/Linus Torvalds.md",
-    "CS/TCS/Data Structures/ADT/List.md",
-    "Software/Networking/Protocols/Communication/Remote control/Telnet.md",
-    "Software/Programming/Frankenstein's tools/SDK/Visual C++.md",
+    "Software/OS/BSD/BSD.md",
+    "CS/Applied CS/Software engineering/Interfaces/POSIX.md",
+    "Languages/GENERAL-PURPOSE/SCALA/Scala.md",
+    "Hardware/Architectures/Microprocessors/Imaginary/JVM.md",
+    "Software/OS/Linux/Linux.md",
+    "Hardware/Architectures/Microprocessors/Imaginary/bytecode.md",
+    "Hardware/Architectures/Microprocessors/Imaginary/binary instruction format.md",
+    "Software/Web/Semantic Web.md",
+    "CS/Applied CS/Software engineering/Interfaces/HID.md",
+    "CS/Applied CS/Software engineering/Interfaces/interface.md",
+    "CS/Applied CS/Software engineering/Interfaces/GUI.md",
+    "CS/Applied CS/Software engineering/Interfaces/UI.md",
+    "CS/Applied CS/Software engineering/Interfaces/API.md",
+    "CS/Applied CS/Software engineering/Systems/information system.md",
+    "CS/Applied CS/Software engineering/Language classification/query language.md",
+    "CS/Applied CS/Software engineering/Systems",
+    "CS/TCS/Data Structures/DB/DB.md",
+    "CS/Applied CS/Software engineering/Language classification/computer language.md",
+    "CS/Applied CS/Software engineering/Language classification/DSL.md",
+    "CS/TCS/TCS.md",
+    "CS/TCS/TOC/Computability Theory/computation.md",
+    "CS/CS.md",
+    "CS/Applied CS/Software engineering/Language classification/statically typed.md",
+    "CS/Applied CS/Software engineering/Language classification/dynamically typed.md",
+    "Languages/QUERY-LANGUAGES/SQL/SQL.md",
+    "Maths/Calculus/Integral Calculus.md",
+    "Languages/GENERAL-PURPOSE/C/C.md",
     "Software/Programming/Frankenstein's tools/SDE",
-    "Software/Web/Hosting/Web hosting.md",
     "Software/Web/Hosting",
-    "Software/Programming/Frankenstein's tools/Used by companies/Mathematica.md",
-    "Software/Programming/Frankenstein's tools/Bundles/WAMP.md",
     "Software/Programming/Frankenstein's tools/Used by companies",
-    "Software/Programming/Frankenstein's tools/Bundles/XAMPP.md",
     "Software/Programming/Built on top of others/Application development frameworks",
     "Software/Programming/Frankenstein's tools",
-    "Software/Programming/Frankenstein's tools/SDK/Unity SDE/Unity SDE.md",
     "Software/Programming/Frankenstein's tools/SDK/Unity SDE",
     "Software/Programming/Frankenstein's tools/Bundles",
     "Software/Programming/Frankenstein's tools/SDK",
-    "Software/Applications/Studying/Mindomo/Mindomo.md",
     "Software/Programming/Atomic tools",
-    "Software/Applications/Studying/Logseq/Logseq.md",
-    "Software/Applications/Studying/Mindomo",
-    "Software/Studying/Notes.md",
-    "Software/Applications/Studying/Roam Research/Roam Research.md",
-    "STS/Works/The Elements.md",
-    "Software/Programming/Built on top of others/Services that provide APIs/Cloud/OCI.md",
-    "Languages/GENERAL-PURPOSE/PERL/Perl.md",
-    "Software/Programming/Frankenstein's tools/Used by companies/Selenium.md",
-    "CS/Applied CS/Software engineering/Software classification/DB/RDBMS.md",
-    "CS/Applied CS/Software engineering/Software classification/DB/OODBMS.md",
-    "CS/Applied CS/Software engineering/Software classification/DB/DBMS.md",
-    "CS/Applied CS/Software engineering/Software classification/DB/DBA.md",
-    "CS/Applied CS/Software engineering/Software classification/Text Editor.md",
     "Languages/GENERAL-PURPOSE/LISP/DIALECTS/attachments/profoto-albert-watson-steve-jobs-pinned-image-3840x2160px-2.jpg",
     "STS/People/attachments/profoto-albert-watson-steve-jobs-pinned-image-3840x2160px-2.jpg",
     "STS/Nonprofit Organizations/attachments/040JHoVNgc1gh2e7sunj82k-1.webp",

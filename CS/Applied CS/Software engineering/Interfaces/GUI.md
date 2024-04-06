@@ -1,5 +1,5 @@
 ---
 aliases:
-  - Graphical User Interface
+  - graphical user interface
   - GUIs
 ---
