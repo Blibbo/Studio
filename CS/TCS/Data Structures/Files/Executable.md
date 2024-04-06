@@ -2,7 +2,7 @@
 aliases:
   - executables
 ---
-Executables are [[File|files]] that your [[OS]] is capable of executing.
+Executables are [[file|files]] that your [[OS]] is capable of executing.
 
 They typically contain a series of instructions from the [[ISA|Instruction Set]] of your [[CPU]], because that's... what software is, fundamentally.
 

@@ -44,7 +44,7 @@ Part of the [[GCC|GNU Compiler Collection]]
 	- pass options to the linker
 - `{bash}gcc ... -g`
 	- adds debugging information in the executable
-	- easier to debug with tools like [[GDB]]
+	- easier to debug with tools like [[gdb.exe]]
 - `{bash}gcc ... -lm`
 	- `{bash}-l` tells the linker to add a library in the standard path
 	- write the library name without the "lib" prefix and the extension

@@ -34,7 +34,7 @@ https://stackoverflow.com/a/64324969
 ### Scripts
 
 They're text files with a `.bat` or `.cmd` extension.
-On windows, they're [[Executable|executables]].
+On windows, they're [[executable|executables]].
 
 Upon execution (when opening these files) each line in the file is executed sequentially.
 It goes from the first line to the last line.
@@ -75,7 +75,7 @@ These get created with each terminal session and don't really make sense outside
 	- ==only exists in [[#Scripts]]==
 - `{batch}%1 %2 %3 etc` contain the parameters passed to the script/function within the script
 	- ==only exists in [[#Scripts]]==
-- `{batch}%*` contains all the parameters as a single string
+- `{batch}%*` contains all the parameters (`{batch}%1 %2 %3 etc`) as a single string (but not `{batch}%0`)
 	- ==only exists in [[#Scripts]]==
 - `{batch}%ERRORLEVEL%` contains the last error code
 	- functions typically return this variable
@@ -92,7 +92,7 @@ These get used by the operating system to do all sorts of things. You can read t
 
 ## Syntax
 
-- `^` ^escape-characters
+- `{batch}^` ^escape-characters
 	- Escape the next character. Allows you to treat pieces of batch syntax as strings.
 	  It itself is a piece of syntax. It works on itself.
 	- ==Examples:==
@@ -103,29 +103,66 @@ These get used by the operating system to do all sorts of things. You can read t
 		- `^&^&` ${ \to }$ `&&`
 	- ==N.B.== If it's the last token in a command, it escapes the newline and it's as if everything is in the same line
 		- If there is nothing in the next line, you'll be prompted for more.
-- `executablename`
+- `{batch}command`
 	- runs the executable
 	- it has a `.exe` extension but you can ~~and should~~ omit it
-	- `"executable name"`
-		- if it has spaces, it needs the quotation marks
+- `{batch}command.exe`
+	- Runs this exe file
+- `{batch}"my command"`
+	- Runs `{batch}my command.exe`
+	  It has spaces in the name, hence the quotation mark to signify that it's all one token.
+- `{batch}C:\Path\To\command`
+	- Execute `{batch}command.exe` if it's not in [[Windows#^path]] by specifying the full path
+- `{batch}"C:\Path with spaces\or\command with spaces"`
+	- Execute `{batch}command with spaces.exe` if anything in the name has spaces
 - `{batch}command /?`
-	- tells you information about the command. VERY verbose.
-- `command && aftercommand`
-	- execute `command` and `aftercommand` right after
-- `command | othercommand` ^pipe
-	- the output of `command` becomes the input of `othercommand`
-	- by _input_ and _output_ I'm talking about when the programs write in the console window.
-	- That normally happens through streams called [[C#^stdin|stdin]] and [[C#^stdout|stdout]] (they'll have other names in other languages but it's still them)
-	- to make programs communicate in fancier ways look into [[IPC]] 
-- `command (code block)`
+	- Tells you verbose information about the external
+- `{batch}command & aftercommand`
+	- Execute `{batch}command` and then `{batch}aftercommand` sequentially.
+	  If `{batch}command` fails, **it still executes** `{batch}aftercommand`.
+- `{batch}command && aftercommand`
+	- Execute `{batch}command` and then `{batch}aftercommand` sequentially.
+	  If `{batch}command` fails, **it does not execute** `{batch}aftercommand`.
+- `{batch}command (code block)`
 	- the code block can span multiple lines
 	- a space is required between the command and the parentheses
-- `%CD%`
+- `{batch}%CD%`
 	- current directory
-- `@command` ^silence
-	- don't echo this command to the console
-- `{batch}<nul`
-	- when you want to provide an empty input to a command
+- `{batch}@command` ^silence
+	- Don't echo this command to the console
+- `{batch}nul`
+	- An empty object
+
+### Piping
+
+The **pipe** operator `{batch}|` turns the [[standard output]] of the command to the **left**,
+into the [[standard input]] of the command to the **right**.
+
+To make programs communicate in fancier ways look into [[IPC]].
+
+- `{batch}command | othercommand` ^pipe
+
+### Redirection
+
+Redirection operators `{batch}<` and `{batch}>` are used to handle input and output [[stream|streams]].
+
+- `{batch}command < file`
+	- Redirects input.
+	  It takes the **file's contents** and provides it as input for a **command**.
+	  Essentially the same as `{batch}type file | command`
+- `{batch}command > file`
+	- Redirects **output**.
+	  It takes output from a **command** and writes it to a **file**.
+- `{batch}command < nul`
+	- When you want to provide an empty [[standard input|input]] to a command
+- `{batch}command > nul`
+	- When you want to silence the output of a command completely, redirecting its [[standard output]] nowhere
+- `{batch}command 2 > nul`
+	- Silence the command's [[standard error]]
+- `{batch}command > nul 2>nul`
+	- **_STFU_**
+- `{batch}type file1 > file2`
+	- Copies `{batch}file1` into `{batch}file2` using [[#^type]]
 
 ### Blocks
 
@@ -239,11 +276,13 @@ Parameter: 4
 - **[Unofficial Reference I use](https://ss64.com/nt/)**: in this site, internal commands have a little dot (${ \cdot }$) next to them
 - [Official Reference by Microsoft](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)  I can't tell internal or external commands apart, so I don't like it
 
-### Internal Commands
+### Internal sommands
+
+These are the built in commands, only usable in this shell.
 
 - `{batch}REM any string here`
-	- remark. A comment. Does nothing
-	- used in scripts
+	- Remark. A comment. Does nothing
+	- Often used in scripts
 - `{batch}echo string`
 	- prints `string` to stdout
 	- `{batch}echo`
@@ -256,12 +295,15 @@ Parameter: 4
 	- `{batch}echo <answer> | command`
 		- it's common to use echo in combination with [[#^pipe]]
 		- this acts like you're answering the command's prompts.
+- `{batch}type <filename>` ^type
+	- Writes out the contents of a text file on the console.
 - `{batch}if`
 	- it's an if statement
 	- `{batch}if not exist "%var%" (echo a)`
 	- `{batch}) else`
-		- after an `{batch}if`
+		- After an `{batch}if`
 		- it's NOT a command of its own: the closing bracket `)` MUST be in the same line as `{batch}else`. That's how it even recognizes else as valid
+		  There must be a space between `{batch}else` and `{batch}(`, if you put a block
 - `{batch}for /f "delims=" %%a in ('other.bat') do set output=%%a`
 	- copy the last line of the file's content
 - `{batch}cd path/to/directory` ^cd

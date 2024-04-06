@@ -11,7 +11,7 @@ Made in [[C++]]
 ## Releases
 
 ```dataview
-LIST from "Software/OS/Windows" AND !"Software/OS/Windows/RELATED" AND !"Software/OS/Windows/TOOLS"
+TABLE from "Software/OS/Windows" AND !"Software/OS/Windows/RELATED" AND !"Software/OS/Windows/TOOLS"
 WHERE file.name != this.file.name
 ```
 
@@ -53,8 +53,8 @@ Executable files on Windows are `.exe`, `.bat` or `.cmd` files.
 
 ### Commands
 
-They're executables that behave as if they were in the [[#^path]].
-Executable that also actually are in the [[#^path]] also count, but I'm documenting the default native ones to Windows.
+They're [[executable|executables]] that behave as if they were in the [[#^path]].
+Executables that also actually are in the [[#^path]] also count, but I'm documenting the default native ones to Windows.
 
 #### Where to run commands?
 
@@ -65,20 +65,34 @@ There are various places you can run commands from.
 
 #### Commands meant to run inside terminals
 
-These commands don't really make sense if you run them outside of a terminal because they prints stuff.
-This means that if you were to open them or run them with [[#^start]] they'd print stuff and immediately disappear.
-Not necessarily, because some prompt you for inputs, but still. They aren't meant to be run as standalone executables.
+These commands don't really make sense if you run them outside of a terminal because they print stuff to the standard output.
+- This means that if you were to open them or run them with [[#^start]] they'd print stuff and immediately disappear.
+  Not necessarily, because some prompt you for inputs, but still. They aren't meant to be run as standalone executables.
 
-- `where commandorexecutable`
+
+- `{batch}help`
+	- Lists [[CMD|batch]] internal commands
+	- `{batch}help <internal command>`
+		- Tells you about the command
+- `where <command>`
 	- if it recognizes the command (either it's in the current dir or [[Windows#^path|available everywhere]]) it'll tell you where it is
 	- if it finds multiple, it tells you the location of every single one
+- `{batch}ping`
+	- Pings the destination
+	- `{batch}ping 192.0.2.0 -n 1 -w 500> nul` ^ping-sleep
+		- [[#^timeout]] for a fraction of a second. `{batch}500`ms (milliseconds) in this case.
+		- `{batch}500` is actually the minimum it will wait, even if you type in lower.
+		- [Found it here](https://stackoverflow.com/a/30665317)
+- `timeout /t 5 /nobreak >nul` ^timeout
+	- Wait `{batch}5` seconds.
 - `tree`
 	- view the folder tree of the directory you're in
 - `{batch}net` ^net
-	- `{batch}net start <servicename>`
+	- `{batch}net start <servicename>` ^net-start
 		- Start a service.
 		  If you installed a program and you want to know what their service name is, check [[#^services-msc]]
 		- Needs administrator mode.
+	- `{batch}net stop <servicename>` ^net-stop
 - `{batch}sc query <servicename>`
 	- Find out if the service is running correctly.
 - `systeminfo`
@@ -91,6 +105,16 @@ Not necessarily, because some prompt you for inputs, but still. They aren't mean
 	- show file contents
 - `more`
 	- same as `type`(???)
+
+##### Common options
+
+These options are built into every Windows command meant for the command line.
+Consider that these options are built into every single `{batch}.exe`, they're not some arcane element of [[CMD|batch]] syntax.
+They just happen to do the same thing.
+
+`{batch}<command>` +
+- `{batch}/?`
+	- Tells you about the command.
 
 ##### Non-native (to install)
 
@@ -111,7 +135,7 @@ Not necessarily, because some prompt you for inputs, but still. They aren't mean
 	- **Windows Terminal** opens the default terminal for the operating system. It's typically powershell. A shorthand.
 	- `{batch}wt batch1; batch2; batch3;`
 - `{batch}start <file path/directory>` ^start
-	- equates to a double click on something. Opens the thing in the default app
+	- Equates to a double click on something. Opens the thing in the default app.
 	- `{batch}start "Window Title" "<path to program>" "<path to open>"`
 		- this equates to "open with" in the context menu.
 		- window title is a weird parameter to have, but you have it.
@@ -119,6 +143,8 @@ Not necessarily, because some prompt you for inputs, but still. They aren't mean
 	- ==N.B.== if the file path contains spaces, you are FORCED to specify the app you're opening it with
 		- this is because normally you'd use `""`, but in here, `""` triggers the second version of the command, where you have to specify the path.
 		- **ex:** `{batch}start "explorer" "path with spaces"`
+	- `{batch}/b`
+		- Don't create a new window.
 - `{batch}explorer` ^explorer
 	- opens the file explorer on the home directory
 	- `{batch}explorer <directory>`
@@ -215,7 +241,7 @@ Not necessarily, because some prompt you for inputs, but still. They aren't mean
 - I'm not sure. Here's a list of shits that generally work on windows:
 - **Alt +:**
 	- 126 ~ tilde ^tilde
-	- 96 `` ` `` backtick
+	- 96 \` backtick
 	- 212 È
 	- 144 É
 	- 0200 È
@@ -233,10 +259,10 @@ Not necessarily, because some prompt you for inputs, but still. They aren't mean
 	- 1451 ½ one half
 	- 4521 ®
 	- 8888 ©
-	- 111111 
-	- 222222 
-	- 333333 
-	- 7777777 
+	- 111111 •
+	- 222222 ♫
+	- 333333 §
+	- 7777777 ±
 	- 98989 ¡ reversed exclamation mark
 	- 173 ¡
 	- 0191 ¿ reversed question mark

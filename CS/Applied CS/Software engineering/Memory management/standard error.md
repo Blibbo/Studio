@@ -1,0 +1,1 @@
+The term **standard error** refers to the main error output [[stream]] of your [[program]].

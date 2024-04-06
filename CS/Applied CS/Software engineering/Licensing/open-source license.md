@@ -1,1 +1,1 @@
-License that facilitates the development of [[FOSS]] [[Program|programs]].
+License that facilitates the development of [[FOSS]] [[program|programs]].

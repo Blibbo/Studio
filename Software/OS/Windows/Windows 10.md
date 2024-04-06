@@ -6,12 +6,8 @@ aliases:
   - Windows 10 Home
   - Windows 10 Pro
 ---
----
-
-### About Windows 10
-
-- its code was leaked
-- lol
+Its code was leaked
+Lol
 
 ---
 

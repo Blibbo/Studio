@@ -4,9 +4,9 @@ tags:
 aliases:
   - MySQL Server
 ---
-[[Executable]] that starts the [[MySQL]] service on your machine.
+[[executable]] that starts the [[MySQL]] service on your machine.
 
-## Command-line execution options
+## Commands
 
 `{bash}mysqld` (no options)
 - Basic command to start the mysql server. Assumes:
@@ -19,3 +19,22 @@ aliases:
 - `{bash}--datadir=C:/my/dir`
 	- Tells mysql where your actual data is.
 	- The directory must already exist, it won't create it.
+- `{bash}--defaults-file="path/to/my.ini"`
+	- Location of the config file.
+- `{bash}ServiceName`
+	- Name of the service [[Windows#^services-msc]].
+- `{bash}status`
+	- Tells you what goes wrong when starting the server.
+
+### Start server
+
+After [[MySQL#Installation]], this command will start the service.
+
+```bash
+mysqld --defaults-file="C:\ProgramData\MySQL\MySQL Server 8.0\my.ini"
+```
+This yields the shell completely.
+Alternatively:
+```
+net start MySQL80
+```

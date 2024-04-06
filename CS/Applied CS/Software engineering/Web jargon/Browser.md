@@ -5,7 +5,7 @@ aliases:
   - browsers
   - web browser
 ---
-A modern **web browser** is a [[Program]] that:
+A modern **web browser** is a [[program]] that:
 - is able to communicate with [[web server|web servers]] through the [[HTTP]] protocol
 - is able to secure the connection through the [[SSH]] and [[TLS]] protocols
 - can render a [[markup|markup language]] called [[HTML]]

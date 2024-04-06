@@ -37,7 +37,7 @@ aliases:
 - 19  DC3 (device control 3)
 - 20  DC4 (device control 4)
 - 21  NAK (negative acknowledge)
-- 22  SYN (synchronous idle)
+- 22  SYN  ^V (synchronous idle)
 - 23  ETB (end of trans. block)
 - 24  CAN (cancel)
 - 25  EM  (end of medium)

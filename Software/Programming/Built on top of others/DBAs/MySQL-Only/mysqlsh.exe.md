@@ -3,7 +3,7 @@ aliases:
   - MySQL Shell
 ---
 [[MySQL]] [[DBA]] [[CLI]] tool.
-This [[Executable]] causes the [[shell]] to open.
+This [[executable]] causes the [[shell]] to open.
 
 ## Material
 

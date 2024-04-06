@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a36a0bbcbd9b38a9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Languages/DSL/SQL/SQL.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e1758d30c4e54fe7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md",
+                "file": "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysqld.exe.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "646fd9298307d595",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/OS/Windows/Windows.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md",
+                "file": "Software/OS/Windows/Windows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md",
+                "file": "Software/OS/Windows/Windows.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md"
+                "file": "Software/OS/Windows/Windows.md"
               }
             }
           }
@@ -170,44 +170,44 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "e1758d30c4e54fe7",
+  "active": "646fd9298307d595",
   "lastOpenFiles": [
-    "Languages/DSL/SQL/SQL.md",
+    "Software/Web/Sites/Google.com.md",
+    "Software/Web/Sites/Schema.org.md",
+    "Software/Web/Semantic Web.md",
+    "Languages/SHELL/cmd/CMD.md",
+    "Software/Web/Sites",
+    "CS/Applied CS/Software engineering/Memory management/stream.md",
+    "CS/Applied CS/Software engineering/Memory management/standard error.md",
+    "CS/Applied CS/Software engineering/Memory management/standard input.md",
+    "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysqld.exe.md",
+    "Software/OS/Windows/Windows.md",
+    "CS/Applied CS/Software engineering/Memory management/standard output.md",
+    "CS/Applied CS/Software engineering/Memory management/buffer.md",
+    "CS/Applied CS/Software engineering/Software classification/program.md",
+    "CS/TCS/Data Structures/Files/file.md",
+    "Standards-Conventions/Standards Organizations/ANSI/ASCII.md",
+    "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysqladmin.exe.md",
+    "CS/TCS/Data Structures/Files/executable.md",
     "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md",
-    "Software/Programming/Atomic tools/DBMS/MySQL/MySQL.md",
-    "Software/Web/Browsers/Firefox.md",
-    "STS/People/Linus Torvalds.md",
-    "CS/TCS/Data Structures/ADT/List.md",
-    "Software/Networking/Protocols/Communication/Remote control/Telnet.md",
-    "Software/Programming/Frankenstein's tools/SDK/Visual C++.md",
+    "Languages/DSL/SQL/SQL.md",
+    "CS/Applied CS/Software engineering/Interfaces/CLI.md",
+    "Software/OS/Windows/Windows 10.md",
+    "Hardware/Actual hardware/Latitude 7280.md",
+    "Hardware/Architectures/Storage devices/SSD/SSD.md",
+    "Software/Programming/Atomic tools/Package managers/Cargo.md",
+    "Software/Programming/Atomic tools/Package managers/rustup.exe.md",
+    "Software/Programming/Atomic tools/Package managers/Chocolatey.md",
+    "Software/Programming/Atomic tools/Package managers/pip.md",
     "Software/Programming/Frankenstein's tools/SDE",
-    "Software/Web/Hosting/Web hosting.md",
     "Software/Web/Hosting",
-    "Software/Programming/Frankenstein's tools/Used by companies/Mathematica.md",
-    "Software/Programming/Frankenstein's tools/Bundles/WAMP.md",
     "Software/Programming/Frankenstein's tools/Used by companies",
-    "Software/Programming/Frankenstein's tools/Bundles/XAMPP.md",
     "Software/Programming/Built on top of others/Application development frameworks",
     "Software/Programming/Frankenstein's tools",
-    "Software/Programming/Frankenstein's tools/SDK/Unity SDE/Unity SDE.md",
     "Software/Programming/Frankenstein's tools/SDK/Unity SDE",
     "Software/Programming/Frankenstein's tools/Bundles",
     "Software/Programming/Frankenstein's tools/SDK",
-    "Software/Applications/Studying/Mindomo/Mindomo.md",
     "Software/Programming/Atomic tools",
-    "Software/Applications/Studying/Logseq/Logseq.md",
-    "Software/Applications/Studying/Mindomo",
-    "Software/Studying/Notes.md",
-    "Software/Applications/Studying/Roam Research/Roam Research.md",
-    "STS/Works/The Elements.md",
-    "Software/Programming/Built on top of others/Services that provide APIs/Cloud/OCI.md",
-    "Languages/GENERAL-PURPOSE/PERL/Perl.md",
-    "Software/Programming/Frankenstein's tools/Used by companies/Selenium.md",
-    "CS/Applied CS/Software engineering/Software classification/DB/RDBMS.md",
-    "CS/Applied CS/Software engineering/Software classification/DB/OODBMS.md",
-    "CS/Applied CS/Software engineering/Software classification/DB/DBMS.md",
-    "CS/Applied CS/Software engineering/Software classification/DB/DBA.md",
-    "CS/Applied CS/Software engineering/Software classification/Text Editor.md",
     "Languages/GENERAL-PURPOSE/LISP/DIALECTS/attachments/profoto-albert-watson-steve-jobs-pinned-image-3840x2160px-2.jpg",
     "STS/People/attachments/profoto-albert-watson-steve-jobs-pinned-image-3840x2160px-2.jpg",
     "STS/Nonprofit Organizations/attachments/040JHoVNgc1gh2e7sunj82k-1.webp",

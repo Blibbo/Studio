@@ -4,10 +4,10 @@ aliases:
 tags:
   - open-source
 ---
-`mysql.exe` is an [[Executable]] that tries to connect to the [[MySQL]] [[Service]] upon execution.
+`mysql.exe` is an [[executable]] that tries to connect to the [[MySQL]] [[Service]] (the one started by [[mysqld.exe]]) upon execution.
 If the connection (execution) is successful, it provides a [[CLI]] to query your database.
 
-## Command-line execution options
+## Commands
 
 `{bash}mysql` (no options)
 - Tries connecting to the MySQL Server assuming:
@@ -16,7 +16,7 @@ If the connection (execution) is successful, it provides a [[CLI]] to query your
 	- Port is `{bash}3306`
 	- No password (won't ever connect successfully)
 
-`{bash}mysql`
+`{bash}mysql` +
 - `{bash}-u <username>` or `{bash}--user <username>` or `{bash}--user=<username>`
 	- Specify username
 - `{bash}-p` or `{bash}--password`
@@ -26,6 +26,7 @@ If the connection (execution) is successful, it provides a [[CLI]] to query your
 	- Deemed unsafe (people can read your password as you write it)
 - `{bash}--port=<port>` or `{bash}--port <port>`
 	- Specify the port the service is being served in (check through [[Windows#^services-msc]])
+	- Replace `{bash}<port>` with `{bash}3306` if unsure
 - `{bash}<databasename>`
 	- Use a specific database right away as you connect.
 - `{batch}-t` ^table-formatting

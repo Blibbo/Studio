@@ -4,13 +4,11 @@ aliases:
   - SSDs
   - Solid State Disks
 ---
----
-
-### About SSDs
-
-- they use [[NAND flash memory cell|NAND flash memory cells]]
-- they have a [[Microcontrollers|Microcontroller]] that manages data access, [[#garbage collection and trimming]].
-- they have an interface to connect to the rest of the system, which is [[SATA]] (poopy) or [[NVMe]] (fast)
+An **SSD** is a memory storage device that uses [[NAND flash memory cell|NAND flash memory cells]].
+They have a [[Microcontrollers|Microcontroller]] that manages data access, [[#garbage collection and trimming]].
+They have interfaces to connect to the rest of the system:
+- [[SATA]] (poopy)
+- [[NVMe]] (fast)
 
 ---
 

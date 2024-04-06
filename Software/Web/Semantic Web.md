@@ -1,4 +1,6 @@
 Turn [[Web Page|web pages]] into a machine-readable format.
+I don't exactly know what this means yet.
+No idea.
 
 ## Schemas
 
