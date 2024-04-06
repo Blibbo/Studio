@@ -1,52 +1,35 @@
 {
   "main": {
-    "id": "a10f623c7584a782",
+    "id": "161210e207657c09",
     "type": "split",
     "children": [
       {
-        "id": "6d65e9d62007fc0d",
+        "id": "8a0e034ea1618e12",
         "type": "tabs",
         "children": [
           {
-            "id": "e1758d30c4e54fe7",
+            "id": "d809ee8b8fa7be64",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysqld.exe.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "646fd9298307d595",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software/OS/Windows/Windows.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "45bbf4fc49d56119",
+    "id": "db3e2c1a4845107f",
     "type": "split",
     "children": [
       {
-        "id": "c87b4e254217cb88",
+        "id": "a357533176a4a20a",
         "type": "tabs",
         "children": [
           {
-            "id": "2c1699f16cf11769",
+            "id": "ae260dcb660795cd",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -56,12 +39,12 @@
             }
           },
           {
-            "id": "31a20fd05ace3a46",
+            "id": "2788d294c2f8b63b",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tim berners",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -71,18 +54,10 @@
             }
           },
           {
-            "id": "2176ec8d5513aa77",
+            "id": "3945ef5c99b39438",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
-            }
-          },
-          {
-            "id": "c6721c25543fed7a",
-            "type": "leaf",
-            "state": {
-              "type": "tagfolder-view",
               "state": {}
             }
           }
@@ -90,23 +65,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5
+    "width": 300
   },
   "right": {
-    "id": "65e831f7a11449c1",
+    "id": "39071d2615cef81a",
     "type": "split",
     "children": [
       {
-        "id": "047ff193daa98cf1",
+        "id": "17d9f3b9e48154af",
         "type": "tabs",
         "children": [
           {
-            "id": "5caa3c9ada5bc73e",
+            "id": "6e0973ac8a80f201",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/OS/Windows/Windows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,19 +92,18 @@
             }
           },
           {
-            "id": "f60bf115ca743913",
+            "id": "530c33d75a787636",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/OS/Windows/Windows.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "e2631432063fbe35",
+            "id": "11ee76f2dcb86ccb",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -141,21 +114,18 @@
             }
           },
           {
-            "id": "5dd53d27cdc05cfe",
+            "id": "fdb5bdc3c7060132",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Software/OS/Windows/Windows.md"
-              }
+              "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
@@ -170,54 +140,6 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "646fd9298307d595",
-  "lastOpenFiles": [
-    "Software/Web/Sites/Google.com.md",
-    "Software/Web/Sites/Schema.org.md",
-    "Software/Web/Semantic Web.md",
-    "Languages/SHELL/cmd/CMD.md",
-    "Software/Web/Sites",
-    "CS/Applied CS/Software engineering/Memory management/stream.md",
-    "CS/Applied CS/Software engineering/Memory management/standard error.md",
-    "CS/Applied CS/Software engineering/Memory management/standard input.md",
-    "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysqld.exe.md",
-    "Software/OS/Windows/Windows.md",
-    "CS/Applied CS/Software engineering/Memory management/standard output.md",
-    "CS/Applied CS/Software engineering/Memory management/buffer.md",
-    "CS/Applied CS/Software engineering/Software classification/program.md",
-    "CS/TCS/Data Structures/Files/file.md",
-    "Standards-Conventions/Standards Organizations/ANSI/ASCII.md",
-    "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysqladmin.exe.md",
-    "CS/TCS/Data Structures/Files/executable.md",
-    "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md",
-    "Languages/DSL/SQL/SQL.md",
-    "CS/Applied CS/Software engineering/Interfaces/CLI.md",
-    "Software/OS/Windows/Windows 10.md",
-    "Hardware/Actual hardware/Latitude 7280.md",
-    "Hardware/Architectures/Storage devices/SSD/SSD.md",
-    "Software/Programming/Atomic tools/Package managers/Cargo.md",
-    "Software/Programming/Atomic tools/Package managers/rustup.exe.md",
-    "Software/Programming/Atomic tools/Package managers/Chocolatey.md",
-    "Software/Programming/Atomic tools/Package managers/pip.md",
-    "Software/Programming/Frankenstein's tools/SDE",
-    "Software/Web/Hosting",
-    "Software/Programming/Frankenstein's tools/Used by companies",
-    "Software/Programming/Built on top of others/Application development frameworks",
-    "Software/Programming/Frankenstein's tools",
-    "Software/Programming/Frankenstein's tools/SDK/Unity SDE",
-    "Software/Programming/Frankenstein's tools/Bundles",
-    "Software/Programming/Frankenstein's tools/SDK",
-    "Software/Programming/Atomic tools",
-    "Languages/GENERAL-PURPOSE/LISP/DIALECTS/attachments/profoto-albert-watson-steve-jobs-pinned-image-3840x2160px-2.jpg",
-    "STS/People/attachments/profoto-albert-watson-steve-jobs-pinned-image-3840x2160px-2.jpg",
-    "STS/Nonprofit Organizations/attachments/040JHoVNgc1gh2e7sunj82k-1.webp",
-    "STS/People/attachments/Linus Torvalds flipping you off.webp",
-    "CS/TCS/TOC/Computability Theory/attachments/1024px-Maquina.png",
-    "UNKNOWN/Producing energy.canvas",
-    "Maths/Geometry/attachments/Pasted image 20240321151401.png",
-    "Maths/attachments/Pasted image 20240320141722.png",
-    "CS/TCS/TOC/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/z vector spherical coordinates.png",
-    "CS/TCS/TOC/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/x,y spherical coordinates.png",
-    "CS/TCS/TOC/CG/scratchapixel/screenshots/spherical coordinates/the pictures i need constantly/polar to cartesian.png"
-  ]
+  "active": "d809ee8b8fa7be64",
+  "lastOpenFiles": []
 }

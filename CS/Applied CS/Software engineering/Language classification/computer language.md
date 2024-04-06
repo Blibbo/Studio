@@ -1,0 +1,1 @@
+A **computer language** is a language to communicate with computers.

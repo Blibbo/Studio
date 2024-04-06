@@ -5,10 +5,11 @@ tags:
 aliases:
   - GNU/Linux
 ---
-[[Unix]]-based operating system.
+**Linux** is a [[Unix]]-based operating system that adheres to [[POSIX]].
 
-Linux is developed by tons of people and lots of distributions of this operating system exist.
-Linux distributions commonly get referred to as [[#distros]].
+Linux is developed by tons of people.
+Lots of distributions of this operating system exist.
+Linux distributions get commonly referred to as [[#distros]].
 
 ---
 

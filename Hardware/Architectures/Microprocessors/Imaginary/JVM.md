@@ -3,7 +3,6 @@ aliases:
   - Java Virtual Machine Architecture
   - Java Virtual Machine
   - JVM Architecture
-  - Bytecode
 ---
 ---
 
@@ -13,12 +12,6 @@ aliases:
 - it has a made up instruction set. [[#Bytecode instruction set]]
 - bytecode files have a `.class` extension
 - apparently `.jar` too idk
-
----
-
-### Bytecode instruction set
-
-- [It's on wikipedia](https://en.wikipedia.org/wiki/List_of_Java_bytecode_instructions)
 
 ---
 

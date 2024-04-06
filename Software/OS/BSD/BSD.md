@@ -4,14 +4,14 @@ aliases:
 tags:
   - open-source
 ---
-[[Unix]] variant.
+[[Unix]] variant that's considered a "weird [[Linux]]".
 
 ---
 
 ### Distributions
 
 ```dataview
-LIST FROM "Software/OS/BSD"
+TABLE FROM "Software/OS/BSD"
 WHERE file.name != this.file.name
 ```
 
