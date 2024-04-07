@@ -1,7 +1,8 @@
 ---
 aliases:
   - Basic Input/Output System
-  - Legacy Firmware
+  - legacy BIOS
+  - legacy firmware
 ---
 ---
 

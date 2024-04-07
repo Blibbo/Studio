@@ -11,8 +11,12 @@
             "id": "d809ee8b8fa7be64",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Software/OS/TempleOS/FORKS/Shrine.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Software/OS/TempleOS/FORKS/Shrine.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Software/OS/TempleOS/FORKS/Shrine.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Software/OS/TempleOS/FORKS/Shrine.md"
+              }
             }
           }
         ]
@@ -141,5 +149,13 @@
     }
   },
   "active": "d809ee8b8fa7be64",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Software/OS/TempleOS/FORKS/Zenith OS.md",
+    "Software/OS/TempleOS/FORKS/Shrine.md",
+    "Software/OS/TempleOS/TempleOS.md",
+    "Software/OS/TempleOS/FORKS",
+    "Standards-Conventions/Firmware/BIOS.md",
+    "STS/People/Terry Davis.md",
+    "STS/People/Linus Torvalds.md"
+  ]
 }
