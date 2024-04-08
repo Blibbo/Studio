@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/Applied CS/Software engineering/Data classification/DB/MODELS/logic model.md",
+                "file": "Languages/QUERY-LANGUAGES/SQL/SQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/Applied CS/Software engineering/Data classification/DB/MODELS/logic model.md",
+                "file": "Languages/QUERY-LANGUAGES/SQL/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/Applied CS/Software engineering/Data classification/DB/MODELS/logic model.md",
+                "file": "Languages/QUERY-LANGUAGES/SQL/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/Applied CS/Software engineering/Data classification/DB/MODELS/logic model.md"
+                "file": "Languages/QUERY-LANGUAGES/SQL/SQL.md"
               }
             }
           }
@@ -174,8 +174,11 @@
   },
   "active": "a13e833de29f7918",
   "lastOpenFiles": [
-    "CS/Applied CS/Software engineering/Data classification/DB/MODELS/data model.md",
+    "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md",
+    "Software/Programming/Atomic tools/DBMS/MySQL/MySQL.md",
+    "Languages/QUERY-LANGUAGES/SQL/SQL.md",
     "CS/Applied CS/Software engineering/Data classification/DB/MODELS/logic model.md",
+    "CS/Applied CS/Software engineering/Data classification/DB/MODELS/data model.md",
     "CS/Applied CS/Software engineering/Data classification/DB/MODELS/ER.md",
     "Languages/DATA_FORMATS/XML/XML.md",
     "CS/Applied CS/Software engineering/Data classification/DB/MODELS/conceptual model.md",
@@ -188,7 +191,6 @@
     "CS/Applied CS/Software engineering/Software classification/DB/DBMS/MMDBMS.md",
     "CS/Applied CS/Software engineering/Data classification/multimedia.md",
     "CS/Applied CS/Software engineering/Data classification/data.md",
-    "Languages/QUERY-LANGUAGES/SQL/SQL.md",
     "CS/Applied CS/Software engineering/Data classification/DB/OTHER TYPES/MMDB.md",
     "CS/Applied CS/Software engineering/Software classification/DB/DBMS/DBMS.md",
     "CS/Applied CS/Software engineering/Software classification/DB/DBMS",
@@ -202,8 +204,6 @@
     "Software/Programming/Atomic tools/Interpreters/php.exe.md",
     "Software/Programming/Atomic tools/Interpreters/Command processors/cmd.exe.md",
     "Software/Programming/Atomic tools/Terminal emulators/wt.exe.md",
-    "CS/Applied CS/Software engineering/Language classification/scripting language.md",
-    "CS/Applied CS/Software engineering/Software classification/COMMAND-LINE STUFF/REPL.md",
     "CS/Applied CS/Software engineering/Software classification/COMMAND-LINE STUFF",
     "CS/Applied CS/Software engineering/Software classification/OPERATING SYSTEM ABSTRACTIONS",
     "CS/Applied CS/Software engineering/Software classification/Processes",
