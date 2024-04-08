@@ -2,7 +2,7 @@
 tags:
   - jargon
 ---
-[[Data]] written in any major [[text encoding|text encoding format]].
+[[data]] written in any major [[text encoding|text encoding format]].
 
 You could just say "text". We say "plain text" because we emphasize that the data is composed of nothing else but encoded characters.
 

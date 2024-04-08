@@ -24,4 +24,4 @@ tags:
 - `program & other-program`
 	- run in parallel
 	- example: `php -S localhost:8000 -t public & npm run dev` for [[Laravel]] with [[Vite]] (typical for [[Laravel Sail]])
-	- without it, you just need two separate [[CMD|shells]]
+	- without it, you just need two separate [[batch|shells]]

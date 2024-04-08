@@ -1,0 +1,1 @@
+A collection of symbols. Elements of [[information]] that have yet to be elaborated.

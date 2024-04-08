@@ -28,7 +28,7 @@ it's jan 2024. Still no news
 	- **Undo:**
 		- look for `HKEY_CURRENT_USER\SOFTWARE\CLASSES\CLSID`
 		- delete `{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}`
-- **Administrator-mode [[CMD]]:**
+- **Administrator-mode [[batch]]:**
 	- `reg add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve`
 	- **restart file explorer:**
 		- `taskkill /f /im explorer.exe`

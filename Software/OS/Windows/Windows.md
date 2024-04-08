@@ -60,7 +60,7 @@ Executables that also actually are in the [[#^path]] also count, but I'm documen
 
 There are various places you can run commands from.
 - [[#^win-r]]
-- any terminal (windows has [[CMD]] and [[Powershell]] installed already)
+- any terminal (windows has [[batch]] and [[Powershell]] installed already)
 - the long bar on top of the [[explorer.exe|file explorer]] where the current path is written (yes. LOL.) 
 
 #### Commands meant to run inside terminals
@@ -71,7 +71,7 @@ These commands don't really make sense if you run them outside of a terminal bec
 
 
 - `{batch}help`
-	- Lists [[CMD|batch]] internal commands
+	- Lists [[batch|batch]] internal commands
 	- `{batch}help <internal command>`
 		- Tells you about the command
 - `where <command>`
@@ -85,6 +85,7 @@ These commands don't really make sense if you run them outside of a terminal bec
 		- [Found it here](https://stackoverflow.com/a/30665317)
 - `timeout /t 5 /nobreak >nul` ^timeout
 	- Wait `{batch}5` seconds.
+	- https://stackoverflow.com/a/30666055
 - `tree`
 	- view the folder tree of the directory you're in
 - `{batch}net` ^net
@@ -109,7 +110,7 @@ These commands don't really make sense if you run them outside of a terminal bec
 ##### Common options
 
 These options are built into every Windows command meant for the command line.
-Consider that these options are built into every single `{batch}.exe`, they're not some arcane element of [[CMD|batch]] syntax.
+Consider that these options are built into every single `{batch}.exe`, they're not some arcane element of [[batch|batch]] syntax.
 They just happen to do the same thing.
 
 `{batch}<command>` +
@@ -124,7 +125,7 @@ They just happen to do the same thing.
 #### Commands that open their own window
 
 - `cmd`
-	- opens the [[CMD]] terminal
+	- opens the [[batch]] terminal
 	- when ran inside a terminal, it doesn't open another terminal
 	- it does hijack the terminal though. (Starts interpreting batch commands)
 - `powershell`
@@ -227,7 +228,7 @@ They just happen to do the same thing.
 	- it's like a right click on the windows button
 	- `Up/Down` keys to navigate it
 	- one of the options opens the default shell
-		- can customize it to open [[Powershell]] instead of [[CMD]]
+		- can customize it to open [[Powershell]] instead of [[batch]]
 - `Alt + Enter`
 	- full screen on some applications
 - `F11`

@@ -3,6 +3,10 @@ aliases:
   - database
   - databases
 ---
+A **database** is a collection of [[data]] that's been organized.
+It's like a [[file system]], but more complex and specialized.
+
+A database system is handled by a [[DBMS]].
 
 ## Types
 

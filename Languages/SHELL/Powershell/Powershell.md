@@ -7,7 +7,7 @@ aliases:
   - powershell.exe
 ---
 Scripting language, command line interpreter and terminal for [[Windows]].
-Successor to [[CMD]].
+Successor to [[batch]].
 This scripting language isn't case sensitive.
 
 ---

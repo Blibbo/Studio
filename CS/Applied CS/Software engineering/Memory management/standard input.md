@@ -2,4 +2,6 @@
 aliases:
   - stdin
 ---
-The term **standard input** refers to the main input [[stream]] of your [[program]].
+**standard input** is one of the three [[standard stream|standard streams]] for [[program|programs]], used for reading.
+
+In other words, it's a [[file]] that 

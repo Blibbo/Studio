@@ -1,6 +1,6 @@
 **mysqladmin.exe** is an [[executable]] that allows you to manage [[mysqld.exe]].
 
-The reason why it exists is that the way to shut down a [[daemon]] like mysqld varies based on your operating system. This command, however, does not. It's the same everywhere.
+The reason why it exists is that the way to shut down a [[Daemon]] like mysqld varies based on your operating system. This command, however, does not. It's the same everywhere.
 
 ## Commands
 

@@ -1,0 +1,1 @@
+A **shell language** is a type of [[scripting language]] used by [[shell|shells]] to glue the execution of [[command-line program|command-line programs]] together, manipulating their [[stream|streams]]

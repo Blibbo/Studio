@@ -4,15 +4,18 @@ tags:
   - back-end
   - software
 ---
+This is a [[command-line program]]
+
 ---
 
-### Command line execution
+### Commands
 
-- `php --help`
-	- all the stuff you can do with this executable
-	- also `php -h`
-	- also `php -help`
-	
+`{bash}php` (no options)
+- It starts interpreting php code in a [[CLI]] fashion
+
+`{bash}php` +
+- `{bash}--help` or `{bash}-h` or `{bash}-help`
+	- All the commands
 - `php -S localhost:80`
 	- host a server in the current folder ^folder
 	- change `80` to whatever port ~~(or don't)~~
@@ -22,20 +25,24 @@ tags:
 		- the 'public' directory is the directory where the PHP server should look for files to serve
 		- also called document root
 		- this specific line is ideal for serving [[Laravel|laravel]] applications
-	- `php -S localhost:80 -c path/to/php.ini`
-	
-- `php filename.php` executes the script
-	- also `php -f filename.php` (literally the same command, nothing changes)
-	
-- `php -r 'phpinfo(); $a = 3; echo $a;'
-	- executes php code
-	
-- `php -a`
+- `{bash}-S localhost:80`
+	- Start [[web server]] at the specified host and port
+- `{bash}-t path/to/root`
+	- Specify the root directory for your [[web server]], starting from the current directory path according to your shell language interpreter.
+- `{bash}-c path/to/php.ini`
+	- Use a specific configuration file
+- `{bash}path/to/myscript.php`
+	- Execute your script
+- `{bash}-f path/to/myscript.php`
+	- Execute your script (same as above)
+- `{bash}-r 'write php code here'` or `{bash}-r "write php code here"`
+	- Execute code and write output to [[standard output]]
+- `-a`
 	- go in interactive mode, execute the script line per line
 	- it requires the [[#^readline-extension|readline extension]]
 	
-- `php -i`
-	- displays php info
+- `-i`
+	- Displays php info
 	
 ---
 

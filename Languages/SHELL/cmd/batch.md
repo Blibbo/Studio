@@ -1,17 +1,9 @@
 ---
-tags:
-  - scripting
-  - language
-  - interpreter
+tags: 
 aliases:
-  - cmd
-  - batch
-  - cmd.exe
-  - Command Prompt Interpreter
-  - Command Prompt
+  - batch scripting language
 ---
-It's made out of two things: a scripting language [[interpreter]] and a [[terminal]].
-You can write either commands or file names (to open those files) from this terminal.
+The 
 
 ---
 

@@ -1,6 +1,7 @@
 ---
 aliases:
   - Puntatore appeso
+  - dangling pointers
 tags:
   - jargon
 ---
