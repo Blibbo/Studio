@@ -24,5 +24,3 @@ Extensionality is a property of sets which signifies that sets are uniquely char
 ---
 
 ## Inferential
-
-${ n \in \mathbb{N} }$
