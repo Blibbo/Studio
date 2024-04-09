@@ -16,17 +16,9 @@ This is a [[command-line program]]
 `{bash}php` +
 - `{bash}--help` or `{bash}-h` or `{bash}-help`
 	- All the commands
-- `php -S localhost:80`
-	- host a server in the current folder ^folder
-	- change `80` to whatever port ~~(or don't)~~
-	- requires the directory to have an `index.php` file inside it
-		- the default resource returned by the server (when someone makes a request to it) is a compiled version of an `index.php` file that the server looks for in the [[#^folder|folder]]
-	- `php -S localhost:8000 -t public`
-		- the 'public' directory is the directory where the PHP server should look for files to serve
-		- also called document root
-		- this specific line is ideal for serving [[Laravel|laravel]] applications
 - `{bash}-S localhost:80`
-	- Start [[web server]] at the specified host and port
+	- Start [[web server]] at the specified host and port.
+	  The root directory of the server is [[batch#^current-directory]]
 - `{bash}-t path/to/root`
 	- Specify the root directory for your [[web server]], starting from the current directory path according to your shell language interpreter.
 - `{bash}-c path/to/php.ini`

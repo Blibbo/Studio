@@ -4,7 +4,7 @@ aliases:
 tags:
   - open-source
 ---
-`mysql.exe` is an [[executable]] that tries to connect to the [[MySQL]] [[Service]] (the one started by [[mysqld.exe]]) upon execution.
+`mysql.exe` is an [[executable]] that tries to connect to the [[MySQL]] [[service]] (the one started by [[mysqld.exe]]) upon execution.
 If the connection (execution) is successful, it provides a [[CLI]] to query your database.
 
 ## Commands

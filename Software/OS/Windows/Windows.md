@@ -161,7 +161,7 @@ They just happen to do the same thing.
 	- `System Model`
 		- what laptop you're using
 - `services.msc` ^services-msc
-	- Find out what [[Service|services]] are installed.
+	- Find out what [[service|services]] are installed.
 	  It's a [[MMC]] snap-in with a [[GUI]] to view, start, stop, pause, resume, or configure services on your system.
 	- `right click a service` > `Properties` > `General` > `Path to executable` ^port
 		- Contains **not only** the path to the executable the service is generated from, but also the **configuration options** it was launched with.

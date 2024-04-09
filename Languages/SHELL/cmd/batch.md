@@ -61,7 +61,7 @@ Tons of existing variables exist though, and they're listed here.
 
 These get created with each terminal session and don't really make sense outside of scripting or writing commands
 
-- `%CD%`
+- `%CD%` ^current-directory
 	- current directory
 - `%0` is the name of the command (or script).
 	- ==only exists in [[#Scripts]]==

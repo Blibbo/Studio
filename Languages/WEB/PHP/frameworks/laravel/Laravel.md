@@ -5,4 +5,9 @@ tags:
   - framework
 ---
 [[PHP]]-based back end web development framework.
-Uses [[Symfony]]
+Uses [[Symfony]].
+
+## Relevant commands
+
+`{bash}php -S localhost:8000 -t public` ${ \equiv }$ `{bash}php artisan serve`
+From [[php.exe]]
