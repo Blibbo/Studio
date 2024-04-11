@@ -1,1 +1,1 @@
-[[DBMS]].
+**PostgreSQL** is a popular [[DBMS]].

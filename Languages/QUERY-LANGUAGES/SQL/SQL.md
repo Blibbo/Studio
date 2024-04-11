@@ -34,16 +34,33 @@ It lets you choose rows based on conditions.
 #### Comparison operators
 
 These operators are used to build conditions next to the where clause.
-Example: `{sql}WHERE field = 'mario'` chooses rows where `{sql}field` is equal to `{sql}'mario'`.
+
 `{sql}=` is equal to
 `{sql}<>` is not. ${ \neq }$
 `{sql}<` is less than
 `{sql}>` is greater than
+[[#Between]]: between two values
+[[#Like]]: string is similar
 
-#### Between
+**Examples:**
+
+Find rows where `{sql}field <> 'mario'`
+```sql
+SELECT *
+FROM myTable
+WHERE field <> 'mario'
+```
+
+
+
+##### Between
 
 `{sql}WHERE field BETWEEN 10 AND 20`
 same as `{sql}field>10 AND field<20`, but it saves you the repetition of `{sql}field`
+
+##### Like
+
+
 
 #### Subqueries
 
@@ -56,7 +73,8 @@ These keywords iterate conditions over a number of values.
 
 ##### Any
 
-**Either** of the values given to this function must result in a truthy comparison
+**Any** returns `{sql}TRUE` when **either** of the values given to this function result in a truthy comparison.
+
 `{sql}WHERE field <comparison> ANY(1, 2, 3)`
 is equal to writing
 ```sql
@@ -67,7 +85,7 @@ OR    field <comparison> 3
 
 ##### All
 
-**All** of the values given to this function must result in a truthy comparison
+**All** returns true when _all_ of the values given to this function result in a truthy comparison
 `{sql}WHERE field <comparison> ALL(1, 2, 3)`
 is equal to writing
 ```sql

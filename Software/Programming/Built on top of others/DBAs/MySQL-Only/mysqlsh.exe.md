@@ -45,13 +45,39 @@ You can write SQL queries after writing this command.
 `{batch}\js` enters JavaScript mode.
 In this mode, you can query your DB through a [[JavaScript]] [[API]] instead of [[SQL]].
 
-#### Connect with js
+#### Connect with js (absolutely doesn't work)
 
-Connection command with the javascript mode
+##### Attempt 1: ChatGPT
+
 ```javascript
 dba.connect('username@hostname:port', 'password')
 ```
 
+##### Attempt 2: Blackbox
+
+blackbox said "mysql shell is not based on [[Node.js]]. So here's how to connect to a db in mysql shell: use the `{js}mysql` module from node.js"
+```js
+MySQL [sitepoint]> \js
+Switching to JavaScript mode.
+MySQL [sitepoint]> var connection = mysql.createConnection({
+    host     : 'localhost',
+    user     : 'user',
+    password : 'password',
+    database : 'sitepoint'
+  });
+
+MySQL [sitepoint]> connection.connect();
+Connection established.
+MySQL [sitepoint]> connection.query('SELECT * FROM authors', function(err, rows, fields) {
+    if (err) throw err;
+    console.log(rows);
+  });
+[ RowDataPacket { id: 1, name: 'Michaela Lehr', city: 'Berlin' },
+  RowDataPacket { id: 2, name: 'Michael Wanyoike', city: 'Nairobi' },
+  RowDataPacket { id: 3, name: 'James Hibbard', city: 'Leipzig' },
+  RowDataPacket { id: 4, name: 'Karolina Gawron', city: 'Wrocław' } ]
+MySQL [sitepoint]>
+```
 ### Info commands
 
 #### `\help` `\?`

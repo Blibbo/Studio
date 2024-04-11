@@ -1,17 +1,9 @@
 ---
-tags:
-  - closed-source
-  - proprietary
-  - operating-system
+tags: []
 aliases:
   - OS X
 ---
----
-
-## About macOS
-
-- sucks dick and balls
-- based on [[Unix]] but they sorta did their own thing and changed it up a little bit
+**macOS** is a dick-and-ball sucking [[proprietary software|proprietary]] [[OS|operating system]] based on [[Unix]].
 
 ---
 
@@ -22,6 +14,18 @@ aliases:
 - old accounts still have Bash, new accounts made in 10.15+ have Zsh
 - to figure out which one you have, execute `{bash}echo $SHELL`
 	- it'll print either `/bin/bash` or `/bin/zsh`
+
+---
+
+## .DS_Store
+
+Files with this extension appear on every folder and they're hidden. IDFK.
+They cause syncing problems when sharing these with other operating systems.
+
+It stands for **Desktop Service Store**. These files are created by the **Finder**, this system's file management app.
+
+These files contain settings for the folder to be viewed from the finder.
+Settings such as column width and stuff, idk and idc.
 
 ---
 
