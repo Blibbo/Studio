@@ -12,6 +12,6 @@ https://www.rust-lang.org/
 
 ```rust
 fn main() {
-    println!("bitches be crazy");
+    println!("Hello world");
 }
 ```

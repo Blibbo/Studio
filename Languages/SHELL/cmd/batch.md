@@ -296,8 +296,19 @@ These are the built in commands, only usable in this shell.
 		- After an `{batch}if`
 		- it's NOT a command of its own: the closing bracket `)` MUST be in the same line as `{batch}else`. That's how it even recognizes else as valid
 		  There must be a space between `{batch}else` and `{batch}(`, if you put a block
-- `{batch}for /f "delims=" %%a in ('other.bat') do set output=%%a`
-	- copy the last line of the file's content
+- `{batch}for`
+	- [[For]] loop.
+	- `{batch}/f`
+		- Iterate over something
+	- `{batch}"delims="`
+		- Set the delimiter between the pieces of input as nothing, empty.
+	- `{batch}%%myVariable in ('file.txt')`
+		- `{batch}%%myVariable` will take the value of each individual input provided by `{batch}file.txt`.
+	- `{batch}do (block of code)`
+		- Execute the [[#Blocks|block]] for each iteration.
+	- **Examples:**
+		- Copy the last piece of output of `{batch}other.bat` into a variable called `{batch}output`
+		  `{batch}for /f "delims=" %%a in ('other.bat') do set output=%%a`
 - `{batch}cd path/to/directory` ^cd
 	- change directory
 - `{batch}dir` ^dir
@@ -365,12 +376,14 @@ These are the built in commands, only usable in this shell.
 - `{batch}goto :label` ^goto
 	- ==only exists in [[#Scripts]]==
 	- jumps to the [[#Labels|label]] and starts executing from there
-- `{batch}exit`
+- `{batch}exit` ^exit
 	- exit the current script
 	- `/b`
-		- doesn't change the parent script's environment
-		- doesn't close the terminal window
-		- used at the end of [[#^functions]]
+		- Doesn't change the parent script's environment
+		- Doesn't close the terminal window
+		- Used at the end of [[#^functions]]
+		- I'm not sure about any of this information.
+		  This option has never served me any purpose so far and I do not understand it.
 
 ---
 

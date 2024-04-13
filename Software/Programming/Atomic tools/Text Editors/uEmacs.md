@@ -2,7 +2,7 @@
 aliases:
   - MicroEmacs
 ---
-${ \mu }$Emacs is a [[text editor]] that uses [[Emacs]]'s keybindings.
+${ \mu }$Emacs is a [[Text Editor]] that uses [[Emacs]]'s keybindings.
 It's very old and not as powerful as Emacs.
 
 You might see this in discussions because [[Linus Torvalds]] apparently still uses it.

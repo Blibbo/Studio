@@ -1,1 +1,0 @@
-Something that does computations using digits. It can crunch those [[number|numbers]].

@@ -1,8 +1,6 @@
 ---
-aliases:
-  - automation
+aliases: []
 ---
-
 An **automation language** is a [[scripting language]] for automating stuff.
 I have no clue what they're automating
 

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f8f1f848e6af4ba9",
+        "id": "2545fb1868946c83",
         "type": "tabs",
         "children": [
           {
-            "id": "22a4d0ba26faefd5",
+            "id": "a0fd091583875309",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Programming/Atomic tools/Interpreters/php.exe.md",
+                "file": "Languages/SHELL/cmd/batch.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Programming/Atomic tools/Interpreters/php.exe.md",
+                "file": "Languages/SHELL/cmd/batch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Programming/Atomic tools/Interpreters/php.exe.md",
+                "file": "Languages/SHELL/cmd/batch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Programming/Atomic tools/Interpreters/php.exe.md"
+                "file": "Languages/SHELL/cmd/batch.md"
               }
             }
           }
@@ -148,43 +148,45 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "22a4d0ba26faefd5",
+  "active": "a0fd091583875309",
   "lastOpenFiles": [
+    "Software/Programming/Atomic tools/Interpreters/Command processors/cmd.exe.md",
+    "Languages/GENERAL-PURPOSE/RUST/Rust.md",
     "Languages/SHELL/cmd/batch.md",
+    "CS/TCS/INFORMATION THEORY/CODING THEORY/coding theory.md",
+    "CS/TCS/INFORMATION THEORY/CODING THEORY/CRYPTOGRAPHY/cryptography.md",
+    "CS/TCS/INFORMATION THEORY/CODING THEORY/COMPRESSION/data compression.md",
+    "CS/TCS/INFORMATION THEORY/information theory.md",
+    "CS/TCS/INFORMATION THEORY/information.md",
+    "CS/TCS/INFORMATION THEORY/data.md",
+    "CS/TCS/INFORMATION THEORY/CODING THEORY/ERROR CORRECTION/error-correction coding.md",
+    "CS/TCS/INFORMATION THEORY/IT/IT.md",
+    "CS/APPLIED CS/SOFTWARE ENGINEERING/LANGUAGE CLASSIFICATION/automation language.md",
+    "CS/CS.md",
+    "CS/TCS/TOC/computer.md",
+    "CS/TCS/TOC/Analog Computer.md",
+    "CS/TCS/TOC/Digital Computer.md",
+    "Languages/WEB/HTML/progetti/Digital Divide (educazione civica)/resources/images/chad.jpg",
+    "CS/TCS/INFORMATION THEORY/CODING THEORY/ERROR CORRECTION",
+    "CS/TCS/INFORMATION THEORY/CODING THEORY/CRYPTOGRAPHY",
+    "CS/TCS/INFORMATION THEORY/CODING THEORY/COMPRESSION",
+    "CS/TCS/INFORMATION THEORY/CODING THEORY",
     "Software/Programming/Atomic tools/Interpreters/php.exe.md",
     "Languages/WEB/PHP/frameworks/laravel/Laravel.md",
-    "CS/Applied CS/Software engineering/Data classification/DB/OTHER TYPES/MMDB.md",
-    "CS/Applied CS/Computer architecture/CPU/CPU.md",
+    "CS/APPLIED CS/SOFTWARE ENGINEERING/DATA CLASSIFICATION/DB/OTHER TYPES/MMDB.md",
+    "CS/APPLIED CS/COMPUTER ARCHITECTURE/CPU/CPU.md",
     "Software/Programming/Built on top of others/Services that provide APIs/Cloud/OneDrive.md",
     "Software/Programming/Built on top of others/Services that provide APIs/Cloud/cloud.md",
     "CS/Applied CS/Software engineering/Software classification/OPERATING SYSTEM ABSTRACTIONS/service.md",
     "Software/OS/Windows/Windows.md",
-    "CS/Applied CS/Software engineering/Data classification/DB/DB.md",
+    "CS/APPLIED CS/SOFTWARE ENGINEERING/DATA CLASSIFICATION/DB/DB.md",
     "Maths/Logic/Mathematical Logic/Higher-order logic/Set Theory/set.md",
-    "CS/TCS/Algorithms/AI/AGI.md",
-    "Languages/QUERY-LANGUAGES/SQL/SQL.md",
-    "Software/Programming/Atomic tools/DBMS/MySQL/CLIs/mysql.exe.md",
-    "Software/Programming/Atomic tools/DBMS/MySQL/MySQL.md",
-    "CS/Applied CS/Software engineering/Data classification/DB/MODELS/logic model.md",
-    "CS/Applied CS/Software engineering/Data classification/DB/MODELS/data model.md",
-    "CS/Applied CS/Software engineering/Data classification/DB/MODELS/ER.md",
-    "Languages/DATA_FORMATS/XML/XML.md",
-    "CS/Applied CS/Software engineering/Data classification/DB/MODELS/conceptual model.md",
-    "CS/Applied CS/Software engineering/Data classification/DB/MODELS/building databases.canvas",
-    "CS/Applied CS/Software engineering/Data classification/DB/MODELS/Untitled.md",
-    "CS/Applied CS/Software engineering/Data classification/DB/MODELS",
-    "CS/Applied CS/Software engineering/Data classification/transaction.md",
-    "CS/Applied CS/Software engineering/Data classification/file system.md",
-    "CS/Applied CS/Software engineering/Software classification/DB/DBMS/MMDBMS.md",
-    "CS/Applied CS/Software engineering/Data classification/multimedia.md",
-    "CS/Applied CS/Software engineering/Data classification/data.md",
-    "CS/Applied CS/Software engineering/Software classification/DB/DBMS",
-    "CS/Applied CS/Software engineering/Data classification/DB/OTHER TYPES",
-    "CS/Applied CS/Software engineering/Software classification/COMMAND-LINE STUFF",
-    "CS/Applied CS/Software engineering/Software classification/OPERATING SYSTEM ABSTRACTIONS",
-    "CS/Applied CS/Software engineering/Software classification/Processes",
-    "Software/Programming/Atomic tools/Interpreters/Command processors",
-    "Software/Programming/Atomic tools/Terminal emulators",
-    "Software/OS/TempleOS/FORKS"
+    "CS/APPLIED CS/SOFTWARE ENGINEERING/DATA CLASSIFICATION/DB/MODELS/building databases.canvas",
+    "CS/APPLIED CS/SOFTWARE ENGINEERING/DATA CLASSIFICATION/DB/MODELS",
+    "CS/APPLIED CS/SOFTWARE ENGINEERING/Software classification/DB/DBMS",
+    "CS/APPLIED CS/SOFTWARE ENGINEERING/DATA CLASSIFICATION/DB/OTHER TYPES",
+    "CS/APPLIED CS/SOFTWARE ENGINEERING/Software classification/COMMAND-LINE STUFF",
+    "CS/APPLIED CS/SOFTWARE ENGINEERING/Software classification/OPERATING SYSTEM ABSTRACTIONS",
+    "CS/Applied CS/Software engineering/Software classification/Processes"
   ]
 }

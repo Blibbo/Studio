@@ -1,10 +1,10 @@
 {
 	"nodes":[
-		{"id":"96dc1abb70c4e7a0","type":"file","file":"CS/Applied CS/Software engineering/Data classification/DB/MODELS/conceptual model.md","x":-440,"y":-560,"width":400,"height":400},
-		{"id":"db949b86affaa908","type":"file","file":"CS/Applied CS/Software engineering/Data classification/DB/DB.md","x":-920,"y":-1360,"width":400,"height":400},
-		{"id":"7ca67f3d5a2ff112","type":"file","file":"CS/Applied CS/Software engineering/Data classification/DB/MODELS/data model.md","x":200,"y":-1360,"width":400,"height":400},
-		{"id":"f400ca37c968d947","type":"file","file":"CS/Applied CS/Software engineering/Data classification/DB/MODELS/logic model.md","x":760,"y":-560,"width":400,"height":400},
-		{"id":"a7906e6a17c64b50","type":"file","file":"CS/Applied CS/Software engineering/Data classification/DB/MODELS/ER.md","x":-440,"y":-40,"width":400,"height":400}
+		{"id":"96dc1abb70c4e7a0","type":"file","file":"CS/APPLIED CS/SOFTWARE ENGINEERING/DATA CLASSIFICATION/DB/MODELS/conceptual model.md","x":-440,"y":-560,"width":400,"height":400},
+		{"id":"db949b86affaa908","type":"file","file":"CS/APPLIED CS/SOFTWARE ENGINEERING/DATA CLASSIFICATION/DB/DB.md","x":-920,"y":-1360,"width":400,"height":400},
+		{"id":"7ca67f3d5a2ff112","type":"file","file":"CS/APPLIED CS/SOFTWARE ENGINEERING/DATA CLASSIFICATION/DB/MODELS/data model.md","x":200,"y":-1360,"width":400,"height":400},
+		{"id":"f400ca37c968d947","type":"file","file":"CS/APPLIED CS/SOFTWARE ENGINEERING/DATA CLASSIFICATION/DB/MODELS/logic model.md","x":760,"y":-560,"width":400,"height":400},
+		{"id":"a7906e6a17c64b50","type":"file","file":"CS/APPLIED CS/SOFTWARE ENGINEERING/DATA CLASSIFICATION/DB/MODELS/ER.md","x":-440,"y":-40,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"728311f43a522209","fromNode":"db949b86affaa908","fromSide":"right","toNode":"7ca67f3d5a2ff112","toSide":"left","label":"if you want to build a database,\nfirst you need to define its"},
