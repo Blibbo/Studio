@@ -1,4 +1,4 @@
-> My name is Linus Torvalds and I am your god.
+>My name is Linus Torvalds and I am your god.
 
 ![[Linus Torvalds flipping you off.webp]]
 
@@ -23,6 +23,10 @@ He just talks _a lot_ of shit, he's bound to have said some memorable stuff.
 
 > The fact is, there aren't just two sides to any issue, there's almost always a range of responses, and "it depends" is almost always the right answer in any big question. 
 
+
+### [[Linux]]
+
+>just a hobby, won't be big and professional like [[GNU|gnu]].
 
 ### [[open source]]
 

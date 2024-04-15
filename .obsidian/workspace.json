@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/SHELL/cmd/batch.md",
+                "file": "Software/OS/Linux/Linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/SHELL/cmd/batch.md",
+                "file": "Software/OS/Linux/Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/SHELL/cmd/batch.md",
+                "file": "Software/OS/Linux/Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Languages/SHELL/cmd/batch.md"
+                "file": "Software/OS/Linux/Linux.md"
               }
             }
           }
@@ -150,9 +150,27 @@
   },
   "active": "a0fd091583875309",
   "lastOpenFiles": [
+    "Software/OS/Linux/GNU/GNU.md",
+    "Languages/SHELL/bash.md",
+    "Software/OS/Linux/Linux.md",
+    "STS/People/Linus Torvalds.md",
+    "Software/OS/Linux/Linux kernel.md",
+    "Software/OS/Unix/Unix.md",
+    "Languages/SHELL/cmd/batch.md",
+    "Languages/SHELL/Powershell/powershell.md",
+    "Languages/SHELL/SH.md",
+    "Languages/SHELL/sh/SH.md",
+    "Languages/SHELL/sh",
+    "Languages/SHELL/batch/SCRIPTS/sync.bat",
+    "Languages/SHELL/batch/SCRIPTS/subfolders-to-uppercase.bat",
+    "Languages/SHELL/batch/SCRIPTS",
+    "Languages/SHELL/batch/batch.md",
+    "Languages/SHELL/batch",
+    "Languages/SHELL/cmd/SCRIPTS/subfolders-to-uppercase.bat",
+    "Languages/SHELL/cmd/SCRIPTS/rename-to-uppercase.bat",
+    "Languages/SHELL/cmd/SCRIPTS/TO UPPERCASE.bat",
     "Software/Programming/Atomic tools/Interpreters/Command processors/cmd.exe.md",
     "Languages/GENERAL-PURPOSE/RUST/Rust.md",
-    "Languages/SHELL/cmd/batch.md",
     "CS/TCS/INFORMATION THEORY/CODING THEORY/coding theory.md",
     "CS/TCS/INFORMATION THEORY/CODING THEORY/CRYPTOGRAPHY/cryptography.md",
     "CS/TCS/INFORMATION THEORY/CODING THEORY/COMPRESSION/data compression.md",
@@ -169,24 +187,6 @@
     "Languages/WEB/HTML/progetti/Digital Divide (educazione civica)/resources/images/chad.jpg",
     "CS/TCS/INFORMATION THEORY/CODING THEORY/ERROR CORRECTION",
     "CS/TCS/INFORMATION THEORY/CODING THEORY/CRYPTOGRAPHY",
-    "CS/TCS/INFORMATION THEORY/CODING THEORY/COMPRESSION",
-    "CS/TCS/INFORMATION THEORY/CODING THEORY",
-    "Software/Programming/Atomic tools/Interpreters/php.exe.md",
-    "Languages/WEB/PHP/frameworks/laravel/Laravel.md",
-    "CS/APPLIED CS/SOFTWARE ENGINEERING/DATA CLASSIFICATION/DB/OTHER TYPES/MMDB.md",
-    "CS/APPLIED CS/COMPUTER ARCHITECTURE/CPU/CPU.md",
-    "Software/Programming/Built on top of others/Services that provide APIs/Cloud/OneDrive.md",
-    "Software/Programming/Built on top of others/Services that provide APIs/Cloud/cloud.md",
-    "CS/Applied CS/Software engineering/Software classification/OPERATING SYSTEM ABSTRACTIONS/service.md",
-    "Software/OS/Windows/Windows.md",
-    "CS/APPLIED CS/SOFTWARE ENGINEERING/DATA CLASSIFICATION/DB/DB.md",
-    "Maths/Logic/Mathematical Logic/Higher-order logic/Set Theory/set.md",
-    "CS/APPLIED CS/SOFTWARE ENGINEERING/DATA CLASSIFICATION/DB/MODELS/building databases.canvas",
-    "CS/APPLIED CS/SOFTWARE ENGINEERING/DATA CLASSIFICATION/DB/MODELS",
-    "CS/APPLIED CS/SOFTWARE ENGINEERING/Software classification/DB/DBMS",
-    "CS/APPLIED CS/SOFTWARE ENGINEERING/DATA CLASSIFICATION/DB/OTHER TYPES",
-    "CS/APPLIED CS/SOFTWARE ENGINEERING/Software classification/COMMAND-LINE STUFF",
-    "CS/APPLIED CS/SOFTWARE ENGINEERING/Software classification/OPERATING SYSTEM ABSTRACTIONS",
-    "CS/Applied CS/Software engineering/Software classification/Processes"
+    "CS/APPLIED CS/SOFTWARE ENGINEERING/DATA CLASSIFICATION/DB/MODELS/building databases.canvas"
   ]
 }

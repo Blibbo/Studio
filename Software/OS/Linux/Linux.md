@@ -4,6 +4,7 @@ tags:
   - operating-system
 aliases:
   - GNU/Linux
+  - Linus kernel
 ---
 **Linux** is a [[Unix]]-based operating system that adheres to [[POSIX]].
 
@@ -43,10 +44,13 @@ TABLE FROM "Software/OS/Linux/DISTROS"
 
 ## Trivia
 
-The [[Linux kernel]] and [[GNU]] are the ones with the [[GPL]]. So those components are open-source.
-- Technically, anything else a Linux distribution has can be proprietary and closed-source.
-- practically, no it's not lol
-- the whole point of this os is that open source = good
+"version 0.01" of the Linux kernel was released by [[Linus Torvalds]] on August 25, 1991.
+Linus developed it as a hobby while studying at the University of Helsinki in Finland.
+
+The annoncement of the kernel being released happened on the [[Usenet]] newsgroup comp.os.minix, and Linus described it as "just a hobby"
+![[Linus Torvalds#Linux]]
+
+The [[Linux kernel]] and [[GNU]] are both [[GPL|GPL'd]], so any changes to those will be made public.
 
 ### [[Linus Torvalds]] on why desktop Linux sucks
 

@@ -20,7 +20,7 @@ Historical [[OS|operating system]] developed at [[Bell Labs]].
 
 ### Userland
 
-- [[Bash]]
+- [[SH|Bourne Shell]]
 - **Info:**
 	- TW: im a windowstard so you'll see `.exe` thrown around a lot
 	- it's to remind me if i download knockoff linux utilities i'll need to explicitly write `.exe`

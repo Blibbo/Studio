@@ -7,20 +7,19 @@ aliases:
   - GNU Bash
   - Bourne Again Shell
 ---
+**Bash** is the [[open source|open-source]] version of the [[SH|Bourne Shell]].
+It's part of the [[GNU|GNU Project]].
+
+Bash is the default shell on some Unix-like systems, such as [[Linux]] and [[macOS]], and it runs whenever you execute `{bash}sh`
+
 ---
 
-### About Bash
+## Bash vs the [[SH|Bourne Shell]]
 
-- builds on the [[SH|Bourne Shell]], but user friendl*ier*
-- shell for a bunch of [[Unix]] like systems, most notably [[Linux]] and [[macOS]] (ew)
-- backwards compatible: most SH scripts can be run by Bash
-- on Unix-like systems that support it bash is the default shell and it runs when you execute `{bash}sh`
-	- ~~execute `{bash}sh` on what? another shell? lol~~
-	
----
+Bash is a superset of the original bourne shell.
+This means, it's capable of executing all `.sh` scripts, as well as a new format called `.bash`.
 
-### Bash builds over [[SH]]
-
+Additionally, bash:
 - incorporates features from the [[KSH|Korn Shell]]
 - incorporates features from the [[CSH|C Shell]]
 - adds command history
