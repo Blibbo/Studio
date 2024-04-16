@@ -4,7 +4,7 @@ tags:
   - operating-system
 aliases:
   - GNU/Linux
-  - Linus kernel
+  - Linux kernel
 ---
 **Linux** is a [[Unix]]-based operating system that adheres to [[POSIX]].
 
