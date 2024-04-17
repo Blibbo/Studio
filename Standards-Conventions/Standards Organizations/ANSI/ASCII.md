@@ -39,7 +39,7 @@ aliases:
 - 21  NAK (negative acknowledge)
 - 22  SYN  ^V (synchronous idle)
 - 23  ETB (end of trans. block)
-- 24  CAN (cancel)
+- 24  CAN  (cancel)
 - 25  EM  (end of medium)
 - 26  SUB (substitute)
 - 27  ESC (escape)

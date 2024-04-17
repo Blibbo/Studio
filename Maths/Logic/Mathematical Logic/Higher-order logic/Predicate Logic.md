@@ -8,7 +8,7 @@ aliases:
   - teoria del primo ordine
   - calcolo dei predicati
 ---
-Extends [[propositional logic]]
+Extends [[Propositional Logic]]
 
 https://brilliant.org/wiki/predicate-logic/
 https://it.wikipedia.org/wiki/Teoria_del_primo_ordine

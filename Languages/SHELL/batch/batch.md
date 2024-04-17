@@ -3,7 +3,7 @@ tags:
 aliases:
   - batch scripting language
 ---
-The 
+**batch** is a scripting language [[interpreter|interpreted]] by [[cmd.exe]].
 
 ---
 
@@ -193,17 +193,57 @@ They're [[variable|variables]]. Like in any other language.
 Variables expand to (a.k.a. _"their text gets replaced with"_) their corresponding value before the line _**==OR BLOCK==**_ is executed. See [[#Execution]] for more info.
 Anyways, this creates problems. These pieces of syntax below address it.
 
+==N.B.:== instead of the variable's name alone, you can put an expression to parse the variable differently and manipulate it, such as a [[#substring extraction]] or a [[#replacement expression]].
+
 - `%variable%` ^variable-syntax
 	- Syntax for normal variables. This expands to the value of the environment variable.
 	  It has scoping problems with [[#Blocks]].
-	  
-	- `{batch}%variable:c=d%`
-		- expands to the variable, but replaces `c` with `d`
-		- you can also replace with nothing, to make substrings
 - `{batch}!variable!` ^block-variable
 	- Refer to the variable, using the correct scope for [[#blocks]]. Fixes the problem.
 	- This syntax requires `{batch}SETLOCAL ENABLEDELAYEDEXPANSION` to be written anywhere before this line (even outside the block)
 	- https://stackoverflow.com/a/21389931
+
+##### Iterator
+
+The **iterator** is a weird variable that is available to you within [[#^for]] loops.
+It takes the value of each token you're iterating... over.
+
+It looks like this: `{batch}%%<letter>`, for example: `{batch}%%f`.
+==It must be exactly one letter long.==
+
+###### Iterator modifiers
+
+Let's say our iterator name is `{batch}%%f`. It contains an absolute path to a file/directory.
+- `{batch}%%~nf` is the name modifier. You're taking the file name.
+- `{batch}%%~xf` is the file extension. You're checking what the extension is. It will be ignored if there's no extension (like with directories)
+- `{batch}%%~nxf` is the file name and extension.
+These things exist because you're typically iterating over absolute file/directory paths, when checking the files inside a directory.
+
+What we often do is make a for loop with one iteration just to extract the file name out of this variable:
+```batch
+for %%f in ("%absolutePath%") do (
+	set "name=%%~nxf"
+)
+```
+`{batch}%name%` will contain the file/directory name at the end of the loop.
+
+##### Replacement expression
+
+`{batch}myVariable:toreplace=replacement` is an expression that allows you to replace parts of a variable
+
+**Examples:**
+`{batch}%myVariable:c=d%` expands to the variable, but replacing `c` with `d`
+`{batch}!myVariable:c=!` expands to the variable, without the letter `c`
+
+##### Substring extraction
+
+`{batch}myVariable:~<beginningIndex>,<endIndex>` is an expression that extracts a substring starting from the `{batch}<beginningIndex>` and ending at `{batch}<endIndex>` (excluding the second index)
+
+**Examples:**
+`{batch}!myVariable:~10,20!` extracts the characters with index from `{batch}10` to `{batch}20`
+`{batch}%myVariable:~0,1%` extracts the first character from the variable
+
+>notice how `{batch}%%` and `{batch}!!` are the same for these examples: I'm using them interchangeably.
 
 ### Labels
 
@@ -296,16 +336,28 @@ These are the built in commands, only usable in this shell.
 		- After an `{batch}if`
 		- it's NOT a command of its own: the closing bracket `)` MUST be in the same line as `{batch}else`. That's how it even recognizes else as valid
 		  There must be a space between `{batch}else` and `{batch}(`, if you put a block
-- `{batch}for`
-	- [[For]] loop.
+- `{batch}for` ^for
+	- For loop.
+	- `{batch}/r <directory>`
+		- Iterate recursively over everything in the directory
 	- `{batch}/f`
-		- Iterate over something
+		- file.
+		- if you're iterating over a directory, it means "iterate over contained files".
+		  If you're iterating over a file, it looks at the contents of the file
+	- `{batch}/D`
+		- directories only
 	- `{batch}"delims="`
 		- Set the delimiter between the pieces of input as nothing, empty.
-	- `{batch}%%myVariable in ('file.txt')`
-		- `{batch}%%myVariable` will take the value of each individual input provided by `{batch}file.txt`.
+	- `{batch}%%f in (<token>)`
+		- `{batch}%%f` is an [[#Iterator]]
+		- **tokens:**
+			- `{batch}*`
+				- everything. just everything
+			- `{batch}filename`
+				- `{batch}%%myVariable` will take the value of each individual input provided by `{batch}file.txt`.
 	- `{batch}do (block of code)`
 		- Execute the [[#Blocks|block]] for each iteration.
+		- If the block is empty your entire script will break.
 	- **Examples:**
 		- Copy the last piece of output of `{batch}other.bat` into a variable called `{batch}output`
 		  `{batch}for /f "delims=" %%a in ('other.bat') do set output=%%a`
@@ -399,19 +451,6 @@ To debug variables:
 Common errors:
 - `<token> was unexpected at this time.`
 	- there's a syntax error, but it will keep you guessing.
-
----
-
-## Shortcuts
-
-Shortcuts for the terminal.
-- `Up Arrow` ^up-arrow
-	- Previous command
-- `Down Arrow`
-	- Next command
-	- Doesn't do anything if you didn't use [[#^up-arrow]] before
-- `Ctrl + Down Arrow`
-	- Go down one line in the screen. As in, scrolling.
 
 ---
 

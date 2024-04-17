@@ -40,6 +40,11 @@ He just talks _a lot_ of shit, he's bound to have said some memorable stuff.
 
 > There are literally several levels of SCO being wrong. And even if we were to live in that alternate universe where SCO would be right, they'd still be wrong.
 
+### [[NVIDIA]]
+
+>Fuck you, NVIDIA
+- https://www.youtube.com/watch?v=xPh-5P4XH6o
+
 ### [[Emacs]]
 
 > An infinite number of monkeys typing into GNU emacs would never make a good program. 
