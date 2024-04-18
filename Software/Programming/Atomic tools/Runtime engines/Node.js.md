@@ -1,6 +1,7 @@
-[[runtime environment]] for [[JavaScript]].
+**Node.js** is a [[runtime environment]] for [[JavaScript]].
 
-It basically turned JavaScript into a general-purpose programming language.
-Among everything else, it allowed JavaScript to be used for server-side web coding.
+It basically made JavaScript break free from the [[browser]] and turned it into a general-purpose programming language.
 
-Supports [[WebAssembly]].
+Node supports [[WebSQL]].
+
+Node.exe is a [[REPL]] for JavaScript.

@@ -1,4 +1,4 @@
-**WebSQL** is a deprecated [[API]] for [[JavaScript]] that lets the language interact with a built in [[DBMS]] within the [[Browser]].
+**WebSQL** is a deprecated [[API]] for [[JavaScript]] that lets the language interact with a built in [[DBMS]] within the [[browser]].
 Each browser had to implement its own DBMS just for this to work.
 
 It was part of the ES standard, I think.

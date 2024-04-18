@@ -4,6 +4,7 @@ aliases:
   - OS X
 ---
 **macOS** is a dick-and-ball sucking [[proprietary software|proprietary]] [[OS|operating system]] based on [[Unix]].
+This OS adheres to [[POSIX]].
 
 ---
 

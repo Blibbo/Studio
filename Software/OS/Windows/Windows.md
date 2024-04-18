@@ -1,10 +1,24 @@
 ---
-tags:
-  - closed-source
-  - operating-system
+tags: []
 ---
-Bloatware, with a functioning operating system hidden in there.
-Made in [[C++]]
+>Bloatware
+- 4chinners
+
+**Windows** is a [[proprietary software|proprietary]], [[closed-source]] [[OS|operating system]] developed by [[Microsoft]], known for its user-friendliness and familiarity.
+It's often shipped _with_ hardware so everyone has at least heard of it.
+
+Microsoft's strategy is giving you reasons to be forced to use Windows despite the operating system being shitty.
+Examples of the stuff microsoft will do:
+1. sign contracts with hardware manufacturers to get windows shipped with the PCs, preinstalled
+2. sign contracts with software companies (e.g. [[Adobe]]) to optimize their software for the Windows environment
+3. not adhere to standards, such as POSIX, to ensure bringing your knowledge over to another operating system is awkward because everything is ever so slightly different
+
+For these reasons, pretentious [[Linux]] elitists **still** have to run Windows on a [[VM]] for gaming. ~~e un po' ci godo, merde.~~
+Still though, Windows users need [[WSL]] to have... you know... a functioning operating system.
+
+## Tech employed
+
+Windows was made in [[C++]]
 
 ---
 

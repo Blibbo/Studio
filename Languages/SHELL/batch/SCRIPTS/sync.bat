@@ -5,7 +5,8 @@ if "%1" neq "" (
 	set device=%1
 ) else (
 	set device_bat=device
-	if "!device_bat!" == "" echo empty
+	rem if "!device_bat!" == "" echo empty
+	
 	REM check if the command exists (i don't know why this is the syntax)
 	where !device_bat! >nul 2>nul
 	

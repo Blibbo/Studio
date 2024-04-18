@@ -2,7 +2,7 @@
 aliases:
   - Web Graphics Library
 ---
-This is a piece of [[software]] that runs on [[Browser|browsers]].
+This is a piece of [[Software]] that runs on [[browser|browsers]].
 The way you interact with this software is through a [[JavaScript]] [[API]].
 
 It allows you to render 2D and 3D graphics.

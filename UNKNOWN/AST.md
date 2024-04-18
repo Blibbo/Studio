@@ -1,0 +1,4 @@
+---
+aliases:
+  - abstract syntax tree
+---

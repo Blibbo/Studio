@@ -1,7 +1,7 @@
 ---
 
 ---
-This is one of the first, if not the first, [[Browser|web browsers]].
+This is one of the first, if not the first, [[browser|web browsers]].
 
 ---
 

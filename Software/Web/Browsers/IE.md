@@ -5,7 +5,7 @@ tags:
 aliases:
   - Internet Explorer
 ---
-[[Browser]] from [[Microsoft]] that used [[Chakra]].
+[[browser]] from [[Microsoft]] that used [[Chakra]].
 
 ---
 

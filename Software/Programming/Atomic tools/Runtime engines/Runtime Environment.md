@@ -4,4 +4,4 @@ aliases:
   - runtime engines
   - runtime engine
 ---
-A piece of [[software]] that executes [[binary instruction format|binary instruction formats]] in real time.
+A piece of [[Software]] that executes [[binary instruction format|binary instruction formats]] in real time.

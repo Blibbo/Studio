@@ -2,7 +2,7 @@
 aliases:
   - MySQL Server
 ---
-Powerful [[DBMS#RDBMS|RDBMS]] [[software]] released under the [[GPL]].
+Powerful [[DBMS#RDBMS|RDBMS]] [[Software]] released under the [[GPL]].
 
 It runs on your machine as a service or [[Daemon]].
 To start the service, use the [[mysqld.exe]] utility.

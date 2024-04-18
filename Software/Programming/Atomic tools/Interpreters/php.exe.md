@@ -1,10 +1,7 @@
 ---
-tags:
-  - web-development
-  - back-end
-  - software
+tags: []
 ---
-This is a [[command-line program]]
+**php.exe** is a [[command-line program]] that handles everything [[PHP]] related.
 
 ---
 
@@ -42,7 +39,7 @@ This is a [[command-line program]]
 
 It's actually a mixture of compilation and interpretation:
 1. **Parsing:**
-	- The PHP interpreter parses the source code and generates an intermediate representation known as the [[Abstract Syntax Tree]] (AST).
+	- The PHP interpreter parses the source code and generates an intermediate representation known as the [[AST]].
     
 2. **Compilation:**
 	- The AST is then translated into an intermediate bytecode. This bytecode is not machine code but is a lower-level representation that can be executed by the Zend Engine, which is the runtime engine for PHP.

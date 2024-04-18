@@ -3,7 +3,7 @@ aliases:
   - programs
 ---
 A program is a set of instructions that directs a [[computer]] to perform a specific task or series of tasks. 
-It is a single piece of [[software]].
+It is a single piece of [[Software]].
 
 ## Program ${ \neq }$ [[executable]]
 

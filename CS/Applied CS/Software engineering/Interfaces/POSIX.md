@@ -12,11 +12,19 @@ This standard is maintained by the [[IEEE]].
 
 This standard is mostly [[Unix]]-based.
 
-- [[Linux]] and various versions of [[Unix#^bsd|BSD]] adhere
+[[Linux]] and various versions of [[Unix#^bsd|BSD]] adhere
 
 ---
 
-### Components
+## File system
+
+- No drive letters in paths
+- forward slashes
+- `/usr` and `/bin` directories
+
+---
+
+## Components
 
 1. **Shell and Utilities (POSIX.1):** Specifies the command shell and a set of common utilities.
     
@@ -27,3 +35,12 @@ This standard is mostly [[Unix]]-based.
 4. **Threads Extensions (POSIX.1c):** Specifies thread creation, synchronization, and management.
     
 5. **Security Interfaces (POSIX.1e):** Defines security-related features.
+
+---
+
+## POSIX-compliant systems
+
+These operating systems adhere to posix:
+```dataview
+TABLE FROM [[OS]] AND [[POSIX]]
+```

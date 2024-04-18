@@ -3,7 +3,8 @@ tags:
 aliases:
   - batch scripting language
 ---
-**batch** is a scripting language [[interpreter|interpreted]] by [[cmd.exe]].
+**batch** is a [[shell language]] [[interpreter|interpreted]] by [[cmd.exe]].
+Tightly associated with the [[Windows]] environment.
 
 ---
 
@@ -179,7 +180,6 @@ Blocks get treated as:
 - **a single instruction** when [[#Parsing]] variables.
 - **multiple instructions** when executing commands inside.
 
-
 ### Variables
 
 They're [[variable|variables]]. Like in any other language.
@@ -203,30 +203,6 @@ Anyways, this creates problems. These pieces of syntax below address it.
 	- This syntax requires `{batch}SETLOCAL ENABLEDELAYEDEXPANSION` to be written anywhere before this line (even outside the block)
 	- https://stackoverflow.com/a/21389931
 
-##### Iterator
-
-The **iterator** is a weird variable that is available to you within [[#^for]] loops.
-It takes the value of each token you're iterating... over.
-
-It looks like this: `{batch}%%<letter>`, for example: `{batch}%%f`.
-==It must be exactly one letter long.==
-
-###### Iterator modifiers
-
-Let's say our iterator name is `{batch}%%f`. It contains an absolute path to a file/directory.
-- `{batch}%%~nf` is the name modifier. You're taking the file name.
-- `{batch}%%~xf` is the file extension. You're checking what the extension is. It will be ignored if there's no extension (like with directories)
-- `{batch}%%~nxf` is the file name and extension.
-These things exist because you're typically iterating over absolute file/directory paths, when checking the files inside a directory.
-
-What we often do is make a for loop with one iteration just to extract the file name out of this variable:
-```batch
-for %%f in ("%absolutePath%") do (
-	set "name=%%~nxf"
-)
-```
-`{batch}%name%` will contain the file/directory name at the end of the loop.
-
 ##### Replacement expression
 
 `{batch}myVariable:toreplace=replacement` is an expression that allows you to replace parts of a variable
@@ -244,6 +220,56 @@ for %%f in ("%absolutePath%") do (
 `{batch}%myVariable:~0,1%` extracts the first character from the variable
 
 >notice how `{batch}%%` and `{batch}!!` are the same for these examples: I'm using them interchangeably.
+
+### Parameters
+
+**Parameters** in batch are special variables with their own silly rules and stuff. They still get parsed as normal variables do, but they have unique syntax to them. They can look like this: `{batch}%1` or like this: `{batch}%%f`. They have either one or two percentage signs and have a name that's one character long.
+
+#### Parameter modifiers
+
+Let's say our parameter name is `{batch}%1`. It contains an absolute path to a file/directory.
+- `{batch}%~1` expands %1 removing any surrounding quotes (")
+- `{batch}%~f1` expands %1 to a fully qualified path name
+- `{batch}%~d1` expands %1 to a drive letter only
+- `{batch}%~p1` expands %1 to a path only
+- `{batch}%~n1` expands %1 to a file name only
+- `{batch}%~x1` expands %1 to a file extension only
+- `{batch}%~s1` expanded path contains short names only
+- `{batch}%~a1` expands %1 to file attributes
+- `{batch}%~t1` expands %1 to date/time of file
+- `{batch}%~z1` expands %1 to size of file
+- `{batch}%~$PATH:1` searches the directories listed in the PATH environment variable and expands %1 to the fully qualified name of the first one found.  If the environment variable name is not defined or the file is not found by the search, then this modifier expands to the empty string
+
+
+
+They can be combined.
+**Examples:**
+- `{batch}%~dp1` expands %1 to a drive letter and path only
+- `{batch}%~nx1` expands %1 to a file name and extension only
+- `{batch}%~dp$PATH:1` searches the directories listed in the PATH environment variable for %1 and expands to the drive letter and path of the first one found.
+- `{batch}%~ftza1` expands %1 to a DIR like output line
+
+http://windows.fyicenter.com/4984_Batch_Parameter_Modifiers.html
+
+#### Iterator
+
+The **iterator** is a [[#parameters|parameter]] that is available to you within [[#^for]] loops.
+It takes the value of each token you're iterating over.
+
+It looks like this: `{batch}%%<letter>`, for example: `{batch}%%f`.
+==It must be exactly one letter long.==
+
+
+What we often do is make a for loop with one iteration over a variable just to abuse the [[#Parameter modifiers]] this iterator offers.
+Normal variables just don't have these handy modifiers, so we gotta do this dumb thing sometimes.
+**Example:**
+```batch
+REM extract file name and extension from a variable containing the absolute path of a file
+for %%f in ("%absolutePath%") do (
+	set "name=%%~nxf"
+)
+```
+`{batch}%name%` will contain the file/directory name at the end of the loop.
 
 ### Labels
 
@@ -453,6 +479,20 @@ Common errors:
 	- there's a syntax error, but it will keep you guessing.
 
 ---
+
+## Handy functions
+### Uppercase
+
+Turning a string to uppercase in batch is not as trivial as it is in most languages. There are various solutions to this problem
+https://stackoverflow.com/questions/34713621/batch-converting-variable-to-uppercase
+
+```batch
+set upper=
+set "str=Make me all uppercase!"
+for /f "skip=2 delims=" %%I in ('tree "\%str%"') do if not defined upper set "upper=%%~I"
+set "upper=%upper:~3%"
+echo %upper%
+```
 
 ## Trivia
 

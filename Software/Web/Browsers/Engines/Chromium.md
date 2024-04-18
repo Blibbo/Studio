@@ -2,7 +2,7 @@
 tags:
   - engine
 ---
-[[open source|Open-source]] [[Browser]] engine.
+[[open source|Open-source]] [[browser]] engine.
 Its rendering engine is called [[Blink]].
 
 ---

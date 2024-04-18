@@ -1,26 +1,45 @@
 ---
-tags:
-  - software
+tags: []
 ---
----
+**Pandoc** is a [[FOSS]] markup document converter. Works for most known [[markup language|markup languages]].
 
-### About Pandoc
-
-- [pandoc.org](https://pandoc.org/)
-- written in [[Haskell]]
-- it's a document converter. From one markup language to another.
-- it recognizes additional syntax for one specific language: [[Markdown]]. This syntax includes:
-	- [[YAML]] for front matter
-	- syntax highlighting with a specific format
-		- meta page about pandoc highlighting [here](https://pandoc.org/chunkedhtml-demo/13-syntax-highlighting.html)
-			- this says pandoc uses [[skylighting]]
-		- how to actually use this shit [here](https://pandoc.org/chunkedhtml-demo/8.5-verbatim-code-blocks.html#fenced-code-blocks)
-	- better table formatting (markdown notoriously [[Markdown#^tables|sucks at tables]])
+[pandoc.org](https://pandoc.org/)
+[Manual](https://pandoc.org/MANUAL.html)
 
 ---
 
-### Trivia
+## Tech employed
 
-- Dr. John MacFarlane, creator of Pandoc, had a PhD in Philosophy and is a professor of Philosophy.
-	- He uses pandoc for all his lecture notes
-- [Here](https://johnmacfarlane.net/tools)'s his other work
+Pandoc is written in [[Haskell]].
+Haskell libraries used:
+- [[skylighting]] for highlighting code in various languages, for documents that include code blocks.
+  [Relevant link](https://pandoc.org/chunkedhtml-demo/13-syntax-highlighting.html)
+
+---
+
+## Enhanced [[Markdown]]
+
+Pandoc offers conversion to and from different markdown flavors, but it also supports its own "enhanced markdown"
+The improvements of enhanced markdown over regular markdown are:
+- support for [[YAML]]
+- code blocks allow for syntax highlighting with an additional piece of syntax
+  [more on this here](https://pandoc.org/chunkedhtml-demo/8.5-verbatim-code-blocks.html#fenced-code-blocks)
+- better table formatting (markdown notoriously [[Markdown#^tables|sucks at tables]])
+
+---
+
+## Trivia
+
+Pandoc was made by [[John MacFarlane|Dr. John MacFarlane]], who's a professor of philosophy.
+
+---
+
+# [[Haskell]] library
+
+The core of pandoc is a library written in haskell.
+
+---
+
+# [[command-line program]]
+
+The command line program uses the library.

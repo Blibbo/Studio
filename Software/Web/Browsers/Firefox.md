@@ -4,7 +4,7 @@ tags:
 aliases:
   - Mozilla Firefox
 ---
-[[Browser|Web browser]] that uses [[SpiderMonkey]] and [[Gecko]].
+[[browser|Web browser]] that uses [[SpiderMonkey]] and [[Gecko]].
 
 ---
 

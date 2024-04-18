@@ -3,26 +3,31 @@ tags:
   - closed-source
   - free
 ---
+**Obsidian** is a [[Markdown]] editor to take notes.
+It's [[proprietary software]], which is dangerous for a note-taking app that wants to "complement your brain".
+You own the notes though, as they're just [[Plain Text]] files in markdown format.
+Additionally, remaking the note rendering part of the app in the future wouldn't be super hard.
+
+You can write plugins for this app in [[JavaScript]] and themes in [[CSS]].
+
 ---
 
-### About Obsidian
+## Tech employed
 
-- [[Markdown]] editor to take notes
-- you own the files
-- Made in [[Electron]]
-- Plugins are written in [[JavaScript]]
-- uses these tools for syntax highlighting in codeblocks:
-	- [[Prism.js]] in reading mode
-	- [[CodeMirror]] in editing mode
-		- because CodeMirror is also Obsidian's text editor
-	- there might be visual inconsistencies between the two modes.
-- uses [[MathJax]] for rendering maths
+Obsidian is made in [[Electron]].
+Because it uses Electron, each software component this app is made out of is a [[JavaScript]] library.
+Obsidian uses:
+- [[MathJax|MathJax]] to render latex.
+- [[Prism.js]] to highlight markdown code blocks in [[Pandoc]]
+- [[CodeMirror]] as the main text editor, and syntax highlighter for code blocks in "editing mode" (visual inconsistencies happen in codeblocks based on whether you're in reading or editing mode)
 
 ---
 
 ### Rendering of Markdown in the client
 
-- [Docs](https://help.obsidian.md/Editing+and+formatting/Advanced+formatting+syntax)
+[Documentation](https://help.obsidian.md/Editing+and+formatting/Advanced+formatting+syntax)
+
+These are all the formats obsidian supports for rendering text within your markdown files:
 - basic [[Markdown#Syntax|markdown syntax]]
 - most [[HTML]] syntax
 - [[YAML]] format for [[#^properties|properties]]
@@ -43,7 +48,7 @@ tags:
 	- Search note
 - `Ctrl + E`
 	- Toggle reading mode
-- `Ctrl + P`
+- `Ctrl + P` ^command-palette
 	- Open command palette
 - `Ctrl + Shift + V`
 	- Paste as plain text
@@ -63,9 +68,9 @@ tags:
 
 ---
 
-### Commands
+## Commands
 
-[[Fuzzy search]]. The best type of search
+Commands in obsidian are written in the [[#^command-palette]].
 `Ctrl + P +:`
 - `buli`
 	- `toggle bullet list`
@@ -92,6 +97,13 @@ tags:
 - `local graph`
 	- open local graph
 	
+---
+
+## Multi-cursor
+
+`Alt + Click` a location or `Shift + Alt + Select lines`
+https://help.obsidian.md/Editing+and+formatting/Multiple+cursors
+
 ---
 
 ### Community plugins

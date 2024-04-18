@@ -4,8 +4,8 @@ aliases:
   - wsl.exe
   - Windows Subsystem for Linux
 ---
-Optional [[Windows]] feature that offers [[Linux]] compatibility.
-Allows you to install as many [[Linux#distros]] as you like.
+**Windows Subsystem for Linux** is an optional [[Windows]] feature that offers [[Linux]] compatibility.
+It basically allows you to install as many [[Linux#distros]] as you like.
 
 Linux files are in a virtual disk named `ext4.vhdx`, located typically in `%userprofile%\AppData\Local\Packages\Canonical...\LocalState\ext4.vhdx`
 
@@ -16,7 +16,7 @@ Linux files are in a virtual disk named `ext4.vhdx`, located typically in `%user
 - [Docs by Microsoft](https://learn.microsoft.com/en-us/windows/wsl/install)
 - requires a [[Windows 10]] build above **19041** or a subsequent [[Windows]] version
 	- check version through [[Windows#^msinfo32|this]] command
-- `wsl.exe` available in the Microsoft Store (look for "**Windows Subsystem for Linux**")
+- `wsl.exe` available in the Microsoft Store
 - this executable handles [[Linux]] distros in your windows pc
 - it goes in the [[Windows#^path|Path]] by default after installation from the store
 
@@ -68,7 +68,7 @@ https://askubuntu.com/questions/1380253/where-is-wsl-located-on-my-computer
 
 ## Troubleshooting
 
-#### `Wsl/CallMsi/E_ABORT` error
+#### Wsl/CallMsi/E_ABORT error
 
 ```shell
 WSL is finishing an upgrade...
@@ -91,10 +91,11 @@ Error code: Wsl/CallMsi/E_ABORT
 - used `wsl --install` (ubuntu didnt prompt me to create an user. it asked to reboot the pc instead)
 - restarted my pc
 - `wsl` said i didnt install distros yet. I did `wsl --install` again and ubuntu finally prompted me to make an user
-- **works :thumbsup:**
+- **worked :thumbsup:**
 
 #### I can't see Linux on the explorer anymore
 
+==not fixed==
 this thread: https://answers.microsoft.com/en-us/windows/forum/all/why-there-is-linux-in-my-file-explorer-bar/c7aaca2b-7e7d-4cd2-bb80-6a4cde330433
 
 it totally doesn't work btw. I don't have it on the explorer anymore and that's that

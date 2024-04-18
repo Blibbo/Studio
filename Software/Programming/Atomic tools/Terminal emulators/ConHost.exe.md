@@ -12,3 +12,5 @@ These are handy keyboard shortcuts for the terminal.
 	- Doesn't do anything unless you used [[#^up-arrow]] before
 - `Ctrl + Down Arrow`
 	- Go down one line in the screen. As in, scrolling.
+- `Ctrl + Up Arrow`
+	- Scroll one line up

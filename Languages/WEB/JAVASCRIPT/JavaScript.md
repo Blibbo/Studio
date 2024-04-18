@@ -13,7 +13,7 @@ aliases:
 ---
 **JavaScript** is a general-purpose, [[multi-paradygm programming language]].
 It's used both for scripting and programming tasks.
-[[Browser|Web browsers]] have a built-in [[interpreter]] for this language.
+[[browser|Web browsers]] have a built-in [[interpreter]] for this language.
 
 ---
 

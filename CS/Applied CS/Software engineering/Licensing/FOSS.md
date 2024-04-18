@@ -5,4 +5,4 @@ tags:
 aliases:
   - Free and Open-Source Software
 ---
-The term **FOSS** refers to all [[software]] that's [[open source|open-source]].
+The term **FOSS** refers to all [[Software]] that's [[open source|open-source]].

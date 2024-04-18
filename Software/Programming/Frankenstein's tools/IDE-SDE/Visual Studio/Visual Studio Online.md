@@ -1,1 +1,1 @@
-[[cloud]]-based version of [[Visual Studio]] that can be accessed through a [[Browser|web browser]].
+[[cloud]]-based version of [[Visual Studio]] that can be accessed through a [[browser|web browser]].

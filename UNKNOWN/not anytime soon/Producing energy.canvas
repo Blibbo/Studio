@@ -1,8 +1,8 @@
 {
 	"nodes":[
 		{"id":"fa2eb554e25a8b5a","type":"text","text":"\"what's the smallest thing i could build with my own hands that would extract power from flowing water if i went near a river\"","x":-180,"y":-220,"width":250,"height":160},
-		{"id":"6d2044dba37362b3","type":"file","file":"UNKNOWN/Producing energy/Turbine.md","x":70,"y":80,"width":400,"height":400},
-		{"id":"5fbcefb6f7babfca","type":"file","file":"UNKNOWN/Producing energy/Water wheel.md","x":-580,"y":80,"width":400,"height":400}
+		{"id":"6d2044dba37362b3","type":"file","file":"UNKNOWN/not anytime soon/Producing energy/Turbine.md","x":70,"y":80,"width":400,"height":400},
+		{"id":"5fbcefb6f7babfca","type":"file","file":"UNKNOWN/not anytime soon/Producing energy/Water wheel.md","x":-580,"y":80,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"5e0a92bd91a86ca0","fromNode":"fa2eb554e25a8b5a","fromSide":"bottom","toNode":"5fbcefb6f7babfca","toSide":"top"},

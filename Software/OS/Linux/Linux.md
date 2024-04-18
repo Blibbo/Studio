@@ -1,14 +1,12 @@
 ---
-tags:
-  - open-source
-  - operating-system
+tags: []
 aliases:
   - GNU/Linux
   - Linux kernel
 ---
-**Linux** is a [[Unix]]-based operating system that adheres to [[POSIX]].
+**Linux** is a [[Unix]]-based [[OS|operating system]] composed entirely out of [[FOSS]].
+Linux adheres to [[POSIX]].
 
-Linux is developed by tons of people.
 Lots of distributions of this operating system exist.
 Linux distributions get commonly referred to as [[#distros]].
 

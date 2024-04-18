@@ -5,8 +5,7 @@
 > I have an ego the size of a small planet
 
 **Linus Torvalds** is a key figure in [[FOSS]] development. He made the [[Linux kernel]] and [[Git]].
-He's very pragmatic in his stances and acknowledges software must exist both in its proprietary and corporate form and in the [[open source]] form he advocates for.
-~~(them devs gotta eat too)~~
+He's very pragmatic in his stances and acknowledges software must exist both in its proprietary, corporate form and in the [[open source]] form he advocates for.
 
 Torvalds thinks the open source movement sometimes has a weird religious aura around it that drives companies away, making open-source development less sustainable.
 
