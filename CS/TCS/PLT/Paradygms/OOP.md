@@ -1,6 +1,7 @@
 ---
 aliases:
   - object-oriented programming
+  - object-oriented
 ---
 **Object-oriented programming** is a programming paradygm where data and behavior is encapsulated into objects.
 Most of the terminology was coined by [[Alan Kay]], a pioneer of OOP.

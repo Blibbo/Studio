@@ -1,17 +1,10 @@
 ---
-tags:
-  - open-source
-  - object-oriented
-  - programming
-  - language
+tags: []
 aliases:
   - Visual Basic .NET
 ---
----
+**VB.NET** is an [[open source|open-source]] [[OOP|object-oriented]] [[programming language]] developed by [[Microsoft]].
 
-### About VB.NET
+It's a successor to [[Visual Basic]], but closely integrated within the [[NET Core|.NET Framework]].
 
-- closely integrated with the [[NET Core|.NET]]
-- source files have a `.vb` extension
-- successor to [[Visual Basic]]
-- compiles to [[CIL|IL]]
+Source files have a `.vb` extension and they compile to a format called [[CIL|IL]]

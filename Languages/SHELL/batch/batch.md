@@ -70,7 +70,7 @@ These get created with each terminal session and don't really make sense outside
 	- ==only exists in [[#Scripts]]==
 - `{batch}%*` contains all the parameters (`{batch}%1 %2 %3 etc`) as a single string (but not `{batch}%0`)
 	- ==only exists in [[#Scripts]]==
-- `{batch}%ERRORLEVEL%` contains the last error code
+- `{batch}%ERRORLEVEL%` contains the last error code ^errorlevel
 	- functions typically return this variable
 - `{batch}%~1` is a modifier that removes any quotation marks from the variable `{batch}%1`
 - `{batch}%~dp0` contains the path of the currently executing script
@@ -405,6 +405,9 @@ These are the built in commands, only usable in this shell.
 	- `{batch}dir /s /b filename.ext` ^search-file
 		- looks for any file called `filename.ext` that's a descendant of your current directory
 		- if you go to the root of your system, it's basically what [[Everything.exe]] does
+- `{batch}ren <file or dir path> newname`
+	- Rename file or directory.
+	- The second argument is just a name, not an entire path.
 - `{batch}find`
 	- filters output
 	- `{batch}dir | find ".txt"`
@@ -486,13 +489,60 @@ Common errors:
 Turning a string to uppercase in batch is not as trivial as it is in most languages. There are various solutions to this problem
 https://stackoverflow.com/questions/34713621/batch-converting-variable-to-uppercase
 
+Here's a solution I like:
 ```batch
-set upper=
-set "str=Make me all uppercase!"
-for /f "skip=2 delims=" %%I in ('tree "\%str%"') do if not defined upper set "upper=%%~I"
-set "upper=%upper:~3%"
-echo %upper%
+:to_uppercase
+	
+	if not defined %~1 exit /b %errorlevel%
+	for %%a in ("a=A" "b=B" "c=C" "d=D" "e=E" "f=F" "g=G" "h=H" "i=I" "j=J" "k=K" "l=L" "m=M" "n=N" "o=O" "p=P" "q=Q" "r=R" "s=S" "t=T" "u=U" "v=V" "w=W" "x=X" "y=Y" "z=Z" "ä=Ä" "ö=Ö" "ü=Ü" "è=È") do (
+		call set %~1=%%%~1:%%~a%%
+	)
+	
+exit /b %errorlevel%
 ```
+You pass it a variable name, and it expands it internally, but using the [[#Replacement expression]].
+**Example:** `{batch}call :to_uppercase my_variable_name`
+
+
+### Lowercase
+
+Same thing as above
+
+```batch
+:to_lowercase
+	
+	if not defined %~1 exit /b %errorlevel%
+	for %%a in ("A=a" "B=b" "C=c" "D=d" "E=e" "F=f" "G=g" "H=h" "I=i" "J=j" "K=k" "L=l" "M=m" "N=n" "O=o" "P=p" "Q=q" "R=r" "S=s" "T=t" "U=u" "V=v" "W=w" "X=x" "Y=y" "Z=z" "Ä=ä" "Ö=ö" "Ü=ü" "È=è") do (
+		call set %~1=%%%~1:%%~a%%
+	)
+	
+exit /b %errorlevel%
+```
+
+### Is descendant of
+
+You have a full path and you want to see if any of the folders in the folder structure is called a specific name, here's the function:
+```batch
+:is_descendant_of
+setlocal
+
+	set "full_path=%1"
+	set "searched_ancestor=%2"
+
+	for %%f in ("%full_path:\=" "%") do (	
+		if /i "%%~nxf"=="%searched_ancestor%" (
+			endlocal & exit /b 1
+		)
+	)
+
+endlocal & exit /b 0
+```
+==N.B:== it also returns 1 if you pass itself to it
+
+**Examples:**
+`{batch}call :is_descendant_of C:\directory\file.txt directory` returns [[#^errorlevel]] 1
+`{batch}call :is_descendant_of C:\directory\file.txt dirname` returns errorlevel 0 (not in ancestry)
+`{batch}call :is_descendant_of C:\directory\file.txt file.txt` also returns errorlevel 1
 
 ## Trivia
 
