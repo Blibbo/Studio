@@ -6,6 +6,8 @@ aliases:
 **batch** is a [[shell language]] [[interpreter|interpreted]] by [[cmd.exe]].
 Tightly associated with the [[Windows]] environment.
 
+Batch is bad. So fucking bad. [relevant thread](https://www.reddit.com/r/windows/comments/6nzuy0/comment/dkdwy0f/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+
 ---
 
 ## Execution

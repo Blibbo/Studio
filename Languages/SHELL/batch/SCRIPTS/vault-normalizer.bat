@@ -51,13 +51,41 @@ endlocal & exit /b 0
 
 
 
+
+:retrieve_vault
+
+	for %%I in ("%~1") do (
+		set "current_dir=%%~dpI"
+		
+		for /d %%J in ("!current_dir!..") do (
+		
+			echo ------------------%%J
+
+			set "test_folder=%%~fJ\.obsidian"
+			if exist "!test_folder!\" (
+				set "%~2=%%~fJ"
+				exit /b 0
+			)
+		)
+	)
+
+exit /b 1
+
+
+
+
+
 :main
 setlocal enabledelayedexpansion
 
-	set "directory=C:\Users\simon\Desktop\Studio"
+	call :retrieve_vault "%~dp0" vault_directory
+	
+	echo RISULTATO NEL MAIN: %vault_directory%
+
+	set "vault_directory=C:\Users\simon\Desktop\Studio"
 	set "blacklist=.git .obsidian"
 
-	for /D /r "%directory%" %%f in (*) do (
+	for /D /r "%vault_directory%" %%f in (*) do (
 		
 		call :in_blacklisted "%%f" "%blacklist%"
 		if "!errorlevel!" == "0" (
@@ -66,15 +94,17 @@ setlocal enabledelayedexpansion
 			set "original_dir_name=%%~nxf"
 			
 			if /i "!original_dir_name:.=!" == "attachments" (
-				echo Renaming %%f into .attachments and hiding it
+				rem attachments folders get handled here
+				echo Renaming !original_dir_name! into .attachments and hiding it
 				ren "%%f" ".attachments"
 				attrib +h "%%f"
 				
 			) else (
+				rem every folder is made uppercase here
 				set "uppercase_dir_name=!original_dir_name!"
 				call :to_uppercase uppercase_dir_name
 				
-				echo Renaming %%f into !uppercase_dir_name!
+				echo Renaming !original_dir_name! into !uppercase_dir_name!
 				ren "%%f" "!uppercase_dir_name!"
 			)
 		)
