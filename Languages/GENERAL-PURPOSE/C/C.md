@@ -214,6 +214,7 @@ TABLE FROM ("Software/Programming/Translators" OR "Software/Programming/Linkers"
 			- actually write shit in the file NOW during execution
 			- you're forced to wait for a [[#^new-line|\n]] to actually flush. Flushing won't work otherwise
 			- as in, the internal pointer must point to `\n`
+			- https://library.weschool.com/lezione/programmazione-c-i-comandi-fflush-e-getchar-451.html
 - `{c}stdlib.h` ^stdlib
 	- **Macros:**
 		- `{c}EXIT_SUCCESS`
