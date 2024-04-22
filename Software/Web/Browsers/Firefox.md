@@ -4,18 +4,24 @@ tags:
 aliases:
   - Mozilla Firefox
 ---
-[[browser|Web browser]] that uses [[SpiderMonkey]] and [[Gecko]].
+**Firefox** is an [[open source|open-source]] [[browser|web browser]] by [[Mozilla]].
 
 ---
 
-### USB Debugging
+## Tech employed
+
+Firefox uses [[SpiderMonkey]] and [[Gecko]].
+
+---
+
+## USB Debugging
 
 Connect your phone to your pc through an [[USB-C]] cable.
 Type `about:debugging` in the address bar.
 
 ---
 
-### Shortcuts
+## Shortcuts
 
 - `Ctrl + T`
 	- new tab
@@ -37,7 +43,7 @@ Type `about:debugging` in the address bar.
 
 ---
 
-### Problems I've had
+## Problems I've had
 
 - **Laptop touchpad scrolling** didn't work.
 	- disable that "hardware acceleration" thing in the settings
@@ -45,6 +51,6 @@ Type `about:debugging` in the address bar.
 
 ---
 
-### Trivia
+## Trivia
 
 The first version was released by [[Mozilla]] in 2004

@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"bb7dab125b8785e4","type":"file","file":"MATHS/PROPOSITIONAL LOGIC/propositional logic.md","x":-240,"y":-240,"width":400,"height":400},
+		{"id":"6d1f15660854400f","x":-880,"y":-240,"width":400,"height":400,"type":"file","file":"MATHS/PROPOSITIONAL LOGIC/proposition.md"},
+		{"id":"c37094e07e234e80","x":240,"y":-240,"width":400,"height":400,"type":"file","file":"MATHS/PROPOSITIONAL LOGIC/CONNECTIVES/logical connective.md"}
+	],
+	"edges":[]
+}

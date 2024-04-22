@@ -8,7 +8,7 @@ aliases:
   - extension language
 ---
 A **scripting language** is a [[programming language]] that:
-- runs on an [[interpreter]] or [[Runtime Environment]]
+- runs on an [[interpreter]] or [[runtime environment]]
 - is very [[high-level]]
 - 
 

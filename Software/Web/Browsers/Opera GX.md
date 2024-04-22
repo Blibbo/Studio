@@ -4,10 +4,14 @@ tags:
   - proprietary
   - software
 ---
+**Opera GX** is a [[browser|web browser]] advertised as being for **_GAM*RS_**.
+It's made by the same shitty company behind [[Opera]].
+It's more [[proprietary software]].
+
+Its main thing is that it allows you to natively limit [[RAM]] usage.
+
 ---
 
-### About Opera GX
+## Tech employed
 
-- [[Chromium]] based
-- see [[Opera]]
-- used because it allows you to natively limit [[RAM]] usage
+Opera GX is based on [[Chromium]]

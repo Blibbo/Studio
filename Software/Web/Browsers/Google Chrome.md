@@ -1,21 +1,18 @@
 ---
-tags:
-  - closed-source
-  - proprietary
-  - software
+tags: []
 ---
----
-
-### About Chrome
-
-- [[Chromium]] based
-- uses [[V8]]
-- uses [[Blink]]
-- lol
+**Chrome** is [[Google]]'s [[browser|web browser]].
+It's [[proprietary software]].
 
 ---
 
-### [[Android]] Mobile Devtools
+## Tech employed
+
+Google Chrome is based on [[Chromium]].
+
+---
+
+## [[Android]] Mobile Devtools
 
 - [Guide](https://developer.chrome.com/docs/devtools/remote-debugging#debug)
 - **TL;DR:**

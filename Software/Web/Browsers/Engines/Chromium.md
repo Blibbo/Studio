@@ -1,20 +1,24 @@
 ---
-tags:
-  - engine
+aliases:
+  - Chromium project
 ---
-[[open source|Open-source]] [[browser]] engine.
+[[open source|Open-source]] [[browser]] engine by [[Google]].
+
+---
+
+## Tech employed
+
 Its rendering engine is called [[Blink]].
+Its [[JavaScript]] engine is called [[V8]].
 
 ---
 
 ### Chromium-based, but proprietary and closed source browsers
 
 ```dataview
-LIST FROM [[]] and "Software/Browsers" and #proprietary and #closed-source and !"Software/Browsers/Engines"
+TABLE FROM [[]] and "SOFTWARE/WEB/BROWSERS" and ([[proprietary software]] or [[closed-source]]) and !"SOFTWARE/WEB/BROWSERS/ENGINE"
 WHERE file.name != this.file.name
 ```
-
----
 
 - these are basically all the big ones
 - you took something pretty and fucked it up
@@ -25,7 +29,7 @@ WHERE file.name != this.file.name
 ### Chromium-based open-source browsers
 
 ```dataview
-LIST FROM [[]] and "Software/Browsers" and !#proprietary and !#closed-source and !"Software/Browsers/Engines"
+TABLE FROM [[]] and "SOFTWARE/WEB/BROWSERS" and ![[proprietary software]] and ![[closed-source]] and !"SOFTWARE/WEB/BROWSERS/ENGINES"
 WHERE file.name != this.file.name
 ```
 - he IS pretty brave isnt he

@@ -2,14 +2,18 @@
 tags:
   - framework
 ---
-[[open source|Open-source]], cross-platform [[JavaScript]] application framework developed by [[Github]].
+**Electron** is an [[open source|open-source]], cross-platform [[JavaScript]] application framework developed by [[Github]].
 
-Under the hood, it's [[Chromium]] + [[Node.js]].
+---
+
+## Tech employed
+
+Electron is made out of [[Chromium]] + [[Node.js]].
 
 ---
 
 ### Stuff made in Electron
 
 ```dataview
-TABLE FROM "Software" and [[Electron]]
+TABLE FROM "SOFTWARE" and [[Electron]]
 ```

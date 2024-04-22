@@ -1,21 +1,19 @@
 ---
-tags:
-  - closed-source
-  - proprietary
-  - software
+tags: []
 ---
----
-
-### About Opera
-
-- [[Chromium]] based
-- uses [[V8]]
-- pretends it's still norwegian even though they sold everything to chinese investors
-- brings your data to the CCP
-- ~~it's basically spyware~~
+**Opera** is a [[browser|web browser]]. It's [[proprietary software|proprietary]].
 
 ---
 
-### Trivia
+## Tech employed
 
-- initially used [[Blink]] as its rendering engine, then switched to Chromium
+Opera is built on top of [[Chromium]].
+
+It used to just use [[Blink]], now it just uses chromium.
+
+----
+
+## Trivia
+
+Its company pretends it's still norwegian even though they sold everything to chinese investors.
+~~It brings your data to the CCP and it's basically spyware~~

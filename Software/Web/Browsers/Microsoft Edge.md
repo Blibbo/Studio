@@ -1,17 +1,16 @@
 ---
-tags:
-  - closed-source
-  - proprietary
-  - software
+tags: []
 ---
----
-
-### About Edge
-
-- based on [[Chromium]]
+**Edge** is [[Microsoft]]'s newest [[proprietary software|proprietary]] [[browser|web browser]], hooray.
 
 ---
 
-### Trivia
+## Tech employed
 
-- used to use [[Chakra]]
+Edge is based on [[Chromium]].
+
+---
+
+## Trivia
+
+Edge used to use [[Chakra]].
