@@ -372,3 +372,9 @@ de-indent and then re-indent the first list item to fix the list
 ---
 
 ### Plugin development
+## Proprietary ${ = }$ evil
+
+### Obsidian refuses to acknowledge dotfiles
+
+Evil, completely evil.
+https://forum.obsidian.md/t/enable-use-of-hidden-files-and-folders-starting-with-a-dot-dotfiles-dotfolders-within-obsidian/26908/53

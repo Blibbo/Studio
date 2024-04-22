@@ -54,22 +54,39 @@ endlocal & exit /b 0
 
 :retrieve_vault
 
-	for %%I in ("%~1") do (
-		set "current_dir=%%~dpI"
+	set "parent_directory=%~1\"
+	
+	:repeat
+		rem remove final backslash and set to its parent (new final backslash)
+		for %%i in ("%parent_directory:~0,-1%") do set "parent_directory=%%~dpi"
 		
-		for /d %%J in ("!current_dir!..") do (
-		
-			echo ------------------%%J
+		rem echo Seeking .obsidian in: %parent_directory%
 
-			set "test_folder=%%~fJ\.obsidian"
-			if exist "!test_folder!\" (
-				set "%~2=%%~fJ"
-				exit /b 0
+		rem check if i have an .obsidian subfolder
+		rem dir needs C:\, not just C:. The final backslash is indifferent for any other path.
+		for /f "tokens=* delims=" %%i in ('dir /a:d /b "%parent_directory%"') do (
+			if "%%i" == "%OBSIDIAN_SETTINGS%" (
+				set "%~2=%parent_directory%"
+				exit /b 1
 			)
 		)
-	)
 
-exit /b 1
+	
+	
+		for %%i in ("%parent_directory:~0,-1%") do (
+			rem %%~i is the current directory to check, without final backslash
+			
+			rem repeat until parent directory is just the disk
+			if "%%~i" == "%%~di" (
+				rem failed, there's no vault
+				exit /b 0
+			) else (
+				goto :repeat
+			)
+		)
+		
+	rem end repeat until
+exit /b 0
 
 
 
@@ -77,35 +94,46 @@ exit /b 1
 
 :main
 setlocal enabledelayedexpansion
+	set "OBSIDIAN_SETTINGS=.obsidian"
 
 	call :retrieve_vault "%~dp0" vault_directory
 	
-	echo RISULTATO NEL MAIN: %vault_directory%
+	if "%errorlevel%" == "0" (
+		echo This script isn't in an Obsidian Vault. Place it inside of one to make it work.
+	) else (
+		echo VAULT = %vault_directory%
+	)
+	
+	set "BLACKLIST=.git %OBSIDIAN_SETTINGS%"
+	set "CURRENT_ATTACHMENTS_NAME=attachments"
+	set "ATTACHMENTS_NAME=attachments"
 
-	set "vault_directory=C:\Users\simon\Desktop\Studio"
-	set "blacklist=.git .obsidian"
-
-	for /D /r "%vault_directory%" %%f in (*) do (
+	rem for /r /a "%vault_directory%" /d %%f in (*) do (
+	for /f "tokens=* delims=" %%f in ('dir /a:d /b /s "%vault_directory%"') do (
 		
-		call :in_blacklisted "%%f" "%blacklist%"
+		call :in_blacklisted "%%~f" "%blacklist%"
 		if "!errorlevel!" == "0" (
 			rem not blacklisted (not in .git or .obsidian)
 			
 			set "original_dir_name=%%~nxf"
 			
-			if /i "!original_dir_name:.=!" == "attachments" (
+			if /i "!original_dir_name:.=!" == "%CURRENT_ATTACHMENTS_NAME:.=%" (
 				rem attachments folders get handled here
-				echo Renaming !original_dir_name! into .attachments and hiding it
-				ren "%%f" ".attachments"
-				attrib +h "%%f"
 				
+				echo Renaming !original_dir_name! into %ATTACHMENTS_NAME% and hiding it
+
+				attrib -h "%%~f"
+				ren "%%~f" "%ATTACHMENTS_NAME%"
+				attrib +h "%%~df%%~pf%ATTACHMENTS_NAME%"
 			) else (
 				rem every folder is made uppercase here
 				set "uppercase_dir_name=!original_dir_name!"
 				call :to_uppercase uppercase_dir_name
 				
 				echo Renaming !original_dir_name! into !uppercase_dir_name!
-				ren "%%f" "!uppercase_dir_name!"
+				
+				rem will fail if directory is hidden (it's okay)
+				ren "%%~f" "!uppercase_dir_name!"
 			)
 		)
 	)

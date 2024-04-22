@@ -215,13 +215,15 @@ Anyways, this creates problems. These pieces of syntax below address it.
 
 ##### Substring extraction
 
-`{batch}myVariable:~<beginningIndex>,<endIndex>` is an expression that extracts a substring starting from the `{batch}<beginningIndex>` and ending at `{batch}<endIndex>` (excluding the second index)
-
-**Examples:**
-`{batch}!myVariable:~10,20!` extracts the characters with index from `{batch}10` to `{batch}20`
-`{batch}%myVariable:~0,1%` extracts the first character from the variable
-
->notice how `{batch}%%` and `{batch}!!` are the same for these examples: I'm using them interchangeably.
+- `{batch}myVariable:~<index>` is an expression that extracts the character at `{batch}<index>` in your variable.
+  
+  **Example:** `{batch}%myVariable:~3%` extracts the third character from your string contained in myVariable.
+- `{batch}myVariable:~<beginningIndex>,<endIndex>` is an expression that extracts a substring starting from the `{batch}<beginningIndex>` and ending at `{batch}<endIndex>` (excluding the second index)
+  
+  **Examples:**
+  `{batch}!myVariable:~10,20!` extracts the characters with index from `{batch}10` to `{batch}20`
+  `{batch}%myVariable:~0,1%` extracts the first character from the variable
+  >notice how `{batch}%%` and `{batch}!!` are used interchangeably in all of these examples.
 
 ### Parameters
 
@@ -390,23 +392,26 @@ These are the built in commands, only usable in this shell.
 		- Copy the last piece of output of `{batch}other.bat` into a variable called `{batch}output`
 		  `{batch}for /f "delims=" %%a in ('other.bat') do set output=%%a`
 - `{batch}cd path/to/directory` ^cd
-	- change directory
+	- Change the [[#^current-directory]] variable
 - `{batch}dir` ^dir
-	- list files and directories in current dir
-	- `{batch}dir FolderName`
+	- List files and directories in the [[#^current-directory]]
+	- `{batch}<folder-path>`
 		- lists stuff in that folder without moving (like [[#^cd]] makes you do)
-	- `{batch}dir myFile.txt`
+	- `{batch}<file-path>`
 		- looks for a file named that way in the current directory
-	- `{batch}dir /s`
-		- list files in subdirectories, too
-	- `{batch}dir /a`
+	- `{batch}/s`
+		- List files in subdirectories, too.
+		- Side effect: your results are now absolute paths instead of relative ones.
+	- `{batch}/a`
 		- list all, hidden items included
-	- `{batch}dir /b`
-		- strips off all info except for file path
-		- "bare"
-	- `{batch}dir /s /b filename.ext` ^search-file
-		- looks for any file called `filename.ext` that's a descendant of your current directory
-		- if you go to the root of your system, it's basically what [[Everything.exe]] does
+	- `{batch}/b`
+		- **bare**: strips off all info except for file path
+	- `{batch}/ad`
+		- List directories only, not files.
+	- **Examples:**
+		- `{batch}dir /s /b filename.ext` ^search-file
+			- looks for any file called `filename.ext` that's a descendant of your current directory
+			- if you go to the root of your file system, it's basically what [[Everything.exe]] does
 - `{batch}ren <file or dir path> newname`
 	- Rename file or directory.
 	- The second argument is just a name, not an entire path.

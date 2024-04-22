@@ -6,7 +6,7 @@
   "autoPairBrackets": false,
   "autoPairMarkdown": true,
   "showLineNumber": true,
-  "attachmentFolderPath": "./.attachments",
+  "attachmentFolderPath": "./attachments",
   "newFileLocation": "current",
   "readableLineLength": false
 }
