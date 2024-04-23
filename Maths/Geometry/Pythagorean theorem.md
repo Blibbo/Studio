@@ -31,6 +31,11 @@ ${ \sqrt{ c^{2}-a^{2} } }$
 Solve for ${ c }$
 ${ \sqrt{ a^{2}+b^{2} } }$
 
+### Proof
+
+There are more than 350 different proofs for this theorem
+https://brilliant.org/wiki/proofs-of-the-pythagorean-theorem/
+
 ---
 
 ## Inferential

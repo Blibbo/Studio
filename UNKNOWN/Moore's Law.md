@@ -1,0 +1,4 @@
+---
+aliases:
+  - legge di Moore
+---
