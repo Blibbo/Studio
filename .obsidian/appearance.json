@@ -1,7 +1,7 @@
 {
   "accentColor": "",
   "theme": "obsidian",
-  "baseFontSize": 15,
+  "baseFontSize": 17,
   "cssTheme": "Blue Topaz",
   "interfaceFontFamily": "Inter",
   "monospaceFontFamily": "Lucida Console",
@@ -11,7 +11,8 @@
     "note-width",
     "adaptive_images",
     "image_zoom2",
-    "image_background"
+    "image_background",
+    "latex-suite-border"
   ],
   "translucency": false,
   "nativeMenus": false

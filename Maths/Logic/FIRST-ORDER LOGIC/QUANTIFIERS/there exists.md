@@ -1,0 +1,15 @@
+---
+aliases:
+  - exists
+---
+
+
+---
+
+## Formally
+
+
+
+---
+
+## Inferential

@@ -1,0 +1,1 @@
+A **model** is a simplification of a phenomenon that serves the purpose of studying it in its essential terms

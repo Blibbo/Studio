@@ -1,1 +1,1 @@
-[[Variable]] that contains memory addresses.
+[[variable]] that contains memory addresses.
