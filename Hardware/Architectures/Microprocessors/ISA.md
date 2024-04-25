@@ -7,7 +7,7 @@ aliases:
 
 ### About Instruction Sets
 
-- they're a list of binary instruction addresses that translate to mnemonic codes
+- they're a list of binary instruction addresses that translate to [[mnemonic]] codes
 - instruction addresses are variable in length
 - they're built into the [[CPU]]
 - it's the foundation of software. This is what allows you to write code and interact with the hardware
