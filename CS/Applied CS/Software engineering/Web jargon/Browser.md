@@ -12,7 +12,7 @@ A modern **web browser** is a [[program]] that:
 - accepts a language called [[CSS]] as an [[DSL#eDSL|eDSL]] of HTML
 - can [[interpreter|interpret]] a language called [[JavaScript|ECMAScript]]
 - has a way for web pages to interact with [[GPU|GPUs]] called [[WebGL]]
-- is able to execute a [[binary instruction format]] called [[WebAssembly]].
+- is able to execute a [[binary instruction format]] called [[HARDWARE/ARCHITECTURES/MICROPROCESSORS/IMAGINARY/WebAssembly]].
 And _so_ much more. Some common features are:
 - an **address bar** for either entering [[#url|urls]] and interacting with a [[search engine]]
 - a **bookmarks toolbar** for bookmarked websites

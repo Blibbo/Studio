@@ -1,1 +1,0 @@
-This is a graphics [[API]] commonly used in mobile and embedded devices.

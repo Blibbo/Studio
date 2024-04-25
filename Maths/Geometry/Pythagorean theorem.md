@@ -7,7 +7,7 @@ the **[[Pythagoras|Pythagorean]] theorem** explains the relationship between the
 
 What it says is if a triangle is a right-angled triangle, then the square of the hypothenuse is equal to the sum of the squares of the other two sides
 
-![[Pasted image 20240321151401.png#invert_B]]
+![[illustration pythagorean.png#invert_B]]
 
 https://www.cuemath.com/geometry/pythagoras-theorem/
 
@@ -33,8 +33,9 @@ ${ \sqrt{ a^{2}+b^{2} } }$
 
 ### Proof
 
-There are more than 350 different proofs for this theorem
+There are more than 370 different proofs for this theorem
 https://brilliant.org/wiki/proofs-of-the-pythagorean-theorem/
+https://en.wikipedia.org/wiki/Theorem#cite_note-Loomis-1
 
 ---
 

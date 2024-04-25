@@ -8,7 +8,7 @@ It still works on [[Node.js]]
 
 ## Connection
 
-Script by [[blackbox ai]]. I can't bother to check if it works, I'm just picking up random shit here and pasting it in my notes.
+Script by [[blackbox ai]]. I can't bother to check if it works, I'm just picking up random shit here and pasting it in my notes. I won't ever use WebSQL.
 ```js
 var openDatabase = require('websql');
 

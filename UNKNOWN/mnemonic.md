@@ -1,0 +1,1 @@
+**Mnemonic** means human-readable.

@@ -3,23 +3,25 @@ aliases:
   - WebAssembly runtime
   - WebAssembly VM
   - Wasm
-tags:
-  - standard
+tags: []
 ---
+>there's plastic in my blood and there's a virtual machine in my browser.
+- quote by me
+
+**WebAssembly** is a binary instruction format.
+
+Wasm code is stored in binary [[file|files]] with `.wasm` extension.
+
+Up-to-date [[JavaScript]] engines have a [[VM]] that knows how to deal with this format (by executing it)
+
+Languages like [[C]], [[C++]] and [[Rust]] can choose to compile to this instead of to regular [[Assembly]].
+
+[All Specs](https://webassembly.org/specs/)
+
 ---
 
-### About WebAssembly
+## Trivia
 
-- it's a binary instruction format
-- these binary files have `.wasm` extension
-- sort of a misnomer. [[Assembly]] languages are usually mnemonic (human-readable). This, is not.
-- has its own [[VM]] that executes `.wasm`s and stuff
-- [[JavaScript]] engines usually know how to deal with this format
-- high level languages like [[C]], [[C++]] and [[Rust]] can choose to compile to this instead of to regular [[Assembly]]
-- [All Specs](https://webassembly.org/specs/)
+WebAssembly is sort of a misnomer. [[Assembly]] languages are usually mnemonic (human-readable). This, is not.
 
----
-
-### Trivia
-
-- [[W3C]] is involved
+[[W3C]] has to do something with wasm but I'm not sure they standardize it.

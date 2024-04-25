@@ -8,7 +8,7 @@ There is no general consensus among mathematicians about a common definition for
 Most mathematical activities revolve around trying to prove, using pure reason, [[property|properties]] of abstract [[mathematical object|objects]].
 These objects are either abstractions from nature, or they're made the fuck up.
 
-The made-up objects have made-up properties, called [[axiom|axioms]].
+The made-up objects have made-up properties, called [[Axiom|axioms]].
 
 https://en.wikipedia.org/wiki/Mathematics
 
@@ -27,6 +27,7 @@ https://en.wikipedia.org/wiki/Pure_mathematics
 ## Applied Mathematics
 
 Mathematicians, engineers and stuff make boring [[model theory|models]] that represent actual problems that need solutions.
+^^^ I wrote that as a joke but as I study, this seems to be a solid take, look at this: [[G. H. Hardy]]
 
 ---
 
@@ -35,9 +36,9 @@ Mathematicians, engineers and stuff make boring [[model theory|models]] that rep
 There are a shit ton of branches of maths and it's dumb to list any as being "major branches".
 Different sources assign different subdisciplines as being "main ones".
 
-- [[Number Theory]]
+- [[number theory]]
 - [[Algebra]]
 - [[Geometry]]
-- [[Mathematical Analysis|Analysis]]
+- [[mathematical analysis|Analysis]]
 
 https://byjus.com/maths/branches-of-mathematics/

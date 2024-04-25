@@ -1,6 +1,0 @@
-
----
-
-### About Express
-
-- [[JavaScript]] framework

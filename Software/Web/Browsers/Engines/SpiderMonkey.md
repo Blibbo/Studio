@@ -4,4 +4,4 @@
 ### About SpiderMonkey
 
 - [[JavaScript]] engine
-- has its own [[WebAssembly]] implementation
+- has its own [[HARDWARE/ARCHITECTURES/MICROPROCESSORS/IMAGINARY/WebAssembly]] implementation

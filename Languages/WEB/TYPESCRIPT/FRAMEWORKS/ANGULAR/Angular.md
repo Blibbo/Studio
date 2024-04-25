@@ -1,13 +1,9 @@
 ---
-tags:
-  - web-development
-  - framework
-  - front-end
-  - software
+aliases:
+  - Angular 2+
 ---
----
+**Angular** is a [[TypeScript]] framework made by [[Google]] and the successor of [[AngularJS]].
 
-### About Angular
+## Trivia
 
-- version 2 and above of [[AngularJS]], a [[JavaScript]] framework by Google.
-- written in [[TypeScript]]
+Introduced in 2016, it's a complete rewrite of angularjs in typescript.

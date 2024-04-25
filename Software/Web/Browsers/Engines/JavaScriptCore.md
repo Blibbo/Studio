@@ -5,4 +5,4 @@ tags: []
 ---
 [[open source|Open-source]] [[JavaScript]] engine, part of the [[WebKit]] project.
 
-Supports [[WebAssembly]].
+Supports [[HARDWARE/ARCHITECTURES/MICROPROCESSORS/IMAGINARY/WebAssembly]].
