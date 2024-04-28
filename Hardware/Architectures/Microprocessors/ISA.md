@@ -3,15 +3,14 @@ aliases:
   - Instruction Set Architecture
   - Instruction Set
 ---
----
+An **instruction set** is a list of binary instruction addresses built into the [[CPU]].
 
-### About Instruction Sets
+It's the foundation of software. This is what allows you to write code and interact with the hardware
 
-- they're a list of binary instruction addresses that translate to [[mnemonic]] codes
-- instruction addresses are variable in length
-- they're built into the [[CPU]]
-- it's the foundation of software. This is what allows you to write code and interact with the hardware
-- if you don't like the instruction set, you **buy a new processor** or use a [[runtime environment|runtime environment]]. There's no way to modify an already built processor
+The instruction codes are variable in length.
+
+If you look in the documentation for the instruction set of your CPU, binary codes will be associated with [[mnemonic]] codes.
+The list of mnemonic instructions forms what is called an [[assembly|assembly language]].
 
 ---
 
