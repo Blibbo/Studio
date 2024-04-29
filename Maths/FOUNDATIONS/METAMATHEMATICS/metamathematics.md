@@ -2,4 +2,4 @@
 
 This discipine began being studied around the same time as [[mathematical logic]], and the two coincided until logic branched out with [[set theory]] and allat.
 
-https://en.wikipedia.org/wiki/Metamathematics
+- [wikipedia](https://en.wikipedia.org/wiki/Metamathematics) ^wikipedia

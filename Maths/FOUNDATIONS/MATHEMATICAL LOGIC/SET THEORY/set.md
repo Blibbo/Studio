@@ -2,7 +2,8 @@
 aliases:
   - insieme
 ---
-
+>A set is a Many that allows itself to be thought of as a One.
+- [Georg Cantor, creator of set theory](https://iai.tv/articles/math-like-quantum-physics-has-observer-problems-ed-frenkel-auid-2733)
 
 https://en.wikipedia.org/wiki/Set_(mathematics)
 

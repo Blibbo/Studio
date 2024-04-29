@@ -266,12 +266,12 @@
 	{trigger: "ceil", replacement: "\\lceil $0 \\rceil $1", options: "mA"},
 	{trigger: "floor", replacement: "\\lfloor $0 \\rfloor $1", options: "mA"},
 	{trigger: "mod", replacement: "|$0|$1", options: "mA"},
-	{trigger: "(", replacement: "(${VISUAL})", options: "mA"},
+	/*{trigger: "(", replacement: "(${VISUAL})", options: "mA"},
 	{trigger: "[", replacement: "[${VISUAL}]", options: "mA"},
 	{trigger: "{", replacement: "{${VISUAL}}", options: "mA"},
 	{trigger: "(", replacement: "($0)$1", options: "mA"},
 	{trigger: "{", replacement: "{$0}$1", options: "mA"},
-	{trigger: "[", replacement: "[$0]$1", options: "mA"},
+	{trigger: "[", replacement: "[$0]$1", options: "mA"},*/
 	{trigger: "lr(", replacement: "\\left( $0 \\right) $1", options: "mA"},
 	{trigger: "lr|", replacement: "\\left| $0 \\right| $1", options: "mA"},
 	{trigger: "lr{", replacement: "\\left\\{ $0 \\right\\} $1", options: "mA"},
@@ -282,6 +282,7 @@
 	// Misc
 	{trigger: "tayl", replacement: "${0:f}(${1:x} + ${2:h}) = ${0:f}(${1:x}) + ${0:f}'(${1:x})${2:h} + ${0:f}''(${1:x}) \\frac{${2:h}^{2}}{2!} + \\dots$3", options: "mA"},
 	
+	//MY STUFF
 	// My Math
 	{trigger: "mk", replacement: "${ $0 }$$1", options: "tA"},
 	{trigger: "case", replacement: "\\begin{cases} $0 \\end{cases}$1", options: "mA"},
@@ -340,8 +341,23 @@
 	{trigger: "bld", replacement: "**$0**$1", options: "tAw"},
 	{trigger: "ita", replacement: "_$0_$1", options: "tAw"},
 	{trigger: "strike", replacement: "~~$0~~$1", options: "tAw"},
+	{trigger: "*", replacement: "*${VISUAL}*", options: "tAw"},
+	{trigger: "**", replacement: "**$0**$1", options: "tAw"},
+	{trigger: "_", replacement: "_$0_$1", options: "tAw"},
+	{trigger: "_", replacement: "_${VISUAL}_", options: "tA"},
+	{trigger: "-", replacement: "~~${VISUAL}~~", options: "tA"},
+
 	// {trigger: "[[", replacement: "[[$0]]$1", options: "tA"},
 	{trigger: "ck", replacement: "- [ ] ", options: "tAw"},
+	{trigger: "(", replacement: "(${VISUAL})", options: "mtcA"},
+	{trigger: "[", replacement: "[${VISUAL}]", options: "mtcA"},
+	{trigger: "{", replacement: "{${VISUAL}}", options: "mtcA"},
+	{trigger: "(", replacement: "($0)$1", options: "mtcA"},
+	{trigger: "{", replacement: "{$0}$1", options: "mtcA"},
+	{trigger: "[", replacement: "[$0]$1", options: "mcA"},
+	
+	{trigger: "wiki", replacement: "- [wikipedia]($0) ^wikipedia", options: "tA"},
+
 	
 	// Emojis
 	{trigger: ":thumbsup:", replacement: "👍", options: "tcmA"},

@@ -4,9 +4,10 @@
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "autoPairBrackets": false,
-  "autoPairMarkdown": true,
+  "autoPairMarkdown": false,
   "showLineNumber": true,
   "attachmentFolderPath": "./attachments",
   "newFileLocation": "current",
-  "readableLineLength": false
+  "readableLineLength": false,
+  "smartIndentList": true
 }
