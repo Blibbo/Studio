@@ -1,0 +1,1 @@
+**Socrates** is [[Plato]]'s teacher.

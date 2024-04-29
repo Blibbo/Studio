@@ -1,0 +1,1 @@
+Found a reference to this guy in [[Begriffsschrift]]'s wikipedia page

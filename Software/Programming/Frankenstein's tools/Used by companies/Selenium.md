@@ -1,0 +1,1 @@
+**Selenium** is a set of [[open source|open-source]] tools for [[browser]] automation

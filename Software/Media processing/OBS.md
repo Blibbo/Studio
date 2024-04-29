@@ -23,5 +23,6 @@ I don't get it
 
 ## [[Discord]]
 
-- virtual audio cable on google, first result, download
-- 
+https://obsproject.com/forum/threads/how-to-create-a-virtual-mic.142968/
+- virtual audio cable on google, first result, download https://vb-audio.com/Cable/
+- obs audio monitor plugin https://obsproject.com/forum/resources/audio-monitor.1186/

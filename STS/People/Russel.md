@@ -1,3 +1,7 @@
+---
+aliases:
+  - Bertrand Russel
+---
 
 
 ## Backlinks
