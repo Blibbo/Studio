@@ -4,6 +4,7 @@
 - [wikipedia](https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems) ^wikipedia
 - [[metamathematics#^wikipedia]]
 - [paywalled iai news](https://iai.tv/articles/most-truths-cannot-be-expressed-in-language-auid-2335)
+- [math overflow](https://mathoverflow.net/questions/405805/why-do-people-say-g%C3%B6dels-sentence-is-true-when-it-is-true-in-some-models-but-fa) ^math-overflow
 
 ## First incompleteness theorem
 

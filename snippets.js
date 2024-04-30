@@ -6,9 +6,9 @@
 
 
 	// Dashes
-	// {trigger: "--", replacement: "–", options: "tA"},
-	// {trigger: "–-", replacement: "—", options: "tA"},
-	// {trigger: "—-", replacement: "---", options: "tA"},
+	{trigger: "--", replacement: "–", options: "tA"},
+	{trigger: "–-", replacement: "—", options: "tA"},
+	{trigger: "—-", replacement: "---", options: "tA"},
 
 	// Greek letters
 	{trigger: "@a", replacement: "\\alpha", options: "mA"},
@@ -357,7 +357,7 @@
 	{trigger: "[", replacement: "[$0]$1", options: "mcA"},
 	
 	{trigger: "wiki", replacement: "- [wikipedia]($0) ^wikipedia", options: "tA"},
-
+	{trigger: "---", replacement: "---\n:\n---", options: "t"},
 	
 	// Emojis
 	{trigger: ":thumbsup:", replacement: "👍", options: "tcmA"},

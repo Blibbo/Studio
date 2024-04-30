@@ -14,10 +14,10 @@ The paradox was thought of by [[Stefan Banach]] and [[Alfred Tarski]]
 
 ## Where did we go wrong
 
-It's the "C" part in [[ZFC]]: the [[AoC|axiom of choice]]. That's what fucks everything up so badly.
+It's the "C" part in [[ZFC]]: the [[axiom of choice|axiom of choice]]. That's what fucks everything up so badly.
 
 The catch in this paradox is that these five pieces, which are totally finite in mass and volume, are cut out of the original sphere in an infinitely complex fashion.
-These pieces are a thing called "unmeasurable sets"
+These pieces are a thing called "[[non-measurable set|non-measurable sets]]"
 
 >How the Axiom of Choice can lead to this paradox regarding our notions of volume is that the axiom allows for the construction of non-measurable sets. This decomposition and reconstruction cannot be done in the physical world, because if you take and apple and cut it up into pieces with a knife, each of these pieces is “measurable.” That is, they have boundaries and a sense of volume, whereas the sets constructed using the Axiom of Choice do not obey these properties
 - [[#^cognitive-coitus]]
