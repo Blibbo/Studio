@@ -1,26 +1,33 @@
 ---
 aliases:
   - insieme
+  - sets
+  - insiemi
 ---
 >A set is a Many that allows itself to be thought of as a One.
-- [Georg Cantor, creator of set theory](https://iai.tv/articles/math-like-quantum-physics-has-observer-problems-ed-frenkel-auid-2733)
+- Quote attributed [[Banach–Tarski paradox#^cognitive-coitus|here]] to [[Georg Cantor]]. [[#^kaplan|Here]] instead it's claimed that he never said that. 
 
-https://en.wikipedia.org/wiki/Set_(mathematics)
+- [wikipedia](https://en.wikipedia.org/wiki/Set_(mathematics)) ^wikipedia
+- [[Russel's Paradox#^jeffrey-kaplan]] ^kaplan
 
 ---
 
 ## Formally
 
-### Roster notation
+### Notation
 
-Also called enumeration notation. Introduced by Ernst Zermelo in 1908.
-It looks like this: ${ \{ object_{1}, object_{2} \} }$
+The **Roster notation**, also called enumeration notation, was introduced by [[Ernst Zermelo]] in 1908 and it looks like this:
+${ \{ object_{1}, object_{2} \} }$
+
+The **set builder notation** or **intentional notation**
+${ \{ x : x \text{ is a cat} \} }$
+_the set of all cats_
+
+
 
 ### Extensionality
 
-Extensionality is a property of sets which signifies that sets are uniquely characterized by their elements.
-- If two sets have the same elements, they're equal.
-- there is only one empty set, denoted ${ \emptyset, \varnothing }$ or ${ \{  \} }$
+
 
 ---
 

@@ -7,7 +7,8 @@ Sets are collections of objects. Objects of any kind.
 
 This is the foundation of mathematics as a whole.
 
-https://en.wikipedia.org/wiki/Set_theory
+- [wikipedia](https://en.wikipedia.org/wiki/Set_theory) ^wikipedia
+- [[Russel's Paradox#^jeffrey-kaplan]]
 
 ## Membership relation
 

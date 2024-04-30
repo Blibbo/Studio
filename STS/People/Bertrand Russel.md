@@ -1,6 +1,6 @@
 ---
 aliases:
-  - Bertrand Russel
+  - Russel
 ---
 
 

@@ -8,8 +8,9 @@ aliases:
   - predicate logic
   - logica predicativa
   - calcolo dei predicati
+  - first-order predicate logic
 ---
-**First-order logic** builds upon [[propositional logic]] by including [[mathematical object|mathematical objects]] with **no [[proposition#Truth value|truth value]]**
+**First-order logic** builds upon [[propositional logic]] by including objects with **no [[proposition#Truth value|truth value]]**
 
 https://it.wikipedia.org/wiki/Teoria_del_primo_ordine
 https://en.wikipedia.org/wiki/First-order_logic

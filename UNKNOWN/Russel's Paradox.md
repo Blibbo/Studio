@@ -1,6 +1,8 @@
-**Russel's Paradox** is a paradox thought of by [[Russel|Bertrand Russel]] involving [[set theory]].
+**Russel's Paradox** is a paradox thought of by [[Bertrand Russel|Bertrand Russel]] involving [[set theory]].
 
 It goes something like: "Does the [[set]] of all those sets that do not contain themselves contain itself?"
+
+- [jeffrey kaplan](https://www.youtube.com/watch?v=ymGt7I4Yn3k) ^jeffrey-kaplan
 
 ## Russel's solution
 
