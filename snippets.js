@@ -363,4 +363,8 @@
 	{trigger: ":thumbsup:", replacement: "👍", options: "tcmA"},
 	{trigger: ":sparkles:", replacement: "✨", options: "tcmA"},
 	{trigger: ":eagle:", replacement: "🦅", options: "tcmA"},
+	
+	// Characters
+	{trigger: "<<", replacement: "«", options: "tA"},
+	{trigger: ">>", replacement: "»", options: "tA"},
 ]
