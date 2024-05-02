@@ -1,0 +1,1 @@
+**Euclid's theorem** is a [[number theory]] theorem written by [[Euclid]] in [[The Elements]] that proves the exitence of infinitely many [[prime number|prime numbers]].

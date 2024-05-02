@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"7d2247947c00414e","x":260,"y":-620,"width":440,"height":1520,"type":"group","label":"DUDES"},
+		{"id":"1abc855ed1b06a4a","x":-940,"y":-100,"width":440,"height":1000,"type":"group","label":"TYPES OF LOGIC"},
+		{"id":"feb1e42dff12a039","type":"file","file":"MATHS/FOUNDATIONS/LOGIC/ZEROTH-ORDER LOGIC/propositional logic.md","x":-920,"y":-80,"width":400,"height":400},
+		{"id":"443e8b2bee0087b5","type":"file","file":"MATHS/FOUNDATIONS/LOGIC/FIRST-ORDER LOGIC/FOL.md","x":-920,"y":480,"width":400,"height":400},
+		{"id":"44893c8ad88b27af","type":"file","file":"STS/PEOPLE/Gottlob Frege.md","x":280,"y":480,"width":400,"height":400},
+		{"id":"a270d90233a30fcf","type":"file","file":"STS/WORKS/Begriffsschrift.md","x":-320,"y":480,"width":400,"height":400},
+		{"id":"ebdb4ba709560425","type":"file","file":"STS/PEOPLE/George Boole.md","x":280,"y":-80,"width":400,"height":400},
+		{"id":"063c61b25dfb432b","type":"file","file":"STS/PEOPLE/Aristotle.md","x":280,"y":-600,"width":400,"height":400},
+		{"id":"1f1fb4fd4c6fb184","type":"file","file":"MATHS/FOUNDATIONS/LOGIC/logic.md","x":-920,"y":-600,"width":400,"height":400},
+		{"id":"f60302ffdcf5d00e","x":-320,"y":-80,"width":400,"height":400,"type":"file","file":"UNKNOWN/boolean algebra.md"}
+	],
+	"edges":[
+		{"id":"29e97a94398dbf40","fromNode":"1f1fb4fd4c6fb184","fromSide":"right","toNode":"063c61b25dfb432b","toSide":"left"},
+		{"id":"0d9df0f211bdb13d","fromNode":"44893c8ad88b27af","fromSide":"left","toNode":"a270d90233a30fcf","toSide":"right"},
+		{"id":"c9ec342d8587ed8b","fromNode":"a270d90233a30fcf","fromSide":"left","toNode":"443e8b2bee0087b5","toSide":"right"},
+		{"id":"7d381f3b62165438","fromNode":"ebdb4ba709560425","fromSide":"left","toNode":"f60302ffdcf5d00e","toSide":"right"},
+		{"id":"fc87e4a635815d3c","fromNode":"063c61b25dfb432b","fromSide":"bottom","toNode":"ebdb4ba709560425","toSide":"top"},
+		{"id":"b9026ad97bb50e36","fromNode":"ebdb4ba709560425","fromSide":"bottom","toNode":"44893c8ad88b27af","toSide":"top"},
+		{"id":"4739c51a8f3bccc3","fromNode":"1f1fb4fd4c6fb184","fromSide":"bottom","toNode":"feb1e42dff12a039","toSide":"top"},
+		{"id":"da351f35e750922f","fromNode":"feb1e42dff12a039","fromSide":"bottom","toNode":"443e8b2bee0087b5","toSide":"top"},
+		{"id":"ab1bc5e9b0b8abbf","fromNode":"f60302ffdcf5d00e","fromSide":"left","toNode":"feb1e42dff12a039","toSide":"right"}
+	]
+}
