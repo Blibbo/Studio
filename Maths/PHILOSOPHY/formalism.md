@@ -1,4 +1,5 @@
-**Formalism** is the belief that [[mathematics|maths]] is just about symbols (strings of characters) and rules about how to manipulate them.
+**Formalism** is a theory on the [[philosophy of mathematics]].
+It states that [[mathematics|maths]] is just about symbols (strings of characters) and rules about how to manipulate them.
 It's the complete rejection of [[platonism]]. They don't want to deal with whether numbers exist at all.
 
 - [wikipedia](https://en.wikipedia.org/wiki/Formalism_(philosophy_of_mathematics)) ^wikipedia

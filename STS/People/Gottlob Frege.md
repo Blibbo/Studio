@@ -19,7 +19,11 @@ He invented a [[formal language]] that looks like [[Arithmetic]], but applies to
 
 > The analysis of logical concepts and the machinery of formalization that is essential to [[Principia Mathematica]], to [[Bertrand Russel|Russel]]'s [[theory of descriptions]], to Kurt [[Gödel's incompleteness theorems]], and to Alfred Tarski's theory of truth, is ultimately due to Frege.
 
-## He had beef with [[formalism]]
+## Beef
+
+He had beef with lots of stuff and people
+
+### [[Formalism]]
 
 
 - [[formalism#^wikipedia]]
@@ -36,3 +40,5 @@ WHERE file.name != this.file.name
 His work is so important but it seems to me like he enjoyed naming his concepts arbitrarily.
 The thing i find funny is that the names he gives things ==just don't stick==. He wanted to make fetch happen so bad.
 Not even just the names: the symbols too. Look at [[Begriffsschrift]].
+
+I don't know whether he invented the *all* the symbols for predicate logic yet. If he did, then I gotta say most of them stuck.

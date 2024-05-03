@@ -7,6 +7,14 @@ aliases:
 ---
 A **proposition** is a statement that is **true** or **false**.
 
+## Analytic proposition
+
+An **analytic proposition**'s [[#truth value]] depends on its meaning alone.
+
+## Syntetic proposition
+
+A **syntetic proposition**'s [[#truth value]] depends on how the thought expressed by the proposition relates to the real world.
+
 ## [[formal language|Formally]]
 
 A proposition can be either represented by a single [[#Propositional variables|variable]], or by an expression including [[logical connective|logical connectives]] and multiple variables, as long as it's [[propositional logic#WFF|well formed]].

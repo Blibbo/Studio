@@ -14,7 +14,8 @@ A concept takes an object as an argument and returns a truth value, forming the 
 ## Object
 
 An **object** is a part of the sentence that "makes sense by itself" because it has a [[Über Sinn und Bedeutung#reference|reference]] that's an actual thing.
-Examples: "dog", "Michael Jackson", "My house".
+Not like a physical thing, but _some_ thing.
+Examples: "dog", "Michael Jackson", "my house", "anger"
 
 ## Concept
 

@@ -25,7 +25,15 @@ At the beginning of the book Frege states this:
 >never ... ask for the meaning of a word in isolation, but only in the context of a proposition
 - [[#^context-principle-wikipedia]]
 
-Frege's applies this view on numbers. He doesn't think numbers are real on their own.
+Frege's applies this view on numbers:
 
 >Frege uses the example of a deck of cards to show numbers do not inhere in objects. Asking "how many" is nonsense without the further clarification of cards or suits or what, showing numbers belong to concepts, not to objects.
 - [[#^wikipedia]]
+
+This suggests Frege believes numbers to be [[Funktion und Begriff#Concept|concepts]].
+However, this other wikipedia article seems to suggest they're [[Funktion und Begriff#Object|objects]] instead:
+
+>Frege argues that numbers are objects and assert something about a concept
+- [[#^wikipedia]]
+
+It's a contradicton and I do not understand it.
