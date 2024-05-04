@@ -13,17 +13,14 @@ aliases:
 
 Internet Explorer was an official Microsoft moment
 
-### History
-
-It was bad.
-
-More accurately, this browser **was** way ahead of the curve at its peak.
+This browser *was* way ahead of the curve at its peak.
 
 However, it didn't follow the [[W3C]] guidelines like other browsers of its time, such as [[Netscape]].
 This was a deliberate business choice.
 The point was to develop cutting-edge browser technology that didn't conform to the standards, so that:
 - developers who wanted to employ it needed to program sites specifically for this browser
 - sites made for this browser wouldn't work as good anywhere else
+	- ![[Pasted image 20240504171908.png#]]
 - users of these sites were forced into using Internet Explorer.
 
 In practice, developers had to use tons of workarounds to make stuff work here _too_, on top of making it work everywhere else. Because that's what you **do**.

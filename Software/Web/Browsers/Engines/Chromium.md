@@ -13,6 +13,8 @@ Its [[JavaScript]] engine is called [[V8]].
 
 ---
 
+## Chromium browsers
+
 ### Chromium-based, but proprietary and closed source browsers
 
 ```dataview
@@ -33,3 +35,7 @@ TABLE FROM [[]] and "SOFTWARE/WEB/BROWSERS" and ![[proprietary software]] and ![
 WHERE file.name != this.file.name
 ```
 - he IS pretty brave isnt he
+
+## History
+
+![[Pasted image 20240504172123.png]]
