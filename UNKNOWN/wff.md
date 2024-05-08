@@ -3,9 +3,15 @@ aliases:
   - well formed
   - well-formed formulae
   - well-formed formula
+  - logical expression
+  - formula
+  - expression
 ---
 The phrase **well-formed formula** refers to "a sequence of symbols written correctly for your context".
-It means "syntactically correct thing" within your [[formal language]].
+It means "syntactically correct thing" within your [[language (theoretical computer science)]].
+
+- [wikipedia](https://en.wikipedia.org/wiki/Well-formed_formula) ^wikipedia
+- [expression on wikipedia](https://en.wikipedia.org/wiki/Expression_(mathematics)) ^expression
 
 ## Ambiguity
 
@@ -15,14 +21,16 @@ The "formula" part of the phrase "well-formed _formula_" can be misleading becau
 
 Additionally, sometimes a wff is simply called "formula", and it could actually be an expression.
 
-https://en.wikipedia.org/wiki/Well-formed_formula
+- [[#^wikipedia]]
 
 ## Expression
 
 An **expression** is a sequence of symbols representing a [[mathematical object]]
 
-https://en.wikipedia.org/wiki/Expression_(mathematics)
+- [[#^expression]]
 
 ## Formula
 
 A **formula** is a sequence of symbols describing a statement _about_ [[mathematical object|mathematical objects]].
+
+- [[#^wikipedia]]

@@ -3,15 +3,20 @@
 It goes something like: "Does the [[set]] of all those sets that do not contain themselves contain itself?"
 
 - [jeffrey kaplan](https://www.youtube.com/watch?v=ymGt7I4Yn3k) ^jeffrey-kaplan
+- [stack-exchange](https://hsm.stackexchange.com/a/15662) ^stack-exchange
+- [[naive set theory#^wikipedia]] ^naive-set-theory-wikipedia
 
 ## Formally
 
 ${ Y = \{  x | x \not\in x \} }$
-- [[naive set theory#^wikipedia]]
+- [[#^naive-set-theory-wikipedia]]
 
 ## History
 
+Russel sent a letter to [[Gottlob Frege]] (who had just finished most of his well known books on logic) upon discovering the paradox.
+There's a myth about [[Gottlob Frege|Gottlob]] being hospitalized after reading the letter.
 
+- [[#^stack-exchange]]
 
 ### Russel's solution
 

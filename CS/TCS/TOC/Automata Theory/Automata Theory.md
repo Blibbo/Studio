@@ -1,8 +1,7 @@
 ---
 aliases:
-  - Teoria degli Automi
+  - teoria degli automi
 ---
-Branch of the [[TOC]].
-Associated with the study of [[Formal language theory (CS)|formal languages]].
+**Automata theory** is a branch of the [[TOC|theory of computation]] and [[formal language theory]].
 
 https://en.wikipedia.org/wiki/Automata_theory

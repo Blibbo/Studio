@@ -1,0 +1,1 @@
+In [[formal language theory]], a **letter** is an element of an [[alphabet]].

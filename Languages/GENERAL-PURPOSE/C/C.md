@@ -10,7 +10,7 @@ aliases:
 ---
 [Status::unfinished]
 [[#^quirky-headers]]
-Statically typed [[Programming Language]].
+Statically typed [[programming language]].
 Implements [[Imperative Programming]] and [[Procedural programming]].
 
 The standard for this language is composed of its syntax + a standard library. The standard library implementation may vary, but the [[interface]] is the same everywhere.

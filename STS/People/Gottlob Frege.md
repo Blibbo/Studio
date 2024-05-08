@@ -15,7 +15,7 @@ His work is influential and foundational to diverse fields, such as analytic phi
 ## He's a big deal
 
 He made [[axiom|axiomatic]] [[FOL|predicate logic]] from the ground up.
-He invented a [[formal language]] that looks like [[Arithmetic]], but applies to [[logic]].
+He invented a [[language (theoretical computer science)]] that looks like [[Arithmetic]], but applies to [[logic]].
 
 > The analysis of logical concepts and the machinery of formalization that is essential to [[Principia Mathematica]], to [[Bertrand Russel|Russel]]'s [[theory of descriptions]], to Kurt [[Gödel's incompleteness theorems]], and to Alfred Tarski's theory of truth, is ultimately due to Frege.
 

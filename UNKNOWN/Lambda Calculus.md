@@ -1,4 +1,4 @@
-**Lambda Calculus** can do everything a [[Turing Machine]] can, so I guess it's like a [[programming language]], but... in [[mathematics|math]] terms?
+**Lambda Calculus** is a [[formal system]] that allows you to describe anything a [[Turing Machine]] can do, so I guess it's like a [[programming language]], but... in [[mathematics|math]] terms?
 
-https://en.wikipedia.org/wiki/Programming_language_theory
-https://en.wikipedia.org/wiki/Lambda_calculus
+- [[PLT#^wikipedia]]
+- [wikipedia](https://en.wikipedia.org/wiki/Lambda_calculus) ^wikipedia

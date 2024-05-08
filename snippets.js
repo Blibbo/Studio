@@ -315,6 +315,8 @@
 	// Visual
 	{trigger: "L", replacement: "\\boxed{ ${VISUAL} }", options: "mA"},
 	{trigger: "G", replacement: "\\underline{ ${VISUAL} }", options: "mA"},
+	{trigger: "1", replacement: "<span style=\"color:lime\">${VISUAL}</span>", options: "tA"},
+	{trigger: "2", replacement: "<span style=\"color:red\">${VISUAL}</span>", options: "tA"},
 
 	
 	// Code
@@ -355,9 +357,17 @@
 	{trigger: "(", replacement: "($0)$1", options: "mtcA"},
 	{trigger: "{", replacement: "{$0}$1", options: "mtcA"},
 	{trigger: "[", replacement: "[$0]$1", options: "mcA"},
+	{trigger: "\"", replacement: "\"$0\"$1", options: "tA"},
+	{trigger: "\"", replacement: "\"${VISUAL}\"", options: "tA"},
+	{trigger: "'", replacement: "'${VISUAL}'", options: "tcA"},
 	
-	{trigger: "wiki", replacement: "- [wikipedia]($0) ^wikipedia", options: "tA"},
+	{trigger: "wiki", replacement: "- [Wikipedia]($0) ^wikipedia$1", options: "tA"},
+	{trigger: "mathworld", replacement: "- [Wolfram MathWorld$0]($1) ^math-world$2", options: "tA"},
+	{trigger: "planetmath", replacement: "- [planetmath.org$0]($1) ^planet-math$2", options: "tA"},
+	{trigger: "src", replacement: "- [$0]($1) ^$2", options: "tA"},
 	{trigger: "---", replacement: "---\n:\n---", options: "t"},
+	{trigger: "tags", replacement: "---\ntags:\n---", options: "t"},
+	{trigger: "aliases", replacement: "---\naliases:\n---", options: "t"},
 	
 	// Emojis
 	{trigger: ":thumbsup:", replacement: "👍", options: "tcmA"},
