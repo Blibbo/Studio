@@ -16,7 +16,8 @@ Up-to-date [[JavaScript]] engines have a [[VM]] that knows how to deal with this
 
 Languages like [[C]], [[C++]] and [[Rust]] can choose to compile to this instead of to regular [[Assembly]].
 
-[All Specs](https://webassembly.org/specs/)
+- [webassembly.org – specs](https://webassembly.org/specs/)
+- [Hacker News – is wasm just a hack that nobody would actually use](https://news.ycombinator.com/item?id=39385739)
 
 ---
 

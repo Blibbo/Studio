@@ -16,6 +16,5 @@ There are five fundamental connectives:
 - ${ \mathbf{B} }$: Jake won't walk to school
 ${ \mathbf{A} \to \mathbf{B} }$
 
-
 https://en.wikipedia.org/wiki/Logical_connective
 https://brilliant.org/wiki/propositional-logic/

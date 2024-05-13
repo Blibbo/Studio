@@ -10,7 +10,8 @@ These objects are either abstractions from nature, or they're made the fuck up.
 
 The made-up objects have made-up properties, called [[axiom|axioms]].
 
-https://en.wikipedia.org/wiki/Mathematics
+- [Wikipedia](https://en.wikipedia.org/wiki/Mathematics) ^wikipedia
+- [Exercises on KhanAcademy](https://www.khanacademy.org/math) ^khanacademy
 
 ---
 
