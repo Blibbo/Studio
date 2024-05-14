@@ -5,4 +5,5 @@ aliases:
   - integrale
   - integrali
   - calcolo integrale
+  - integration
 ---

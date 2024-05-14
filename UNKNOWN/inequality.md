@@ -32,7 +32,6 @@ Same statement but in a chained notation:
 - ${ a \leq b < 0 \implies \frac{1}{b} \leq \frac{1}{a} < 0 }$
 - ${ a < 0 < b \implies \frac{1}{a} < 0 < \frac{1}{b} }$
 
-${ -3 \leq 2 \implies -\frac{1}{3} \geq \frac{1}{2} }$
 
 ---
 

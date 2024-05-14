@@ -8,7 +8,7 @@
 
 ## First incompleteness theorem
 
->No [[consistency|consistent]] [[formal system|system]] of axioms whose theorems can be listed by an effective procedure (i.e., an algorithm) is capable of proving all truths about the arithmetic of [[natural numbers]]. For any such consistent formal system, there will always be statements about natural numbers that are true, but that are unprovable within the system.
+>No [[consistency|consistent]] [[formal system|system]] of axioms whose theorems can be listed by an effective procedure (i.e., an algorithm) is capable of proving all truths about the arithmetic of [[natural number|natural numbers]]. For any such consistent formal system, there will always be statements about natural numbers that are true, but that are unprovable within the system.
 - [[#^wikipedia]]
 
 ## Second incompleteness theorem
