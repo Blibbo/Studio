@@ -3,7 +3,7 @@ aliases:
   - OpenAI LP
 ---
 
-**OpenAI** is a company that focuses on research in the field of [[AI]] and [[CS/TCS/ALGORITHMS/AI/ML|Machine Learning]].
+**OpenAI** is a company that focuses on research in the field of [[AI]] and [[COMPUTER SCIENCE/THEORETICAL/ALGORITHMS/AI/ML|Machine Learning]].
 Its goal is getting as close as possible to [[AGI]].
 
 It was initially founded as a non-profit organization in December 2015 by [[Elon Musk]], Sam Altman, Greg Brockman, Ilya Sutskever, Wojciech Zaremba, and John Schulman, and others.

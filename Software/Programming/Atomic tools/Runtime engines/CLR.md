@@ -4,10 +4,6 @@ aliases:
 tags:
   - open-source
 ---
----
+The **Common Language Runtime** is a [[JIT]] [[CIL|IL]] [[compiler]], also called a [[runtime environment]].
 
-### About CLR
-
-- it's a [[runtime environment|runtime environment]]
-- for the [[NET Core|.NET Framework]]
-- provides runtime garbage collection and exception handling and stuff
+It provides runtime garbage collection and exception handling and stuff.

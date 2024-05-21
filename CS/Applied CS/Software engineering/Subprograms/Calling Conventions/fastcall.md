@@ -1,1 +1,0 @@
-[[Calling Convention]] on [[Intel 8086|x86]] platforms.

@@ -13,3 +13,9 @@ aliases:
 - they standardize [[ICT]] systems and products
 - they're behind [[ECMAScript]]
 - ~~it's their fault~~
+
+## Backlinks
+
+```dataview
+TABLE FROM [[ECMA]]
+```

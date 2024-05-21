@@ -5,7 +5,7 @@ tags:
 aliases:
   - List Processing
 ---
-[[Functional Programming]] [[programming language|language]].
+[[functional programming]] [[programming language|language]].
 
 There isn't "one" unique lisp
 Has "metaprogramming" capabilities. Perfect for making [[DSL]]s

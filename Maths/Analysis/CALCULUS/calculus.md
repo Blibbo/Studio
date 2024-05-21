@@ -1,9 +1,9 @@
-**Calculus** is a branch of [[Mathematics|maths]] that is introductory to [[analysis]].
+**Calculus** is a branch of [[mathematics|maths]] that is introductory to [[analysis]].
 
 Its purpose is dealing with [[differential calculus|differentiation]] and [[integral calculus|integration]].
 To do that, it defines concepts such as [[limit|limits]], [[continuous function|continuous functions]] and [[derivative|derivatives]].
 
-This field requires knowledge of [[Algebra]] and [[Trigonometry]].
+This field requires knowledge of [[Algebra]] and [[trigonometry]].
 
 - Calculus for the Practical man by J.E. Thompson
 

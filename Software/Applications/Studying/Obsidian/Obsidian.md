@@ -5,7 +5,7 @@ tags:
 ---
 **Obsidian** is a [[Markdown]] editor to take notes.
 It's [[proprietary software]], which is dangerous for a note-taking app that wants to "complement your brain".
-You own the notes though, as they're just [[Plain Text]] files in markdown format.
+You own the notes though, as they're just [[plain text]] files in markdown format.
 Additionally, remaking the note rendering part of the app in the future wouldn't be super hard.
 
 You can write plugins for this app in [[JavaScript]] and themes in [[CSS]].

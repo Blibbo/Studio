@@ -1,7 +1,7 @@
 ---
 tags: []
 ---
-[[Functional Programming]] [[programming language|language]].
+[[functional programming]] [[programming language|language]].
 
 Doesn't provide loops.
 Uses [[Tail Call Optimization]] for function calls.

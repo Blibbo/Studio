@@ -1,0 +1,1 @@
+I think it covers [[group|groups]], [[field|fields]], [[ring|rings]] and stuff. So... algebraic structures in general?

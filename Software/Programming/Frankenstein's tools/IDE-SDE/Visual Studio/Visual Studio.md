@@ -134,7 +134,7 @@ https://learn.microsoft.com/it-it/visualstudio/debugger/debugger-feature-tour?vi
 ## [[NET Core|.NET]]
 
 - **Info:**
-	- `.csproj` for [[C Sharp|C#]] projects
+	- `.csproj` for [[C-Sharp|C#]] projects
 	- `.vbproj` for [[VB.NET]] projects
 
 ---

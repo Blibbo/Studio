@@ -1,1 +1,0 @@
-A **text editor** is a [[program]] whose purpose is manipulating [[Plain Text]].

@@ -1,0 +1,1 @@
+A **hypervisor** or **virtualization software** is a [[VM|virtual machine]] that is built to run [[OS|operating systems]] that were _not_ made to be virtualized.

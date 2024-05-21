@@ -4,6 +4,8 @@ aliases:
 ---
 A **synthetic proposition** is a [[proposition]] whose predicate concept is _not_ contained in its subject concept but related.
 
+A synthetic proposition's [[proposition#truth value|truth value]] depends on how the thought expressed by the proposition relates to the real world.
+
 Their [[proposition#Truth value|truth value]] is in a gray area of uncertainty.
 
 Examples

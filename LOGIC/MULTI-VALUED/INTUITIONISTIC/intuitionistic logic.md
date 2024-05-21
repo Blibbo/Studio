@@ -1,0 +1,4 @@
+---
+tags:
+  - multi-valued-logic
+---

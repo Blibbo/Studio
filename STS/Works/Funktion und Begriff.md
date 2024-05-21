@@ -23,4 +23,4 @@ Some parts of the sentence, according to Frege, don't make sense by themselves.
 Example: "is hot".
 
 The [[Über Sinn und Bedeutung#reference|reference]] of such a part of the sentence is a **concept**. By itself, this reference isn't an actual thing.
-He describes concepts as being analogous to [[function|functions]]: concepts want [[#object|objects]] as arguments to make full sentences. Full sentences [[Über Sinn und Bedeutung#The full/complete sentence|do]] have actual references.
+He describes concepts as being analogous to [[function (computer science)|functions]]: concepts want [[#object|objects]] as arguments to make full sentences. Full sentences [[Über Sinn und Bedeutung#The full/complete sentence|do]] have actual references.

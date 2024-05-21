@@ -1,1 +1,1 @@
-[[C Sharp|C#]]-based framework for native mobile applications.
+[[C-Sharp|C#]]-based framework for native mobile applications.

@@ -1,0 +1,2 @@
+**Blazor WebAssembly** is an implementation of the [[dotNET|.NET]] standards that allows you to run [[C-Sharp|C#]] on browsers through [[WebAssembly]]. Client-side.
+The way it works is they compiled the .NET runtime into WebAssembly, which turns your browser into something that can run C#. It's fucking crazy

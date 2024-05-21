@@ -13,5 +13,5 @@ When it was founded, in the search of the [[foundations of mathematics]] in the 
 Eventually, it began developing its own ideas with **new pure mathematics**:
 - [[model theory]]
 - [[proof theory]]
-- [[recursion theory]]
+- [[computability theory|recursion theory]]
 - [[set theory]]

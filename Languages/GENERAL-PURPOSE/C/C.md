@@ -1,30 +1,21 @@
 ---
-tags:
-  - standard
-  - strongly-typed
+tags: []
 aliases:
   - ANSI C
   - C89
   - ISO C
   - C Standard
 ---
-[Status::unfinished]
-[[#^quirky-headers]]
 Statically typed [[programming language]].
 Implements [[Imperative Programming]] and [[Procedural programming]].
 
 The standard for this language is composed of its syntax + a standard library. The standard library implementation may vary, but the [[interface]] is the same everywhere.
 
-
-Here's my [Reference](https://devdocs.io/c/) of choice for the C standard library.
+- [devdocs.io](https://devdocs.io/c/)
 
 ---
 
 ## Build process
-
-The whole process is somewhat mistakenly called "compilation"; though compilation is also the name of the middle step of the build process for C programs.
-
-Your [[Source File]]s  should typically have a `.c` extension.
 
 ### Preprocessing
 
@@ -60,34 +51,12 @@ Complex scenarios (things you can't declare in header files included by multiple
 - static variables
 - elements with actual executable code (function implementations etc)
 
-### Tools
-
-The following software is a mix of tools, but i suggest [[gcc]] because it's the most complete.
-
-```dataview
-TABLE FROM ("Software/Programming/Translators" OR "Software/Programming/Linkers" OR "Software/Programming/Debugging") AND [[C]]
-```
-
 ---
 
 ## Standard Library Headers
 
-- **About the headers**
-	- **The basics:**
-		- [[#^include-standard-header|here]]'s the syntax to include headers.
-		- include before using any of its contents
-		- watch out for guards: things won't be defined twice. You can trace back a definition to the first relevant header inclusion
-		- you won't _need_ to most of the time. There are [isolated cases](https://www.quantstart.com/articles/Mathematical-Constants-in-C/) where this is important
-	- **Quirky and funny ~~and absolutely FUCKING despicable~~ behavior:** ^quirky-headers
-		- if you call a standard library header function (any function in the "**Functions:**" section of the headers) WITHOUT including the corresponding header, the code _will not_ throw an error
-		- what _will_ happen though is you might encounter unpredictable and potentially code-breaking behavior
-		- compilers will often throw warnings but try to execute anyway
-		- God knows where they attempt to get the function implementation from
-		- simply _INCLUDE_. _THE_. _HEADER_.
-	- **Unimportant info:**
-		- implementation varies based on the environment. The [[#^ANSI]] specification only standardizes what the headers have to offer
-		- a header might define a [[#^macro]] indirectly by simply including _another_ header. This might be the case for [[#^stdio]] including [[#^stddef]] to have [[#^NULL]], for example
-		- this isn't the rule. The way [[Visual Studio]] handles it, for example, is having a _third_ arbitrary header included by both stdio and stddef.
+Headers are files with a .h extension.
+
 - `{c}stddef.h` ^stddef
 	- **Macros:**
 		- `{c}NULL` ^null
@@ -896,10 +865,10 @@ Compound [[#literals]] can be described as nameless variables.
 			  It requires additional arguments I haven't documented.
 - **[[GCC]]:** ^gcc
 	- **libc** ^libc
-		- standard library.
+		- I don't know what it implements. All of the standard library? what do you have libm for then?
 	- **libm** ^libm
 		- math library
-		- has [[#^math-header|math.h]]
+		- I think it implements [[#^math-header|math.h]]
 	- **glibc** ^glibc
 		- [[GNU]] C Library
 		- standard library + **unique stuff (listed here)**
@@ -917,19 +886,20 @@ Compound [[#literals]] can be described as nameless variables.
 
 ---
 
-## Trivia
+## History
 
-- **Creation:**
-	- C was made by **Dennis Ritchie** in the early **'70s** at **Bell Labs**
-	- initially made to develop [[Unix]]
-	- before C, they were making Unix with [[B]] but they needed a more powerful language
-- **History of standardization:**
-	- [[ANSI]] formed the **X3J11** committee to standardize C (just in the USA) ^ANSI
-	- the **ANSI X3.159-1989** standard was approved and published in 1989
-	- it defined once and for all:
-		- the language's syntax
-		- the standard library headers
-		- the content of these headers
-	- all C compilers must abide
-	- the next year [[ISO]] and [[IEC]] (international shits) adopted this standard, known as **ISO/IEC 9899:1990** or the **C Standard**
-	- the latest C Standard is like **ISO/IEC 9899:2018** or something
+C was made by [[Dennis Ritchie]] in the early 70s at [[Bell Labs]].
+It was initially made to develop [[Unix]].
+Before C, they were making Unix with [[B]], but they needed a more powerful language.
+
+C became popular and needed standardization.
+
+[[ANSI]] formed the **X3J11** committee to standardize C (just in the USA) ^ANSI
+The **ANSI X3.159-1989** standard was approved and published in 1989.
+It defined once and for all:
+- the language's syntax
+- the standard library headers
+- the content of these headers
+
+The next year [[ISO]] and [[IEC]] (international shits) adopted this standard, known as **ISO/IEC 9899:1990** or the **C Standard**.
+The latest C Standard is like **ISO/IEC 9899:2018** or something.

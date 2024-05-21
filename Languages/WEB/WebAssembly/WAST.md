@@ -13,7 +13,7 @@ aliases:
 
 ### About WAST
 
-- use if you want a [[HARDWARE/ARCHITECTURES/MICROPROCESSORS/IMAGINARY/WebAssembly]] that actually looks like an [[Assembly]] language (it doesn't)
+- use if you want a [[WebAssembly]] that actually looks like an [[Assembly]] language (it doesn't)
 - WAT files have a, you guessed it, `.wat` extension.
 
 ---

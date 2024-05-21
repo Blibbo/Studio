@@ -1,6 +1,11 @@
 ---
 aliases:
   - Teoria degli insiemi
+tags:
+  - maths
+  - metamathematics
+  - foundations-of-mathematics
+  - mathematical-logic
 ---
 Branch of mathematics that studies sets.
 Sets are collections of objects. Objects of any kind.

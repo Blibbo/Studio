@@ -8,7 +8,7 @@ aliases:
   - expression
 ---
 The phrase **well-formed formula** refers to "a sequence of symbols written correctly for your context".
-It means "syntactically correct thing" within your [[language (theoretical computer science)]].
+It means "syntactically correct thing" within your [[language (maths)]].
 
 - [wikipedia](https://en.wikipedia.org/wiki/Well-formed_formula) ^wikipedia
 - [expression on wikipedia](https://en.wikipedia.org/wiki/Expression_(mathematics)) ^expression

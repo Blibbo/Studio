@@ -2,7 +2,7 @@
 aliases:
   - Microsoft Access
 ---
-Intuitive and interactive database [[Application]] by [[Microsoft]].
+Intuitive and interactive database [[application]] by [[Microsoft]].
 Technically a [[DBMS]], but it's more like a toy.
 
 Each access file corresponds to a db.
