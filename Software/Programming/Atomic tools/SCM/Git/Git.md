@@ -1,20 +1,18 @@
 ---
 tags: []
 ---
-
-
-
-
-
-
-
-
 **Git** is an [[open source|open-source]] [[Software/OS/Windows/RELATED/SCM]] tool developed by [[Linus Torvalds]] using the [[C]] [[programming language]].
 Git is distributed under the [[GPL]].
 
 [Guide](https://dev.to/g_abud/advanced-git-reference-1o9j)
 
 ---
+
+## To add
+
+- [ ] how do remote repositories work
+- [ ] git submodules
+- [ ] forks, pull requests
 
 ## Tools
 

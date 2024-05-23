@@ -15,6 +15,10 @@ The standard for this language is composed of its syntax + a standard library. T
 
 ---
 
+## To add
+
+- [ ] Wtf is a yield return and a coroutine https://www.youtube.com/watch?v=EJiVWoFk8GA
+
 ## Build process
 
 ### Preprocessing
