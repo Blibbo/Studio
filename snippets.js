@@ -309,7 +309,6 @@
 	{trigger: "=>", replacement: "\\Rightarrow", options: "mA"},
 	{trigger: "==>", replacement: "\\implies", options: "mA"},
 	{trigger: "lim", replacement: "\\underset{ ${0:n} \\to ${1:\\infty} }{\\lim} $2", options: "mA"},
-	
 	{trigger: "QQ", replacement: "\\mathbb{Q}", options: "mA"},
 	
 	// Visual
@@ -317,8 +316,33 @@
 	{trigger: "G", replacement: "\\underline{ ${VISUAL} }", options: "mA"},
 	{trigger: "1", replacement: "<span style=\"color:lime\">${VISUAL}</span>", options: "tA"},
 	{trigger: "2", replacement: "<span style=\"color:red\">${VISUAL}</span>", options: "tA"},
-
 	
+	// Markdown
+	{trigger: "bld", replacement: "**$0**$1", options: "tAw"},
+	{trigger: "ita", replacement: "_$0_$1", options: "tAw"},
+	{trigger: "strike", replacement: "~~$0~~$1", options: "tAw"},
+	{trigger: "*", replacement: "*${VISUAL}*", options: "tAw"},
+	{trigger: "**", replacement: "**$0**$1", options: "tAw"},
+	{trigger: "_", replacement: "_$0_$1", options: "tAw"},
+	{trigger: "_", replacement: "_${VISUAL}_", options: "tA"},
+	{trigger: "-", replacement: "~~${VISUAL}~~", options: "tA"},
+	// {trigger: "[[", replacement: "[[$0]]$1", options: "tA"},
+	{trigger: "ck", replacement: "- [ ] ", options: "tAw"},
+	{trigger: "(", replacement: "(${VISUAL})", options: "mtcA"},
+	{trigger: "[", replacement: "[${VISUAL}]", options: "mtcA"},
+	{trigger: "{", replacement: "{${VISUAL}}", options: "mtcA"},
+	{trigger: "(", replacement: "($0)$1", options: "mtcA"},
+	{trigger: "{", replacement: "{$0}$1", options: "mtcA"},
+	{trigger: "[", replacement: "[$0]$1", options: "mcA"},
+	{trigger: "\"", replacement: "\"$0\"$1", options: "tA"},
+	{trigger: "\"", replacement: "\"${VISUAL}\"", options: "tA"},
+	{trigger: "'", replacement: "'${VISUAL}'", options: "tcA"},
+
+	// YAML
+	{trigger: "---", replacement: "---\n:\n---", options: "t"},
+	{trigger: "tags", replacement: "---\ntags:\n---", options: "t"},
+	{trigger: "aliases", replacement: "---\naliases:\n---", options: "t"},
+
 	// Code
 	{trigger: "cd", replacement: "`$0`$1", options: "tAw"},
 	{trigger: "fence", replacement: "```", options: "tcA"},
@@ -337,38 +361,14 @@
 	{trigger: "cmd", replacement: "`{cmd}$0`$1", options: "tw"},
 	{trigger: "sql", replacement: "`{sql}$0`$1", options: "tw"},
 	{trigger: "perl", replacement: "`{perl}$0`$1", options: "tw"},
-
 	
-	// Markdown
-	{trigger: "bld", replacement: "**$0**$1", options: "tAw"},
-	{trigger: "ita", replacement: "_$0_$1", options: "tAw"},
-	{trigger: "strike", replacement: "~~$0~~$1", options: "tAw"},
-	{trigger: "*", replacement: "*${VISUAL}*", options: "tAw"},
-	{trigger: "**", replacement: "**$0**$1", options: "tAw"},
-	{trigger: "_", replacement: "_$0_$1", options: "tAw"},
-	{trigger: "_", replacement: "_${VISUAL}_", options: "tA"},
-	{trigger: "-", replacement: "~~${VISUAL}~~", options: "tA"},
-
-	// {trigger: "[[", replacement: "[[$0]]$1", options: "tA"},
-	{trigger: "ck", replacement: "- [ ] ", options: "tAw"},
-	{trigger: "(", replacement: "(${VISUAL})", options: "mtcA"},
-	{trigger: "[", replacement: "[${VISUAL}]", options: "mtcA"},
-	{trigger: "{", replacement: "{${VISUAL}}", options: "mtcA"},
-	{trigger: "(", replacement: "($0)$1", options: "mtcA"},
-	{trigger: "{", replacement: "{$0}$1", options: "mtcA"},
-	{trigger: "[", replacement: "[$0]$1", options: "mcA"},
-	{trigger: "\"", replacement: "\"$0\"$1", options: "tA"},
-	{trigger: "\"", replacement: "\"${VISUAL}\"", options: "tA"},
-	{trigger: "'", replacement: "'${VISUAL}'", options: "tcA"},
-	
+	// Common sources
+	{trigger: "src", replacement: "- [$0]($1) ^$2", options: "tA"},
 	{trigger: "wiki", replacement: "- [Wikipedia]($0) ^wikipedia$1", options: "tA"},
 	{trigger: "mathworld", replacement: "- [Wolfram MathWorld$0]($1) ^math-world$2", options: "tA"},
 	{trigger: "planetmath", replacement: "- [planetmath.org$0]($1) ^planet-math$2", options: "tA"},
 	{trigger: "youmath", replacement: "- [YouMath$0]($1) ^youmath$2", options: "tA"},
-	{trigger: "src", replacement: "- [$0]($1) ^$2", options: "tA"},
-	{trigger: "---", replacement: "---\n:\n---", options: "t"},
-	{trigger: "tags", replacement: "---\ntags:\n---", options: "t"},
-	{trigger: "aliases", replacement: "---\naliases:\n---", options: "t"},
+	{trigger: "github", replacement: "- [GitHub$0]($1) ^github$2", options: "tA"},
 	
 	// Emojis
 	{trigger: ":thumbsup:", replacement: "👍", options: "tcmA"},

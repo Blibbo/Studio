@@ -4,7 +4,8 @@ aliases:
 Dataview is an [[Obsidian]] plugin that allows you to do exactly two things: [[#Indexing|index]] and [[#Querying|query]] your vault.
 
 [documentation](https://blacksmithgu.github.io/obsidian-dataview/)
-[dataview](https://github.com/blacksmithgu/obsidian-dataview) on [[Github]]
+- [GitHub](https://github.com/blacksmithgu/obsidian-dataview) ^github
+- [Tasks with inline fields – Obsidian Forum](https://forum.obsidian.md/t/using-a-dataview-query-how-do-you-display-only-those-tasks-which-have-a-value-for-some-field/39149) ^task-inline
 
 ---
 
