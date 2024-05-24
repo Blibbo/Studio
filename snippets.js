@@ -364,6 +364,7 @@
 	{trigger: "wiki", replacement: "- [Wikipedia]($0) ^wikipedia$1", options: "tA"},
 	{trigger: "mathworld", replacement: "- [Wolfram MathWorld$0]($1) ^math-world$2", options: "tA"},
 	{trigger: "planetmath", replacement: "- [planetmath.org$0]($1) ^planet-math$2", options: "tA"},
+	{trigger: "youmath", replacement: "- [YouMath$0]($1) ^youmath$2", options: "tA"},
 	{trigger: "src", replacement: "- [$0]($1) ^$2", options: "tA"},
 	{trigger: "---", replacement: "---\n:\n---", options: "t"},
 	{trigger: "tags", replacement: "---\ntags:\n---", options: "t"},
