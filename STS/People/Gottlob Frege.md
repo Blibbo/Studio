@@ -23,7 +23,7 @@ He invented a [[language (maths)]] that looks like [[Arithmetic]], but applies t
 
 He had beef with lots of stuff and people
 
-### [[Formalism]]
+### [[formalism]]
 
 
 - [[formalism#^wikipedia]]

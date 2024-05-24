@@ -1,1 +1,0 @@
-**Topology** is a branch of [[Geometry]]

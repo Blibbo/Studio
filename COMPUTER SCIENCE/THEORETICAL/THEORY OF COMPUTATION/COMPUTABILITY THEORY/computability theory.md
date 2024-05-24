@@ -9,7 +9,7 @@ tags:
   - mathematical-logic
   - metamathematics
 ---
-**Computability theory** or **recursion theory** is a field of the [[TOC|theory of computation]] and [[mathematics|maths]] that focuses on figuring out what _can_ be computed.
+**Computability theory** or **recursion theory** is a field of the [[TOC|theory of computation]] and [[Mathematics|maths]] that focuses on figuring out what _can_ be computed.
 
 Studies stuff such as [[turing machine|turing machines]] and [[complexity class|complexity classes]], [[decidability]].
 

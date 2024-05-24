@@ -6,6 +6,7 @@ aliases:
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Inequality_(mathematics)) ^wikipedia
 - [Wikipedia – inequation](https://en.wikipedia.org/wiki/Inequation) ^inequation
+- [Disequazioni con valore assoluto](https://www.youmath.it/lezioni/algebra-elementare/disequazioni/422-disequazioni-con-valori-assoluti.html) ^youmath
 
 ---
 

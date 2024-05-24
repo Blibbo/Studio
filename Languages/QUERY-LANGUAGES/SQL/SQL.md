@@ -28,7 +28,7 @@ Implements [[Relational Algebra]] on your database.
 
 ### Where
 
-The `{sql}WHERE` clause implements [[selection]] in SQL.
+The `{sql}WHERE` clause implements [[Selection]] in SQL.
 It lets you choose rows based on conditions.
 
 #### Comparison operators

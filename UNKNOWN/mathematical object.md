@@ -1,7 +1,7 @@
 A **mathematical object** is an abstract object which's nature is unknown to us.
 Our current [[language (maths)|formal]] definition is that it's a [[set]].
 
-We built [[mathematics|maths]] around this thought and [[axiom|axiomatized]] a [[set theory]] ([[ZFC]]) that is able to define every mathematical object we've used so far as a set of some kind.
+We built [[Mathematics|maths]] around this thought and [[axiom|axiomatized]] a [[set theory]] ([[ZFC]]) that is able to define every mathematical object we've used so far as a set of some kind.
 
 ## Philosophy
 

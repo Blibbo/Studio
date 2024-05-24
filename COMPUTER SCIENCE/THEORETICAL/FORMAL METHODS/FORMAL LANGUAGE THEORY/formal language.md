@@ -16,7 +16,7 @@ It's the subject of study of [[formal language theory]].
 - [Wolfram MathWorld](https://mathworld.wolfram.com/FormalLanguage.html) ^math-world
 - [wikipedia](https://en.wikipedia.org/wiki/Formal_language) ^wikipedia
 
-## In [[mathematics|maths]]
+## In [[Mathematics|maths]]
 
 A [[subset]] of a [[language (maths)]] where you only choose specific [[string|strings]].
 The rules according to which you choose strings are called **formation rules**.

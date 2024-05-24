@@ -2,7 +2,7 @@
 aliases:
   - Srinivasa Ramanujan
 ---
-**Srinivasa Ramanujan** was a [[mathematics|mathematician]] of the ${ \text{XX} }$ century who died at 32.
+**Srinivasa Ramanujan** was a [[Mathematics|mathematician]] of the ${ \text{XX} }$ century who died at 32.
 They made a movie on him and stuff.
 
 His whole deal is that mathematicians didn't take him seriously until he met [[G. H. Hardy]], and they had say gex

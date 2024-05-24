@@ -1,6 +1,6 @@
 A **variable** is a symbol that can change. It _varies_.
 
-## In [[mathematics]]
+## In [[Mathematics]]
 
 A **variable** is a symbol that represents a [[mathematical object]].
 

@@ -10,8 +10,6 @@ Linux adheres to [[POSIX]].
 Lots of distributions of this operating system exist.
 Linux distributions get commonly referred to as [[#distros]].
 
----
-
 ## Userland
 
 The original Linux is GNU/Linux, which means the userland is typically [[GNU]].
@@ -30,17 +28,13 @@ Here are a bunch of Linux-unique utilities:
 - `Ctrl + L`
 	- Clear screen on shells
 
----
-
 ## Distros
 
 ```dataview
 TABLE FROM "Software/OS/Linux/DISTROS"
 ```
 
----
-
-## Trivia
+## History
 
 "version 0.01" of the Linux kernel was released by [[Linus Torvalds]] on August 25, 1991.
 Linus developed it as a hobby while studying at the University of Helsinki in Finland.
@@ -49,6 +43,8 @@ The annoncement of the kernel being released happened on the [[Usenet]] newsgrou
 ![[Linus Torvalds#Linux]]
 
 The [[Linux kernel]] and [[GNU]] are both [[GPL|GPL'd]], so any changes to those will be made public.
+
+## Trivia
 
 ### [[Linus Torvalds]] on why desktop Linux sucks
 

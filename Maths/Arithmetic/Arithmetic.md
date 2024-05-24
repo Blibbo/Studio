@@ -1,2 +1,0 @@
-Branch of [[mathematics|maths]] concerned with basic operations such as [[addition]], [[subtraction]], [[multiplication]] and [[division]] of [[number|numbers]].
-Basic operations and properties of numbers.

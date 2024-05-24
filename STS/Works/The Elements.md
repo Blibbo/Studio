@@ -1,4 +1,4 @@
-Collection of 13 [[mathematics|math]] textbooks by [[Euclid]], written around 300 BC, that pretty much sum up all of mathematics known at the time.
+Collection of 13 [[Mathematics|math]] textbooks by [[Euclid]], written around 300 BC, that pretty much sum up all of mathematics known at the time.
 In it, 465 [[theorem|theorems]] are proved.
 
 https://en.wikipedia.org/wiki/Euclid%27s_Elements

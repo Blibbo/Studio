@@ -2,13 +2,13 @@
 	"nodes":[
 		{"id":"7d2247947c00414e","x":260,"y":-620,"width":440,"height":1520,"type":"group","label":"DUDES"},
 		{"id":"1abc855ed1b06a4a","x":-940,"y":-100,"width":440,"height":1000,"type":"group","label":"TYPES OF LOGIC"},
-		{"id":"feb1e42dff12a039","type":"file","file":"LOGIC/FORMAL/LOGICAL SYSTEMS/ZEROTH-ORDER LOGIC/propositional logic.md","x":-920,"y":-80,"width":400,"height":400},
-		{"id":"443e8b2bee0087b5","type":"file","file":"LOGIC/FORMAL/LOGICAL SYSTEMS/FIRST-ORDER LOGIC/FOL.md","x":-920,"y":480,"width":400,"height":400},
+		{"id":"feb1e42dff12a039","type":"file","file":"LANGUAGES/LOGIC/FORMAL/LOGICAL SYSTEMS/ZEROTH-ORDER LOGIC/propositional logic.md","x":-920,"y":-80,"width":400,"height":400},
+		{"id":"443e8b2bee0087b5","type":"file","file":"LANGUAGES/LOGIC/FORMAL/LOGICAL SYSTEMS/FIRST-ORDER LOGIC/FOL.md","x":-920,"y":480,"width":400,"height":400},
 		{"id":"44893c8ad88b27af","type":"file","file":"STS/PEOPLE/Gottlob Frege.md","x":280,"y":480,"width":400,"height":400},
 		{"id":"a270d90233a30fcf","type":"file","file":"STS/WORKS/Begriffsschrift.md","x":-320,"y":480,"width":400,"height":400},
 		{"id":"ebdb4ba709560425","type":"file","file":"STS/PEOPLE/George Boole.md","x":280,"y":-80,"width":400,"height":400},
 		{"id":"063c61b25dfb432b","type":"file","file":"STS/PEOPLE/Aristotle.md","x":280,"y":-600,"width":400,"height":400},
-		{"id":"1f1fb4fd4c6fb184","type":"file","file":"LOGIC/logic.md","x":-920,"y":-600,"width":400,"height":400},
+		{"id":"1f1fb4fd4c6fb184","type":"file","file":"LANGUAGES/LOGIC/logic.md","x":-920,"y":-600,"width":400,"height":400},
 		{"id":"f60302ffdcf5d00e","x":-320,"y":-80,"width":400,"height":400,"type":"file","file":"UNKNOWN/boolean algebra.md"}
 	],
 	"edges":[

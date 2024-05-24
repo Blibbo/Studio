@@ -3,9 +3,9 @@ aliases:
   - Godfrey Harold Hardy
 ---
 **Godfrey Harold Hardy** was an English mathematician.
-He did important work in [[number theory]] and [[mathematical analysis]]
+He did important work in [[Number Theory]] and [[Mathematical Analysis]]
 
-He believed [[mathematics|maths]] to be an art form and wasn't a fan of [[mathematics#Applied Mathematics|applied mathematics]].
+He believed [[Mathematics|maths]] to be an art form and wasn't a fan of [[Mathematics#Applied Mathematics|applied mathematics]].
 
 https://en.wikipedia.org/wiki/G._H._Hardy
 

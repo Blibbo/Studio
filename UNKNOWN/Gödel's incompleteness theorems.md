@@ -1,5 +1,5 @@
 ![[attachment-godel incompleteness.png#invert_B]]
-**Gödel's incompleteness theorems** highlight a fundamental limitation of [[mathematics|maths]].
+**Gödel's incompleteness theorems** highlight a fundamental limitation of [[Mathematics|maths]].
 
 - [wikipedia](https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems) ^wikipedia
 - [[metamathematics#^wikipedia]]
