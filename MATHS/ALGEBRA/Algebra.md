@@ -1,1 +1,1 @@
-Extends beyond basic [[Arithmetic]], working with the study of **symbols**, [[equation|equations]], [[variable|variables]], [[exponent|exponents]], [[polynomial|polynomials]], [[function (computer science)|functions]] and more abstract mathematical structures.
+**Algebra** is the part of [[Mathematics|maths]] that analyzes symbols and the rules to manipulate those symbols.

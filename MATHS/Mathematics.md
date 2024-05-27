@@ -12,6 +12,7 @@ The made-up objects have made-up properties, called [[axiom|axioms]].
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Mathematics) ^wikipedia
 - [Exercises on KhanAcademy](https://www.khanacademy.org/math) ^khanacademy
+- [math is lonely – YouTube](https://www.youtube.com/watch?v=LEsI4kPEkgw) ^math-is-lonely
 
 ---
 
@@ -37,7 +38,7 @@ Mathematicians, engineers and stuff make boring [[model theory|models]] that rep
 There are a shit ton of branches of maths and it's dumb to list any as being "major branches".
 Different sources assign different subdisciplines as being "main ones".
 
-- [[Number Theory]]
+- [[number theory]]
 - [[Algebra]]
 - [[geometry]]
 - [[Mathematical Analysis|Analysis]]
