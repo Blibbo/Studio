@@ -6,7 +6,12 @@ aliases:
 **batch** is a [[shell language]] [[interpreter|interpreted]] by [[cmd.exe]].
 Tightly associated with the [[Windows]] environment.
 
-Batch is bad. So fucking bad. [relevant thread](https://www.reddit.com/r/windows/comments/6nzuy0/comment/dkdwy0f/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+Batch is bad. So fucking bad. [[#^reddit|Relevant thread]]
+
+- [CMD Commands Reference](https://ss64.com/nt/) ^reference
+- [Official Commands Reference by Microsoft](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) ^microsoft
+- [Why is batch bad – Reddit](https://www.reddit.com/r/windows/comments/6nzuy0/comment/dkdwy0f/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) ^reddit
+
 
 ---
 
@@ -335,8 +340,7 @@ Parameter: 4
 
 **Internal commands** are unique to this shell, **external commands** are actual programs on windows that behave like commands in any shell language interpreter.
 
-- **[Unofficial Reference I use](https://ss64.com/nt/)**: in this site, internal commands have a little dot (${ \cdot }$) next to them
-- [Official Reference by Microsoft](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)  I can't tell internal or external commands apart, so I don't like it
+- [[#^reference]]: in this site, internal commands have a little dot (${ \cdot }$) next to them
 
 ### Internal sommands
 

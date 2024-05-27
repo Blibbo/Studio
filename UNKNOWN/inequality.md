@@ -10,7 +10,7 @@ aliases:
 
 ---
 
-## Inferential
+## Properties
 
 Converse:
 ${ a \leq b \Longleftrightarrow b\geq a }$
@@ -34,9 +34,3 @@ Same statement but in a chained notation:
 - ${ a < 0 < b \implies \frac{1}{a} < 0 < \frac{1}{b} }$
 
 Applying functions:
-
----
-
-## Formally
-
----

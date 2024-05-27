@@ -6,7 +6,7 @@ aliases:
 ---
 **cmd.exe** is a [[command-line interpreter]] for the [[batch|batch scripting language]].
 
-https://en.wikipedia.org/wiki/Cmd.exe
+- [Wikipedia](https://en.wikipedia.org/wiki/Cmd.exe) ^wikipedia
 
 ## Command-line execution
 

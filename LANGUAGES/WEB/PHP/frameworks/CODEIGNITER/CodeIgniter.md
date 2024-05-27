@@ -1,0 +1,1 @@
+**CodeIgniter** is a [[PHP]] framework released under the [[mit|MIT License]].

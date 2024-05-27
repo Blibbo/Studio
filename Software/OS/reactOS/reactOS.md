@@ -1,4 +1,4 @@
-I sincerely hope it has nothing to do with [[React.js]]
+I sincerely hope it has nothing to do with [[React]]
 
 ---
 
