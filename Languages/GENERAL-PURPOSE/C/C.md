@@ -1,10 +1,15 @@
 ---
-tags: []
+tags: 
 aliases:
   - ANSI C
   - C89
   - ISO C
   - C Standard
+  - C90
+  - C11
+  - C17
+  - C23
+  - C2x
 ---
 Statically typed [[programming language]].
 Implements [[Imperative Programming]] and [[Procedural programming]].
@@ -12,6 +17,10 @@ Implements [[Imperative Programming]] and [[Procedural programming]].
 The standard for this language is composed of its syntax + a standard library. The standard library implementation may vary, but the [[interface]] is the same everywhere.
 
 - [devdocs.io](https://devdocs.io/c/)
+- [C – iso-9899.info](https://iso-9899.info/wiki/The_Standard) ^iso
+- [Download the C Standard from open-std.org](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1256.pdf&ved=2ahUKEwji-Ira0beGAxUDSvEDHTSsAkoQFnoECB0QAQ&usg=AOvVaw0r_BYeGq-S21LM06aU0Fo3) ^open-std
+- [C standard disambiguation – Wikipedia](https://en.wikipedia.org/wiki/C_standard) ^wiki-c-standard
+
 
 ---
 

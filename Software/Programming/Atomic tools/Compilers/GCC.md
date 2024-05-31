@@ -4,14 +4,10 @@ tags:
 aliases:
   - GNU Compiler Collection
 ---
----
+The **GNU Compiler Collection** is a set of compilers developed by the [[FSF]] for the [[GNU|GNU Project]].
 
-### About GCC
-
-- it's a ton of compilers
-- integral part of the [[GNU]] userland
-
----
+- [GCC Documentation](https://gcc.gnu.org/onlinedocs/) ^docs
+- [Download GCC Docs PDF](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gcc.gnu.org/onlinedocs/gcc.pdf&ved=2ahUKEwjJ9vqs2LeGAxUhA9sEHUQxAVcQjBB6BAgSEAE&usg=AOvVaw1XQQbHEpGHip1qb60VGdt_) ^docs-pdf
 
 ### On [[Windows]]
 
