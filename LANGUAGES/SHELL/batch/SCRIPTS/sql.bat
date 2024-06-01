@@ -49,12 +49,12 @@ net start MySQL80
 call sleep 500
 
 if "%1" == "" (
-	mysql --port 3307 -u %user% --password=%password% -t && rem 2>nul
+	mysql --port 3306 -u %user% --password=%password% -t && rem 2>nul
 ) else (
-	mysql --port 3307 -u %user% --password=%password% -t < "%1"
+	mysql --port 3306 -u %user% --password=%password% -t < "%1"
 )
 
-mysqladmin --port 3307 -u %user% --password=%password% shutdown > nul 2>nul
-rem net stop MySQL80
+rem mysqladmin --port 3306 -u %user% --password=%password% shutdown > nul 2>nul
+net stop MySQL80
 
 echo on
