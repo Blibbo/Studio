@@ -8,3 +8,6 @@ tags:
   - maths
   - lattice-theory
 ---
+
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Order_theory) ^wikipedia

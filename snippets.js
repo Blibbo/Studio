@@ -369,6 +369,9 @@
 	{trigger: "planetmath", replacement: "- [planetmath.org$0]($1) ^planet-math$2", options: "tA"},
 	{trigger: "youmath", replacement: "- [YouMath$0]($1) ^youmath$2", options: "tA"},
 	{trigger: "github", replacement: "- [GitHub$0]($1) ^github$2", options: "tA"},
+	{trigger: "releases", replacement: "- [GitHub Releases Page$0]($1) ^github-releases$2", options: "tA"},
+	{trigger: "youtube", replacement: "- [YouTube$0]($1) ^youtube$2", options: "tA"},
+	{trigger: "website", replacement: "- [Website$0]($1) ^website$2", options: "tA"},
 	
 	// Emojis
 	{trigger: ":thumbsup:", replacement: "👍", options: "tcmA"},
@@ -378,4 +381,7 @@
 	// Characters
 	{trigger: "<<", replacement: "«", options: "tA"},
 	{trigger: ">>", replacement: "»", options: "tA"},
+
+	// Templates
+	{trigger: "cle", replacement: "## Command-line execution\n\n`{bash}$0` (no options)\n- $1\n\n`{bash}$0` +\n- $2", options: "tw"},
 ]

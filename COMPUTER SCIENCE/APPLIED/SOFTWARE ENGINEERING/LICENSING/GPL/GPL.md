@@ -2,7 +2,7 @@
 aliases:
   - General Public License
 ---
-The **GPL** is an [[open-source license]] developed by [[FSF]] as part of the [[GNU|GNU Project]]
+The **GPL** is an [[open-source license]] developed by [[FSF]] as part of the [[GNU|GNU Project]].
 
 The license basically says "this software is mega free and open and you can't turn it into proprietary bullshit"
 

@@ -1,14 +1,15 @@
 ---
 aliases:
   - inequation
+  - disequazione
+  - disequazioni
 ---
 
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Inequality_(mathematics)) ^wikipedia
 - [Wikipedia – inequation](https://en.wikipedia.org/wiki/Inequation) ^inequation
-- [YouMath – disequazioni con valore assoluto](https://www.youmath.it/lezioni/algebra-elementare/disequazioni/422-disequazioni-con-valori-assoluti.html) ^youmath
-
----
+- [YouMath – disequazioni con valore assoluto](https://www.youmath.it/lezioni/algebra-elementare/disequazioni/422-disequazioni-con-valori-assoluti.html) ^youmath-absolute
+- [YouMath – Lezioni](https://www.youmath.it/lezioni/algebra-elementare/disequazioni/171-introduzione-alle-disequazioni.html) ^youmath
 
 ## Properties
 

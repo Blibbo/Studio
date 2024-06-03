@@ -41,6 +41,6 @@ Different sources assign different subdisciplines as being "main ones".
 - [[number theory]]
 - [[Algebra]]
 - [[geometry]]
-- [[Mathematical Analysis|Analysis]]
+- [[mathematical analysis|Analysis]]
 
 https://byjus.com/maths/branches-of-mathematics/

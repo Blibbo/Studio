@@ -7,6 +7,6 @@ aliases:
 
 It's about stuff you can count. You can't count [[real number|real numbers]] in order, for example. So real numbers aren't a prominent topic in discrete mathematics.
 
-The antithesis is [[Mathematical Analysis]] that only covers real and complex numbers.
+The antithesis is [[mathematical analysis]] that only covers real and complex numbers.
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Discrete_mathematics) ^wikipedia

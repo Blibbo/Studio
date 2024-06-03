@@ -2,7 +2,7 @@
 aliases:
   - problema ben posto
 ---
-A **well-posed problem** in [[Mathematical Analysis]] is a problem with the following properties:
+A **well-posed problem** in [[mathematical analysis]] is a problem with the following properties:
 1. The problem has a solution
 2. The solution is unique
 3. The solution's behavior changes continuously with the initial conditions
