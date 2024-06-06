@@ -383,5 +383,5 @@
 	{trigger: ">>", replacement: "»", options: "tA"},
 
 	// Templates
-	{trigger: "cle", replacement: "## Command-line execution\n\n`{bash}$0` (no options)\n- $1\n\n`{bash}$0` +\n- $2", options: "tw"},
+	//{trigger: "cle", replacement: "## Command-line execution\n\n`{bash}$0` (no options)\n- $1\n\n`{bash}$0` +\n- $2", options: "tw"},
 ]

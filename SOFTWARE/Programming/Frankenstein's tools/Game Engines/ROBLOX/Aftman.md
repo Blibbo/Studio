@@ -10,11 +10,15 @@ It's meant to be used with another tool called [[Rojo]].
 `{bash}aftman` (no options)
 - Tells you the version of the program
 
-`{bash}aftman` +
-- `{bash}--help`
-	- Detailed help on subcommands
+### Options
+
+`{bash}--help` or `{bash}-h`
+
+### Subcommands
+
 - `{bash}self-install`
-	- Updates the program
+- `{bash}self-update`
+	- Updates the program from the internet
 - `{bash}init [path]`
 	- Creates `aftman.toml` in your current directory by default, or in the specifed path
 - `{bash}add rojo-rbx/rojo`
