@@ -1,6 +1,6 @@
 >My name is Linus Torvalds and I am your god.
 
-![[Linus Torvalds flipping you off.webp#invert_B]]
+![[Linus Torvalds flipping you off.webp]]
 
 > I have an ego the size of a small planet
 

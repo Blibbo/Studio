@@ -54,7 +54,7 @@ tags:
 		```markdown
 		# header level 1
 		## level 2
-		###### level 6 (max)
+		### level 3 (max)
 		```
 	- Strikethrough
 		```markdown
