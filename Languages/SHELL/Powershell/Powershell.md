@@ -10,13 +10,11 @@ Scripting language, command line interpreter and terminal for [[Windows]].
 Successor to [[batch]].
 This scripting language isn't case sensitive.
 
+- [Thread on running scripts – Reddit](https://www.reddit.com/r/PowerShell/comments/m3hyn0/how_do_i_run_a_ps1_file_in_power_shell_by_simply/) ^reddit
+
 ---
 
 ### Cmdlets
-
-They're commands available (only) in powershell.
-Said to be "lightweight and powerful". Ion know
-Technically, they are specialized [[NET Core|.NET]] classes
 
 - `get-command`
 	- returns every command/executable available in that directory's scope, including the ones in the system's [[Windows#^path|path]]
